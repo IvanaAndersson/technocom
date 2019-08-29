@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700');
+@import '_modules/reset';
+@import '_modules/variables';
+@import '_modules/typography';
+
+@import 'layout-pages';
+@import 'layout-blogposts';
+@import '_elements/buttons';
+@import '_components/site-header';
+@import '_components/site-footer';
+
+@import '_components/navigation';
+@import '_sections/home-page';
+@import '_sections/about-me';
+@import '_sections/gallery';
+@import '_sections/blog';
+@import '_sections/contacts';

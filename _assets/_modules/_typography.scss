@@ -1,0 +1,60 @@
+$widths: (
+    'phone' : ( max-width: 600px ),
+    'tablet' : ( min-width: 601px),
+    'laptop' : ( min-width: 990px),
+    'desktop' : ( min-width: 1220px),
+    'huge' : (min-width: 1500px)
+) !default;
+
+
+@mixin screen-width($width) {
+    @if map-has-key($widths, $width) {
+        @media #{inspect(map-get($widths, $width))} {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$width}`. "
+            + "Available widths are: #{map-keys($widths)}.";
+    }
+}
+
+html {
+    line-height: 1.5;    
+    font-family: $ff-text;
+
+
+    @include screen-width('phone') { font-size: $sizing-fs-base; }
+
+    @include screen-width('tablet') { font-size: $sizing-fs-tablet; }
+
+    @include screen-width('laptop') { font-size: $sizing-fs-laptop; }
+
+    @include screen-width('desktop') { font-size: $sizing-fs-desktop; }
+
+    @include screen-width('huge') { font-size: $sizing-fs-huge; }
+}
+
+p, ul, ol {
+    margin-bottom: $sizing-mb-general;
+}
+
+ul, ol {
+    padding-left: $sizing-ws-base;
+}
+
+a {
+    text-decoration: none;
+}
+
+$headings: (h1: $h1-size, h2: $h2-size, h3: $h3-size, h4: $h4-size, h5: $h5-size, h6: $h6-size);
+
+@each $heading, $size in $headings {
+    #{$heading} { font-size: $size; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $ff-headings;
+    margin: 0 0 $sizing-ws-base/3 0;
+}

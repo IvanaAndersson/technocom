@@ -1,0 +1,24 @@
+<nav class="{{ include.location }}-nav">
+  <ul>
+    {% assign sorted_pages = site.pages | sort: "order" %} {% for page in
+    sorted_pages %} {% if page.url != '/' and page.url != '/feed.xml' %}
+    <li>
+      <a
+        href="{{ site.baseurl }}{{ page.url }}"
+        {%
+        if
+        include.location
+        !="footer"
+        %}
+        class="button-purple"
+        {%
+        endif
+        %}
+      >
+        <span class="title">{{ page.title }}</span>
+        <span class="date">{{ page.date | date_to_string }}</span>
+      </a>
+    </li>
+    {% endif %} {% endfor %}
+  </ul>
+</nav>
