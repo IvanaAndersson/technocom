@@ -1,14 +1,30 @@
-<nav class="{{ include.location }}-nav">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/site.css" />
+  </head>
+  <body>
+    <nav class="header-nav">
   <ul>
-    {% assign sorted_pages = site.pages | sort: "order" %} {% for page in
-    sorted_pages %} {% if page.url != '/' and page.url != '/feed.xml' %}
+      
     <li>
-      <a href="{{ site.baseurl }}{{ page.url }}">
-        <span class="title">{{ page.title }}</span>
-        <span class="date">{{ page.date | date_to_string }}</span>
+      <a href="/home/">
+        <span class="title">Home</span>
+        <span class="date"></span>
       </a>
     </li>
-    {% endif %} {% endfor %}
+        
+    <li>
+      <a href="/about/">
+        <span class="title">About</span>
+        <span class="date"></span>
+      </a>
+    </li>
+     
   </ul>
 </nav>
 <!-- 
@@ -86,3 +102,13 @@
     </ul>
   </nav>
 </footer> -->
+
+    <h1>Home</h1>
+    <section>
+      
+    </section>
+    <footer>
+      
+    </footer>
+  </body>
+</html>

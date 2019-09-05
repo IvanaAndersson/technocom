@@ -1,27 +1,31 @@
 .button-purple {
-    outline:none;
-    @media screen and (min-width: 750px) {    border-radius: 0.5rem; }
-    color: $color-grey;
-    background: $color-purple;
-    transition: background 0.3s ease-in;
+  outline: none;
+  @media screen and (min-width: 750px) {
+    border-radius: 0.5rem;
+  }
+  color: $color-grey;
+  background: $color-purple;
+  transition: background 0.3s ease-in;
 
-    &:hover, 
-    &:focus {
-        color: $color-purple;
-        background: $color-grey;
-    }
+  &:hover,
+  &:focus {
+    color: $color-purple;
+    background: $color-grey;
+  }
 }
 
 .button-green {
-    outline:none;
-    @media screen and (min-width: 750px) {    border-radius: 0.5rem; }
-    color: $color-grey;
-    background: $color-dark-green;
-    transition: background 0.3s ease-in;
+  outline: none;
+  @media screen and (min-width: 750px) {
+    border-radius: 0.5rem;
+  }
+  color: $color-grey;
+  background: $color-dark-green;
+  transition: background 0.3s ease-in;
 
-    &:hover, 
-    &:focus {
-        color: $color-dark-green;
-        background: $color-grey;
-    }
+  &:hover,
+  &:focus {
+    color: $color-dark-green;
+    background: $color-grey;
+  }
 }
