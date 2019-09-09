@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>About</title>
-    <link rel="stylesheet" href="../css/site.css" />
-  </head>
-  <body>
-    <header>
-  <a href="/">
-    <img src="/" class="logo" alt="" />
+<header>
+  <a href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/" class="logo" alt="" />
   </a>
 
   <nav class="header-nav">
@@ -149,36 +136,7 @@
     </ul>
   </nav>
 
-  <h1 style="">
-    About
+  <h1 style="{% if page.url == '/' %} display:none; {% endif %}">
+    {{ page.title }}
   </h1>
 </header>
-
-
-    <section>
-      
-    </section>
-    <footer>
-      <footer>
-  <nav>
-    <ul>
-      <li>Продукти</li>
-      <li>Инеженеринг</li>
-      <li>Автомобилна Индустрия</li>
-      <li>Компанията</li>
-      <li>Новини</li>
-      <li>Контакти</li>
-    </ul>
-  </nav>
-  <a href="#">Poveritelnost</a>
-</footer>
-
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
-</html>

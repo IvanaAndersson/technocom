@@ -17,8 +17,8 @@ title: Technocom Co
 email: ivana.p.kostova@gmail.com
 description: Technocom Co
 destination: docs
-baseurl: "" # the subpath of your site, e.g. /blog
-# baseurl: "/technocom" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site
+# baseurl: "/technocom" # the subpath of your site
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -26,12 +26,11 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+# The following items will not be processed, by default.
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
+  # - node_modules
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
