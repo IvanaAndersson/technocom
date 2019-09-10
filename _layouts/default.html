@@ -8,27 +8,42 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ page.title }}</title>
+    <!-- Bootstrap + CSS compiled file -->
     <link rel="stylesheet" href="../css/site.css" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    {% include header.html %}
-    <div class="container-fluid">
-      <section>
-        {{ content }}
-      </section>
-      <footer>
-        {% include footer.html %}
-      </footer>
+    <header>
+      {% include navigation.html %}
+      <h1 style="{% if page.url == '/' %} display:none; {% endif %}">
+        {{ page.title }}
+      </h1>
+    </header>
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="{{ '/node_modules/jquery/dist/jquery.min.js' }}"></script>
-      <script src="{{
-          '/node_modules/popper.js/dist/umd/popper.min.js'
-        }}"></script>
-      <script src="{{
-          '/node_modules/bootstrap/dist/js/bootstrap.min.js'
-        }}"></script>
+    <div class="container-fluid">
+      <main>
+        {{ content }}
+      </main>
     </div>
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{{ '/node_modules/jquery/dist/jquery.min.js' }}"></script>
+    <script src="{{
+        '/node_modules/popper.js/dist/umd/popper.min.js'
+      }}"></script>
+    <script src="{{
+        '/node_modules/bootstrap/dist/js/bootstrap.min.js'
+      }}"></script>
   </body>
 </html>
