@@ -1,7 +1,7 @@
 // FONT FAMILY VARIABLES
 
-$ff-text: "Montserrat";
-$ff-headings: "Merriweather";
+// $ff-text: "Montserrat";
+// $ff-headings: "Merriweather";
 
 // COLOR VARIABLES
 
@@ -9,15 +9,25 @@ $gray-900: #1e2022;
 $blue: #003a4e;
 $teal: #009fab;
 $body-bg: #f3f3f3;
+$white: #ffffff;
 
 $color-gradient: linear-gradient(to bottom, $blue, $teal);
 
+// NAVBAR
+
+$dark: $blue;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $teal;
+$border-width: 1px;
+$border-color: $teal;
+$dropdown-min-width: 100vw;
+$dropdown-link-color: $teal;
+$dropdown-link-hover-color: $teal;
+$dropdown-link-hover-bg: $teal;
+
 // WHITE SPACE VARIABLES
 
-$sizing-basic-padding: 2rem;
-$sizing-ws-base: 0.5em;
-$sizing-mb-general: 2rem;
-$sizing-basic-border: 1px;
+$dropdown-spacer: 0.01;
 
 // FONT SIZE VARIABLES
 
@@ -26,14 +36,5 @@ $sizing-fs-tablet: 14px;
 $sizing-fs-laptop: 16px;
 $sizing-fs-desktop: 18px;
 $sizing-fs-huge: 20px;
-
-// HEADINGS VARIABLES
-
-$h1-size: 2.441em;
-$h2-size: 1.953em;
-$h3-size: 1.563em;
-$h4-size: 1.25em;
-$h5-size: 1.1em;
-$h6-size: 1em;
 
 $enable-rounded: false;

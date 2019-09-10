@@ -1,153 +1,33 @@
-// GENERAL NAVIGATION BAR STYLES
-.header-nav {
-  position: absolute;
-  top: 105px;
-  left: 0;
-  width: 100%;
-
-  & > ul {
-    display: flex;
-  }
-
-  ul {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-
-    li {
-      display: block;
-      list-style: none outside;
-      position: relative;
-
-      &:hover > ul {
-        pointer-events: all;
-
-        & > li {
-          transform: translateY(0);
-          opacity: 1;
-
-          @for $i from 1 through 6 {
-            &:nth-child(#{$i}) {
-              transition-delay: $i * 0.06s;
-            }
-          }
-        }
-      }
-
-      // & > ul {
-      //   display: flex;
-
-      //   ul {
-      //     display: block;
-      //     position: absolute;
-      //     top: 100%;
-      //     left: 0;
-      //     z-index: 50;
-      //     pointer-events: none;
-      //     border-bottom-left-radius: 0.3rem;
-      //     border-bottom-right-radius: 0.3rem;
-      //     overflow: hidden;
-
-      //     li {
-      //       opacity: 0;
-      //       transform: translateY(-1rem);
-      //       transition: opacity 0.2s ease-in, transform 0.2s ease-in-out;
-      //     }
-
-      //     a {
-      //       padding: 1em 2.5em 1em 1em;
-      //     }
-      //   }
-      // }
-
-      a {
-        display: inline-block;
-        outline: none;
-      }
-    }
-  }
-}
-
-.header-nav {
-  ul {
-  }
-
-  a {
-    display: block;
-    margin: 0.5em 0;
-    padding: 1em;
-    text-align: center;
-    border: 1px solid $teal;
-  }
-}
-
-.footer-nav {
-  width: 100%;
-
-  & > ul {
-    justify-content: space-around;
-    margin-bottom: 1em;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  nav {
-    flex-grow: 1;
-
-    & > ul {
-      justify-content: flex-end;
-    }
-  }
-
-  // STYLES SPECIFIC TO THE NAVIGATION IN THE HEADER
-
-  .header-nav {
+.navbar-expand-lg {
+  .navbar-nav {
+    cursor: pointer;
     position: static;
-    width: auto;
 
-    ul {
-      flex-direction: row;
-    }
-
-    a {
-      margin: 1.5rem 1rem;
-      padding: 0.8rem 1.5rem;
-      border: 1px solid $teal;
+    .dropdown {
+      position: static;
     }
   }
+}
 
-  // STYLES SPECIFIC TO THE NAVIGATION IN THE FOOTER
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
-  .footer-nav {
-    width: auto;
+.dropdown,
+.dropdown-menu {
+  background: $blue;
 
-    & > ul {
-      justify-content: flex-end;
-      margin-bottom: 0;
-    }
+  .row {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    a {
-      position: relative;
-      padding: 0 1rem;
+  .menu-item {
+    color: $white;
 
-      &:before {
-        display: inline-block;
-        content: "";
-        height: 5px;
-        background: $teal;
-        position: absolute;
-        top: -9px;
-        left: 0;
-        right: 0;
-        transform: scale(0, 1);
-        transform-origin: left;
-        transition: transform 250ms ease-in-out;
-      }
-
-      &:focus::before,
-      &:hover::before {
-        transform: scale(1, 1);
-      }
+    &:hover {
+      color: $teal;
+      text-decoration: none;
     }
   }
 }

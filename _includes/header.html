@@ -1,140 +1,459 @@
 <header>
-  <a href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/" class="logo" alt="" />
-  </a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navbar brand -->
+    <a class="navbar-brand text-uppercase" href="#">Navbar</a>
 
-  <nav class="header-nav">
-    <ul>
-      <li>
-        Продукти
-        <ul>
-          <li>
-            Пневматика
-            <ul>
-              <li>Движение</li>
-              <li>Управление</li>
-              <li>Подготовка</li>
-              <li>Свързване</li>
-            </ul>
-          </li>
-          <li>
-            Профили
-            <ul>
-              <li>Алуминиеви профили</li>
-              <li>Съединения</li>
-              <li>Аксесоари</li>
-              <li>LEAN системи</li>
-            </ul>
-          </li>
-          <li>
-            Линейни задвижвания
-            <ul>
-              <li>Направляващи</li>
-              <li>СВД</li>
-              <li>Зъбни рейки</li>
-              <li>Модулни системи</li>
-            </ul>
-          </li>
-          <li>
-            Арматура
-            <ul>
-              <li>Спирателна</li>
-              <li>Регулираща</li>
-              <li>Магнетвентили</li>
-              <li>Санитарна</li>
-            </ul>
-          </li>
-          <li>
-            Вибратори
-            <ul>
-              <li>Пневматични</li>
-              <li>Електрически</li>
-              <li>Аератори</li>
-              <li>За бетон</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Инженеринг
-        <ul>
-          <li>
-            Транспортни системи
-            <ul>
-              <li>Лентови транспортни системи</li>
-              <li>Ролкови транспортни системи</li>
-              <li>Елеваторни транспортни системи</li>
-              <li>Компоненти</li>
-            </ul>
-          </li>
-          <li>
-            Индустриални работни места
-            <ul>
-              <li>Индустриални работни маси</li>
-              <li>Индустриални колички</li>
-              <li>Други</li>
-            </ul>
-          </li>
-          <li>
-            Пневматични и електрически табла
-            <ul>
-              <li>Пневматични</li>
-              <li>Електрически</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Авто Индустрия
-        <ul>
-          <li>
-            Клампи
-            <ul>
-              <li>Заключващи единици</li>
-              <li>Центриращи единици</li>
-              <li>Заключващи и центриращи единици</li>
-              <li>Хващачи</li>
-              <li>Въртящи единици</li>
-              <li>Маркиращи единици</li>
-              <li>Електрически единици</li>
-            </ul>
-          </li>
-          <li>
-            GR8 Модулна система
-            <ul>
-              <li>GR8</li>
-              <li>GR8SK</li>
-            </ul>
-          </li>
-          <li>
-            Аксесоари
-            <ul>
-              <li>Клампови челюсти</li>
-              <li>Сензори</li>
-              <li>UBK система</li>
-              <li>Ръчно управление</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        Компанията
-        <ul>
-          <li>Мисия</li>
-          <li>Патньори</li>
-        </ul>
-      </li>
+    <!-- Collapse button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent2"
+      aria-controls="navbarSupportedContent2"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <li>
-        Новини
-        <ul>
-          <li>Продукти</li>
-          <li>Събития</li>
-        </ul>
-      </li>
-      <li>Контакти</li>
-    </ul>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+      <!-- Links -->
+      <ul class="navbar-nav mx-auto">
+        <!-- Products menu -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-uppercase"
+            id="navbarDropdownMenuLink2"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Продукти
+            <span class="sr-only">(current)</span>
+          </a>
+
+          <div
+            class="dropdown-menu w-100 border"
+            aria-labelledby="navbarDropdownMenuLink2"
+          >
+            <div class="row no-gutters">
+              <div class="col-sm-6 col-md-6 col-lg col-xl mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Пневматика
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Движение
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Управление
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Подготовка
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Свързване
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg col-xl mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Профили
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Алуминиеви профили
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Съединения
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Аксесоари
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      LEAN системи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg col-xl mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Линейни задвижвания
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Направляващи
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      СВД
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Зъбни рейки
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Модулни системи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg col-xl mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Арматура
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Спирателна
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Регулираща
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Магнетвентили
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Санитарна
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg col-xl mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Вибратори
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Пневматични
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Електрически
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Аератори
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      За бетон
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Engineering menu -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-uppercase"
+            id="navbarDropdownMenuLink3"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Инженеринг
+          </a>
+
+          <div
+            class="dropdown-menu w-100 border"
+            aria-labelledby="navbarDropdownMenuLink3"
+          >
+            <div class="row no-gutters">
+              <div class="col-md col-lg-4 col-xl-4 mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Транспортни системи
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Лентови транспортни системи
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Ролкови транспортни системи
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Елеваторни транспортни системи
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Компоненти
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md col-lg-4 col-xl-4 mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Индустриални работни места
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Индустриални работни маси
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Индустриални колички
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Други
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md col-lg-4 col-xl-4 mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Пневматични и електрически табла
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Пневматични
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Електрически
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Auto industry menu -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-uppercase"
+            id="navbarDropdownMenuLink4"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Авто индустрия</a
+          >
+          <div
+            class="dropdown-menu w-100 border"
+            aria-labelledby="navbarDropdownMenuLink4"
+          >
+            <div class="row no-gutters">
+              <div class="col-md col-lg-4 col-xl-4 mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Клампи
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Заключващи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Центриращи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Заключващи и центриращи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Хващачи /грипери/
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Въртящи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Маркиращи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Електрически единици
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md col-lg-4 col-xl-4 mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  GR8 модулна система
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      GR8
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      GR8SK
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md col-lg-4 col-xl-4 mb-4">
+                <h6 class="text-uppercase text-white border-bottom pb-3 pt-3">
+                  Аксесоари
+                </h6>
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Клампови челюсти
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Сензори
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      UBK система
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item pl-0" href="#!">
+                      Ръчно управление
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- THE COMPANY menu -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-uppercase"
+            id="navbarDropdownMenuLink5"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Компанията
+          </a>
+          <div
+            class="dropdown-menu border"
+            aria-labelledby="navbarDropdownMenuLink5"
+          >
+            <ul class="list-unstyled">
+              <li class="pb-2 pt-2 border-bottom">
+                <a class="menu-item pl-0" href="#!">
+                  Мисия
+                </a>
+              </li>
+              <li class="pb-2 pt-2">
+                <a class="menu-item pl-0" href="#!">
+                  Партньори
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- News menu -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-uppercase"
+            id="navbarDropdownMenuLink6"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Новини
+          </a>
+          <div
+            class="dropdown-menu border"
+            aria-labelledby="navbarDropdownMenuLink6"
+          >
+            <ul class="list-unstyled">
+              <li class="pb-2 pt-2 border-bottom">
+                <a class="menu-item pl-0" href="#!">
+                  Продукти
+                </a>
+              </li>
+              <li class="pb-2 pt-2">
+                <a class="menu-item pl-0" href="#!">
+                  Събития
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Contacts menu item -->
+        <li class="nav-item">
+          <a class="nav-link text-uppercase">Контакти </a>
+        </li>
+      </ul>
+      <!-- Links -->
+
+      <!-- Search button -->
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </div>
+      </form>
+    </div>
+    <!-- Collapsible content -->
   </nav>
+  <!-- Navbar -->
 
   <h1 style="{% if page.url == '/' %} display:none; {% endif %}">
     {{ page.title }}
