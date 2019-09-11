@@ -20,13 +20,14 @@ $navbar-dark-color: $white;
 $navbar-dark-hover-color: $teal;
 $border-width: 1px;
 $border-color: $teal;
-$dropdown-min-width: 100vw;
+$dropdown-min-width: 0;
 $dropdown-link-color: $teal;
 $dropdown-link-hover-color: $teal;
 $dropdown-link-hover-bg: $teal;
 
 // WHITE SPACE VARIABLES
 
+$dropdown-padding-y: 0;
 $dropdown-spacer: 0.01;
 
 // FONT SIZE VARIABLES

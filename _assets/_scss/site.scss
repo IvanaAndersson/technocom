@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700");
-
+body {
+  max-width: 100vw;
+}
 @import "_modules/reset";
+@import "_modules/abstracts";
 @import "_modules/variables";
 @import "_modules/typography";
 
