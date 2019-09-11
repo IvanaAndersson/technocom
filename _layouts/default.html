@@ -21,7 +21,7 @@
   <body>
     <header>
       {% include navigation.html %}
-      <h1 style="{% if page.url == '/' %} display:none; {% endif %}">
+      <h1 {% if page.url == '/' %} style="display:none" {% endif %}>
         {{ page.title }}
       </h1>
     </header>
@@ -45,5 +45,6 @@
     <script src="{{
         '/node_modules/bootstrap/dist/js/bootstrap.min.js'
       }}"></script>
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>

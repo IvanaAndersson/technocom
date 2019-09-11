@@ -1,53 +1,21 @@
 .navbar-expand-lg {
-  padding: 0 1rem;
+  padding: 1rem 0;
 
   .navbar-nav {
     cursor: pointer;
-    position: static;
 
     & a {
       font-size: 0.9rem;
     }
 
-    .dropdown {
-      position: static;
-
-      //takes only the three last elements
-      @include last(3) {
-        position: relative;
-      }
-    }
-
-    .dropdown-menu {
-      display: block;
-
-      transform: scale(1, 0);
-      transition: transform 150ms cubic-bezier(0.17, 0.67, 0.83, 0.67); // regulate the speed and the bezier curve of the drop down menu from here
-      transform-origin: top;
-    }
-
-    .dropdown:hover .dropdown-menu {
-      transform: scale(1, 1);
-    }
-
-    .dropdown:hover > a {
-      color: $teal;
-    }
-
-    // hover effect starts here
     .hoverable {
-      height: 300px;
-      background: rgba(255, 255, 255, 0);
-      transition: background 0.15s ease-in;
-
       h6 {
+        align-self: stretch;
+        border-top: 1px solid $teal;
         padding-left: 2rem;
-        width: 80%;
-        margin: 0 auto;
       }
 
       ul {
-        padding-left: 2rem;
         align-self: stretch;
         border-top: 1px solid $teal;
 
@@ -56,40 +24,23 @@
           margin: 0 auto;
         }
       }
-
-      &:hover {
-        background: rgba(255, 255, 255, 1);
-
-        & > ul {
-          border-top: none;
-        }
-
-        & a {
-          color: $gray-900;
-
-          &:hover {
-            color: $teal;
-          }
-        }
-      }
     }
   }
-}
+  .menu-item,
+  .nav-link {
+    color: $white;
 
-.menu-item {
-  color: $white;
-
-  &:hover {
-    color: $teal;
-    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $teal;
+      text-decoration: none;
+    }
   }
 }
 
 // Search button and search field
 
 .search-bar.dropdown {
-  position: static;
-
   button[type="button"] {
     background-color: $teal;
     outline: none;
@@ -106,12 +57,16 @@
       font-weight: 900;
       font-size: 1.5rem;
     }
+    // Toggling this class with JS
+    &.expanded:before {
+      content: "\f00d";
+    }
   }
   .search-bar-hidden {
     background-color: $teal;
 
     form {
-      min-height: 10rem;
+      min-height: 5rem;
 
       span {
         width: 90%;
@@ -130,6 +85,90 @@
         .fa-search {
           font-size: 1.5rem;
         }
+      }
+    }
+  }
+}
+
+// Navigation styles for screens above 992px
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg {
+    padding: 0;
+
+    .navbar-nav {
+      position: static;
+
+      .dropdown {
+        position: static;
+
+        //takes only the three last elements
+        @include last(3) {
+          position: relative;
+        }
+      }
+
+      .dropdown-menu {
+        display: block;
+        transform: scale(1, 0);
+        transition: transform 150ms cubic-bezier(0.17, 0.67, 0.83, 0.67); // regulate the speed and the bezier curve of the drop down menu from here
+        transform-origin: top;
+      }
+
+      .dropdown:hover .dropdown-menu,
+      .dropdown:focus .dropdown-menu {
+        transform: scale(1, 1);
+      }
+
+      .dropdown:hover > a,
+      .dropdown:focus > a {
+        color: $teal;
+      }
+
+      // hover effect starts here
+      .hoverable {
+        height: 300px;
+        background: rgba(255, 255, 255, 0);
+        transition: background 0.15s ease-in;
+
+        h6 {
+          align-self: flex-start;
+          border-top: none;
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        ul {
+          padding-left: 2rem;
+        }
+
+        &:hover {
+          background: rgba(255, 255, 255, 1);
+
+          & > ul {
+            border-top: none;
+          }
+
+          & a {
+            color: $gray-900;
+
+            &:hover {
+              color: $teal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Search button and search field
+
+  .search-bar.dropdown {
+    position: static;
+
+    .search-bar-hidden {
+      form {
+        min-height: 10rem;
       }
     }
   }
