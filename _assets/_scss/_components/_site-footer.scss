@@ -1,3 +1,120 @@
 .site-footer {
   background-color: $blue;
+
+  & a {
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $teal;
+      text-decoration: none;
+    }
+  }
+}
+
+.footer-nav {
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+.address {
+  .written-address {
+    position: relative;
+    .company-name {
+      &:before {
+        display: inline-block;
+        content: "\f3c5";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.contacts {
+  ul {
+    font-size: 0.8rem;
+
+    .first-child {
+      span {
+        font-size: 1rem;
+        position: relative;
+        &:before {
+          display: inline-block;
+          content: "\f095";
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+          position: absolute;
+          top: 0;
+          left: -2rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  p {
+    position: relative;
+    &:before {
+      display: inline-block;
+      content: "\f0e0";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      top: 0;
+      left: -2rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.copyright-social {
+  border-top: 1px solid $white;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+
+  .copyright {
+    a {
+      border-left: 2px solid $white;
+      margin-left: 0.8rem;
+      padding-left: 0.8rem;
+    }
+  }
+
+  .social-media {
+    .menu-item {
+      span {
+        display: none;
+      }
+      &::before {
+        display: inline-block;
+        content: "";
+        font-family: "Font Awesome 5 Brands";
+        font-size: 1.2rem;
+      }
+
+      &.fa-facebook::before {
+        content: "\f39e";
+        margin-right: 2rem;
+      }
+
+      &.fa-linkedin::before {
+        content: "\f0e1";
+      }
+    }
+  }
 }
