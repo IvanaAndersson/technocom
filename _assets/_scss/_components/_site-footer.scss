@@ -12,6 +12,13 @@
   }
 }
 
+.logo {
+  .bg-flag {
+    max-width: 2rem;
+    height: auto;
+  }
+}
+
 .footer-nav {
   a {
     font-size: 0.8rem;
@@ -88,7 +95,7 @@
   font-size: 0.8rem;
 
   .copyright {
-    a {
+    .menu-item {
       border-left: 2px solid $white;
       margin-left: 0.8rem;
       padding-left: 0.8rem;

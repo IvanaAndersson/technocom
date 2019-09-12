@@ -39,6 +39,11 @@ a {
   text-decoration: none;
 }
 
+.logo .bg-flag {
+  max-width: 2rem;
+  height: auto;
+}
+
 .footer-nav a {
   font-size: 0.8rem;
 }
@@ -108,7 +113,7 @@ a {
   font-size: 0.8rem;
 }
 
-.copyright-social .copyright a {
+.copyright-social .copyright .menu-item {
   border-left: 2px solid #ffffff;
   margin-left: 0.8rem;
   padding-left: 0.8rem;
