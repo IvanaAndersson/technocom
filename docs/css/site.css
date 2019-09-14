@@ -364,33 +364,33 @@ h5 {
 }
 
 .container-fluid .secondary-menu .row .products {
-  background: url("/assets/img/home/producti.png") center right no-repeat;
+  background: url("../assets/img/home/producti.png") center right no-repeat;
 }
 
 .container-fluid .secondary-menu .row .products:hover {
-  background: url("/assets/img/home/producti.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
-  background: url("/assets/img/home/producti.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
+  background: url("../assets/img/home/producti.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
+  background: url("../assets/img/home/producti.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
   color: white;
 }
 
 .container-fluid .secondary-menu .row .engineering {
-  background: url("/assets/img/home/injenering.png") center right no-repeat;
+  background: url("../assets/img/home/injenering.png") center right no-repeat;
 }
 
 .container-fluid .secondary-menu .row .engineering:hover {
-  background: url("/assets/img/home/injenering.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
-  background: url("/assets/img/home/injenering.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
+  background: url("../assets/img/home/injenering.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
+  background: url("../assets/img/home/injenering.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
   color: white;
 }
 
 .container-fluid .secondary-menu .row .auto-industry {
-  background: url("/assets/img/home/avto.png") center right no-repeat;
+  background: url("../assets/img/home/avto.png") center right no-repeat;
   background-size: 30%;
 }
 
 .container-fluid .secondary-menu .row .auto-industry:hover {
-  background: url("/assets/img/home/avto.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
-  background: url("/assets/img/home/avto.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
+  background: url("../assets/img/home/avto.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
+  background: url("../assets/img/home/avto.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
   color: white;
   background-size: 30%;
 }

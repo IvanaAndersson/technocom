@@ -47,10 +47,11 @@
       // margin: 0 auto;
       height: 70vh;
       .products {
-        background: url("/assets/img/home/producti.png") center right no-repeat;
+        background: url("../assets/img/home/producti.png") center right
+          no-repeat;
 
         &:hover {
-          background: url("/assets/img/home/producti.png") center right
+          background: url("../assets/img/home/producti.png") center right
               no-repeat,
             linear-gradient(to bottom, $blue, $teal);
           color: $white;
@@ -58,11 +59,11 @@
       }
 
       .engineering {
-        background: url("/assets/img/home/injenering.png") center right
+        background: url("../assets/img/home/injenering.png") center right
           no-repeat;
 
         &:hover {
-          background: url("/assets/img/home/injenering.png") center right
+          background: url("../assets/img/home/injenering.png") center right
               no-repeat,
             linear-gradient(to bottom, $blue, $teal);
           color: $white;
@@ -70,11 +71,11 @@
       }
 
       .auto-industry {
-        background: url("/assets/img/home/avto.png") center right no-repeat;
+        background: url("../assets/img/home/avto.png") center right no-repeat;
         background-size: 30%;
 
         &:hover {
-          background: url("/assets/img/home/avto.png") center right no-repeat,
+          background: url("../assets/img/home/avto.png") center right no-repeat,
             linear-gradient(to bottom, $blue, $teal);
           color: $white;
           background-size: 30%;
