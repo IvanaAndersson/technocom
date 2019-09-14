@@ -1,5 +1,6 @@
 .site-footer {
   background-color: $blue;
+  width: 100%;
 
   & a {
     color: $white;
@@ -10,13 +11,28 @@
       text-decoration: none;
     }
   }
+
+  .row {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .logo {
-  .bg-flag {
-    max-width: 2rem;
-    height: auto;
+  max-height: 10rem;
+
+  img {
+    width: auto;
+    height: 100%;
   }
+  // .bg-flag {
+  //   max-width: 2rem;
+  //   height: auto;
+  // }
+}
+
+h5 {
+  font-family: "Acari Sans Bold", sans-serif;
 }
 
 .footer-nav {
@@ -26,9 +42,15 @@
 }
 
 .address {
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
   .written-address {
     position: relative;
     .company-name {
+      font-family: "Acari Sans Bold", sans-serif;
+      font-size: 1rem;
       &:before {
         display: inline-block;
         content: "\f3c5";
@@ -41,11 +63,6 @@
       }
     }
   }
-
-  p {
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
-  }
 }
 
 .contacts {
@@ -54,6 +71,7 @@
 
     .first-child {
       span {
+        font-family: "Acari Sans Bold", sans-serif;
         font-size: 1rem;
         position: relative;
         &:before {
@@ -74,7 +92,7 @@
     }
   }
 
-  p {
+  .companymail {
     position: relative;
     &:before {
       display: inline-block;

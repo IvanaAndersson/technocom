@@ -68,6 +68,76 @@
   src: local("Acari Sans Bold Italic"), url("../assets/fonts/Acari-Sans/AcariSans-BoldItalic.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Axiforma Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma Regular"), url("/assets/fonts/Axiforma/Axiforma-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma Italic"), url("/assets/fonts/Axiforma/Axiforma-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma Light"), url("/assets/fonts/Axiforma/Axiforma-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma Light Italic"), url("/assets/fonts/Axiforma/Axiforma-Light-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma Medium"), url("/assets/fonts/Axiforma/Axiforma-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma Medium Italic"), url("/assets/fonts/Axiforma/Axiforma-Medium-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma SemiBold"), url("/assets/fonts/Axiforma/Axiforma-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma SemiBold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma SemiBold Italic"), url("/assets/fonts/Axiforma/Axiforma-SemiBold-Italic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acari Sans Bold"), url("/assets/fonts/Axiforma/Axiforma-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Axiforma Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Axiforma Bold Italic"), url("/assets/fonts/Axiforma/Axiforma-Bold-Italic.otf") format("opentype");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -100,6 +170,7 @@ a {
 
 .site-footer {
   background-color: #004456;
+  width: 100%;
 }
 
 .site-footer a {
@@ -111,17 +182,40 @@ a {
   text-decoration: none;
 }
 
-.logo .bg-flag {
-  max-width: 2rem;
-  height: auto;
+.site-footer .row {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-height: 10rem;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+}
+
+h5 {
+  font-family: "Acari Sans Bold", sans-serif;
 }
 
 .footer-nav a {
   font-size: 0.8rem;
 }
 
+.address p {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
 .address .written-address {
   position: relative;
+}
+
+.address .written-address .company-name {
+  font-family: "Acari Sans Bold", sans-serif;
+  font-size: 1rem;
 }
 
 .address .written-address .company-name:before {
@@ -135,16 +229,12 @@ a {
   margin-right: 1rem;
 }
 
-.address p {
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-}
-
 .contacts ul {
   font-size: 0.8rem;
 }
 
 .contacts ul .first-child span {
+  font-family: "Acari Sans Bold", sans-serif;
   font-size: 1rem;
   position: relative;
 }
@@ -164,11 +254,11 @@ a {
   margin-bottom: 0.5rem;
 }
 
-.contacts p {
+.contacts .companymail {
   position: relative;
 }
 
-.contacts p:before {
+.contacts .companymail:before {
   display: inline-block;
   content: "\f0e0";
   font-weight: 900;
@@ -225,39 +315,259 @@ a {
   height: 50vh;
 }
 
-.services {
-  position: relative;
+.container-fluid {
+  width: 100%;
 }
 
-.services h3 {
+.container-fluid .row {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container-fluid .services {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #f4f4f4), color-stop(50%, #004456));
+  background: linear-gradient(to right, #f4f4f4 50%, #004456 50%);
+}
+
+.container-fluid .services h2 {
+  font-family: "Axiforma Light", sans-serif;
   position: absolute;
   top: -5rem;
-  left: 4rem;
+  left: 1rem;
+  font-weight: 300;
 }
 
-.services ul {
+.container-fluid .services ul {
   padding: 2rem 0 1rem 1rem;
 }
 
-.services ul h5 {
+.container-fluid .services ul h5 {
+  font-family: "Axiforma Light", sans-serif;
   position: absolute;
   top: -1.8rem;
-  left: 2rem;
+  left: 1rem;
+  font-weight: 300;
 }
 
-.services ul li {
+.container-fluid .services ul li {
   margin-bottom: 1rem;
 }
 
-.secondary-menu {
-  min-height: 30rem;
+.container-fluid .secondary-menu {
+  min-height: 70vh;
+  margin-bottom: 2rem;
 }
 
-.advantages {
-  min-height: 20rem;
+.container-fluid .secondary-menu .row {
+  height: 70vh;
 }
 
-.advantages .advantage-image img {
+.container-fluid .secondary-menu .row .products {
+  background: url("/assets/img/home/producti.png") center right no-repeat;
+}
+
+.container-fluid .secondary-menu .row .products:hover {
+  background: url("/assets/img/home/producti.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
+  background: url("/assets/img/home/producti.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
+  color: white;
+}
+
+.container-fluid .secondary-menu .row .engineering {
+  background: url("/assets/img/home/injenering.png") center right no-repeat;
+}
+
+.container-fluid .secondary-menu .row .engineering:hover {
+  background: url("/assets/img/home/injenering.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
+  background: url("/assets/img/home/injenering.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
+  color: white;
+}
+
+.container-fluid .secondary-menu .row .auto-industry {
+  background: url("/assets/img/home/avto.png") center right no-repeat;
+  background-size: 30%;
+}
+
+.container-fluid .secondary-menu .row .auto-industry:hover {
+  background: url("/assets/img/home/avto.png") center right no-repeat, -webkit-gradient(linear, left top, left bottom, from(#004456), to(#00a0ad));
+  background: url("/assets/img/home/avto.png") center right no-repeat, linear-gradient(to bottom, #004456, #00a0ad);
+  color: white;
+  background-size: 30%;
+}
+
+.container-fluid .secondary-menu .row .products,
+.container-fluid .secondary-menu .row .engineering {
+  background-size: 70%;
+  height: 100%;
+}
+
+.container-fluid .secondary-menu .row .products:hover,
+.container-fluid .secondary-menu .row .engineering:hover {
+  background-size: 70%;
+}
+
+.container-fluid .secondary-menu .row .products,
+.container-fluid .secondary-menu .row .engineering,
+.container-fluid .secondary-menu .row .auto-industry {
+  padding-top: 5rem;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper,
+.container-fluid .secondary-menu .row .engineering .wrapper,
+.container-fluid .secondary-menu .row .auto-industry .wrapper {
+  height: 100%;
+  border: none;
+  border-right: 1px solid #aaaaaa;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper .menu-header,
+.container-fluid .secondary-menu .row .engineering .wrapper .menu-header,
+.container-fluid .secondary-menu .row .auto-industry .wrapper .menu-header {
+  max-height: 5rem;
+  padding-left: 2rem;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper .menu-header h4,
+.container-fluid .secondary-menu .row .engineering .wrapper .menu-header h4,
+.container-fluid .secondary-menu .row .auto-industry .wrapper .menu-header h4 {
+  font-family: "Axiforma Bold", sans-serif;
+  font-weight: 700;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper .menu-header img,
+.container-fluid .secondary-menu .row .engineering .wrapper .menu-header img,
+.container-fluid .secondary-menu .row .auto-industry .wrapper .menu-header img {
+  width: 50%;
+  height: auto;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper ul,
+.container-fluid .secondary-menu .row .engineering .wrapper ul,
+.container-fluid .secondary-menu .row .auto-industry .wrapper ul {
+  display: none;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper ul li,
+.container-fluid .secondary-menu .row .engineering .wrapper ul li,
+.container-fluid .secondary-menu .row .auto-industry .wrapper ul li {
+  position: relative;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper ul li:before,
+.container-fluid .secondary-menu .row .engineering .wrapper ul li:before,
+.container-fluid .secondary-menu .row .auto-industry .wrapper ul li:before {
+  display: inline-block;
+  content: "";
+  height: 3px;
+  width: 5.5rem;
+  background: white;
+  position: absolute;
+  top: 40%;
+  right: 102%;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper ul li:hover,
+.container-fluid .secondary-menu .row .engineering .wrapper ul li:hover,
+.container-fluid .secondary-menu .row .auto-industry .wrapper ul li:hover {
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
+}
+
+.container-fluid .secondary-menu .row .products .wrapper ul li:focus::before, .container-fluid .secondary-menu .row .products .wrapper ul li:hover::before,
+.container-fluid .secondary-menu .row .engineering .wrapper ul li:focus::before,
+.container-fluid .secondary-menu .row .engineering .wrapper ul li:hover::before,
+.container-fluid .secondary-menu .row .auto-industry .wrapper ul li:focus::before,
+.container-fluid .secondary-menu .row .auto-industry .wrapper ul li:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.container-fluid .secondary-menu .row .products .wrapper ul li a,
+.container-fluid .secondary-menu .row .engineering .wrapper ul li a,
+.container-fluid .secondary-menu .row .auto-industry .wrapper ul li a {
+  color: white;
+}
+
+.container-fluid .secondary-menu .row .products .wrapper ul li a:hover,
+.container-fluid .secondary-menu .row .engineering .wrapper ul li a:hover,
+.container-fluid .secondary-menu .row .auto-industry .wrapper ul li a:hover {
+  text-decoration: none;
+}
+
+.container-fluid .secondary-menu .row .products:hover ul,
+.container-fluid .secondary-menu .row .engineering:hover ul,
+.container-fluid .secondary-menu .row .auto-industry:hover ul {
+  display: block;
+}
+
+.container-fluid .advantages h3,
+.container-fluid .news h3,
+.container-fluid .partners h3 {
+  font-family: "Axiforma Light", sans-serif;
+  font-weight: 300;
+  color: #00a0ad;
+  margin-bottom: 2rem;
+}
+
+.container-fluid .advantages h3:before,
+.container-fluid .news h3:before,
+.container-fluid .partners h3:before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 1.75rem;
+  background-color: #00a0ad;
+  margin-right: 0.5rem;
+}
+
+.container-fluid .advantages {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.container-fluid .advantages .advantage-text ul li {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.container-fluid .advantages .advantage-text ul li img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 25%;
+  height: auto;
+}
+
+.container-fluid .advantages .advantage-text ul li h6 {
+  font-family: "Acari Sans Bold", sans-serif;
+}
+
+.container-fluid .advantages .advantage-image img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
+
+.container-fluid .news {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container-fluid .partners {
+  padding: 5rem 0;
+}
+
+.container-fluid .partners img {
   width: 100%;
   height: auto;
 }
@@ -620,7 +930,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Acari Sans Bold", sans-serif;
+  font-family: "Axiforma Regular", sans-serif;
   font-weight: 500;
   line-height: 1.2;
 }

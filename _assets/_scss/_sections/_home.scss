@@ -4,36 +4,221 @@
   height: 50vh;
 }
 
-.services {
-  position: relative;
-  h3 {
-    position: absolute;
-    top: -5rem;
-    left: 4rem;
+.container-fluid {
+  width: 100%;
+  .row {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
-  ul {
-    padding: 2rem 0 1rem 1rem;
-    h5 {
+  .services {
+    position: relative;
+    background: linear-gradient(to right, $body-bg 50%, $blue 50%);
+
+    h2 {
+      font-family: "Axiforma Light", sans-serif;
       position: absolute;
-      top: -1.8rem;
-      left: 2rem;
+      top: -5rem;
+      left: 1rem;
+      font-weight: 300;
     }
 
-    li {
-      margin-bottom: 1rem;
+    ul {
+      padding: 2rem 0 1rem 1rem;
+      h5 {
+        font-family: "Axiforma Light", sans-serif;
+        position: absolute;
+        top: -1.8rem;
+        left: 1rem;
+        font-weight: 300;
+      }
+
+      li {
+        margin-bottom: 1rem;
+      }
     }
   }
-}
 
-.secondary-menu {
-  min-height: 30rem;
-  // background: #0ff;
-}
+  .secondary-menu {
+    min-height: 70vh;
+    margin-bottom: 2rem;
+    .row {
+      // max-width: 1440px;
+      // margin: 0 auto;
+      height: 70vh;
+      .products {
+        background: url("/assets/img/home/producti.png") center right no-repeat;
 
-.advantages {
-  min-height: 20rem;
-  .advantage-image {
+        &:hover {
+          background: url("/assets/img/home/producti.png") center right
+              no-repeat,
+            linear-gradient(to bottom, $blue, $teal);
+          color: $white;
+        }
+      }
+
+      .engineering {
+        background: url("/assets/img/home/injenering.png") center right
+          no-repeat;
+
+        &:hover {
+          background: url("/assets/img/home/injenering.png") center right
+              no-repeat,
+            linear-gradient(to bottom, $blue, $teal);
+          color: $white;
+        }
+      }
+
+      .auto-industry {
+        background: url("/assets/img/home/avto.png") center right no-repeat;
+        background-size: 30%;
+
+        &:hover {
+          background: url("/assets/img/home/avto.png") center right no-repeat,
+            linear-gradient(to bottom, $blue, $teal);
+          color: $white;
+          background-size: 30%;
+        }
+      }
+      .products,
+      .engineering {
+        background-size: 70%;
+        height: 100%;
+
+        &:hover {
+          background-size: 70%;
+        }
+      }
+
+      .products,
+      .engineering,
+      .auto-industry {
+        padding-top: 5rem;
+
+        .wrapper {
+          height: 100%;
+          border: none;
+          border-right: 1px solid $lines;
+
+          .menu-header {
+            max-height: 5rem;
+            padding-left: 2rem;
+            h4 {
+              font-family: "Axiforma Bold", sans-serif;
+              font-weight: 700;
+            }
+
+            img {
+              width: 50%;
+              height: auto;
+            }
+          }
+
+          ul {
+            display: none;
+
+            li {
+              position: relative;
+              &:before {
+                display: inline-block;
+                content: "";
+                height: 3px;
+                width: 5.5rem;
+                background: $white;
+                position: absolute;
+                top: 40%;
+                right: 102%;
+                transform: scale(1, 0);
+                transform-origin: right;
+                transition: transform 250ms ease-in-out;
+              }
+
+              &:hover {
+                transform: translateX(2rem);
+              }
+              &:focus::before,
+              &:hover::before {
+                transform: scale(1, 1);
+              }
+
+              a {
+                color: $white;
+
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover ul {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .advantages,
+  .news,
+  .partners {
+    h3 {
+      font-family: "Axiforma Light", sans-serif;
+      font-weight: 300;
+      color: $teal;
+      margin-bottom: 2rem;
+
+      &:before {
+        display: inline-block;
+        content: "";
+        width: 4px;
+        height: 1rem * 1.75;
+        background-color: $teal;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .advantages {
+    position: relative;
+    margin-bottom: 8rem;
+
+    .advantage-text {
+      ul {
+        li {
+          flex-basis: 45%;
+
+          img {
+            align-self: center;
+            width: 25%;
+            height: auto;
+          }
+
+          h6 {
+            font-family: "Acari Sans Bold", sans-serif;
+          }
+        }
+      }
+    }
+
+    .advantage-image {
+      img {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+      }
+    }
+  }
+
+  .news {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .partners {
+    padding: 5rem 0;
     img {
       width: 100%;
       height: auto;
