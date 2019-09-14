@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700");
+@import "_modules/font-acari";
+@import "_modules/reset";
+@import "_modules/variables";
 body {
   max-width: 100vw;
+  overflow-x: hidden;
 }
-@import "_modules/reset";
 @import "_modules/abstracts";
-@import "_modules/variables";
 @import "_modules/typography";
 
 // @import "_elements/buttons";
 @import "_components/site-footer";
+@import "_components/cards";
+@import "_sections/home";
 
 // Bootstrap imports
 @import "../../node_modules/bootstrap/scss/functions";

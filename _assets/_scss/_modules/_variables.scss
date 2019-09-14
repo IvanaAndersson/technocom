@@ -1,15 +1,17 @@
 // FONT FAMILY VARIABLES
 
-// $ff-text: "Montserrat";
-// $ff-headings: "Merriweather";
+$font-family-base: "Acari Sans Regular", sans-serif;
+$headings-font-family: "Acari Sans Bold", sans-serif;
 
 // COLOR VARIABLES
 
-$gray-900: #1e2022;
-$blue: #003a4e;
-$teal: #009fab;
-$body-bg: #f3f3f3;
-$white: #ffffff;
+$gray-900: rgb(110, 110, 115);
+$blue: rgb(0, 68, 86);
+$teal: rgb(0, 160, 173);
+$lines: rgb(170, 170, 170);
+$card-bg: rgb(234, 234, 234);
+$body-bg: rgb(244, 244, 244);
+$white: rgb(255, 255, 255);
 
 $color-gradient: linear-gradient(to bottom, $blue, $teal);
 

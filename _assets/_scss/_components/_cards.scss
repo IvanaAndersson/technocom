@@ -1,0 +1,11 @@
+.card {
+  .card-img-top {
+  }
+  .card-body {
+    background-color: $card-bg;
+
+    .card-text {
+      color: $teal;
+    }
+  }
+}

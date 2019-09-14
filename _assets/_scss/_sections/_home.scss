@@ -1,0 +1,42 @@
+.jumbotron {
+  background: url("../assets/img/home/photo 1.jpg") center no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.services {
+  position: relative;
+  h3 {
+    position: absolute;
+    top: -5rem;
+    left: 4rem;
+  }
+
+  ul {
+    padding: 2rem 0 1rem 1rem;
+    h5 {
+      position: absolute;
+      top: -1.8rem;
+      left: 2rem;
+    }
+
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.secondary-menu {
+  min-height: 30rem;
+  // background: #0ff;
+}
+
+.advantages {
+  min-height: 20rem;
+  .advantage-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

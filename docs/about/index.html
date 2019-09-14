@@ -21,9 +21,15 @@
   <body>
     <header>
       <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-dark p-0 d-flex align-items-stretch"
+>
   <!-- Navbar brand -->
-  <a class="navbar-brand text-uppercase" href="#">ТЕХНОКОМко</a>
+  <span class="logo-container d-flex align-items-center px-3">
+    <a class="navbar-brand text-uppercase" href="/">
+      <img src="/assets/img/logo 1.png" alt=""
+    /></a>
+  </span>
 
   <!-- Collapse button -->
   <button
@@ -41,9 +47,9 @@
   <!-- Collapsible content -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent2">
     <!-- Links -->
-    <ul class="navbar-nav mx-auto">
+    <ul class="navbar-nav">
       <!-- Products menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item dropdown dropdown-main bg-primary mx-2">
         <a
           class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
           id="navbarDropdownMenuLink2"
@@ -56,165 +62,236 @@
         </a>
 
         <div
-          class="dropdown-menu bg-primary w-100 border"
+          class="dropdown-menu dropdown-main-menu bg-primary w-100"
           aria-labelledby="navbarDropdownMenuLink2"
         >
-          <div class="row no-gutters">
+          <ul class="row no-gutters list-unstyled">
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item " href="#!">Пневматика</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item" href="#!">
-                    Движение
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Управление
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Подготовка
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Свързване
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Пневматика</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Движение
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Управление
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Подготовка
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Свързване
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
 
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item " href="#!">Профили</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Алуминиеви профили
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Съединения
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Аксесоари
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    LEAN системи
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Профили</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem2"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Алуминиеви профили
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Съединения
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Аксесоари
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        LEAN системи
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
 
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item " href="#!">Линейни задвижвания</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Направляващи
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    СВД
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Зъбни рейки
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Модулни системи
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem3"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Линейни задвижвания</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem3"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Направляващи
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        СВД
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Зъбни рейки
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Модулни системи
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
 
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item " href="#!">Арматура</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Спирателна
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Регулираща
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Магнетвентили
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Санитарна
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem4"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Арматура</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem4"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Спирателна
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Регулираща
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Магнетвентили
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Санитарна
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
 
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item " href="#!">Вибратори</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Пневматични
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Електрически
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Аератори
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    За бетон
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem5"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Вибратори</a
+                >
+
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem5"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Пневматични
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Електрически
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Аератори
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        За бетон
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
-          </div>
+          </ul>
         </div>
       </li>
 
       <!-- Engineering menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item dropdown dropdown-main bg-primary mx-2">
         <a
           class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
           id="navbarDropdownMenuLink3"
@@ -226,201 +303,289 @@
         </a>
 
         <div
-          class="dropdown-menu bg-primary w-100 border"
+          class="dropdown-menu dropdown-main-menu bg-primary w-100"
           aria-labelledby="navbarDropdownMenuLink3"
         >
-          <div class="row no-gutters">
+          <ul class="row no-gutters list-unstyled">
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item " href="#!">Транспортни системи</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Лентови транспортни системи
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Ролкови транспортни системи
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Елеваторни транспортни системи
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Компоненти
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Транспортни системи</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Лентови транспортни системи
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Ролкови транспортни системи
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Елеваторни транспортни системи
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Компоненти
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
+
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item " href="#!">Индустриални работни места</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Индустриални работни маси
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Индустриални колички
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Други
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Индустриални работни места</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem2"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Индустриални работни маси
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Индустриални колички
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Други
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
+
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item " href="#!"
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem3"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                   >Пневматични и електрически табла</a
                 >
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Пневматични
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Електрически
-                  </a>
-                </li>
-              </ul>
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem3"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Пневматични
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Електрически
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
-          </div>
+          </ul>
         </div>
       </li>
 
       <!-- Auto industry menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item dropdown dropdown-main bg-primary mx-2">
         <a
           class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
           id="navbarDropdownMenuLink4"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
-          >Авто индустрия</a
         >
+          Авто индустрия
+        </a>
+
         <div
-          class="dropdown-menu bg-primary w-100 border"
+          class="dropdown-menu dropdown-main-menu bg-primary w-100"
           aria-labelledby="navbarDropdownMenuLink4"
         >
-          <div class="row no-gutters">
+          <ul class="row no-gutters list-unstyled">
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item" href="#!">Клампи</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Заключващи единици
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Центриращи единици
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Заключващи и центриращи единици
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Хващачи /грипери/
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Въртящи единици
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Маркиращи единици
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Електрически единици
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Клампи</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Заключващи единици
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Центриращи единици
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Заключващи и центриращи единици
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Хващачи /грипери/
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Въртящи единици
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Маркиращи единици
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Електрически единици
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
+
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item" href="#!">GR8 модулна система</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    GR8
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    GR8SK
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >GR8 модулна система</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem2"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        GR8
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        GR8SK
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
+
             <div
-              class="hoverable col-sm-12 col-md-6 col-lg col-xl d-flex flex-column align-items-center"
+              class="hoverable col-sm-12 col-lg col-xl d-flex flex-column"
             >
-              <h6 class="text-uppercase font-weight-bold text-white py-3">
-                <a class="menu-item" href="#!">Аксесоари</a>
-              </h6>
-              <ul class="list-unstyled pt-2">
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Клампови челюсти
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Сензори
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    UBK система
-                  </a>
-                </li>
-                <li class="my-1">
-                  <a class="menu-item pl-0" href="#!">
-                    Ръчно управление
-                  </a>
-                </li>
-              </ul>
+              <li
+                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+              >
+                <a
+                  class="menu-item dropdown-toggle"
+                  id="subMenuItem3"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Аксесоари</a
+                >
+                <div
+                  class="dropdown-menu bg-primary w-100 border-0"
+                  aria-labelledby="subMenuItem3"
+                >
+                  <ul class="list-unstyled pt-2">
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Клампови челюсти
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Сензори
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        UBK система
+                      </a>
+                    </li>
+                    <li class="my-1">
+                      <a class="menu-item" href="#!">
+                        Ръчно управление
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
             </div>
-          </div>
+          </ul>
         </div>
       </li>
 
       <!-- THE COMPANY menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item dropdown dropdown-main bg-primary mx-2">
         <a
           class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
           id="navbarDropdownMenuLink5"
@@ -430,7 +595,7 @@
           >Компанията
         </a>
         <div
-          class="dropdown-menu bg-primary border mt-2"
+          class="dropdown-menu dropdown-main-menu bg-primary border mt-2"
           aria-labelledby="navbarDropdownMenuLink5"
         >
           <ul class="list-unstyled">
@@ -449,7 +614,7 @@
       </li>
 
       <!-- News menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item dropdown dropdown-main bg-primary mx-2">
         <a
           class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
           id="navbarDropdownMenuLink6"
@@ -459,7 +624,7 @@
           >Новини
         </a>
         <div
-          class="dropdown-menu bg-primary border mt-2"
+          class="dropdown-menu dropdown-main-menu bg-primary border mt-2"
           aria-labelledby="navbarDropdownMenuLink6"
         >
           <ul class="list-unstyled">
@@ -489,7 +654,7 @@
     <!-- Search button -->
     <div class="search-bar dropdown">
       <button
-        class="btn btn-primary dropdown-toggle border-0 p-xl-3"
+        class="btn btn-primary dropdown-toggle border-0 p-lg-3 p-xl-4"
         type="button"
         id="dropdownMenuButton"
         data-toggle="dropdown"
@@ -529,11 +694,21 @@
       </h1>
     </header>
 
-    <div>
+    
       <main>
-        
+        <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="..." />
+  <div class="card-body">
+    <p class="card-text font-weight-bold">
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </p>
+  </div>
+</div>
+
+
       </main>
-    </div>
+    
 
     <footer class="site-footer text-white container-fluid px-5 pt-5">
       <div class="row no-gutters">
@@ -618,5 +793,6 @@
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/submenu.js"></script>
   </body>
 </html>
