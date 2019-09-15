@@ -682,16 +682,16 @@ h5 {
   padding-left: 5rem;
 }
 
-.container-fluid .partners {
+.container-fluid .partners-about {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f4f4f4), color-stop(50%, #00a0ad), to(#00a0ad));
   background: linear-gradient(to bottom, #f4f4f4 50%, #00a0ad 50%, #00a0ad 100%);
 }
 
-.container-fluid .partners .partners-cards {
+.container-fluid .partners-about .partners-cards {
   background: transparent;
 }
 
-.container-fluid .partners .partners-cards .partners-card {
+.container-fluid .partners-about .partners-cards .partners-card {
   max-width: 20rem;
   margin: 0 1rem;
   padding: 2rem;
@@ -708,13 +708,13 @@ h5 {
           justify-content: center;
 }
 
-.container-fluid .partners .partners-cards .partners-card img {
+.container-fluid .partners-about .partners-cards .partners-card img {
   width: 100%;
   height: auto;
   margin-bottom: 1rem21;
 }
 
-.container-fluid .partners .partners-cards .partners-card p {
+.container-fluid .partners-about .partners-cards .partners-card p {
   font-weight: bold;
   font-size: 0.9rem;
   margin-top: auto;
