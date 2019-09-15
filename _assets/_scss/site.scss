@@ -12,9 +12,12 @@ body {
 @import "_modules/typography";
 
 // @import "_elements/buttons";
+@import "_components/header";
 @import "_components/site-footer";
 @import "_components/cards";
 @import "_sections/home";
+@import "_sections/about";
+@import "_sections/privacy";
 
 // Bootstrap imports
 @import "../../node_modules/bootstrap/scss/functions";

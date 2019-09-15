@@ -13,7 +13,7 @@ $card-bg: rgb(234, 234, 234);
 $body-bg: rgb(244, 244, 244);
 $white: rgb(255, 255, 255);
 
-$color-gradient: linear-gradient(to bottom, $blue, $teal);
+$color-gradient: linear-gradient(to bottom, $blue 30%, $teal 100%);
 
 // NAVBAR
 
@@ -30,7 +30,7 @@ $dropdown-link-hover-bg: $teal;
 // WHITE SPACE VARIABLES
 
 $dropdown-padding-y: 0;
-$dropdown-spacer: 0.01;
+$dropdown-spacer: 0.0000001;
 
 // FONT SIZE VARIABLES
 

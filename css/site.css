@@ -168,6 +168,12 @@ a {
   text-decoration: none;
 }
 
+.site-header h1 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #004456), to(#00a0ad));
+  background: linear-gradient(to bottom, #004456 30%, #00a0ad 100%);
+  min-height: 10rem;
+}
+
 .site-footer {
   background-color: #004456;
   width: 100%;
@@ -570,6 +576,172 @@ h5 {
 .container-fluid .partners img {
   width: 100%;
   height: auto;
+}
+
+.container-fluid .mission {
+  position: relative;
+}
+
+.container-fluid .mission .mission-text {
+  margin-top: 10rem;
+}
+
+.container-fluid .mission .mission-text h2 {
+  font-family: "Axiforma Bold";
+}
+
+.container-fluid .mission .mission-text h4 {
+  font-family: "Axiforma Light";
+  margin: 3rem 0;
+}
+
+.container-fluid .mission .mission-image img {
+  width: auto;
+  max-height: 80vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container-fluid h2,
+.container-fluid h4,
+.container-fluid h6 {
+  color: #00a0ad;
+}
+
+.container-fluid h4 {
+  font-family: "Axiforma Bold";
+  margin: 2rem 0;
+}
+
+.container-fluid h4:first-child {
+  margin: 0 0 1rem 0;
+}
+
+.container-fluid h6 {
+  font-family: "Axiforma Light";
+  margin-bottom: 1.5rem;
+}
+
+.container-fluid .p-detail {
+  position: relative;
+}
+
+.container-fluid .p-detail:before {
+  display: inline-block;
+  content: "";
+  width: 3px;
+  height: 2rem;
+  background: #00a0ad;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+
+.container-fluid .quote {
+  width: 40%;
+  margin: 15rem auto 10rem auto;
+}
+
+.container-fluid .quote blockquote {
+  position: relative;
+}
+
+.container-fluid .quote blockquote:before {
+  display: inline-block;
+  content: '"';
+  font-size: 400px;
+  font-weight: 100;
+  color: rgba(110, 110, 115, 0.4);
+  position: absolute;
+  top: -170%;
+  left: 30%;
+}
+
+.container-fluid .company-values .values-image {
+  overflow: hidden;
+}
+
+.container-fluid .company-values .values-image:before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
+.container-fluid .company-values .values-image img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container-fluid .company-values .values-text {
+  padding-left: 5rem;
+}
+
+.container-fluid .partners {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f4f4f4), color-stop(50%, #00a0ad), to(#00a0ad));
+  background: linear-gradient(to bottom, #f4f4f4 50%, #00a0ad 50%, #00a0ad 100%);
+}
+
+.container-fluid .partners .partners-cards {
+  background: transparent;
+}
+
+.container-fluid .partners .partners-cards .partners-card {
+  max-width: 20rem;
+  margin: 0 1rem;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-fluid .partners .partners-cards .partners-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem21;
+}
+
+.container-fluid .partners .partners-cards .partners-card p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.privacy-policy h4 {
+  position: relative;
+}
+
+.privacy-policy h4:first-child {
+  margin: 0 0 2rem 0;
+}
+
+.privacy-policy h4:before {
+  display: inline-block;
+  content: "";
+  width: 3px;
+  height: 2rem;
+  background: #00a0ad;
+  position: absolute;
+  top: 0;
+  left: -1rem;
+}
+
+.privacy-policy h6 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
 }
 
 :root {
@@ -3842,7 +4014,7 @@ input[type="button"].btn-block {
   float: left;
   min-width: 0;
   padding: 0 0;
-  margin: 0.01 0 0;
+  margin: 0 0 0;
   font-size: 1rem;
   color: #6e6e73;
   text-align: left;
@@ -3910,7 +4082,7 @@ input[type="button"].btn-block {
   top: auto;
   bottom: 100%;
   margin-top: 0;
-  margin-bottom: 0.01;
+  margin-bottom: 0;
 }
 
 .dropup .dropdown-toggle::after {
@@ -3933,7 +4105,7 @@ input[type="button"].btn-block {
   right: auto;
   left: 100%;
   margin-top: 0;
-  margin-left: 0.01;
+  margin-left: 0;
 }
 
 .dropright .dropdown-toggle::after {
@@ -3960,7 +4132,7 @@ input[type="button"].btn-block {
   right: 100%;
   left: auto;
   margin-top: 0;
-  margin-right: 0.01;
+  margin-right: 0;
 }
 
 .dropleft .dropdown-toggle::after {
@@ -10878,7 +11050,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .navbar-expand-lg .logo-container {
-  background-color: white;
+  background-color: #f4f4f4;
   max-width: 15rem;
 }
 
