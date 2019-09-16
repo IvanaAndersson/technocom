@@ -21,7 +21,7 @@
   <body>
     <header class='site-header'>
       {% include navigation.html %}
-      <h1 {% if page.title == 'Home' or page.title ==  'About' %} class='d-none' {% endif %}
+      <h1 {% if page.title == 'Техноком Ко' or page.title ==  'Компанията' %} class='d-none' {% endif %}
       class='d-flex justify-content-center align-items-center text-white text-uppercase'>
         {{ page.title }}
       </h1>
@@ -55,6 +55,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="{{ site.baseurl }}/assets/js/index.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/carousel.js"></script>
     <script src="{{ site.baseurl }}/assets/js/submenu.js"></script>
   </body>
 </html>

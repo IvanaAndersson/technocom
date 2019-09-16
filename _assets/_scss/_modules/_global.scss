@@ -37,3 +37,19 @@ a {
   font-family: $font-family-base;
   text-decoration: none;
 }
+
+// CARDS
+
+.card {
+  max-width: 20rem;
+  margin: 0 1rem;
+  .card-img-top {
+  }
+  .card-body {
+    background-color: $card-bg;
+
+    .card-text {
+      color: $teal;
+    }
+  }
+}

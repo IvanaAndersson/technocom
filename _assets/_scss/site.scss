@@ -6,7 +6,6 @@
 
 @import "_components/header";
 @import "_components/site-footer";
-@import "_components/cards";
 
 @import "_pages/home";
 @import "_pages/about";
@@ -46,10 +45,9 @@
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/tooltip";
 @import "../../node_modules/bootstrap/scss/popover";
-@import "../../node_modules/bootstrap/scss/carousel";
+// @import "../../node_modules/bootstrap/scss/carousel";
 @import "../../node_modules/bootstrap/scss/spinners";
 @import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/print";
 
-// @import "_components/navigation";
-@import "_components/navigation-copy";
+@import "_components/navigation";
