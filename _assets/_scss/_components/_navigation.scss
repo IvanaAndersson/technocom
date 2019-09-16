@@ -1,8 +1,10 @@
+// Navigation styles for mobile and tablet screens
+
 .navbar-expand-lg {
   padding: 1rem 0;
 
   .logo-container {
-    background-color: $body-bg;
+    background: $body-bg;
     max-width: 15rem;
     img {
       width: 100%;
@@ -15,7 +17,7 @@
     padding: 1rem 0;
 
     & a {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
 
     .hoverable {
@@ -106,7 +108,6 @@
     padding: 0;
 
     .logo-container {
-      background-color: $white;
       max-width: 20rem;
     }
 
@@ -116,26 +117,65 @@
     }
 
     .navbar-nav {
-      position: static;
+      & a {
+        font-size: 0.9rem;
+      }
+      .dropdown-main {
+        display: block;
+        position: relative;
+        @media screen and (min-width: 1244px) {
+          &:before {
+            display: inline-block;
+            content: "";
+            color: $white;
+            @include caret-down;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+          }
 
-      .dropdown {
-        position: static;
-
-        //takes only the three last elements
-        @include last(3) {
-          position: relative;
+          &:hover:before {
+            color: $teal;
+          }
         }
       }
 
       .dropdown-main-menu {
-        display: block;
+        position: fixed;
         transform: scale(1, 0);
         transition: transform 400ms ease-in-out; // regulate the speed and the bezier curve of the drop down menu from here
         transform-origin: top;
+        top: 68px;
+
+        @media screen and (min-width: 1200px) {
+          top: 84px;
+        }
+
+        left: 0;
+        right: 0;
+        z-index: 1000;
+
+        &.company-dropdown {
+          left: 55%;
+          right: 28%;
+          @media screen and (min-width: 1440px) {
+            left: 48%;
+            right: 35%;
+          }
+        }
+
+        &.news-dropdown {
+          left: 65%;
+          right: 18%;
+          @media screen and (min-width: 1440px) {
+            left: 55%;
+            right: 28%;
+          }
+        }
       }
 
-      .dropdown-main:hover .dropdown-main-menu,
-      .dropdown-main:focus .dropdown-main-menu {
+      .dropdown-main:hover .dropdown-main-menu {
         transform: scale(1, 1);
       }
 
@@ -143,6 +183,7 @@
       .dropdown-main:focus > a {
         color: $teal;
       }
+
       // hover effect starts here
       .hoverable {
         border: none;
@@ -166,25 +207,14 @@
           }
         }
 
-        // all:unset not supported for Internet Explorer
         .dropdown-submenu {
-          all: unset;
-
           text-align: center;
-
-          .dropdown-toggle {
-            &:after {
-              all: unset;
-            }
-          }
-
-          .dropdown-menu {
-            all: unset;
+          padding-left: 0;
+          .dropdown-submenu-item {
             text-align: left;
             border-top: none;
 
             ul {
-              // align-self: center;
               border-top: 1px solid $teal;
               padding-left: 2rem;
 
