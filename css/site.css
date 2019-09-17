@@ -183,15 +183,30 @@ a {
 
 .card {
   max-width: 20rem;
-  margin: 0 1rem;
+  height: 100%;
 }
 
 .card .card-body {
   background-color: #eaeaea;
 }
 
-.card .card-body .card-text {
+.card .card-body .card-title {
   color: #00a0ad;
+  font-weight: bold;
+}
+
+.card .card-body .card-text {
+  color: #6e6e73;
+  font-weight: bold;
+}
+
+.card-link:hover .card .card-body {
+  background: #00a0ad;
+}
+
+.card-link:hover .card .card-title,
+.card-link:hover .card .card-text {
+  color: white;
 }
 
 .site-header h1 {
@@ -592,6 +607,23 @@ h5 {
 }
 
 .container-fluid .news .carousel-header .tabs-item a:hover {
+  color: #00a0ad;
+  text-decoration: none;
+}
+
+.container-fluid .news .carousel-header .active-tab a {
+  color: #00a0ad !important;
+}
+
+.container-fluid .news .carousel-header .see-all {
+  position: relative;
+  margin-left: auto;
+  margin-right: 8rem;
+  color: #6e6e73;
+}
+
+.container-fluid .news .carousel-header .see-all:hover {
+  color: #00a0ad;
   text-decoration: none;
 }
 
@@ -600,8 +632,13 @@ h5 {
   content: "";
   width: 1.75rem;
   height: 2px;
-  background-color: #6e6e73;
+  background-color: rgba(110, 110, 115, 0.5);
   margin-right: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .container-fluid .news .carousel-header .pages {
@@ -647,14 +684,20 @@ h5 {
   padding-left: 0.8rem;
 }
 
-.container-fluid .news .carousel-news {
+.container-fluid .news .carousel-events {
+  display: none;
+}
+
+.container-fluid .news .carousel-products,
+.container-fluid .news .carousel-events {
   width: 100%;
   height: 40vh;
   margin: 0 auto;
   position: relative;
 }
 
-.container-fluid .news .carousel-news .carousel-track-container {
+.container-fluid .news .carousel-products .carousel-track-container,
+.container-fluid .news .carousel-events .carousel-track-container {
   width: 100%;
   height: 90%;
   margin: 0 auto;
@@ -662,7 +705,8 @@ h5 {
   overflow: hidden;
 }
 
-.container-fluid .news .carousel-news .carousel-track-container .carousel-track {
+.container-fluid .news .carousel-products .carousel-track-container .carousel-track,
+.container-fluid .news .carousel-events .carousel-track-container .carousel-track {
   height: 100%;
   position: relative;
   -webkit-transition: -webkit-transform 250ms ease-in;
@@ -671,19 +715,20 @@ h5 {
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
-.container-fluid .news .carousel-news .carousel-track-container .carousel-track .carousel-item {
+.container-fluid .news .carousel-products .carousel-track-container .carousel-track .carousel-item,
+.container-fluid .news .carousel-events .carousel-track-container .carousel-track .carousel-item {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.container-fluid .news .carousel-news .carousel-nav {
+.container-fluid .news .carousel-nav {
   margin-top: 2rem;
   padding: 1em 0;
 }
 
-.container-fluid .news .carousel-news .carousel-nav .carousel-indicator {
+.container-fluid .news .carousel-nav .carousel-indicator {
   width: 1rem;
   height: 1rem;
   background: white;
@@ -694,7 +739,7 @@ h5 {
   cursor: pointer;
 }
 
-.container-fluid .news .carousel-news .carousel-nav .carousel-indicator.current-slide {
+.container-fluid .news .carousel-nav .carousel-indicator.current-slide {
   background: #00a0ad;
 }
 
