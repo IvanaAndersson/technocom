@@ -3,19 +3,20 @@
 $font-family-base: "Acari Sans Regular", sans-serif;
 $headings-font-family: "Axiforma Regular", sans-serif;
 
-// COLOR VARIABLES
-
+// RESETTING BOOTSTRAP COLOR VARIABLES
 $gray-900: rgb(110, 110, 115);
 $blue: rgb(0, 68, 86);
 $teal: rgb(0, 160, 173);
-$lines: rgb(170, 170, 170);
 $card-bg: rgb(234, 234, 234);
 $body-bg: rgb(244, 244, 244);
 $white: rgb(255, 255, 255);
-
+$lines: rgb(170, 170, 170);
 $color-gradient: linear-gradient(to bottom, $blue 30%, $teal 100%);
+$input-focus-color: #000000;
+$input-focus-bg: $body-bg;
+$input-focus-border-color: none;
 
-// NAVBAR
+// RESETTING BOOTSTRAP NAVBAR VARIABLES
 
 $dark: $blue;
 $navbar-dark-color: $white;
@@ -32,7 +33,7 @@ $dropdown-link-hover-bg: $teal;
 $dropdown-padding-y: 0;
 $dropdown-spacer: 0.0000001;
 
-// FONT SIZE VARIABLES
+// FONT SIZE VARIABLES - unused so far
 
 $sizing-fs-base: 12px;
 $sizing-fs-tablet: 14px;

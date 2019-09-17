@@ -1,0 +1,91 @@
+.contacts-header {
+  background: $color-gradient;
+  min-height: 50vh;
+
+  h1,
+  h2 {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  h2 {
+    color: $teal;
+    font-family: "Axiforma Light";
+    margin-bottom: 5rem;
+  }
+  h5 {
+    margin-bottom: 2rem;
+  }
+
+  .contact-address,
+  .office-contacts {
+    border-right: 1px solid $white;
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .tech-consultants {
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .map-link {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+    border: 1px solid $white;
+    margin-top: 1.5rem;
+
+    &:hover {
+      text-decoration: none;
+      background: $blue;
+      border: none;
+    }
+  }
+
+  .companymail {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+}
+
+.contact-form {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 0 10rem 0;
+
+  .contact-form-message {
+    color: $teal;
+    line-height: 1.6;
+    font-family: "Axiforma Light";
+    width: 40%;
+    margin: 5rem auto;
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $gray-900;
+    margin-bottom: 2rem;
+  }
+
+  textarea {
+    resize: none;
+    border-left: 1px solid $gray-900;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    background: $teal;
+    padding: 1rem 4rem;
+    float: right;
+  }
+}

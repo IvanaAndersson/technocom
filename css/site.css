@@ -280,13 +280,13 @@ h5 {
   font-size: 0.8rem;
 }
 
-.contacts ul .first-child span {
+.contacts ul .first-child span, .contacts ul .second-child span {
   font-family: "Acari Sans Bold", sans-serif;
   font-size: 1rem;
   position: relative;
 }
 
-.contacts ul .first-child span:before {
+.contacts ul .first-child span:before, .contacts ul .second-child span:before {
   display: inline-block;
   content: "\f095";
   font-weight: 900;
@@ -892,6 +892,101 @@ h5 {
   font-weight: bold;
   font-size: 0.9rem;
   margin-top: auto;
+}
+
+.contacts-header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #004456), to(#00a0ad));
+  background: linear-gradient(to bottom, #004456 30%, #00a0ad 100%);
+  min-height: 50vh;
+}
+
+.contacts-header h1,
+.contacts-header h2 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.contacts-header h2 {
+  color: #00a0ad;
+  font-family: "Axiforma Light";
+  margin-bottom: 5rem;
+}
+
+.contacts-header h5 {
+  margin-bottom: 2rem;
+}
+
+.contacts-header .contact-address,
+.contacts-header .office-contacts {
+  border-right: 1px solid white;
+}
+
+.contacts-header .contact-address p,
+.contacts-header .office-contacts p {
+  margin-bottom: 0.5rem;
+}
+
+.contacts-header .tech-consultants p {
+  margin-bottom: 0.5rem;
+}
+
+.contacts-header .map-link {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem 4rem;
+  border: 1px solid white;
+  margin-top: 1.5rem;
+}
+
+.contacts-header .map-link:hover {
+  text-decoration: none;
+  background: #004456;
+  border: none;
+}
+
+.contacts-header .companymail {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+
+.contact-form {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 0 10rem 0;
+}
+
+.contact-form .contact-form-message {
+  color: #00a0ad;
+  line-height: 1.6;
+  font-family: "Axiforma Light";
+  width: 40%;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6e6e73;
+  margin-bottom: 2rem;
+}
+
+.contact-form textarea {
+  resize: none;
+  border-left: 1px solid #6e6e73;
+}
+
+.contact-form button {
+  border: none;
+  outline: none;
+  background: #00a0ad;
+  padding: 1rem 4rem;
+  float: right;
 }
 
 .privacy-policy h4 {
@@ -2947,9 +3042,9 @@ pre code {
 }
 
 .form-control:focus {
-  color: #495057;
-  background-color: white;
-  border-color: #00a9d6;
+  color: #000000;
+  background-color: #f4f4f4;
+  border-color: none;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 68, 86, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 68, 86, 0.25);
@@ -4702,7 +4797,7 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #00a9d6;
+  border-color: none;
 }
 
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
@@ -4843,7 +4938,7 @@ input[type="button"].btn-block {
 }
 
 .custom-select:focus {
-  border-color: #00a9d6;
+  border-color: none;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 68, 86, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 68, 86, 0.25);
@@ -4903,7 +4998,7 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #00a9d6;
+  border-color: none;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 68, 86, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 68, 86, 0.25);
 }
