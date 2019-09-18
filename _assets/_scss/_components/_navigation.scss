@@ -4,10 +4,11 @@
   padding: 1rem 0;
 
   .logo-container {
+    // width: 450px;
     background: $body-bg;
     max-width: 15rem;
     img {
-      width: 100%;
+      width: 80%;
       height: auto;
     }
   }
@@ -49,30 +50,49 @@
 }
 
 // Search button and search field
-
+.dropdown-menu {
+  min-width: 100vw;
+}
 .search-bar.dropdown {
+  max-width: 6rem;
   background-color: $teal;
-  button[type="button"] {
+
+  a.btn {
+    width: 100%;
+    height: 100%;
+
     background-color: $teal;
     outline: none;
     border: none;
+    cursor: pointer;
+
+    img {
+      width: 60%;
+      height: auto;
+      vertical-align: middle;
+    }
 
     span {
       display: none;
     }
 
+    // Toggling this class with JS
+  }
+  .expanded {
+    padding: 2rem;
+    img {
+      display: none;
+    }
     &:before {
       display: inline-block;
-      content: "\f002";
+      content: "\f00d";
+      color: $white;
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      font-size: 1.5rem;
-    }
-    // Toggling this class with JS
-    &.expanded:before {
-      content: "\f00d";
+      font-size: 1rem;
     }
   }
+
   .search-bar-hidden {
     background-color: $teal;
 
@@ -86,15 +106,18 @@
         input[type="text"] {
           color: $white;
           outline: none;
+          font-family: "Axiforma Light";
+          font-size: 1.7rem;
 
           &::placeholder {
-            font-size: 1.2rem;
+            font-family: "Axiforma Light";
+            font-size: 1.7rem;
             color: rgba(255, 255, 255, 0.5);
           }
         }
 
         .fa-search {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
         }
       }
     }
@@ -106,17 +129,27 @@
 @media screen and (min-width: 992px) {
   .navbar-expand-lg {
     padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
 
     .logo-container {
       max-width: 20rem;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
     }
 
     .collapse {
-      display: flex;
-      justify-content: space-around;
+      max-width: 1300px;
+      margin: 0 auto 0 -13rem;
     }
 
     .navbar-nav {
+      margin: 0 auto;
       & a {
         font-size: 0.9rem;
       }
@@ -144,7 +177,7 @@
       .dropdown-main-menu {
         position: fixed;
         transform: scale(1, 0);
-        transition: transform 400ms ease-in-out; // regulate the speed and the bezier curve of the drop down menu from here
+        transition: transform 200ms ease-in-out; // regulate the speed and the bezier curve of the drop down menu from here
         transform-origin: top;
         top: 68px;
 
@@ -184,18 +217,38 @@
         color: $teal;
       }
 
+      .submenu-container {
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+
       // hover effect starts here
       .hoverable {
         border: none;
         height: 300px;
-        background: rgba(255, 255, 255, 0);
+        background: rgba($body-bg, 0);
         transition: background 0.15s ease-in;
 
-        &:hover {
-          background: rgba(255, 255, 255, 1);
+        .dropdown-submenu {
+          padding-left: 0;
 
-          & ul {
-            border-top: none;
+          & > .menu-item {
+            display: block;
+            width: 100%;
+            padding-left: 4rem;
+            border: 1px solid $teal;
+          }
+
+          .dropdown-submenu-item {
+            text-align: left;
+          }
+        }
+
+        &:hover {
+          background: rgba($body-bg, 1);
+
+          & .menu-item {
+            border: none;
           }
 
           & a {
@@ -206,22 +259,14 @@
             }
           }
         }
+      }
 
-        .dropdown-submenu {
-          text-align: center;
-          padding-left: 0;
-          .dropdown-submenu-item {
-            text-align: left;
-            border-top: none;
-
-            ul {
-              border-top: 1px solid $teal;
-              padding-left: 2rem;
-
-              li {
-                width: 70%;
-                margin: 0 auto;
-              }
+      .dropdown-engineering-menu,
+      .dropdown-auto-menu {
+        .hoverable {
+          .dropdown-submenu {
+            & > .menu-item {
+              padding-left: 6.5rem;
             }
           }
         }

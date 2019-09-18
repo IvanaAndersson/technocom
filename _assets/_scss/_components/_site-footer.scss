@@ -69,7 +69,8 @@ h5 {
   ul {
     font-size: 0.8rem;
 
-    .first-child, .second-child {
+    .first-child,
+    .second-child {
       span {
         font-family: "Acari Sans Bold", sans-serif;
         font-size: 1rem;
@@ -83,6 +84,7 @@ h5 {
           top: 0;
           left: -2rem;
           margin-right: 1rem;
+          transform: rotateY(180deg);
         }
       }
     }
@@ -129,7 +131,7 @@ h5 {
         display: inline-block;
         content: "";
         font-family: "Font Awesome 5 Brands";
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
 
       &.fa-facebook::before {
