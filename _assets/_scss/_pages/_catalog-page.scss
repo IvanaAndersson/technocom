@@ -1,0 +1,43 @@
+.catalog-page {
+  .catalog-page-grid {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    .card-link {
+      flex: 0 0 18%;
+      margin-bottom: 2rem;
+
+      @include each(6) {
+        margin-left: 0;
+      }
+
+      .card {
+        width: auto;
+      }
+    }
+  }
+}
+.container-fluid {
+  .accent {
+    margin: 10rem auto;
+
+    .accent-text {
+      h4 {
+        font-family: "Axiforma Light";
+        padding: 1rem 1.3rem;
+        margin: 4.5rem 0;
+      }
+      .accent-paragraph {
+        color: $gray-900;
+        width: 80%;
+      }
+    }
+
+    .accent-image {
+      border: 1px solid $blue;
+      .embed-responsive-item {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -4,15 +4,17 @@ $font-family-base: "Acari Sans Regular", sans-serif;
 $headings-font-family: "Axiforma Regular", sans-serif;
 
 // RESETTING BOOTSTRAP COLOR VARIABLES
-$gray-900: rgb(0, 0, 0);
+$gray-900: rgb(110, 110, 115);
 $blue: rgb(0, 68, 86);
+$black: rgb(0, 0, 0);
 $teal: rgb(0, 160, 173);
+$white: rgb(255, 255, 255);
 $card-bg: rgb(234, 234, 234);
 $body-bg: rgb(244, 244, 244);
-$white: rgb(255, 255, 255);
+$body-color: $black;
 $lines: rgb(170, 170, 170);
 $color-gradient: linear-gradient(to bottom, $blue 30%, $teal 100%);
-$input-focus-color: #000000;
+$input-focus-color: $black;
 $input-focus-bg: $body-bg;
 $input-focus-border-color: none;
 
@@ -27,6 +29,13 @@ $dropdown-min-width: 0;
 $dropdown-link-color: $teal;
 $dropdown-link-hover-color: $teal;
 $dropdown-link-hover-bg: $teal;
+
+// RESETTING BOOTSTRAP BREADCRUMB VARIABLES
+
+$breadcrumb-bg: transparent;
+$breadcrumb-divider-color: $gray-900;
+$breadcrumb-active-color: $teal;
+$breadcrumb-divider: quote(">");
 
 // WHITE SPACE VARIABLES
 

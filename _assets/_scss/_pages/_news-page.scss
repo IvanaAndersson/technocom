@@ -1,0 +1,17 @@
+.news-page {
+  .news-page-grid {
+    margin-top: 5rem;
+    .card-link {
+      flex: 0 0 23%;
+      margin-bottom: 2rem;
+
+      @include each(5) {
+        margin-left: 0;
+      }
+
+      .card {
+        width: auto;
+      }
+    }
+  }
+}

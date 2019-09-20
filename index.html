@@ -47,7 +47,7 @@ permalink: /
 
   <section class="secondary-menu mb-5">
     <div class="row no-gutters">
-      <div class="col-lg-4 products px-0">
+      <div class="products col-lg-4 px-0">
         <div class="wrapper d-flex flex-column">
           <div class="menu-header">
             <h4 class="text-uppercase font-weight-bold">Продукти</h4>
@@ -61,26 +61,44 @@ permalink: /
           </div>
 
           <ul class="list-unstyled text-white mt-auto mb-5 pl-5 ">
+              
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Пневматика</a>
+              <a
+                href="{{ site.baseurl }}/pneumatics.html"
+                >Пневматика
+              </a>
             </li>
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Профили</a>
+              <a
+                href="{{ site.baseurl }}/"
+                >Профили
+              </a>
             </li>
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Линейни задвижвания</a>
+              <a
+                href="{{ site.baseurl }}/"
+                >Линейни задвижвания
+              </a>
             </li>
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Арматура</a>
+              <a
+                href="{{ site.baseurl }}/"
+                >Арматура
+              </a>
             </li>
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Вибратори</a>
+              <a
+                href="{{ site.baseurl }}/"
+                >Вибратори
+              </a>
             </li>
+                
+            
           </ul>
         </div>
       </div>
 
-      <div class="col-lg-4 engineering px-0">
+      <div class="engineering col-lg-4 px-0">
         <div class="wrapper d-flex flex-column">
           <div class="menu-header">
             <h4 class="text-uppercase font-weight-bold">Инженеринг</h4>
@@ -93,20 +111,31 @@ permalink: /
               <img src="{{ site.baseurl }}/assets/img/home/injenering.png" alt="" class="engineering-picture">
             </div>
           <ul class="list-unstyled text-white mt-auto mb-5 pl-5">
+              
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Транспортни системи</a>
+              <a
+                href="{{ site.baseurl }}/"
+                >Транспортни системи
+              </a>
             </li>
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Индустриални работни места</a>
+              <a
+                href="{{ site.baseurl }}/"
+                >Индустриални работни места
+              </a>
             </li>
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Пневматични и електрически табла</a>
+              <a
+                href="{{ site.baseurl }}/"
+                >Пневматични и електрически табла
+              </a>
             </li>
+                
           </ul>
         </div>
       </div>
 
-      <div class="col-lg-4 auto-industry px-0">
+      <div class="auto-industry col-lg-4 px-0">
         <div class="wrapper d-flex flex-column">
           <div class="menu-header">
             <h4 class="text-uppercase font-weight-bold">
@@ -121,15 +150,26 @@ permalink: /
               <img src="{{ site.baseurl }}/assets/img/home/avto.png" alt="" class="auto-picture">
             </div>
           <ul class="list-unstyled text-white mt-auto mb-5 pl-5">
+            
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Клампи</a>
+              <a
+                href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
+                >Клампи
+              </a>
             </li>
             <li class="text-uppercase font-weight-bold">
-              <a href="#">GR8 модулна система</a>
+              <a
+                href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
+                >GR8 модулна система
+              </a>
             </li>
             <li class="text-uppercase font-weight-bold">
-              <a href="#">Аксесоари</a>
+              <a
+                href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
+                >Аксесоари
+              </a>
             </li>
+            
           </ul>
         </div>
       </div>
@@ -203,6 +243,7 @@ permalink: /
         class="carousel-header d-flex justify-content-between align-items-center"
       >
         <ul class="list-unstyled d-flex tabs">
+            
           <li class="tabs-item tabs-item--products active-tab mx-2 text-uppercase font-weight-bold">
             <a href="#!">Продукти</a>
           </li>
@@ -210,7 +251,7 @@ permalink: /
             <a href="#!">Събития</a>
           </li>
         </ul>
-        <a href="#" class="see-all">Виж всички</a>
+        <a href="{{ site.baseurl }}/news.html" class="see-all">Виж всички</a>
         <ul class="list-unstyled d-flex align-items-center pages">
           <button class="carousel-button carousel-button--left"></button>
           <li id="pagination-beginning" class="page-left mx-2 text-white">
@@ -755,10 +796,6 @@ permalink: /
         </div>
       </div>
 
-      
-
-        
-      
     </div>
   </section>
 

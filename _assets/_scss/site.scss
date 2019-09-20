@@ -6,11 +6,15 @@
 
 @import "_components/header";
 @import "_components/site-footer";
+@import "_components/sub-nav";
 
 @import "_pages/home";
 @import "_pages/about";
 @import "_pages/contacts";
 @import "_pages/privacy";
+@import "_pages/catalog-page";
+@import "_pages/catalog-item";
+@import "_pages/news-page";
 
 // Bootstrap imports
 @import "../../node_modules/bootstrap/scss/functions";

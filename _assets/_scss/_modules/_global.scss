@@ -38,9 +38,15 @@ a {
   text-decoration: none;
 }
 
+.site-header {
+  h1 {
+    margin-top: 5rem;
+  }
+}
+
 // CARDS
 .card {
-  max-width: 20rem;
+  width: 20rem;
   height: 100%;
 
   .card-body {
@@ -64,5 +70,13 @@ a {
   .card-title,
   .card-text {
     color: $white;
+  }
+}
+
+.breadcrumb-nav {
+  max-width: 1440px;
+  margin: 0.5rem auto;
+  a {
+    color: $gray-900;
   }
 }

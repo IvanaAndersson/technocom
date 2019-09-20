@@ -69,7 +69,7 @@
             margin-bottom: 3rem;
 
             h4 {
-              color: $gray-900;
+              color: $black;
               margin-bottom: 2rem;
               font-family: "Axiforma Bold", sans-serif;
               font-weight: 700;
@@ -221,7 +221,7 @@
     .advantage-text {
       ul {
         li {
-          color: rgb(110, 110, 115);
+          color: $gray-900;
           flex-basis: 45%;
           .image-ratio-container {
             position: relative;
@@ -244,6 +244,8 @@
           }
 
           h6 {
+            color: $black;
+
             font-family: "Acari Sans Bold", sans-serif;
           }
         }
@@ -270,13 +272,12 @@
         align-self: flex-start;
         position: relative;
         &:last-child {
-          border-left: 2px solid $gray-900;
+          border-left: 2px solid $black;
           margin-left: 0.8rem;
           padding-left: 0.8rem;
         }
 
         a {
-          // color: $gray-900;
           &:hover {
             color: $teal;
             text-decoration: none;
