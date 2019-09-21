@@ -8,12 +8,12 @@ layout: default
     sublist %}
     <li
       class="sub-nav-list h-100 px-5 d-flex
-      {% if page.url contains product.folder and product.order == 1 %}current-sub-item{% endif %}"
+      {% if page.url contains product.folder and product.order == 1 %}current-sub-item{% endif %}
+      "
     >
       <a
         href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
-        class="text-uppercase align-self-center
-          {% if page.url contains product.slug %}current-sub-item{% endif %}"
+        class="text-uppercase align-self-center"
         >{{ product.subtitle }}
       </a>
     </li>
@@ -22,17 +22,5 @@ layout: default
 </nav>
 
 <main class="catalog-page">
-  <nav class="breadcrumb-nav" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="{{ site.baseurl }}/">Начало</a></li>
-      <li class="breadcrumb-item">
-        <a href="{{ site.baseurl }}/products.html">Продукти</a>
-      </li>
-      <li class="breadcrumb-item">
-        <a href="{{ site.baseurl }}/pneumatics.html">Пневматика</a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">Движение</li>
-    </ol>
-  </nav>
   {{ content }}
 </main>

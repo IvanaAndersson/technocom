@@ -80,3 +80,10 @@ a {
     color: $gray-900;
   }
 }
+
+.carousel-header {
+  .breadcrumb-nav {
+    width: auto;
+    margin: 0;
+  }
+}
