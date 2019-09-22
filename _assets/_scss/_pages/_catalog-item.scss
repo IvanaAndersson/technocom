@@ -1,84 +1,58 @@
-.catalog-item {
-  .catalog-item-text {
-    margin-bottom: 8rem;
-    .catalog-item-title {
-      margin-bottom: 4rem;
-      border-left: 3px solid $teal;
-      padding-left: 1rem;
-    }
+/* STYLING THE INDIVIDUAL PRODUCT FROM THE CATALOG PAGE*/
+.container-catalog-item {
+  padding: 2rem 0;
+}
 
-    .catalog-item-paragraph {
-      width: 80%;
-      color: $gray-900;
-      line-height: 1.7;
-    }
-  }
+.catalog-item-text {
+  margin-bottom: 8rem;
+}
 
-  .catalog-item-download,
-  form {
-    margin-bottom: 5rem;
+.catalog-item-title {
+  margin-bottom: 4rem;
+  border-left: 3px solid $teal;
+  padding-left: 1rem;
+}
+
+.catalog-item-paragraph {
+  width: 80%;
+  color: $gray-900;
+  line-height: 1.7;
+}
+
+.catalog-item-download,
+form {
+  margin-bottom: 5rem;
+  color: $gray-900;
+  a {
     color: $gray-900;
-    a {
-      color: $gray-900;
-      font-size: 1.1rem;
+    font-size: 1.1rem;
 
-      .pdf-icon {
-        transition: opacity 200ms ease-in-out;
+    .pdf-icon {
+      transition: opacity 200ms ease-in-out;
+      opacity: 1;
+    }
+    .arrow-icon {
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+    }
+
+    &:hover {
+      color: $teal;
+      text-decoration: none;
+
+      .arrow-icon {
         opacity: 1;
       }
-      .arrow-icon {
+
+      .pdf-icon {
         opacity: 0;
-        transition: opacity 200ms ease-in-out;
-      }
-
-      &:hover {
-        color: $teal;
-        text-decoration: none;
-
-        .arrow-icon {
-          opacity: 1;
-        }
-
-        .pdf-icon {
-          opacity: 0;
-        }
-      }
-    }
-    .download-image {
-      position: relative;
-      margin-right: 3rem;
-
-      &:before {
-        display: inline-block;
-        content: "";
-        width: 5rem;
-        height: 5rem;
-        border-radius: 50%;
-        background: $teal;
-        padding-top: 100%;
-      }
-      img {
-        width: auto;
-        height: 50%;
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
       }
     }
   }
+}
 
+.catalog-item {
   form {
-    .download-form {
-      span {
-        margin-bottom: 1rem;
-        &:first-child {
-          font-size: 1.1rem;
-        }
-        font-size: 0.8rem;
-      }
-    }
-
     input,
     button {
       border: none;
@@ -101,11 +75,44 @@
       padding-right: 2rem;
     }
   }
+}
 
-  .catalog-item-image {
-    height: 90%;
-    border: 1px solid $blue;
+.download-image {
+  position: relative;
+  margin-right: 3rem;
+
+  &:before {
+    display: inline-block;
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: $teal;
+    padding-top: 100%;
   }
+  img {
+    width: auto;
+    height: 50%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.download-form {
+  span {
+    margin-bottom: 1rem;
+    &:first-child {
+      font-size: 1.1rem;
+    }
+    font-size: 0.8rem;
+  }
+}
+
+.catalog-item-image {
+  height: 90%;
+  border: 1px solid $blue;
 }
 
 .codes {

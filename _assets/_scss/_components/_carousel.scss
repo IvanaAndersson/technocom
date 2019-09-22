@@ -1,3 +1,5 @@
+/* STYLES FOR THE CAROUSEL ON THE HOME PAGE */
+
 .carousel-header {
   .tabs-item {
     align-self: flex-start;
@@ -16,7 +18,6 @@
       }
     }
   }
-
   .active-tab {
     a {
       color: $teal !important;
@@ -46,7 +47,6 @@
   }
   .pages {
     padding: 1rem;
-
     width: 8.5rem;
     background: $teal;
 
@@ -87,11 +87,9 @@
     }
   }
 }
-
 .carousel-events {
   display: none;
 }
-
 .carousel {
   width: 100%;
   min-height: 80vh;
@@ -109,7 +107,6 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    // background: #000;
 
     .carousel-track {
       height: 100%;

@@ -42,6 +42,10 @@ $breadcrumb-divider: quote(">");
 $dropdown-padding-y: 0;
 $dropdown-spacer: 0.0000001;
 
+// RESETTING BOOTSTRAP VARIABLE FOR ROUND EDGES OF BUTTON ETC.
+
+$enable-rounded: false;
+
 // FONT SIZE VARIABLES - unused so far
 
 $sizing-fs-base: 12px;
@@ -49,5 +53,3 @@ $sizing-fs-tablet: 14px;
 $sizing-fs-laptop: 16px;
 $sizing-fs-desktop: 18px;
 $sizing-fs-huge: 20px;
-
-$enable-rounded: false;

@@ -1,6 +1,9 @@
+/* STYLES FOR THE PAGES WITH NEWS CARDS */
+
 .news-page {
   .news-page-grid {
     margin-top: 5rem;
+    margin-bottom: 5rem;
     .card-link {
       flex: 0 0 23%;
       margin-bottom: 2rem;
@@ -16,13 +19,16 @@
   }
 }
 
+/* STYLING OF THE SEE ALL BUTTON ON THE NEWS PAGE */
 .see-all-news {
   position: relative;
   margin-left: 2rem;
   color: $gray-900;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $teal;
     text-decoration: none;
+    outline: none;
   }
   &:before {
     display: inline-block;
@@ -38,63 +44,56 @@
   }
 }
 
+/* STYLES FOR THE PAGES WITH NEWS ARTICLES */
 .container-news-item {
   padding-top: 3rem;
 }
 .news-item {
-  .news-item-description {
-    .news-item-text {
-      .news-item-title {
-        font-size: 1.3rem;
-        color: $black;
-        margin-bottom: 3rem;
-        border-left: 3px solid $teal;
-        padding-left: 1rem;
-      }
-
-      .news-item-date {
-        color: $teal;
-        font-weight: bold;
-      }
-
-      .news-item-paragraph {
-        color: $gray-900;
-      }
-    }
+  .news-item-title {
+    font-size: 1.3rem;
+    color: $black;
+    margin-bottom: 3rem;
+    border-left: 3px solid $teal;
+    padding-left: 1rem;
   }
-
+  .news-item-date {
+    color: $teal;
+    font-weight: bold;
+  }
+  .news-item-paragraph {
+    color: $gray-900;
+  }
   .news-item-image {
     position: absolute;
     right: 0;
+  }
+  .social-media-list {
+    .menu-item {
+      span {
+        display: none;
+      }
+      &::before {
+        display: inline-block;
+        content: "";
+        font-family: "Font Awesome 5 Brands";
+        font-size: 1.1rem;
+        color: $white;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .social-media-list {
-      .menu-item {
-        span {
-          display: none;
-        }
-        &::before {
-          display: inline-block;
-          content: "";
-          font-family: "Font Awesome 5 Brands";
-          font-size: 1.1rem;
-          color: $white;
-          width: 2rem;
-          height: 2rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      &.fa-facebook::before {
+        content: "\f39e";
+        background: #3c5a99;
+        margin-right: 2rem;
+      }
 
-        &.fa-facebook::before {
-          content: "\f39e";
-          background: #3c5a99;
-          margin-right: 2rem;
-        }
-
-        &.fa-linkedin::before {
-          content: "\f0e1";
-          background: #0077b5;
-        }
+      &.fa-linkedin::before {
+        content: "\f0e1";
+        background: #0077b5;
       }
     }
   }

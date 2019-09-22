@@ -1,40 +1,8 @@
+/* HERE START THE ABOUT PAGE */
+
 .about-main {
   margin-top: 5.3rem;
-}
 
-.container-fluid {
-  .mission {
-    position: relative;
-
-    .mission-text {
-      margin-top: 10rem;
-
-      h2 {
-        font-family: "Axiforma Bold";
-      }
-
-      h4 {
-        font-family: "Axiforma Light";
-        margin: 3rem 0;
-      }
-    }
-
-    .mission-image {
-      img {
-        width: auto;
-        max-height: 80vh;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-    }
-  }
-
-  h2,
-  h4,
-  h6 {
-    color: $teal;
-  }
   h4 {
     font-family: "Axiforma Bold";
     margin: 2rem 0;
@@ -48,90 +16,119 @@
     font-family: "Axiforma Light";
     margin-bottom: 1.5rem;
   }
+}
 
-  .p-detail {
-    position: relative;
-    &:before {
-      display: inline-block;
-      content: "";
-      width: 3px;
-      height: 2rem;
-      background: $teal;
+.mission {
+  position: relative;
+
+  .mission-text {
+    margin-top: 10rem;
+
+    h2 {
+      font-family: "Axiforma Bold";
+    }
+
+    h4 {
+      font-family: "Axiforma Light";
+      margin: 3rem 0;
+    }
+  }
+
+  .mission-image {
+    img {
+      width: auto;
+      max-height: 80vh;
       position: absolute;
       top: 0;
-      left: -1rem;
+      right: 0;
     }
   }
+}
 
-  .quote {
-    width: 40%;
-    margin: 15rem auto 10rem auto;
+.p-detail {
+  position: relative;
+  &:before {
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 2rem;
+    background: $teal;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+  }
+}
 
-    blockquote {
-      position: relative;
+/* STYLING THE BLOCKQUOTE */
+.quote {
+  width: 40%;
+  margin: 15rem auto 10rem auto;
 
-      &:before {
-        display: inline-block;
-        content: '"';
-        font-size: 400px;
-        font-weight: 100;
-        color: rgba(110, 110, 115, 0.4);
-        position: absolute;
-        top: -170%;
-        left: 30%;
-      }
+  blockquote {
+    position: relative;
+
+    &:before {
+      display: inline-block;
+      content: '"';
+      font-size: 400px;
+      font-weight: 100;
+      color: rgba(110, 110, 115, 0.4);
+      position: absolute;
+      top: -170%;
+      left: 30%;
     }
   }
+}
 
-  .company-values {
-    .values-image {
-      overflow: hidden;
-      &:before {
-        display: block;
-        content: "";
-        padding-top: 50%;
-      }
-
-      img {
-        width: auto;
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    .values-text {
-      padding-left: 5rem;
-    }
+.values-image {
+  overflow: hidden;
+  &:before {
+    display: block;
+    content: "";
+    padding-top: 50%;
   }
 
-  .partners-about {
-    background: linear-gradient(to bottom, $body-bg 50%, $teal 50%, $teal 100%);
-    .partners-cards {
-      background: transparent;
+  img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 
-      .partners-card {
-        max-width: 20rem;
-        margin: 0 1rem;
-        padding: 2rem;
-        background-color: $body-bg;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+.values-text {
+  padding-left: 5rem;
+}
 
-        img {
-          width: 100%;
-          height: auto;
-          margin-bottom: 1rem21;
-        }
-        p {
-          font-weight: bold;
-          font-size: 0.9rem;
-          margin-top: auto;
-        }
-      }
-    }
+/* STYLING THE SECTION WITH THE PARTNERS ON THE ABOUT PAGE */
+.partners-about {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, $body-bg 50%, $teal 50%, $teal 100%);
+}
+
+.partners-cards {
+  background: transparent;
+}
+
+.partners-card {
+  max-width: 20rem;
+  margin: 0 1rem;
+  padding: 2rem;
+  background-color: $body-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem21;
+  }
+  p {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: auto;
   }
 }

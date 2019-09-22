@@ -1,4 +1,4 @@
-// Navigation styles for mobile and tablet screens
+/* NAVIGATION STYLES FOR MOBILE AND TABLET SCREENS*/
 
 .navbar-expand-lg {
   padding: 1rem 0;
@@ -45,11 +45,12 @@
     &:focus {
       color: $teal;
       text-decoration: none;
+      outline: none;
     }
   }
 }
 
-// Search button and search field
+/* SEARCH BUTTON AND SEARCH FIELD */
 .dropdown-menu {
   min-width: 100vw;
 }
@@ -75,11 +76,9 @@
     span {
       display: none;
     }
-
-    // Toggling this class with JS
   }
   .expanded {
-    padding: 2rem;
+    padding: 2rem; // Toggling this class with JS
     img {
       display: none;
     }
@@ -124,7 +123,7 @@
   }
 }
 
-// Navigation styles for screens above 992px
+/* NAVIGATION STYLES FOR SCREENS ABOVE 992px */
 
 @media screen and (min-width: 992px) {
   .navbar-expand-lg {
@@ -168,7 +167,8 @@
             transform: translateY(-50%);
           }
 
-          &:hover:before {
+          &:hover:before,
+          &:focus:before {
             color: $teal;
           }
         }
@@ -208,7 +208,8 @@
         }
       }
 
-      .dropdown-main:hover .dropdown-main-menu {
+      .dropdown-main:hover .dropdown-main-menu,
+      .dropdown-main:focus .dropdown-main-menu {
         transform: scale(1, 1);
       }
 
@@ -222,7 +223,7 @@
         margin: 0 auto;
       }
 
-      // hover effect starts here
+      // hover effect of the inside menu starts here
       .hoverable {
         border: none;
         height: 300px;
@@ -244,7 +245,8 @@
           }
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
           background: rgba($body-bg, 1);
 
           & .menu-item {
@@ -254,7 +256,8 @@
           & a {
             color: $black;
 
-            &:hover {
+            &:hover,
+            &:focus {
               color: $teal;
             }
           }
@@ -274,7 +277,7 @@
     }
   }
 
-  // Search button and search field
+  // SEARCH BUTTON AND SEARCH FIELD ON DESKTOP
 
   .search-bar.dropdown {
     position: static;

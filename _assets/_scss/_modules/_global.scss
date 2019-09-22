@@ -38,46 +38,69 @@ a {
   text-decoration: none;
 }
 
+/* STYLING THE HEADERS EXCEPT ON HOME, ABOUT AND CONTACTS PAGES*/
+
 .site-header {
   h1 {
+    background: $color-gradient;
+    min-height: 10rem;
     margin-top: 5rem;
   }
 }
 
-// CARDS
+/* STYLING THE HEADINGS IN GENERAL BUT OVERRIDING THEM IN OTHER FILES FOR DIFFERENT SECTIONS */
+
+h2,
+h4,
+h6 {
+  color: $teal;
+}
+
+// OVERRIDING THE CARDS STYLES FROM BOOTSTRAP
+
 .card {
-  width: 20rem;
+  max-width: 20rem;
   height: 100%;
-
-  .card-body {
-    background-color: $card-bg;
-
-    .card-title {
-      color: $teal;
-      font-weight: bold;
-    }
-
-    .card-text {
-      color: $gray-900;
-      font-weight: bold;
-    }
-  }
 }
-.card-link:hover .card {
-  .card-body {
-    background: $teal;
-  }
-  .card-title,
-  .card-text {
-    color: $white;
-  }
+.card-body {
+  background-color: $card-bg;
 }
+.card-title {
+  color: $teal;
+  font-weight: bold;
+}
+
+.card-text {
+  color: $gray-900;
+  font-weight: bold;
+}
+
+.card-link:hover .card-body,
+.card-link:focus .card-body {
+  background: $teal;
+}
+
+.card-link:hover .card-title,
+.card-link:focus .card-title,
+.card-link:hover .card-text,
+.card-link:focus .card-text {
+  color: $white;
+}
+
+// OVERRIDING THE BREADCRUMB STYLES FROM BOOTSTRAP
 
 .breadcrumb-nav {
   max-width: 1440px;
   margin: 0.5rem auto;
   a {
     color: $gray-900;
+
+    &:hover,
+    &:focus {
+      color: $teal;
+      text-decoration: none;
+      outline: none;
+    }
   }
 }
 
@@ -85,5 +108,33 @@ a {
   .breadcrumb-nav {
     width: auto;
     margin: 0;
+  }
+}
+
+/* STYLING THE PRIVACY POLICY HEADINGS AND TEXT */
+.privacy-policy {
+  h4 {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &:before {
+      display: inline-block;
+      content: "";
+      width: 3px;
+      height: 2rem;
+      background: $teal;
+      position: absolute;
+      top: 0;
+      left: -1rem;
+    }
+  }
+
+  h6 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  ul {
+    padding-left: 1rem;
   }
 }

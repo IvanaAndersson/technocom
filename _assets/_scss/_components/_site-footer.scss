@@ -1,3 +1,4 @@
+/* STYLES FOR THE FOOTER, FOOTER IS THE SAME ON ALL PAGES */
 .site-footer {
   background-color: $blue;
   width: 100%;
@@ -9,6 +10,7 @@
     &:focus {
       color: $teal;
       text-decoration: none;
+      outline: none;
     }
   }
 
@@ -16,82 +18,9 @@
     max-width: 1440px;
     margin: 0 auto;
   }
-}
 
-.logo {
-  max-height: 10rem;
-
-  img {
-    width: auto;
-    height: 100%;
-  }
-  // .bg-flag {
-  //   max-width: 2rem;
-  //   height: auto;
-  // }
-}
-
-h5 {
-  font-family: "Acari Sans Bold", sans-serif;
-}
-
-.footer-nav {
-  a {
-    font-size: 0.8rem;
-  }
-}
-
-.address {
-  p {
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
-  }
-  .written-address {
-    position: relative;
-    .company-name {
-      font-family: "Acari Sans Bold", sans-serif;
-      font-size: 1rem;
-      &:before {
-        display: inline-block;
-        content: "\f3c5";
-        font-weight: 900;
-        font-family: "Font Awesome 5 Free";
-        position: absolute;
-        top: 0;
-        left: -2rem;
-        margin-right: 1rem;
-      }
-    }
-  }
-}
-
-.contacts {
-  ul {
-    font-size: 0.8rem;
-
-    .first-child,
-    .second-child {
-      span {
-        font-family: "Acari Sans Bold", sans-serif;
-        font-size: 1rem;
-        position: relative;
-        &:before {
-          display: inline-block;
-          content: "\f095";
-          font-weight: 900;
-          font-family: "Font Awesome 5 Free";
-          position: absolute;
-          top: 0;
-          left: -2rem;
-          margin-right: 1rem;
-          transform: rotateY(180deg);
-        }
-      }
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
+  h5 {
+    font-family: "Acari Sans Bold", sans-serif;
   }
 
   .companymail {
@@ -109,39 +38,110 @@ h5 {
   }
 }
 
+.logo {
+  max-height: 10rem;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+  // .bg-flag {
+  //   max-width: 2rem;
+  //   height: auto;
+  // }
+}
+.footer-nav {
+  a {
+    font-size: 0.8rem;
+  }
+}
+.address {
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.written-address {
+  position: relative;
+  .company-name {
+    font-family: "Acari Sans Bold", sans-serif;
+    font-size: 1rem;
+    &:before {
+      display: inline-block;
+      content: "\f3c5";
+      font-weight: 900;
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      top: 0;
+      left: -2rem;
+      margin-right: 1rem;
+    }
+  }
+}
+.contacts {
+  ul {
+    font-size: 0.8rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .first-child,
+  .second-child {
+    span {
+      font-family: "Acari Sans Bold", sans-serif;
+      font-size: 1rem;
+      position: relative;
+      &:before {
+        display: inline-block;
+        content: "\f095";
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        margin-right: 1rem;
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}
+
+/* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
 .copyright-social {
   border-top: 1px solid $white;
   padding: 1rem 0;
   font-size: 0.8rem;
+}
 
-  .copyright {
-    .menu-item {
-      border-left: 2px solid $white;
-      margin-left: 0.8rem;
-      padding-left: 0.8rem;
-    }
+.copyright {
+  .menu-item {
+    border-left: 2px solid $white;
+    margin-left: 0.8rem;
+    padding-left: 0.8rem;
   }
+}
 
-  .social-media {
-    .menu-item {
-      span {
-        display: none;
-      }
-      &::before {
-        display: inline-block;
-        content: "";
-        font-family: "Font Awesome 5 Brands";
-        font-size: 1.1rem;
-      }
+.social-media {
+  .menu-item {
+    span {
+      display: none;
+    }
+    &::before {
+      display: inline-block;
+      content: "";
+      font-family: "Font Awesome 5 Brands";
+      font-size: 1.1rem;
+    }
 
-      &.fa-facebook::before {
-        content: "\f39e";
-        margin-right: 2rem;
-      }
+    &.fa-facebook::before {
+      content: "\f39e";
+      margin-right: 2rem;
+    }
 
-      &.fa-linkedin::before {
-        content: "\f0e1";
-      }
+    &.fa-linkedin::before {
+      content: "\f0e1";
     }
   }
 }

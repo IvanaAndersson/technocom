@@ -1,3 +1,5 @@
+/* HERE START THE STYLES FOR THE HOME PAGE */
+
 .banner {
   background: url("../assets/img/home/photo 1.jpg") center no-repeat;
   background-size: cover;
@@ -9,286 +11,299 @@
   }
 }
 
-.container-fluid {
-  .services {
-    position: relative;
-    background: linear-gradient(to right, $body-bg 50%, $blue 50%);
+/* STYLING THE SECTION WITH SERVICES */
+.services {
+  position: relative;
+  background: linear-gradient(to right, $body-bg 50%, $blue 50%);
 
-    h2 {
-      font-family: "Axiforma Light", sans-serif;
-      position: absolute;
-      top: -7rem;
-      left: 1rem;
-      font-weight: 300;
-    }
+  h2 {
+    font-family: "Axiforma Light", sans-serif;
+    position: absolute;
+    top: -7rem;
+    left: 1rem;
+    font-weight: 300;
+  }
+
+  ul {
+    padding: 2rem 0 1rem 1rem;
+  }
+
+  h5 {
+    font-family: "Axiforma Light", sans-serif;
+    position: absolute;
+    top: -2.5rem;
+    left: 1rem;
+    font-weight: 300;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+/*STYLING THE SECTION WITH THE THREE MODULES, WHICH ACT AS A SECONDARY MENU ON THE FRONT PAGE */
+
+.secondary-menu {
+  min-height: 90vh;
+  margin-bottom: 2rem;
+  .row {
+    height: 90vh;
+  }
+}
+
+.products,
+.engineering {
+  height: 100%;
+}
+
+.products,
+.engineering,
+.auto-industry {
+  padding-top: 5rem;
+  position: relative;
+  background-image: linear-gradient(to bottom, $body-bg, $body-bg);
+  z-index: 1;
+
+  .wrapper {
+    height: 100%;
+    border: none;
+    border-right: 1px solid $lines;
 
     ul {
-      padding: 2rem 0 1rem 1rem;
-      h5 {
-        font-family: "Axiforma Light", sans-serif;
-        position: absolute;
-        top: -2.5rem;
-        left: 1rem;
-        font-weight: 300;
-      }
+      display: none;
 
       li {
-        margin-bottom: 1rem;
-      }
-    }
-  }
-
-  .secondary-menu {
-    min-height: 90vh;
-    margin-bottom: 2rem;
-    .row {
-      height: 90vh;
-
-      .products,
-      .engineering {
-        height: 100%;
-      }
-
-      .products,
-      .engineering,
-      .auto-industry {
-        padding-top: 5rem;
         position: relative;
-        background-image: linear-gradient(to bottom, $body-bg, $body-bg);
-        z-index: 1;
-
-        .wrapper {
-          height: 100%;
-          border: none;
-          border-right: 1px solid $lines;
-
-          .menu-header {
-            max-height: 20rem;
-            padding-left: 2rem;
-            position: relative;
-            margin-bottom: 3rem;
-
-            h4 {
-              color: $black;
-              margin-bottom: 2rem;
-              font-family: "Axiforma Bold", sans-serif;
-              font-weight: 700;
-            }
-
-            &:after {
-              display: block;
-              content: "";
-              padding-top: 20%;
-            }
-
-            img {
-              width: auto;
-              height: 100%;
-              position: absolute;
-              top: 0;
-              left: 5%;
-              margin-top: 3rem;
-            }
-          }
-
-          .product-picture {
-            position: relative;
-            overflow: hidden;
-            &:after {
-              display: block;
-              content: "";
-              padding-top: 90%;
-            }
-
-            img {
-              width: 70%;
-              height: auto;
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              transition: transform 200ms ease-in-out;
-            }
-            .engineering-picture {
-              width: 60%;
-            }
-
-            .auto-picture {
-              width: auto;
-              height: 100%;
-            }
-          }
-
-          ul {
-            display: none;
-
-            li {
-              position: relative;
-              &:before {
-                display: inline-block;
-                content: "";
-                height: 3px;
-                width: 5rem;
-                background: $white;
-                position: absolute;
-                top: 40%;
-                right: 102%;
-                transform: scale(0, 1);
-                transform-origin: right top;
-                transition: transform 200ms ease-in;
-              }
-
-              &:hover {
-                transform: translateX(2rem);
-              }
-              &:focus::before,
-              &:hover::before {
-                transform: scale(1, 1);
-              }
-
-              a {
-                color: $white;
-
-                &:hover {
-                  text-decoration: none;
-                }
-              }
-            }
-          }
-        }
-        &::before {
-          position: absolute;
+        &:before {
+          display: inline-block;
           content: "";
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background-image: linear-gradient(to bottom, $blue, $teal);
-          z-index: -1;
-          transition: opacity 200ms ease-in-out;
-          opacity: 0;
+          height: 3px;
+          width: 5rem;
+          background: $white;
+          position: absolute;
+          top: 40%;
+          right: 102%;
+          transform: scale(0, 1);
+          transform-origin: right top;
+          transition: transform 200ms ease-in;
         }
 
-        &:hover::before {
-          opacity: 1;
-        }
         &:hover {
-          opacity: 1;
+          transform: translateX(2rem);
+        }
+        &:focus::before,
+        &:hover::before {
+          transform: scale(1, 1);
+        }
+
+        a {
           color: $white;
-          .menu-header {
-            h4 {
-              color: $white;
-            }
-          }
 
-          .product-picture {
-            img {
-              transform: translateY(-2rem) scale(1.1);
-            }
+          &:hover {
+            text-decoration: none;
           }
-        }
-
-        &:hover ul {
-          display: block;
         }
       }
     }
   }
 
-  .advantages,
-  .news,
-  .partners {
-    h3 {
-      font-family: "Axiforma Light", sans-serif;
-      font-weight: 300;
-      color: $teal;
-      margin-bottom: 5rem;
-
-      &:before {
-        display: inline-block;
-        content: "";
-        width: 4px;
-        height: 1rem * 1.75;
-        background-color: $teal;
-        margin-right: 0.5rem;
-      }
-    }
-  }
-
-  .advantages {
+  .menu-header {
+    max-height: 20rem;
+    padding-left: 2rem;
     position: relative;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
 
-    .advantage-text {
-      ul {
-        li {
-          color: $gray-900;
-          flex-basis: 45%;
-          .image-ratio-container {
-            position: relative;
-            overflow: hidden;
+    h4 {
+      color: $black;
+      margin-bottom: 2rem;
+      font-family: "Axiforma Bold", sans-serif;
+      font-weight: 700;
+    }
 
-            &:before {
-              display: block;
-              content: "";
-              padding-top: 50%;
-            }
+    &:after {
+      display: block;
+      content: "";
+      padding-top: 20%;
+    }
 
-            img {
-              width: 25%;
-              height: auto;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            }
-          }
+    img {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 5%;
+      margin-top: 3rem;
+    }
+  }
 
-          h6 {
-            color: $black;
+  .product-picture {
+    position: relative;
+    overflow: hidden;
+    &:after {
+      display: block;
+      content: "";
+      padding-top: 90%;
+    }
 
-            font-family: "Acari Sans Bold", sans-serif;
-          }
+    img {
+      width: 70%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transition: transform 200ms ease-in-out;
+    }
+    .engineering-picture {
+      width: 60%;
+    }
+
+    .auto-picture {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  //WHEN EACH OF THE MODULES IS HOVERED - DO THESE
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, $blue, $teal);
+    z-index: -1;
+    transition: opacity 200ms ease-in-out;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:hover {
+    opacity: 1;
+    color: $white;
+  }
+
+  &:hover .menu-header {
+    h4 {
+      color: $white;
+    }
+  }
+
+  &:hover .product-picture {
+    img {
+      transform: translateY(-2rem) scale(1.1);
+    }
+  }
+
+  &:hover ul {
+    display: block;
+  }
+}
+
+/* THE SECTIONS WITH THE ADVANTAGES, NEWS AND PARTNERS HAVE THE SAME STYLING FOR THE HEADING  */
+.advantages,
+.news,
+.partners {
+  h3 {
+    font-family: "Axiforma Light", sans-serif;
+    font-weight: 300;
+    color: $teal;
+    margin-bottom: 5rem;
+
+    &:before {
+      display: inline-block;
+      content: "";
+      width: 4px;
+      height: 1rem * 1.75;
+      background-color: $teal;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+/* STYLING THE SECTION WITH THE ADVANTAGES ON THE MAIN PAGE */
+
+.advantages {
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.advantage-text {
+  ul {
+    li {
+      color: $gray-900;
+      flex-basis: 45%;
+      .image-ratio-container {
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+          display: block;
+          content: "";
+          padding-top: 50%;
+        }
+
+        img {
+          width: 25%;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
-    }
 
-    .advantage-image {
-      img {
-        width: 50%;
-        height: auto;
-        position: absolute;
-        top: 7rem;
-        right: 0;
+      h6 {
+        color: $black;
+
+        font-family: "Acari Sans Bold", sans-serif;
       }
     }
   }
+}
 
-  .news {
-    min-height: 70vh;
-    background: linear-gradient(to bottom, $body-bg 50%, $blue 50%, $blue 100%);
+.advantage-image {
+  img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 7rem;
+    right: 0;
   }
+}
 
-  .partners {
-    padding: 5rem 0;
+/* STYLING THE SECTION WITH THE NEWS ON THE MAIN PAGE*/
 
-    .image-container {
-      position: relative;
-      overflow: hidden;
+.news {
+  min-height: 70vh;
+  background: linear-gradient(to bottom, $body-bg 50%, $blue 50%, $blue 100%);
+}
 
-      &:before {
-        display: inline-block;
-        content: "";
-        padding-top: 25%;
-      }
+/* STYLING THE SECTION WITH THE PARTNERS ON THE MAIN PAGE  */
 
-      img {
-        width: 75%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+.partners {
+  padding: 5rem 0;
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      display: inline-block;
+      content: "";
+      padding-top: 25%;
+    }
+
+    img {
+      width: 75%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
