@@ -679,7 +679,8 @@ h6 {
 }
 
 .products,
-.engineering {
+.engineering,
+.auto-industry {
   height: 100%;
 }
 
@@ -970,6 +971,9 @@ h6 {
 }
 
 .partners .image-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 19%;
+          flex: 0 0 19%;
   position: relative;
   overflow: hidden;
 }
@@ -981,7 +985,7 @@ h6 {
 }
 
 .partners .image-container img {
-  width: 75%;
+  width: 80%;
   height: auto;
   position: absolute;
   top: 50%;
