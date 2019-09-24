@@ -167,7 +167,7 @@
 .carousel-events {
   display: none;
 }
-.carousel {
+.carousel-news-article {
   width: 100%;
   min-height: 80vh;
 }
@@ -190,7 +190,7 @@
       position: relative;
       transition: transform 250ms ease-in;
 
-      .carousel-item {
+      .home-carousel-item {
         width: 100%;
         position: absolute;
         top: 0;

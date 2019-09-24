@@ -166,11 +166,6 @@
             right: 0;
             transform: translateY(-50%);
           }
-
-          &:hover:before,
-          &:focus:before {
-            color: $teal;
-          }
         }
       }
 
@@ -180,6 +175,7 @@
         transition: transform 200ms ease-in-out; // regulate the speed and the bezier curve of the drop down menu from here
         transform-origin: top;
         top: 68px;
+        border-bottom: 1px solid $teal;
 
         @media screen and (min-width: 1200px) {
           top: 84px;

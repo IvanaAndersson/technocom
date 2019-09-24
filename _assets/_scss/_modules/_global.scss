@@ -42,6 +42,7 @@ a {
 
 .site-header {
   h1 {
+    font-size: 2rem;
     background: $color-gradient;
     min-height: 10rem;
     margin-top: 5rem;
@@ -64,20 +65,24 @@ h6 {
 }
 .card-body {
   background-color: $card-bg;
+  transition: background-color 250ms ease-in-out;
 }
 .card-title {
+  font-size: 1.1rem;
   color: $teal;
   font-weight: bold;
+  transition: color 250ms ease-in-out;
 }
 
 .card-text {
   color: $gray-900;
   font-weight: bold;
+  transition: color 250ms ease-in-out;
 }
 
 .card-link:hover .card-body,
 .card-link:focus .card-body {
-  background: $teal;
+  background-color: $teal;
 }
 
 .card-link:hover .card-title,
@@ -92,6 +97,9 @@ h6 {
 .breadcrumb-nav {
   max-width: 1440px;
   margin: 0.5rem auto;
+  .breadcrumb {
+    padding: 0.5rem 0;
+  }
   a {
     color: $gray-900;
 

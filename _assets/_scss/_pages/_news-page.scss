@@ -47,6 +47,10 @@
 /* STYLES FOR THE PAGES WITH NEWS ARTICLES */
 .container-news-item {
   padding-top: 3rem;
+
+  .carousel-item {
+    min-height: 90vh;
+  }
 }
 .news-item {
   .news-item-title {

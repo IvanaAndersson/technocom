@@ -679,9 +679,9 @@
 
 
 <!-- Desktop Navbar visible over the large width breakpoint -->
-<nav  class='bg-dark' 
-  class="navbar-expand-lg navbar-dark  p-0 d-none d-lg-block" id='navigation-desktop'
->
+<nav 
+  class="navbar-expand-lg navbar-dark  p-0 d-none d-lg-block  bg-dark " 
+  id='navigation-desktop'>
   <!-- The class d-lg-block overrides the d-flex, so I put the content in another div --> 
   <div class='d-flex align-content-stretch'>
 
@@ -701,7 +701,7 @@
       <!-- Links -->
       <ul class="navbar-nav">
         <!-- Products menu -->
-        <li class="nav-item dropdown-main bg-primary mx-3">
+        <li class="nav-item dropdown-main mx-3">
           <a class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
           href="/technocom/products.html"
           >Продукти</a>
@@ -870,7 +870,7 @@
         </li>
 
         <!-- Engineering menu -->
-        <li class="nav-item dropdown-main bg-primary mx-3">
+        <li class="nav-item dropdown-main mx-3">
           <a
             class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
             href="/technocom/engineering.html"
@@ -944,12 +944,12 @@
                     <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
                       <li class="my-1 w-75">
                         <a class="menu-item" href="#!">
-                          Пневматични
+                          Пневматични табла
                         </a>
                       </li>
                       <li class="my-1 w-75">
                         <a class="menu-item" href="#!">
-                          Електрически
+                          Електрически табла
                         </a>
                       </li>
                     </ul>
@@ -961,7 +961,7 @@
         </li>
 
         <!-- Auto industry menu -->
-        <li class="nav-item dropdown-main bg-primary mx-3">
+        <li class="nav-item dropdown-main mx-3">
           <a class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3" >
             Авто индустрия
           </a>
@@ -1070,12 +1070,12 @@
         </li>
 
         <!-- THE COMPANY menu -->
-        <li class="nav-item dropdown-main bg-primary mx-3">
+        <li class="nav-item dropdown-main mx-3">
           <a class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
           >Компанията</a>
           <div class="dropdown-main-menu company-dropdown bg-primary">
             <ul class="list-unstyled">
-              <li class="px-5 py-2 border-bottom">
+              <li class="px-5 py-2 border-bottom border-top">
                 <a
                   class="menu-item pl-0"
                   href="/technocom/about/index.html#misson"
@@ -1094,7 +1094,7 @@
         </li>
 
         <!-- News menu -->
-        <li class="nav-item dropdown-main bg-primary mx-3">
+        <li class="nav-item dropdown-main mx-3">
           <a
             class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
             href="/technocom/news/events.html">
@@ -1102,7 +1102,7 @@
           </a>
           <div class="dropdown-main-menu news-dropdown bg-primary">
             <ul class="list-unstyled">
-              <li class="border-bottom px-5 py-2">
+              <li class="border-bottom border-top px-5 py-2">
                 <a class="menu-item pl-0" href="/technocom/news/new-products.html">
                   Продукти
                 </a>
@@ -1117,7 +1117,7 @@
         </li>
 
         <!-- Contacts menu item -->
-        <li class="nav-item bg-primary mx-3">
+        <li class="nav-item mx-3">
           <a class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
           href='/technocom/contact/index.html'
             >Контакти
@@ -1510,7 +1510,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/technocom/assets/js/index.js"></script>
-    <!-- <script src="/technocom/assets/js/carousel.js"></script> -->
+    <script src="/technocom/assets/js/carousel.js"></script>
     <script src="/technocom/assets/js/submenu.js"></script>
     
   </body>

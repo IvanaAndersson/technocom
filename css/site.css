@@ -183,8 +183,9 @@ a {
 
 /* STYLING THE HEADERS EXCEPT ON HOME, ABOUT AND CONTACTS PAGES*/
 .site-header h1 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #004456), to(#00a0ad));
-  background: linear-gradient(to bottom, #004456 30%, #00a0ad 100%);
+  font-size: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #004456), to(#00a0ad));
+  background: linear-gradient(to bottom, #004456 50%, #00a0ad 100%);
   min-height: 10rem;
   margin-top: 5rem;
 }
@@ -203,21 +204,28 @@ h6 {
 
 .card-body {
   background-color: #eaeaea;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
 }
 
 .card-title {
+  font-size: 1.1rem;
   color: #00a0ad;
   font-weight: bold;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 
 .card-text {
   color: #6e6e73;
   font-weight: bold;
+  -webkit-transition: color 250ms ease-in-out;
+  transition: color 250ms ease-in-out;
 }
 
 .card-link:hover .card-body,
 .card-link:focus .card-body {
-  background: #00a0ad;
+  background-color: #00a0ad;
 }
 
 .card-link:hover .card-title,
@@ -230,6 +238,10 @@ h6 {
 .breadcrumb-nav {
   max-width: 1440px;
   margin: 0.5rem auto;
+}
+
+.breadcrumb-nav .breadcrumb {
+  padding: 0.5rem 0;
 }
 
 .breadcrumb-nav a {
@@ -800,8 +812,8 @@ h6 {
 
 /* STYLES FOR THE CONTACT PAGE */
 .contacts-header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #004456), to(#00a0ad));
-  background: linear-gradient(to bottom, #004456 30%, #00a0ad 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #004456), to(#00a0ad));
+  background: linear-gradient(to bottom, #004456 50%, #00a0ad 100%);
   min-height: 50vh;
   margin-top: 5rem;
 }
@@ -903,9 +915,9 @@ h6 {
 
 .catalog-page .catalog-page-grid .card-link {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 18%;
-          flex: 0 0 18%;
-  margin-bottom: 2rem;
+      -ms-flex: 0 0 18.66%;
+          flex: 0 0 18.66%;
+  margin-bottom: 1.25rem;
 }
 
 .catalog-page .catalog-page-grid .card-link:nth-child(6n) {
@@ -921,6 +933,7 @@ h6 {
 }
 
 .accent-text h4 {
+  font-size: 1.75rem;
   font-family: "Axiforma Light";
   padding: 1rem 1.3rem;
   margin: 4.5rem 0;
@@ -941,10 +954,6 @@ h6 {
 }
 
 /* STYLING THE INDIVIDUAL PRODUCT FROM THE CATALOG PAGE*/
-.container-catalog-item {
-  padding: 2rem 0;
-}
-
 .catalog-item-text {
   margin-bottom: 8rem;
 }
@@ -1132,6 +1141,10 @@ form a:hover .pdf-icon {
 /* STYLES FOR THE PAGES WITH NEWS ARTICLES */
 .container-news-item {
   padding-top: 3rem;
+}
+
+.container-news-item .carousel-item {
+  min-height: 90vh;
 }
 
 .news-item .news-item-title {
@@ -5870,11 +5883,11 @@ input[type="button"].btn-block {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("/assets/img/home/strelka.png");
+  background-image: url("../assets/img/home/strelka.png");
 }
 
 .carousel-control-next-icon {
-  background-image: url("/assets/img/home/strelka.png");
+  background-image: url("../assets/img/home/strelka.png");
 }
 
 .carousel-indicators {
@@ -9820,9 +9833,6 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  .navbar-expand-lg .navbar-nav .dropdown-main:hover:before, .navbar-expand-lg .navbar-nav .dropdown-main:focus:before {
-    color: #00a0ad;
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -9837,6 +9847,7 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transform-origin: top;
             transform-origin: top;
     top: 68px;
+    border-bottom: 1px solid #00a0ad;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -10248,7 +10259,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: none;
 }
 
-.carousel {
+.carousel-news-article {
   width: 100%;
   min-height: 80vh;
 }
@@ -10280,8 +10291,8 @@ a.text-dark:hover, a.text-dark:focus {
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
 }
 
-.carousel-products .carousel-track-container .carousel-track .carousel-item,
-.carousel-events .carousel-track-container .carousel-track .carousel-item {
+.carousel-products .carousel-track-container .carousel-track .home-carousel-item,
+.carousel-events .carousel-track-container .carousel-track .home-carousel-item {
   width: 100%;
   position: absolute;
   top: 0;
