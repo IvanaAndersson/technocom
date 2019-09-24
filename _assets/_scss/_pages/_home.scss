@@ -1,7 +1,7 @@
 /* HERE START THE STYLES FOR THE HOME PAGE */
 
 .banner {
-  background: url("../assets/img/home/photo 1.jpg") center no-repeat;
+  background: url("../assets/img/home/glavna\ 1.jpg") center no-repeat;
   background-size: cover;
   height: 75vh;
   margin-bottom: 0;
@@ -147,6 +147,7 @@
     }
 
     img {
+      z-index: 2000;
       width: 70%;
       height: auto;
       position: absolute;
@@ -289,14 +290,14 @@
   padding: 5rem 0;
 
   .image-container {
-    flex: 0 0 19%;
+    flex: 0 0 20%;
     position: relative;
     overflow: hidden;
 
     &:before {
       display: inline-block;
       content: "";
-      padding-top: 25%;
+      padding-top: 50%;
     }
 
     img {

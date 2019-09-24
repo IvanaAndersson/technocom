@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <header {% if page.title == 'Контакти' %} class='d-none' {% endif %} class='site-header'>
+    <header {% if page.title == 'Контакти' %} class='d-none' {% endif %} class='site-header' id='top'>
       {% include navigation.html %}
       <h1 {% if page.title == 'Техноком Ко' or page.title ==  'Компанията' %} class='d-none' {% endif %}
       class='d-flex justify-content-center align-items-center mb-0 text-white text-uppercase font-weight-bold'>
@@ -32,7 +32,7 @@
   
     
 
-    <footer class="site-footer text-white container-fluid px-5 pt-5">
+    <footer class="site-footer text-white pt-5">
       {% include footer.html %}
     </footer>
 

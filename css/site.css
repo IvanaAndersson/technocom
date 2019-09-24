@@ -273,146 +273,6 @@ h6 {
   padding-left: 1rem;
 }
 
-/* STYLES FOR THE FOOTER, FOOTER IS THE SAME ON ALL PAGES */
-.site-footer {
-  background-color: #004456;
-  width: 100%;
-}
-
-.site-footer a {
-  color: white;
-}
-
-.site-footer a:hover, .site-footer a:focus {
-  color: #00a0ad;
-  text-decoration: none;
-  outline: none;
-}
-
-.site-footer .row {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.site-footer h5 {
-  font-family: "Acari Sans Bold", sans-serif;
-}
-
-.site-footer .companymail {
-  position: relative;
-}
-
-.site-footer .companymail:before {
-  display: inline-block;
-  content: "\f0e0";
-  font-weight: 900;
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-  top: 0;
-  left: -2rem;
-  margin-right: 1rem;
-}
-
-.logo {
-  max-height: 10rem;
-}
-
-.logo img {
-  width: auto;
-  height: 100%;
-}
-
-.footer-nav a {
-  font-size: 0.8rem;
-}
-
-.address p {
-  font-size: 0.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.written-address {
-  position: relative;
-}
-
-.written-address .company-name {
-  font-family: "Acari Sans Bold", sans-serif;
-  font-size: 1rem;
-}
-
-.written-address .company-name:before {
-  display: inline-block;
-  content: "\f3c5";
-  font-weight: 900;
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-  top: 0;
-  left: -2rem;
-  margin-right: 1rem;
-}
-
-.contacts ul {
-  font-size: 0.8rem;
-}
-
-.contacts ul li {
-  margin-bottom: 0.5rem;
-}
-
-.contacts .first-child span,
-.contacts .second-child span {
-  font-family: "Acari Sans Bold", sans-serif;
-  font-size: 1rem;
-  position: relative;
-}
-
-.contacts .first-child span:before,
-.contacts .second-child span:before {
-  display: inline-block;
-  content: "\f095";
-  font-weight: 900;
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-  top: 0;
-  left: -2rem;
-  margin-right: 1rem;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-/* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
-.copyright-social {
-  border-top: 1px solid white;
-  padding: 1rem 0;
-  font-size: 0.8rem;
-}
-
-.copyright .menu-item {
-  border-left: 2px solid white;
-  margin-left: 0.8rem;
-  padding-left: 0.8rem;
-}
-
-.social-media .menu-item span {
-  display: none;
-}
-
-.social-media .menu-item::before {
-  display: inline-block;
-  content: "";
-  font-family: "Font Awesome 5 Brands";
-  font-size: 1.1rem;
-}
-
-.social-media .menu-item.fa-facebook::before {
-  content: "\f39e";
-  margin-right: 2rem;
-}
-
-.social-media .menu-item.fa-linkedin::before {
-  content: "\f0e1";
-}
-
 /* STYLES FOR THE CAROUSEL ON THE HOME PAGE */
 .carousel-header .tabs-item {
   -ms-flex-item-align: start;
@@ -624,7 +484,7 @@ h6 {
 
 /* HERE START THE STYLES FOR THE HOME PAGE */
 .banner {
-  background: url("../assets/img/home/photo 1.jpg") center no-repeat;
+  background: url("../assets/img/home/glavna 1.jpg") center no-repeat;
   background-size: cover;
   height: 75vh;
   margin-bottom: 0;
@@ -818,6 +678,7 @@ h6 {
 .products .product-picture img,
 .engineering .product-picture img,
 .auto-industry .product-picture img {
+  z-index: 2000;
   width: 70%;
   height: auto;
   position: absolute;
@@ -972,8 +833,8 @@ h6 {
 
 .partners .image-container {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 19%;
-          flex: 0 0 19%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
   position: relative;
   overflow: hidden;
 }
@@ -981,7 +842,7 @@ h6 {
 .partners .image-container:before {
   display: inline-block;
   content: "";
-  padding-top: 25%;
+  padding-top: 50%;
 }
 
 .partners .image-container img {
@@ -10055,4 +9916,137 @@ a.text-dark:hover, a.text-dark:focus {
   .search-bar.dropdown .search-bar-hidden form {
     min-height: 10rem;
   }
+}
+
+/* STYLES FOR THE FOOTER, FOOTER IS THE SAME ON ALL PAGES */
+.site-footer {
+  background-color: #004456;
+  width: 100%;
+}
+
+.site-footer a {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.site-footer a:hover, .site-footer a:focus {
+  color: #00a0ad;
+  text-decoration: none;
+  outline: none;
+}
+
+.site-footer h5 {
+  font-size: 1rem;
+  font-family: "Acari Sans Bold", sans-serif;
+}
+
+.site-footer .companymail {
+  font-size: 0.8rem;
+}
+
+.site-footer .companymail span {
+  font-family: "Acari Sans Regular", sans-serif;
+}
+
+.logo {
+  max-height: 10rem;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+}
+
+.address p,
+.address .company-name {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.written-address .company-name {
+  font-family: "Acari Sans Bold", sans-serif;
+}
+
+.contacts ul {
+  font-size: 0.8rem;
+}
+
+.contacts ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contacts span {
+  font-family: "Acari Sans Bold", sans-serif;
+  font-size: 0.9rem;
+}
+
+.footer-icon-container {
+  position: relative;
+}
+
+.footer-icon-container .footer-icon {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  margin-right: 1rem;
+}
+
+/* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
+.copyright-social {
+  border-top: 1px solid white;
+  font-size: 0.8rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1440px 1fr;
+      grid-template-columns: 1fr 1440px 1fr;
+      grid-template-areas: "... copyright button-to-top";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyright-social > .row {
+  width: 1440px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: copyright;
+}
+
+.copyright-social .facebook,
+.copyright-social .linkedin {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.copyright .menu-item {
+  border-left: 1px solid white;
+  margin-left: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+.button-to-top {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: button-to-top;
+  display: inline-block;
+  border-left: 1px solid white;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.button-to-top span {
+  display: none;
+}
+
+.button-to-top::before {
+  display: inline-block;
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
 }

@@ -5,6 +5,7 @@
 
   & a {
     color: $white;
+    font-size: 0.8rem;
 
     &:hover,
     &:focus {
@@ -14,26 +15,16 @@
     }
   }
 
-  .row {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
   h5 {
+    font-size: 1rem;
     font-family: "Acari Sans Bold", sans-serif;
   }
 
   .companymail {
-    position: relative;
-    &:before {
-      display: inline-block;
-      content: "\f0e0";
-      font-weight: 900;
-      font-family: "Font Awesome 5 Free";
-      position: absolute;
-      top: 0;
-      left: -2rem;
-      margin-right: 1rem;
+    font-size: 0.8rem;
+
+    span {
+      font-family: "Acari Sans Regular", sans-serif;
     }
   }
 }
@@ -45,37 +36,18 @@
     width: auto;
     height: 100%;
   }
-  // .bg-flag {
-  //   max-width: 2rem;
-  //   height: auto;
-  // }
 }
-.footer-nav {
-  a {
-    font-size: 0.8rem;
-  }
-}
+
 .address {
-  p {
+  p,
+  .company-name {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
   }
 }
 .written-address {
-  position: relative;
   .company-name {
     font-family: "Acari Sans Bold", sans-serif;
-    font-size: 1rem;
-    &:before {
-      display: inline-block;
-      content: "\f3c5";
-      font-weight: 900;
-      font-family: "Font Awesome 5 Free";
-      position: absolute;
-      top: 0;
-      left: -2rem;
-      margin-right: 1rem;
-    }
   }
 }
 .contacts {
@@ -87,61 +59,71 @@
     }
   }
 
-  .first-child,
-  .second-child {
-    span {
-      font-family: "Acari Sans Bold", sans-serif;
-      font-size: 1rem;
-      position: relative;
-      &:before {
-        display: inline-block;
-        content: "\f095";
-        font-weight: 900;
-        font-family: "Font Awesome 5 Free";
-        position: absolute;
-        top: 0;
-        left: -2rem;
-        margin-right: 1rem;
-        transform: rotateY(180deg);
-      }
-    }
+  span {
+    font-family: "Acari Sans Bold", sans-serif;
+    font-size: 0.9rem;
+  }
+}
+
+.footer-icon-container {
+  position: relative;
+
+  .footer-icon {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    margin-right: 1rem;
   }
 }
 
 /* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
 .copyright-social {
   border-top: 1px solid $white;
-  padding: 1rem 0;
   font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1440px 1fr;
+  grid-template-areas: "... copyright button-to-top";
+  justify-content: space-between;
+
+  & > .row {
+    width: 1440px;
+    grid-area: copyright;
+  }
+
+  .facebook,
+  .linkedin {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .copyright {
   .menu-item {
-    border-left: 2px solid $white;
+    border-left: 1px solid $white;
     margin-left: 0.8rem;
     padding-left: 0.8rem;
   }
 }
 
-.social-media {
-  .menu-item {
-    span {
-      display: none;
-    }
-    &::before {
-      display: inline-block;
-      content: "";
-      font-family: "Font Awesome 5 Brands";
-      font-size: 1.1rem;
-    }
+.button-to-top {
+  grid-area: button-to-top;
+  display: inline-block;
+  // max-width: 5rem;
+  border-left: 1px solid $white;
+  justify-self: stretch;
+  align-self: stretch;
 
-    &.fa-facebook::before {
-      content: "\f39e";
-      margin-right: 2rem;
-    }
+  span {
+    display: none;
+  }
 
-    &.fa-linkedin::before {
-      content: "\f0e1";
-    }
+  &::before {
+    display: inline-block;
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5rem;
   }
 }
