@@ -5,17 +5,82 @@ permalink: /
 ---
 
 <main>
-  <div class="banner d-flex align-items-center">
-    <div class="container ">
-      <!-- <h1 class="display-4 text-uppercase font-weight-bold text-white text-right">
-        Технически<br />
-        доброто до вас.
-      </h1> -->
+  <!-- SECTION WITH TO PAGE CAROUSEL -->
+  <div
+    id="carouselExampleFade"
+    class="carousel slide carousel-fade"
+    data-ride="carousel"
+  >
+    <div class="carousel-inner ">
+      <div class="carousel-item  active">
+        <img
+          src="/assets/img/home/glavna 1.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block row no-gutters">
+          <ul class="list-unstyled text-white">
+            <h5>Доставка на елементи за</h5>
+            <li class="text-uppercase font-weight-bold">Автоматизация</li>
+            <li class="text-uppercase font-weight-bold">Инженеринг</li>
+            <li class="text-uppercase font-weight-bold">
+              Автомобилна индустрия
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/assets/img/home/glavna 2.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <ul class="carousel-caption d-none d-md-block list-unstyled text-white">
+          <h5 class="text-white">Изработване на</h5>
+          <li class="text-uppercase font-weight-bold">Транспортни системи</li>
+          <li class="text-uppercase font-weight-bold">
+            Индустриални работни места
+          </li>
+          <li class="text-uppercase font-weight-bold">
+            Пневматични и електрически табла
+          </li>
+        </ul>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/assets/img/home/glavna 1.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+      </div>
     </div>
+
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleFade"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true">
+        <!-- <img src="/assets/img/home/strelka.png" alt="" /> -->
+      </span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleFade"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+
   <div class="container-fluid p-0">
     <!-- THE SECTION WITH SERVICES -->
-
+    <!-- 
     <section class="services">
       <div class="row no-gutters d-flex">
         <div class="col-lg-4">
@@ -37,11 +102,13 @@ permalink: /
             <h5>Доставка на елементи за</h5>
             <li class="text-uppercase font-weight-bold">Автоматизация</li>
             <li class="text-uppercase font-weight-bold">Инженеринг</li>
-            <li class="text-uppercase font-weight-bold">Автомобилна индустрия</li>
+            <li class="text-uppercase font-weight-bold">
+              Автомобилна индустрия
+            </li>
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- THE SECTION WITH SECONDARY MENU -->
 
@@ -57,43 +124,29 @@ permalink: /
               />
             </div>
             <div class="product-picture">
-              <img src="{{ site.baseurl }}/assets/img/home/produkti.png" alt="" class="product">
+              <img
+                src="{{ site.baseurl }}/assets/img/home/produkti.png"
+                alt=""
+                class="product"
+              />
             </div>
 
             <ul class="list-unstyled text-white mt-auto mb-5 pl-5 ">
-                
               <li class="text-uppercase font-weight-bold">
-                <a
-                  href="{{ site.baseurl }}/pneumatics.html"
-                  >Пневматика
-                </a>
+                <a href="{{ site.baseurl }}/pneumatics.html">Пневматика </a>
               </li>
               <li class="text-uppercase font-weight-bold">
-                <a
-                  href="{{ site.baseurl }}/"
-                  >Профили
-                </a>
+                <a href="{{ site.baseurl }}/">Профили </a>
               </li>
               <li class="text-uppercase font-weight-bold">
-                <a
-                  href="{{ site.baseurl }}/"
-                  >Линейни задвижвания
-                </a>
+                <a href="{{ site.baseurl }}/">Линейни задвижвания </a>
               </li>
               <li class="text-uppercase font-weight-bold">
-                <a
-                  href="{{ site.baseurl }}/"
-                  >Арматура
-                </a>
+                <a href="{{ site.baseurl }}/">Арматура </a>
               </li>
               <li class="text-uppercase font-weight-bold">
-                <a
-                  href="{{ site.baseurl }}/"
-                  >Вибратори
-                </a>
+                <a href="{{ site.baseurl }}/">Вибратори </a>
               </li>
-                  
-              
             </ul>
           </div>
         </div>
@@ -108,29 +161,24 @@ permalink: /
               />
             </div>
             <div class="product-picture">
-                <img src="{{ site.baseurl }}/assets/img/home/injener.png" alt="" class="engineering-picture">
-              </div>
+              <img
+                src="{{ site.baseurl }}/assets/img/home/injener.png"
+                alt=""
+                class="engineering-picture"
+              />
+            </div>
             <ul class="list-unstyled text-white mt-auto mb-5 pl-5">
-                
               <li class="text-uppercase font-weight-bold">
-                <a
-                  href="{{ site.baseurl }}/"
-                  >Транспортни системи
-                </a>
+                <a href="{{ site.baseurl }}/">Транспортни системи </a>
               </li>
               <li class="text-uppercase font-weight-bold">
-                <a
-                  href="{{ site.baseurl }}/"
-                  >Индустриални работни места
-                </a>
+                <a href="{{ site.baseurl }}/">Индустриални работни места </a>
               </li>
               <li class="text-uppercase font-weight-bold">
-                <a
-                  href="{{ site.baseurl }}/"
+                <a href="{{ site.baseurl }}/"
                   >Пневматични и електрически табла
                 </a>
               </li>
-                  
             </ul>
           </div>
         </div>
@@ -139,7 +187,8 @@ permalink: /
           <div class="wrapper d-flex flex-column">
             <div class="menu-header">
               <h4 class="text-uppercase font-weight-bold">
-                Автомобилна <br> индустрия
+                Автомобилна <br />
+                индустрия
               </h4>
               <img
                 src="{{ site.baseurl }}/assets/img/home/number-3.png"
@@ -147,29 +196,37 @@ permalink: /
               />
             </div>
             <div class="product-picture">
-                <img src="{{ site.baseurl }}/assets/img/home/avto.png" alt="" class="auto-picture">
-              </div>
+              <img
+                src="{{ site.baseurl }}/assets/img/home/avto.png"
+                alt=""
+                class="auto-picture"
+              />
+            </div>
             <ul class="list-unstyled text-white mt-auto mb-5 pl-5">
-              
               <li class="text-uppercase font-weight-bold">
                 <a
-                  href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
+                  href="{{ site.baseurl }}/{{ product.folder }}/{{
+                    product.slug
+                  }}"
                   >Клампи
                 </a>
               </li>
               <li class="text-uppercase font-weight-bold">
                 <a
-                  href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
+                  href="{{ site.baseurl }}/{{ product.folder }}/{{
+                    product.slug
+                  }}"
                   >GR8 модулна система
                 </a>
               </li>
               <li class="text-uppercase font-weight-bold">
                 <a
-                  href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
+                  href="{{ site.baseurl }}/{{ product.folder }}/{{
+                    product.slug
+                  }}"
                   >Аксесоари
                 </a>
               </li>
-              
             </ul>
           </div>
         </div>
@@ -178,64 +235,60 @@ permalink: /
 
     <!-- THE SECTION WITH THE ADVANTAGES -->
     <section class="advantages">
-      <div class="row no-gutters d-flex">
-        <div class="advantage-text col-lg-6">
-          <h3>Предимства</h3>
-          <ul class="list-unstyled d-flex flex-wrap">
-            <li class="d-flex flex-column pr-4">
-                <div class='image-ratio-container'>
+      <div class="advantage-text row no-gutters">
+        <h3>Предимства</h3>
+        <ul class="list-unstyled d-flex justify-content-between">
+          <li class="d-flex flex-column">
+            <div class="image-ratio-container">
               <img
                 src="{{ site.baseurl }}/assets/img/home/icon 2.png"
                 class="mb-4"
                 alt="an icon showing a lightbulb"
-              /></div>
+              />
+            </div>
 
-              <div>
-                <h6 class="mt-2 mb-3 text-uppercase">Технически решения</h6>
-                Предлагаме на българския пазар както продукти, така и цялостни
-                технически решения на разумни цени.
-              </div>
-            </li>
-            <li class="d-flex flex-column ml-5">
-              <div class='image-ratio-container'><img
+            <div>
+              <h6 class="mt-2 mb-3 text-uppercase">Технически решения</h6>
+              Предлагаме на българския пазар както продукти, така и цялостни
+              технически решения на разумни цени.
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <div class="image-ratio-container">
+              <img
                 src="{{ site.baseurl }}/assets/img/home/icon 3.png"
                 class="mb-4"
                 alt="an icon showing a packet that is moving"
-              /></div>
-              <div>
-                <h6 class="mt-2 mb-3 text-uppercase">Бърза доставка</h6>
-                <p>
-                  Нашата дистрибуторска мрежа и складова наличност ни позволяват
-                  да бъдем винаги близо до Вас.
-                </p>
-              </div>
-            </li>
-            <li class="d-flex flex-column pr-4 mt-3">
-                <div class='image-ratio-container'><img
+              />
+            </div>
+            <div>
+              <h6 class="mt-2 mb-3 text-uppercase">Бърза доставка</h6>
+              <p>
+                Нашата дистрибуторска мрежа и складова наличност ни позволяват
+                да бъдем винаги близо до Вас.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex flex-column">
+            <div class="image-ratio-container">
+              <img
                 src="{{ site.baseurl }}/assets/img/home/icon 4.png"
                 class="mb-4"
                 alt="an icon showing a bullseye"
-              /></div>
-              <div>
-                <h6 class="mt-2 mb-3 text-uppercase">Страст към успеха</h6>
-                Винаги се стремим към съвършенство, защото сме емоционално и
-                интелектуално свързани с работата си.
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- <div class="advantage-image">
-          <img
-            src="{{ site.baseurl }}/assets/img/home/photo 2.jpg"
-            alt="a close up picture of an industrial machine"
-          />
-        </div> -->
+              />
+            </div>
+            <div>
+              <h6 class="mt-2 mb-3 text-uppercase">Страст към успеха</h6>
+              Винаги се стремим към съвършенство, защото сме емоционално и
+              интелектуално свързани с работата си.
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- SECTION WITH NEWS -->
-
+    <!-- 
     <section class="news">
       <div style="max-width: 1440px; margin: 0 auto;">
         <h3>Новини</h3>
@@ -797,7 +850,7 @@ permalink: /
         </div>
 
       </div>
-    </section>
+    </section> -->
 
     <!-- SECTION WITH PARTNERS LOGOS -->
 
@@ -807,59 +860,50 @@ permalink: /
         <div class="row mb-5 w-100 justify-content-center">
           <div class="image-container ">
             <img
-            
-            src="{{ site.baseurl }}/assets/img/partniori/univer.png"
-            alt="logo of our partners"
+              src="{{ site.baseurl }}/assets/img/partniori/univer.png"
+              alt="logo of our partners"
             />
           </div>
           <div class="image-container">
             <img
-            
-            src="{{ site.baseurl }}/assets/img/partniori/gmatic.png"
-            alt="logo of our partners"
+              src="{{ site.baseurl }}/assets/img/partniori/gmatic.png"
+              alt="logo of our partners"
             />
           </div>
           <div class="image-container">
             <img
-            
-            src="{{ site.baseurl }}/assets/img/partniori/mebra.png"
-            alt="logo of our partners"
+              src="{{ site.baseurl }}/assets/img/partniori/mebra.png"
+              alt="logo of our partners"
             />
           </div>
           <div class="image-container ">
             <img
-            
-            src="{{ site.baseurl }}/assets/img/partniori/fg line.png"
-            alt="logo of our partners"
+              src="{{ site.baseurl }}/assets/img/partniori/fg line.png"
+              alt="logo of our partners"
             />
           </div>
           <div class="image-container ">
             <img
-            
-            src="{{ site.baseurl }}/assets/img/partniori/valvole.png"
-            alt="logo of our partners"
+              src="{{ site.baseurl }}/assets/img/partniori/valvole.png"
+              alt="logo of our partners"
             />
           </div>
         </div>
         <div class="row w-100 justify-content-center">
-            
           <div class="image-container">
             <img
-              
               src="{{ site.baseurl }}/assets/img/partniori/sirca.png"
               alt="logo of our partners"
             />
           </div>
           <div class="image-container">
             <img
-              
               src="{{ site.baseurl }}/assets/img/partniori/dogus.png"
               alt="logo of out partners"
             />
           </div>
           <div class="image-container">
             <img
-              
               src="{{ site.baseurl }}/assets/img/partniori/turbo.png"
               alt="logo of out partners"
             />

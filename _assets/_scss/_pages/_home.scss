@@ -1,15 +1,31 @@
 /* HERE START THE STYLES FOR THE HOME PAGE */
-
-.banner {
-  background: url("../assets/img/home/glavna\ 1.jpg") center no-repeat;
-  background-size: cover;
-  height: 75vh;
-  margin-bottom: 0;
-  margin-top: 0;
-  @media screen and (min-width: 992px) {
-    margin-top: 4rem;
+.carousel-item {
+  position: relative;
+  .row {
+    max-width: 1440px;
+    margin: 0 auto;
+    // position: relative;
   }
 }
+.carousel-caption {
+  position: absolute;
+  top: -100%;
+  left: 0%;
+  right: 100%;
+  bottom: 0;
+  text-align: left;
+}
+
+// .banner {
+//   background: url("../assets/img/home/glavna\ 1.jpg") center no-repeat;
+//   background-size: cover;
+//   height: 75vh;
+//   margin-bottom: 0;
+//   margin-top: 0;
+//   @media screen and (min-width: 992px) {
+//     margin-top: 4rem;
+//   }
+// }
 
 /* STYLING THE SECTION WITH SERVICES */
 .services {
@@ -79,7 +95,7 @@
           display: inline-block;
           content: "";
           height: 3px;
-          width: 5rem;
+          width: 4.5rem;
           background: $white;
           position: absolute;
           top: 40%;
@@ -176,6 +192,7 @@
     background-image: linear-gradient(to bottom, $blue, $teal);
     z-index: -1;
     transition: opacity 200ms ease-in-out;
+
     opacity: 0;
   }
 
@@ -235,9 +252,16 @@
 
 .advantage-text {
   ul {
+    text-align: center;
     li {
       color: $gray-900;
-      flex-basis: 45%;
+      flex: 0 0 33%;
+      padding: 0 5.5rem;
+      border-right: 1px solid $gray-900;
+
+      &:last-child {
+        border-right: none;
+      }
       .image-ratio-container {
         position: relative;
         overflow: hidden;
@@ -258,24 +282,27 @@
         }
       }
 
-      h6 {
-        color: $black;
+      div {
+        // flex: 0 0 50%;
+        h6 {
+          color: $black;
 
-        font-family: "Acari Sans Bold", sans-serif;
+          font-family: "Acari Sans Bold", sans-serif;
+        }
       }
     }
   }
 }
 
-.advantage-image {
-  img {
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 7rem;
-    right: 0;
-  }
-}
+// .advantage-image {
+//   img {
+//     width: 50%;
+//     height: auto;
+//     position: absolute;
+//     top: 7rem;
+//     right: 0;
+//   }
+// }
 
 /* STYLING THE SECTION WITH THE NEWS ON THE MAIN PAGE*/
 
