@@ -1,5 +1,82 @@
-/* STYLES FOR THE CAROUSEL ON THE HOME PAGE */
+/* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
+.carousel-item {
+  position: relative;
+  .row {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
 
+  h1 {
+    font-family: "Axiforma Bold", sans-serif;
+    font-size: 3.8rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+    color: $white;
+    text-align: right;
+    font-family: "Axiforma Light", sans-serif;
+  }
+
+  ul {
+    padding-left: 0.5rem;
+    li {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.delivery,
+.production {
+  color: $teal;
+  font-family: "Axiforma Regular", sans-serif;
+  margin-bottom: 1.5rem;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 6rem;
+    height: 3px;
+    background-color: $white;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.carousel-control-prev {
+  left: 82%;
+  transform: rotateY(180deg);
+}
+.carousel-control-next {
+  right: -5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px;
+}
+
+.carousel-indicators {
+  li {
+    height: $carousel-indicator-width;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+
+  .active {
+    background-color: $teal;
+  }
+}
+
+/* HERE START THE STYLES FOR THE CAROUSEL WITH NEWS ARTICLES ON THE MAIN PAGE */
 .carousel-header {
   .tabs-item {
     align-self: flex-start;

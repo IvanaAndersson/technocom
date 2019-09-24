@@ -4,9 +4,8 @@
 @import "_modules/abstracts";
 @import "_modules/global";
 
-@import "_components/carousel";
 @import "_components/sub-nav";
-
+@import "_pages/home";
 @import "_pages/about";
 @import "_pages/contacts";
 @import "_pages/catalog-page";
@@ -54,5 +53,4 @@
 
 @import "_components/navigation";
 @import "_components/site-footer";
-
-@import "_pages/home";
+@import "_components/carousel";

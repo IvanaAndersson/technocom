@@ -1,61 +1,4 @@
 /* HERE START THE STYLES FOR THE HOME PAGE */
-.carousel-item {
-  position: relative;
-  .row {
-    max-width: 1440px;
-    margin: 0 auto;
-    // position: relative;
-  }
-}
-.carousel-caption {
-  position: absolute;
-  top: -100%;
-  left: 0%;
-  right: 100%;
-  bottom: 0;
-  text-align: left;
-}
-
-// .banner {
-//   background: url("../assets/img/home/glavna\ 1.jpg") center no-repeat;
-//   background-size: cover;
-//   height: 75vh;
-//   margin-bottom: 0;
-//   margin-top: 0;
-//   @media screen and (min-width: 992px) {
-//     margin-top: 4rem;
-//   }
-// }
-
-/* STYLING THE SECTION WITH SERVICES */
-.services {
-  position: relative;
-  background: linear-gradient(to right, $body-bg 50%, $blue 50%);
-
-  h2 {
-    font-family: "Axiforma Light", sans-serif;
-    position: absolute;
-    top: -7rem;
-    left: 1rem;
-    font-weight: 300;
-  }
-
-  ul {
-    padding: 2rem 0 1rem 1rem;
-  }
-
-  h5 {
-    font-family: "Axiforma Light", sans-serif;
-    position: absolute;
-    top: -2.5rem;
-    left: 1rem;
-    font-weight: 300;
-  }
-
-  li {
-    margin-bottom: 1rem;
-  }
-}
 
 /*STYLING THE SECTION WITH THE THREE MODULES, WHICH ACT AS A SECONDARY MENU ON THE FRONT PAGE */
 
@@ -282,30 +225,15 @@
         }
       }
 
-      div {
-        // flex: 0 0 50%;
-        h6 {
-          color: $black;
-
-          font-family: "Acari Sans Bold", sans-serif;
-        }
+      h6 {
+        color: $black;
+        font-family: "Acari Sans Bold", sans-serif;
       }
     }
   }
 }
 
-// .advantage-image {
-//   img {
-//     width: 50%;
-//     height: auto;
-//     position: absolute;
-//     top: 7rem;
-//     right: 0;
-//   }
-// }
-
-/* STYLING THE SECTION WITH THE NEWS ON THE MAIN PAGE*/
-
+/* STYLING THE SECTION WITH THE NEWS ARTICLES ON THE MAIN PAGE  */
 .news {
   min-height: 70vh;
   background: linear-gradient(to bottom, $body-bg 50%, $blue 50%, $blue 100%);
