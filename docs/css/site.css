@@ -9799,7 +9799,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .navbar-transparent-home-page .logo-container #head-logo-blue {
     display: none;
-    width: 100%;
   }
   .navbar-transparent-home-page:hover {
     background-color: #004456;
@@ -9809,7 +9808,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .navbar-transparent-home-page:hover .logo-container #head-logo-blue {
     display: block;
-    width: 100%;
   }
   .navbar-transparent-home-page:hover .logo-container #head-logo-white {
     display: none;
