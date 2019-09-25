@@ -9697,14 +9697,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .search-bar.dropdown {
-  max-width: 6rem;
-  background-color: #00a0ad;
+  max-width: 5rem;
 }
 
 .search-bar.dropdown a.btn {
   width: 100%;
   height: 100%;
-  background-color: #00a0ad;
   outline: none;
   border: none;
   cursor: pointer;
@@ -9787,6 +9785,53 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* NAVIGATION STYLES FOR SCREENS ABOVE 992px */
 @media screen and (min-width: 992px) {
+  .navbar-transparent-home-page {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  .navbar-transparent-home-page .logo-container {
+    background-color: rgba(244, 244, 244, 0);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  .navbar-transparent-home-page .logo-container #head-logo-white {
+    width: 17rem;
+  }
+  .navbar-transparent-home-page .logo-container #head-logo-blue {
+    display: none;
+    width: 100%;
+  }
+  .navbar-transparent-home-page:hover {
+    background-color: #004456;
+  }
+  .navbar-transparent-home-page:hover .logo-container {
+    background-color: #f4f4f4;
+  }
+  .navbar-transparent-home-page:hover .logo-container #head-logo-blue {
+    display: block;
+    width: 100%;
+  }
+  .navbar-transparent-home-page:hover .logo-container #head-logo-white {
+    display: none;
+  }
+  .navbar-transparent-home-page:hover .search-bar.dropdown a.btn {
+    background-color: #00a0ad;
+  }
+  .navbar-when-scrolled {
+    background-color: #004456;
+  }
+  .navbar-when-scrolled .logo-container {
+    background-color: #f4f4f4;
+  }
+  .navbar-when-scrolled .logo-container #head-logo-blue {
+    display: block;
+  }
+  .navbar-when-scrolled .logo-container #head-logo-white {
+    display: none;
+  }
+  .navbar-when-scrolled .search-bar.dropdown a.btn {
+    background-color: #00a0ad;
+  }
   .navbar-expand-lg {
     padding: 0;
     position: fixed;
@@ -9796,7 +9841,7 @@ a.text-dark:hover, a.text-dark:focus {
     z-index: 2000;
   }
   .navbar-expand-lg .logo-container {
-    max-width: 20rem;
+    max-width: 17rem;
   }
   .navbar-expand-lg .logo-container img {
     display: block;

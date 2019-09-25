@@ -55,14 +55,14 @@
   min-width: 100vw;
 }
 .search-bar.dropdown {
-  max-width: 6rem;
-  background-color: $teal;
+  max-width: 5rem;
+  // background-color: $teal;
 
   a.btn {
     width: 100%;
     height: 100%;
 
-    background-color: $teal;
+    // background-color: $teal;
     outline: none;
     border: none;
     cursor: pointer;
@@ -126,6 +126,70 @@
 /* NAVIGATION STYLES FOR SCREENS ABOVE 992px */
 
 @media screen and (min-width: 992px) {
+  //when on the main page, the menu is transparent and the logo is white
+  // when we scroll on main page, the menu becomes as normal
+  .navbar-transparent-home-page {
+    transition: all 300ms ease-in-out;
+    .logo-container {
+      background-color: rgba($body-bg, 0);
+      transition: all 300ms ease-in-out;
+
+      #head-logo-white {
+        width: 17rem;
+      }
+      #head-logo-blue {
+        display: none;
+        width: 100%;
+      }
+    }
+
+    //when we hover the transparent menu on the main page (when not scrolled) the menu should be as normal
+    &:hover {
+      background-color: $blue;
+
+      .logo-container {
+        background-color: rgba($body-bg, 1);
+
+        #head-logo-blue {
+          display: block;
+          width: 100%;
+        }
+
+        #head-logo-white {
+          display: none;
+        }
+      }
+
+      .search-bar.dropdown {
+        a.btn {
+          background-color: $teal;
+        }
+      }
+    }
+  }
+
+  .navbar-when-scrolled {
+    background-color: $blue;
+
+    .logo-container {
+      background-color: rgba($body-bg, 1);
+
+      #head-logo-blue {
+        display: block;
+      }
+
+      #head-logo-white {
+        display: none;
+      }
+    }
+
+    .search-bar.dropdown {
+      a.btn {
+        background-color: $teal;
+      }
+    }
+  }
+
   .navbar-expand-lg {
     padding: 0;
     position: fixed;
@@ -135,7 +199,8 @@
     z-index: 2000;
 
     .logo-container {
-      max-width: 20rem;
+      max-width: 17rem;
+
       img {
         display: block;
         margin: 0 auto;
