@@ -658,15 +658,15 @@
 
 <!-- Desktop Navbar visible over the large width breakpoint -->
 <nav 
-  class="navbar-expand-lg navbar-dark  p-0 d-none d-lg-block {% if page.title != 'Техноком Ко' %} bg-dark {% endif %}
+  class="navbar-expand-lg navbar-dark p-0 d-none d-lg-block w-100 {% if page.title != 'Техноком Ко' %} bg-dark {% endif %}
   {% if page.title == 'Техноком Ко' %} navbar-transparent-home-page {% endif %}" 
   id='navigation-desktop'>
   <!-- The class d-lg-block overrides the d-flex, so I put the content in another div --> 
-  <div class='d-flex align-content-stretch'>
+  <div class='row w-100 '>
 
-
+    
     <!-- Navbar brand -->
-    <span class="logo-container d-flex align-items-center px-3 mr-auto">
+    <span class="logo-container d-flex align-items-center col-2">
       <a class="navbar-brand text-uppercase" href="{{ site.baseurl }}/">
         <img class='{% if page.title != "Техноком Ко" %} d-none {% endif %}'
           id='head-logo-white'
@@ -681,7 +681,7 @@
     </span>
 
     <!-- Collapsible content -->
-    <div class="collapse navbar-collapse row no-gutters">
+    <div class="collapse navbar-collapse row justify-content-between col-9">
       <!-- Links -->
       <ul class="navbar-nav">
         <!-- Products menu -->
@@ -690,165 +690,170 @@
           href="{{ site.baseurl }}/products.html"
           >Продукти</a>
 
-          <div class='dropdown-main-menu bg-primary'>
-            <ul class="row no-gutters list-unstyled submenu-container">
-              <div class="hoverable col-sm-12 col-lg col-xl">
-                <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
-                  <a class="menu-item text-uppercase font-weight-bold py-3"
-                    href="{{ site.baseurl }}/products.html">Пневматика</a>
-                  <div class="dropdown-submenu-item w-100">
-                    <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="{{ site.baseurl }}/pneumatics/movement.html">
-                          Движение
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Управление
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Подготовка
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Свързване
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </div>
+          <div class='dropdown-main-menu bg-primary row'>
+            <div class="col-1"></div>
+            <div class="col-10">
+              <ul class="row no-gutters list-unstyled">
+                <div class="hoverable col-sm-12 col-lg">
+                  <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
+                    <a class="menu-item text-uppercase font-weight-bold py-3"
+                      href="{{ site.baseurl }}/products.html">Пневматика</a>
+                    <div class="dropdown-submenu-item w-100">
+                      <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="{{ site.baseurl }}/pneumatics/movement.html">
+                            Движение
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Управление
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Подготовка
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Свързване
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </div>
 
-              <div class="hoverable col-sm-12 col-lg col-xl">
-                <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
-                  <a class="menu-item text-uppercase font-weight-bold py-3"
-                  href='#'>
-                    Профили</a>
-                  <div class="dropdown-submenu-item w-100">
-                    <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Алуминиеви профили
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Съединения
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Аксесоари
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          LEAN системи
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </div>
+                <div class="hoverable col-sm-12 col-lg">
+                  <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
+                    <a class="menu-item text-uppercase font-weight-bold py-3"
+                    href='#'>
+                      Профили</a>
+                    <div class="dropdown-submenu-item w-100">
+                      <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Алуминиеви профили
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Съединения
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Аксесоари
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            LEAN системи
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </div>
 
-              <div class="hoverable col-sm-12 col-lg col-xl">
-                <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
-                  <a
-                    class="middle-submenu-item menu-item text-uppercase font-weight-bold py-3"
-                    href="#">Линейни задвижвания</a>
-                  <div class="dropdown-submenu-item w-100">
-                    <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Направляващи
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          СВД
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Зъбни рейки
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Модулни системи
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </div>
+                <div class="hoverable col-sm-12 col-lg">
+                  <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
+                    <a
+                      class="middle-submenu-item menu-item text-uppercase font-weight-bold py-3"
+                      href="#">Линейни задвижвания</a>
+                    <div class="dropdown-submenu-item w-100">
+                      <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Направляващи
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            СВД
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Зъбни рейки
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Модулни системи
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </div>
 
-              <div class="hoverable col-sm-12 col-lg col-xl">
-                <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
-                  <a class="menu-item text-uppercase font-weight-bold py-3"
-                    href="#">Арматура</a>
-                  <div class="dropdown-submenu-item w-100">
-                    <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Спирателна
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Регулираща
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Магнетвентили
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Санитарна
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </div>
+                <div class="hoverable col-sm-12 col-lg">
+                  <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
+                    <a class="menu-item text-uppercase font-weight-bold py-3"
+                      href="#">Арматура</a>
+                    <div class="dropdown-submenu-item w-100">
+                      <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Спирателна
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Регулираща
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Магнетвентили
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Санитарна
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </div>
 
-              <div class="hoverable col-sm-12 col-lg col-xl">
-                <li class="dropdown-submenu text-white pb-5 d-flex flex-column">
-                  <a class="menu-item text-uppercase font-weight-bold py-3"
-                    href="#">Вибратори</a>
-                  <div class="dropdown-submenu-item w-100">
-                    <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Пневматични
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Електрически
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          Аератори
-                        </a>
-                      </li>
-                      <li class="my-1 w-75">
-                        <a class="menu-item" href="#!">
-                          За бетон
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </div>
-            </ul>
+                <div class="hoverable col-sm-12 col-lg">
+                  <li class="dropdown-submenu text-white pb-5 d-flex flex-column">
+                    <a class="menu-item text-uppercase font-weight-bold py-3"
+                      href="#">Вибратори</a>
+                    <div class="dropdown-submenu-item w-100">
+                      <ul class="list-unstyled pt-2 w-75 mx-auto d-flex flex-column align-items-center">
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Пневматични
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Електрически
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            Аератори
+                          </a>
+                        </li>
+                        <li class="my-1 w-75">
+                          <a class="menu-item" href="#!">
+                            За бетон
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col-1"></div>
+            
           </div>
           
         </li>
@@ -860,9 +865,11 @@
             href="{{ site.baseurl }}/engineering.html"
             >Инженеринг</a>
 
-          <div class="dropdown-main-menu dropdown-engineering-menu bg-primary">
-            <ul class="row no-gutters list-unstyled submenu-container">
-              <div class="hoverable col-sm-12 col-lg col-xl ">
+          <div class="dropdown-main-menu dropdown-engineering-menu bg-primary row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <ul class="row no-gutters list-unstyled">
+              <div class="hoverable col-sm-12 col-lg">
                 <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-end">
                   <a class="menu-item text-uppercase font-weight-bold py-3"
                   href="{{ site.baseurl }}/engineering.html">Транспортни системи</a>
@@ -893,7 +900,7 @@
                 </li>
               </div>
 
-              <div class="hoverable col-sm-12 col-lg col-xl ">
+              <div class="hoverable col-sm-12 col-lg">
                 <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
                   <a class="middle-submenu-item menu-item text-uppercase font-weight-bold  py-3"
                   href="#">Индустриални работни места</a>
@@ -919,7 +926,7 @@
                 </li>
               </div>
 
-              <div class="hoverable col-sm-12 col-lg col-xl">
+              <div class="hoverable col-sm-12 col-lg">
                 <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center" >
                   <a
                     class="menu-item text-uppercase font-weight-bold py-3" 
@@ -940,7 +947,9 @@
                   </div>
                 </li>
               </div>
-            </ul>
+              </ul>
+            </div>
+            <div class="col-1"></div>
           </div>
         </li>
 
@@ -950,9 +959,11 @@
             Авто индустрия
           </a>
 
-          <div class="dropdown-main-menu dropdown-auto-menu bg-primary">
-            <ul class="row no-gutters list-unstyled submenu-container">
-              <div class="hoverable col-sm-12 col-lg col-xl">
+          <div class="dropdown-main-menu dropdown-auto-menu bg-primary row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <ul class="row no-gutters list-unstyled">
+              <div class="hoverable col-sm-12 col-lg">
                 <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-end">
                   <a class="menu-item text-uppercase font-weight-bold py-3"
                   href="#">Клампи</a>
@@ -998,7 +1009,7 @@
                 </li>
               </div>
 
-              <div class="hoverable col-sm-12 col-lg col-xl">
+              <div class="hoverable col-sm-12 col-lg">
                 <li class="dropdown-submenu  text-white pb-5 d-flex flex-column align-items-center">
                   <a class="middle-submenu-item menu-item text-uppercase font-weight-bold py-3"
                   href="#">GR8 модулна система</a>
@@ -1019,7 +1030,7 @@
                 </li>
               </div>
 
-              <div class="hoverable col-sm-12 col-lg col-xl">
+              <div class="hoverable col-sm-12 col-lg">
                 <li class="dropdown-submenu text-white pb-5 d-flex flex-column align-items-center">
                   <a class="menu-item text-uppercase font-weight-bold py-3"
                   href="#">Аксесоари</a>
@@ -1049,7 +1060,11 @@
                   </div>
                 </li>
               </div>
-            </ul>
+              </ul>
+
+            </div>
+            <div class="col-1"></div>
+            
           </div>
         </li>
 
@@ -1145,6 +1160,9 @@
       <!-- Search button -->
     </div>
     <!-- Collapsible content -->
+    
+    
+    <div class='col-1'></div>
   </div>
 </nav>
 <!-- Desktop Navbar -->

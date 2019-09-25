@@ -25,14 +25,6 @@ body {
   overflow-x: hidden;
 }
 
-.container-fluid {
-  width: 100%;
-  .row {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-}
-
 a {
   font-family: $font-family-base;
   text-decoration: none;

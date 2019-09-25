@@ -79,18 +79,13 @@
 }
 
 /* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
-.copyright-social {
+.footer-copyright {
   border-top: 1px solid $white;
-  font-size: 0.8rem;
-  display: grid;
-  grid-template-columns: 1fr 1440px 1fr;
-  grid-template-areas: "... copyright button-to-top";
-  justify-content: space-between;
+}
 
-  & > .row {
-    width: 1440px;
-    grid-area: copyright;
-  }
+.copyright-social {
+  font-size: 0.8rem;
+  border-right: 1px solid $white;
 
   .facebook,
   .linkedin {
@@ -108,13 +103,6 @@
 }
 
 .button-to-top {
-  grid-area: button-to-top;
-  display: inline-block;
-  // max-width: 5rem;
-  border-left: 1px solid $white;
-  justify-self: stretch;
-  align-self: stretch;
-
   span {
     display: none;
   }

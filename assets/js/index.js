@@ -17,7 +17,7 @@ window.addEventListener("scroll", event => {
   scrollDirection = window.scrollY > currentY ? "down" : "up";
   currentY = window.scrollY;
 
-  if (currentY > 5) {
+  if (currentY > 100) {
     myNav.classList.add("navbar-when-scrolled");
   } else {
     myNav.classList.remove("navbar-when-scrolled");
