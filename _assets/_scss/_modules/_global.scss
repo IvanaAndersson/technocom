@@ -37,7 +37,7 @@ a {
     font-size: 2rem;
     background: $color-gradient;
     min-height: 10rem;
-    margin-top: 5rem;
+    margin-top: 68px;
   }
 }
 
@@ -57,19 +57,19 @@ h6 {
 }
 .card-body {
   background-color: $card-bg;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 .card-title {
   font-size: 1.1rem;
   color: $teal;
   font-weight: bold;
-  transition: color 250ms ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 .card-text {
   color: $gray-900;
   font-weight: bold;
-  transition: color 250ms ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 .card-link:hover .card-body,

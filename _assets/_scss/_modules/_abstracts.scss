@@ -1,3 +1,14 @@
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 //// Select all children from the first to `$num`.
 // @group with-arguments
 // @content [Write the style you want to apply to the children, and it will be added within the @content directive]

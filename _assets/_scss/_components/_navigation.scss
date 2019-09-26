@@ -8,7 +8,7 @@
     background: $body-bg;
     // max-width: 15rem;
     img {
-      width: 80%;
+      width: 70%;
       height: auto;
     }
   }
@@ -55,13 +55,12 @@
   min-width: 100vw;
 }
 .search-bar.dropdown {
-  min-width: 5rem;
+  min-width: 4.3rem;
 
   a.btn {
     width: 100%;
     height: 100%;
     position: relative;
-
     outline: none;
     border: none;
     cursor: pointer;
@@ -73,7 +72,7 @@
     }
 
     img {
-      width: 40%;
+      width: 30%;
       height: auto;
       position: absolute;
       top: 50%;
@@ -85,8 +84,10 @@
       display: none;
     }
   }
+
+  // Toggling this class with JS
   .expanded {
-    padding: 2rem; // Toggling this class with JS
+    padding: 2rem;
     img {
       display: none;
     }
@@ -136,15 +137,17 @@
 @media screen and (min-width: 992px) {
   .navbar-expand-lg {
     padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2000;
 
     .navbar-brand {
       width: 100%;
-      margin-left: 2rem;
+      position: relative;
+    }
+
+    #head-logo-blue {
+      display: block;
+      width: 65%;
+      height: auto;
+      margin: 0 auto;
     }
 
     .navbar-nav {
@@ -172,15 +175,10 @@
       .dropdown-main-menu {
         position: fixed;
         transform: scale(1, 0);
-        transition: transform 200ms ease-in-out; // regulate the speed and the bezier curve of the drop down menu from here
+        transition: transform 300ms linear; // regulate the speed and the bezier curve of the drop down menu from here
         transform-origin: top;
-        top: 68px;
         border-bottom: 1px solid $teal;
-
-        @media screen and (min-width: 1200px) {
-          top: 80px;
-        }
-
+        top: 69px;
         left: 0;
         right: 0;
         z-index: 1000;
@@ -218,8 +216,8 @@
       .hoverable {
         border: none;
         height: 300px;
-        background: rgba($body-bg, 0);
-        transition: background 0.15s ease-in;
+        background-color: rgba($body-bg, 0);
+        transition: background-color 0.15s ease-in;
 
         .dropdown-submenu {
           padding-left: 0;
@@ -238,7 +236,7 @@
 
         &:hover,
         &:focus {
-          background: rgba($body-bg, 1);
+          background-color: rgba($body-bg, 1);
 
           & .menu-item {
             border: none;
@@ -270,14 +268,15 @@
 
   //when on the main page, the menu is transparent and the logo is white
   // when we scroll on main page, the menu becomes as normal
-  .navbar-transparent-home-page {
+  .navbar-transparent {
+    padding-top: 0.5rem;
     .navbar-brand {
-      position: relative;
+      margin-left: 2.7rem;
 
       &:before {
         display: block;
         content: "";
-        padding-top: 25%;
+        padding-top: 22%;
       }
       img {
         width: 100%;
@@ -287,13 +286,13 @@
         left: 50%;
       }
     }
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     .logo-container {
       background-color: rgba($body-bg, 0);
-      transition: all 0.4s ease-in-out;
+      transition: all 0.3s ease-in-out;
       #head-logo-blue {
         opacity: 0;
-        transition: opacity 0.15s ease 0.15s transform 0.4s ease-in;
+        transition: opacity 0.1s ease 0.5s transform 0.3s ease;
       }
       #head-logo-white {
         opacity: 1;
@@ -301,10 +300,11 @@
       }
     }
   }
-  //when we hover the transparent menu on the main page (when not scrolled) the menu should be as normal
 
-  .navbar-transparent-home-page:hover,
-  .navbar-when-scrolled {
+  //when we hover the transparent menu on the main page (when not scrolled) the menu should be as normal
+  // when the home page is scrolled, the menu should be as normal
+  .navbar-transparent:hover,
+  .home-page.navbar-when-scrolled {
     background-color: $blue;
 
     .logo-container {
@@ -312,9 +312,10 @@
 
       #head-logo-blue {
         opacity: 1;
-        top: 25%;
+        width: 100%;
+        top: 20%;
         left: 0;
-        transform: scale(0.85) translateY(-15%);
+        transform: scale(0.75) translate3d(0, -0.5rem, 2rem);
         transform-origin: bottom left;
       }
 
