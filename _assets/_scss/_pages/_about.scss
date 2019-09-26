@@ -1,7 +1,7 @@
 /* HERE START THE ABOUT PAGE */
 
 .about-main {
-  margin-top: 5.3rem;
+  margin-top: 4.3rem;
 
   h4 {
     font-family: "Axiforma Bold";
@@ -19,10 +19,11 @@
 }
 
 .mission {
-  position: relative;
+  // position: relative;
 
   .mission-text {
     margin-top: 10rem;
+    padding-right: 5rem;
 
     h2 {
       font-family: "Axiforma Bold";
@@ -36,11 +37,8 @@
 
   .mission-image {
     img {
-      width: auto;
-      max-height: 80vh;
-      position: absolute;
-      top: 0;
-      right: 0;
+      width: 100%;
+      max-height: 90vh;
     }
   }
 }
@@ -61,21 +59,23 @@
 
 /* STYLING THE BLOCKQUOTE */
 .quote {
-  width: 40%;
   margin: 15rem auto 10rem auto;
 
   blockquote {
+    width: 80%;
+    margin: 0 auto;
     position: relative;
 
     &:before {
       display: inline-block;
       content: '"';
-      font-size: 400px;
+      font-family: "Axiforma Bold";
+      font-size: 250px;
       font-weight: 100;
-      color: rgba(110, 110, 115, 0.4);
+      color: rgba($gray-900, 0.4);
       position: absolute;
-      top: -170%;
-      left: 30%;
+      top: -130%;
+      left: 40%;
     }
   }
 }
@@ -110,10 +110,15 @@
 
 .partners-cards {
   background: transparent;
+
+  .card {
+    // max-width: 23rem;
+    border: none;
+  }
 }
 
 .partners-card {
-  max-width: 20rem;
+  flex: 0 0 23%;
   margin: 0 1rem;
   padding: 2rem;
   background-color: $body-bg;
@@ -121,14 +126,27 @@
   flex-direction: column;
   justify-content: center;
 
-  img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem21;
+  .image-container {
+    position: relative;
+    margin-bottom: 2rem;
+    &:before {
+      display: block;
+      content: "";
+      padding-top: 50%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
+
   p {
     font-weight: bold;
     font-size: 0.9rem;
-    margin-top: auto;
   }
 }

@@ -215,7 +215,7 @@ h6 {
 }
 
 .card {
-  max-width: 20rem;
+  max-width: 22rem;
   height: 100%;
 }
 
@@ -733,7 +733,7 @@ h6 {
 
 /* HERE START THE ABOUT PAGE */
 .about-main {
-  margin-top: 5.3rem;
+  margin-top: 4.3rem;
 }
 
 .about-main h4 {
@@ -750,12 +750,9 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
-.mission {
-  position: relative;
-}
-
 .mission .mission-text {
   margin-top: 10rem;
+  padding-right: 5rem;
 }
 
 .mission .mission-text h2 {
@@ -768,11 +765,8 @@ h6 {
 }
 
 .mission .mission-image img {
-  width: auto;
-  max-height: 80vh;
-  position: absolute;
-  top: 0;
-  right: 0;
+  width: 100%;
+  max-height: 90vh;
 }
 
 .p-detail {
@@ -792,23 +786,25 @@ h6 {
 
 /* STYLING THE BLOCKQUOTE */
 .quote {
-  width: 40%;
   margin: 15rem auto 10rem auto;
 }
 
 .quote blockquote {
+  width: 80%;
+  margin: 0 auto;
   position: relative;
 }
 
 .quote blockquote:before {
   display: inline-block;
   content: '"';
-  font-size: 400px;
+  font-family: "Axiforma Bold";
+  font-size: 250px;
   font-weight: 100;
   color: rgba(110, 110, 115, 0.4);
   position: absolute;
-  top: -170%;
-  left: 30%;
+  top: -130%;
+  left: 40%;
 }
 
 .values-image {
@@ -846,8 +842,14 @@ h6 {
   background: transparent;
 }
 
+.partners-cards .card {
+  border: none;
+}
+
 .partners-card {
-  max-width: 20rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
   margin: 0 1rem;
   padding: 2rem;
   background-color: #f4f4f4;
@@ -863,16 +865,30 @@ h6 {
           justify-content: center;
 }
 
-.partners-card img {
+.partners-card .image-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.partners-card .image-container:before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
+.partners-card .image-container img {
   width: 100%;
   height: auto;
-  margin-bottom: 1rem21;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .partners-card p {
   font-weight: bold;
   font-size: 0.9rem;
-  margin-top: auto;
 }
 
 /* STYLES FOR THE CONTACT PAGE */
@@ -10062,6 +10078,19 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* STYLES FOR THE FOOTER, FOOTER IS THE SAME ON ALL PAGES */
+.footer-icon-container {
+  position: relative;
+}
+
+.footer-icon-container .footer-icon {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  margin-right: 1rem;
+}
+
 .site-footer {
   background-color: #004456;
   width: 100%;
@@ -10070,6 +10099,8 @@ a.text-dark:hover, a.text-dark:focus {
 .site-footer a {
   color: white;
   font-size: 0.8rem;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .site-footer a:hover, .site-footer a:focus {
@@ -10089,6 +10120,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .site-footer .companymail span {
   font-family: "Acari Sans Regular", sans-serif;
+}
+
+.site-footer .companymail .footer-icon {
+  height: 80%;
 }
 
 .logo {
@@ -10123,19 +10158,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 0.9rem;
 }
 
-.footer-icon-container {
-  position: relative;
-}
-
-.footer-icon-container .footer-icon {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: -2rem;
-  margin-right: 1rem;
-}
-
 /* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
 .footer-copyright {
   border-top: 1px solid white;
@@ -10158,16 +10180,32 @@ a.text-dark:hover, a.text-dark:focus {
   padding-left: 0.8rem;
 }
 
+.button-to-top {
+  display: block;
+  width: 2rem;
+  height: 1.5rem;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 1.2rem;
+  margin-top: 0.5rem;
+}
+
 .button-to-top span {
   display: none;
 }
 
-.button-to-top::before {
-  display: inline-block;
-  content: "\f106";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 1.5rem;
+.button-to-top svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.button-to-top .arrow-to-top {
+  fill: white;
 }
 
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */

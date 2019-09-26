@@ -1,4 +1,17 @@
 /* STYLES FOR THE FOOTER, FOOTER IS THE SAME ON ALL PAGES */
+
+.footer-icon-container {
+  position: relative;
+
+  .footer-icon {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    margin-right: 1rem;
+  }
+}
 .site-footer {
   background-color: $blue;
   width: 100%;
@@ -6,6 +19,7 @@
   & a {
     color: $white;
     font-size: 0.8rem;
+    transition: all 0.4s ease;
 
     &:hover,
     &:focus {
@@ -25,6 +39,10 @@
 
     span {
       font-family: "Acari Sans Regular", sans-serif;
+    }
+
+    .footer-icon {
+      height: 80%;
     }
   }
 }
@@ -65,19 +83,6 @@
   }
 }
 
-.footer-icon-container {
-  position: relative;
-
-  .footer-icon {
-    width: auto;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -2rem;
-    margin-right: 1rem;
-  }
-}
-
 /* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
 .footer-copyright {
   border-top: 1px solid $white;
@@ -103,15 +108,25 @@
 }
 
 .button-to-top {
+  display: block;
+  width: 2rem;
+  height: 1.5rem;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 1.2rem;
+  margin-top: 0.5rem;
   span {
     display: none;
   }
-
-  &::before {
-    display: inline-block;
-    content: "\f106";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 1.5rem;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  .arrow-to-top {
+    fill: $white;
   }
 }
