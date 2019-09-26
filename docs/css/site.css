@@ -253,7 +253,6 @@ h6 {
 }
 
 .breadcrumb-nav {
-  max-width: 1440px;
   margin: 0.5rem auto;
 }
 
@@ -269,6 +268,22 @@ h6 {
   color: #00a0ad;
   text-decoration: none;
   outline: none;
+}
+
+.breadcrumb-nav .breadcrumb-item:first-child a {
+  position: relative;
+}
+
+.breadcrumb-nav .breadcrumb-item:first-child a:before {
+  display: block;
+  content: "\f015";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #6e6e73;
+}
+
+.breadcrumb-nav .breadcrumb-item:first-child a:hover:before {
+  color: #00a0ad;
 }
 
 .carousel-header .breadcrumb-nav {
@@ -302,10 +317,13 @@ h6 {
   padding-left: 1rem;
 }
 
+.sub-nav-container {
+  border-bottom: 1px solid rgba(110, 110, 115, 0.5);
+}
+
 .sub-nav {
   width: 100%;
   min-height: 4rem;
-  border-bottom: 1px solid rgba(110, 110, 115, 0.5);
 }
 
 .sub-nav > ul {
@@ -990,7 +1008,7 @@ h6 {
 
 /* STYLING THE PAGES WITH MULTIPLE CATALOG ITEMS */
 .catalog-page .catalog-page-grid {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
   margin-bottom: 10rem;
 }
 

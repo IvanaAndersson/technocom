@@ -1,7 +1,9 @@
+.sub-nav-container {
+  border-bottom: 1px solid rgba($gray-900, 0.5);
+}
 .sub-nav {
   width: 100%;
   min-height: 4rem;
-  border-bottom: 1px solid rgba($gray-900, 0.5);
 
   & > ul {
     max-width: 1440px;

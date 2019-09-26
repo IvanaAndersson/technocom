@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<nav class="sub-nav d-flex justify-content-center aling-items-center">
-  <ul class="list-unstyled d-flex justify-content-center w-100 m-0">
-    {% assign sublist = site.news | sort: "order" %} {% for product in sublist
-    %}
-    <li
-      class="sub-nav-list h-100 px-5 d-flex
+<div class="sub-nav-container row no-gutters">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <nav class="sub-nav d-flex justify-content-center aling-items-center">
+      <ul class="list-unstyled d-flex justify-content-center w-100 m-0">
+        {% assign sublist = site.news | sort: "order" %} {% for product in
+        sublist %}
+        <li
+          class="sub-nav-list h-100 px-5 d-flex
         {% if page.url contains product.folder and product.order == 1 %}current-sub-item{% endif %}"
-    >
-      <a
-        href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
-        class="text-uppercase align-self-center"
-        >{{ product.subtitle }}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</nav>
-
+        >
+          <a
+            href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
+            class="text-uppercase align-self-center"
+            >{{ product.subtitle }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="col-1"></div>
+</div>
 {{ content }}
