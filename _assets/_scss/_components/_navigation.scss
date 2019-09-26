@@ -56,10 +56,10 @@
 }
 .search-bar.dropdown {
   min-width: 4.3rem;
-
   a.btn {
     width: 100%;
     height: 100%;
+    background: $teal;
     position: relative;
     outline: none;
     border: none;
@@ -172,38 +172,34 @@
         }
       }
 
+      .company-dropdown,
+      .news-dropdown,
       .dropdown-main-menu {
         position: fixed;
         transform: scale(1, 0);
-        transition: transform 300ms linear; // regulate the speed and the bezier curve of the drop down menu from here
+        transition: transform 0.45s cubic-bezier(0.2, 0.11, 0.66, 1.05); // regulate the speed and the bezier curve of the drop down menu from here
         transform-origin: top;
         border-bottom: 1px solid $teal;
         top: 69px;
         left: 0;
         right: 0;
         z-index: 1000;
+      }
 
-        &.company-dropdown {
-          left: 55%;
-          right: 28%;
-          @media screen and (min-width: 1440px) {
-            left: 48%;
-            right: 35%;
-          }
-        }
-
-        &.news-dropdown {
-          left: 65%;
-          right: 18%;
-          @media screen and (min-width: 1440px) {
-            left: 55%;
-            right: 28%;
-          }
-        }
+      .company-dropdown,
+      .news-dropdown {
+        width: 16rem;
+        position: absolute;
+        top: 115%;
+        left: -2rem;
       }
 
       .dropdown-main:hover .dropdown-main-menu,
-      .dropdown-main:focus .dropdown-main-menu {
+      .dropdown-main:hover .company-dropdown,
+      .dropdown-main:hover .news-dropdown,
+      .dropdown-main:focus .dropdown-main-menu,
+      .dropdown-main:focus .company-dropdown,
+      .dropdown-main:focus .news-dropdown {
         transform: scale(1, 1);
       }
 
@@ -217,7 +213,7 @@
         border: none;
         height: 300px;
         background-color: rgba($body-bg, 0);
-        transition: background-color 0.15s ease-in;
+        transition: background-color 0.4s ease-in;
 
         .dropdown-submenu {
           padding-left: 0;
@@ -270,6 +266,7 @@
   // when we scroll on main page, the menu becomes as normal
   .navbar-transparent {
     padding-top: 0.5rem;
+    transition: all 0.3s ease-in-out;
     .navbar-brand {
       margin-left: 2.7rem;
 
@@ -286,17 +283,24 @@
         left: 50%;
       }
     }
-    transition: all 0.3s ease-in-out;
+
     .logo-container {
       background-color: rgba($body-bg, 0);
       transition: all 0.3s ease-in-out;
       #head-logo-blue {
         opacity: 0;
-        transition: opacity 0.1s ease 0.5s transform 0.3s ease;
+        transition: opacity 0.1s ease-in, transform 0.5s ease-in;
       }
       #head-logo-white {
         opacity: 1;
+        transition: opacity 0.5s ease-in;
         transform: translate(-50%, -50%);
+      }
+    }
+
+    .search-bar.dropdown {
+      a.btn {
+        background-color: rgba($teal, 0);
       }
     }
   }
@@ -313,9 +317,9 @@
       #head-logo-blue {
         opacity: 1;
         width: 100%;
-        top: 20%;
+        top: 25%;
         left: 0;
-        transform: scale(0.75) translate3d(0, -0.5rem, 2rem);
+        transform: scale(0.75) translate3d(0, -0.75rem, 1rem);
         transform-origin: bottom left;
       }
 
@@ -326,7 +330,7 @@
 
     .search-bar.dropdown {
       a.btn {
-        background-color: $teal;
+        background-color: rgba($teal, 1);
       }
     }
   }

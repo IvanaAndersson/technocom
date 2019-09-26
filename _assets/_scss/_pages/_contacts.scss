@@ -2,9 +2,12 @@
 
 .contacts-header {
   background: $color-gradient;
-  min-height: 50vh;
+  min-height: 45vh;
   margin-top: 4.3rem;
 
+  h1 {
+    font-size: 2rem;
+  }
   h1,
   h2 {
     text-align: center;
@@ -12,11 +15,12 @@
   }
   h2 {
     color: $teal;
-    font-family: "Axiforma Light";
-    margin-bottom: 5rem;
+    font-family: "Axiforma Light", sans-serif;
+    margin-bottom: 4rem;
   }
   h5 {
-    margin-bottom: 2rem;
+    font-family: "Axiforma Semibold", sans-serif;
+    margin-bottom: 1.25rem;
   }
 
   .companymail {
@@ -30,13 +34,13 @@
 .contact-address,
 .office-contacts {
   border-right: 1px solid $white;
-  p {
-    margin-bottom: 0.5rem;
-  }
 }
 
-.tech-consultants {
+.tech-consultants,
+.contact-address,
+.office-contacts {
   p {
+    font-family: "Acari Sans SemiBold", sans-serif;
     margin-bottom: 0.5rem;
   }
 }
@@ -60,15 +64,13 @@
   color: $teal;
   line-height: 1.6;
   font-family: "Axiforma Light";
-  width: 40%;
-  margin: 5rem auto;
+  width: 60%;
+  margin: 3.5rem auto;
   text-align: center;
 }
 
 .contact-form {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 2rem 0 10rem 0;
+  padding: 1rem 4.5rem 8rem 4rem;
 
   input,
   textarea {

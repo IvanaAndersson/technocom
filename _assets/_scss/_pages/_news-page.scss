@@ -5,15 +5,27 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     .card-link {
-      flex: 0 0 23%;
+      flex: 0 0 23.4873%;
+      margin-left: 1.5rem;
       margin-bottom: 2rem;
 
-      @include each(5) {
-        margin-left: 0;
+      + .card-link {
+        margin-left: 1.5rem;
       }
+
+      // @include each(5) {
+      //   margin-left: 0;
+      // }
 
       .card {
         width: auto;
+
+        .card-body {
+          padding: 0.9rem;
+        }
+        .card-title {
+          margin: 0;
+        }
       }
     }
   }
@@ -46,7 +58,7 @@
 
 /* STYLES FOR THE PAGES WITH NEWS ARTICLES */
 .container-news-item {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 
   .carousel-item {
     min-height: 90vh;
@@ -54,6 +66,7 @@
 }
 .news-item {
   .news-item-title {
+    letter-spacing: 0.05rem;
     font-size: 1.3rem;
     color: $black;
     margin-bottom: 3rem;

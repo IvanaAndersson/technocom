@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <header  class='d-none'  class='site-header' id='top'>
+    <header  class='d-none'  class='site-header'>
       <!-- Mobile Navbar visible untill large width -->
 <nav
   class="navbar navbar-expand-lg navbar-dark bg-dark p-0 d-lg-none"
@@ -1095,7 +1095,7 @@
         <li class="nav-item dropdown-main mx-3">
           <a class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
           >Компанията</a>
-          <div class="dropdown-main-menu company-dropdown bg-primary">
+          <div class="company-dropdown bg-primary">
             <ul class="list-unstyled">
               <li class="px-5 py-2 border-bottom border-top">
                 <a
@@ -1122,7 +1122,7 @@
             href="/technocom/news/events.html">
             Новини
           </a>
-          <div class="dropdown-main-menu news-dropdown bg-primary">
+          <div class="news-dropdown bg-primary">
             <ul class="list-unstyled">
               <li class="border-bottom border-top px-5 py-2">
                 <a class="menu-item pl-0" href="/technocom/news/new-products.html">
@@ -2271,7 +2271,7 @@
         <li class="nav-item dropdown-main mx-3">
           <a class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
           >Компанията</a>
-          <div class="dropdown-main-menu company-dropdown bg-primary">
+          <div class="company-dropdown bg-primary">
             <ul class="list-unstyled">
               <li class="px-5 py-2 border-bottom border-top">
                 <a
@@ -2298,7 +2298,7 @@
             href="/technocom/news/events.html">
             Новини
           </a>
-          <div class="dropdown-main-menu news-dropdown bg-primary">
+          <div class="news-dropdown bg-primary">
             <ul class="list-unstyled">
               <li class="border-bottom border-top px-5 py-2">
                 <a class="menu-item pl-0" href="/technocom/news/new-products.html">
@@ -2374,35 +2374,35 @@
         </h1>
         <h2>Ние сме тук за Вас</h2>
         <div class="row no-gutters justify-content-between text-white w-100">
-          <div class="contact-address col-4 px-5 py-2 mb-5 text-center">
-            <h5 class="font-weight-bold text-white">ТЕХНОКОМ Ко ЕООД</h5>
+          <div class="contact-address col-4 px-5 mb-4 text-center">
+            <h5 class="text-white">ТЕХНОКОМ Ко ЕООД</h5>
             <p>Пловдив 4003, България</p>
             <p>бул. "Васил Левски" 214</p>
             <a
               href="https://goo.gl/maps/Qrr3QiFkkRmENNwP7"
-              class="map-link text-white"
+              class="map-link text-white mb-0"
               target="_blank"
               >КАРТА
             </a>
           </div>
-          <div class="office-contacts col-4 px-5 py-2 mb-5 text-center">
-            <h5 class="text-uppercase font-weight-bold text-white">Офис</h5>
-            <p class="font-weight-bold">+ 359 32 965 088</p>
-            <p class="font-weight-bold">+ 359 32 965 099</p>
+          <div class="office-contacts col-4 px-5 mb-4 text-center">
+            <h5 class="text-uppercase text-white">Офис</h5>
+            <p>+ 359 32 965 088</p>
+            <p>+ 359 32 965 099</p>
             <a
               href="mailto:ivana.p.kostova@gmail.com"
-              class="companymail text-white"
+              class="companymail text-white mb-0"
               >info@technocom.bg
             </a>
           </div>
-          <div class="tech-consultants col-4 px-5 py-2 mb-5 text-center">
-            <h5 class="text-uppercase font-weight-bold text-white">
+          <div class="tech-consultants col-4 px-5 mb-4 text-center">
+            <h5 class="text-uppercase text-white">
               Технически Консултанти
             </h5>
-            <p class="font-weight-bold">+ 359 888 332 968</p>
-            <p class="font-weight-bold">+ 359 879 497 035</p>
-            <p class="font-weight-bold">+ 359 894 530 453</p>
-            <p class="font-weight-bold">+ 359 888 221 437</p>
+            <p>+ 359 888 332 968</p>
+            <p>+ 359 879 497 035</p>
+            <p>+ 359 894 530 453</p>
+            <p class="mb-0">+ 359 888 221 437</p>
           </div>
         </div>
       </div>
@@ -2420,10 +2420,11 @@
           Нашите консултанти очакват запитванията Ви,<br />
           за да получите бърз и професионален отговор.
         </h5>
-        <form>
+        <form action="POST" autocomplete="on">
           <div class="form-group">
             <input
               type="text"
+              name="customer-name"
               class="form-control"
               id="formGroupExampleInput"
               placeholder="Име"
@@ -2433,6 +2434,7 @@
           <div class="form-group">
             <input
               type="email"
+              name="customer-email"
               class="form-control"
               id="formGroupExampleInput2"
               placeholder="Имейл"
@@ -2442,6 +2444,7 @@
           <div class="form-group">
             <input
               type="tel"
+              name="customer-phone"
               class="form-control"
               id="formGroupExampleInput3"
               placeholder="Телефон"
@@ -2451,6 +2454,7 @@
           <div class="form-group">
             <input
               type="text"
+              name="message-subject"
               class="form-control"
               id="formGroupExampleInput4"
               placeholder="Тема"
@@ -2460,9 +2464,10 @@
           <div class="form-group">
             <textarea
               type="text"
+              name="message-body"
               class="form-control"
               id="formGroupExampleInput4"
-              placeholder="ВАШЕТО СЪОБЩЕНИЕ"
+              placeholder="Вашето съобщение"
               rows="10"
               required
             ></textarea>

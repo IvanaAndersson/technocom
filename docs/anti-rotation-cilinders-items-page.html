@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <header  class='site-header' id='top'>
+    <header  class='site-header'>
       <!-- Mobile Navbar visible untill large width -->
 <nav
   class="navbar navbar-expand-lg navbar-dark bg-dark p-0 d-lg-none"
@@ -1095,7 +1095,7 @@
         <li class="nav-item dropdown-main mx-3">
           <a class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
           >Компанията</a>
-          <div class="dropdown-main-menu company-dropdown bg-primary">
+          <div class="company-dropdown bg-primary">
             <ul class="list-unstyled">
               <li class="px-5 py-2 border-bottom border-top">
                 <a
@@ -1122,7 +1122,7 @@
             href="/technocom/news/events.html">
             Новини
           </a>
-          <div class="dropdown-main-menu news-dropdown bg-primary">
+          <div class="news-dropdown bg-primary">
             <ul class="list-unstyled">
               <li class="border-bottom border-top px-5 py-2">
                 <a class="menu-item pl-0" href="/technocom/news/new-products.html">
@@ -1258,7 +1258,9 @@
 
 <main class="catalog-page">
   <div class="container-fluid container-catalog-item">
-  <div
+  <div class="row no-gutters">
+    <div class="col-1"></div>
+    <div class="col-10"><div
     class="carousel-header mb-5 row no-gutters justify-content-between align-items-center"
   >
     <nav class="breadcrumb-nav" aria-label="breadcrumb">
@@ -1557,7 +1559,7 @@
                   <span>Свали техническа информация</span>
                 </a>
               </div>
-              <form class="d-flex align-items-center">
+              <form action="POST" autocomplete="on" class="d-flex align-items-center">
                 <span class="download-image align-self-start">
                   <img
                     src="/technocom/assets/img/products/3d icon.png"
@@ -1568,7 +1570,7 @@
                   <span>Свали 3D модел</span>
                   <span
                     >За да получите линк за сваляне на 3D модела, моля, <br />
-                    попълнете валиден имейл адрес в полето по-долу
+                    попълнете валиден имейл адрес в полето по-долу.
                   </span>
                   <div class="input-group">
                     <input type="email" placeholder="E-mail" />
@@ -1615,7 +1617,10 @@
       <span>M1000100025</span>
       <span>M1000100025</span>
     </div>
-  </section>
+  </section></div>
+    <div class="col-1"></div>
+  </div>
+  
 </div>
 
 </main>
