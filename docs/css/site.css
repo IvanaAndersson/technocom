@@ -279,7 +279,7 @@ h6 {
 /* STYLING THE PRIVACY POLICY HEADINGS AND TEXT */
 .privacy-policy h4 {
   position: relative;
-  margin-bottom: 2rem;
+  margin: 2.5rem 0;
 }
 
 .privacy-policy h4:before {
@@ -605,8 +605,8 @@ h6 {
 .products:hover .product-picture img,
 .engineering:hover .product-picture img,
 .auto-industry:hover .product-picture img {
-  -webkit-transform: translateY(-5rem) scale(1.1);
-          transform: translateY(-5rem) scale(1.1);
+  -webkit-transform: translateY(-5rem) scale(1.2);
+          transform: translateY(-5rem) scale(1.2);
 }
 
 .products:hover ul,
@@ -896,7 +896,7 @@ h6 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #004456), to(#00a0ad));
   background: linear-gradient(to bottom, #004456 50%, #00a0ad 100%);
   min-height: 50vh;
-  margin-top: 5rem;
+  margin-top: 4.3rem;
 }
 
 .contacts-header h1,
