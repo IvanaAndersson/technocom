@@ -33,10 +33,19 @@
     font-size: 1rem;
     font-family: "Acari Sans Bold", sans-serif;
   }
+}
+
+.logo {
+  max-height: 12.7rem;
+
+  img {
+    width: 50%;
+    height: auto;
+  }
 
   .companymail {
     font-size: 1.1rem;
-
+    margin-left: 2rem;
     span {
       font-family: "Acari Sans Regular", sans-serif;
     }
@@ -47,12 +56,9 @@
   }
 }
 
-.logo {
-  max-height: 10rem;
-
-  img {
-    width: auto;
-    height: 100%;
+.footer-nav {
+  li {
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -60,12 +66,16 @@
   p,
   .company-name {
     font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 0;
   }
 }
 .written-address {
   .company-name {
     font-family: "Acari Sans Bold", sans-serif;
+    margin-bottom: 1.5rem;
   }
 }
 .contacts {
@@ -91,9 +101,25 @@
 .copyright-social {
   font-size: 0.8rem;
   border-right: 1px solid $white;
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    padding-top: 1%;
+  }
+
+  .bulgarian-flag {
+    width: auto;
+    height: 30%;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+  }
 }
 
 .copyright {
+  margin-left: 2.5rem;
   .menu-item {
     border-left: 1px solid $white;
     margin-left: 0.8rem;
@@ -104,6 +130,7 @@
 .social-media {
   margin-right: 2.5rem;
   .menu-item {
+    position: relative;
     &::before {
       display: inline-block;
       content: "";
@@ -119,6 +146,9 @@
 
     &.fa-linkedin::before {
       content: "\f0e1";
+      position: absolute;
+      top: -0.7rem;
+      left: 0;
     }
 
     &:hover::before {
@@ -135,8 +165,8 @@
   outline: none;
   cursor: pointer;
   position: relative;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 0.75rem;
+  margin-top: 0.9rem;
   span {
     display: none;
   }

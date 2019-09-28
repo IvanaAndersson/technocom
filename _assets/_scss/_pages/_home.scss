@@ -126,10 +126,10 @@
     &:after {
       display: block;
       content: "";
-      padding-top: 55%;
+      padding-top: 38%;
 
       @media screen and (min-width: 1600px) {
-        padding-top: 60%;
+        padding-top: 43%;
       }
     }
 
@@ -213,20 +213,23 @@
       padding: 0 5rem;
 
       @media screen and (max-width: 1690px) {
-        padding: 0 4rem;
+        padding: 0 3.2rem;
       }
       @media screen and (max-width: 1550px) {
-        padding: 0 3rem;
+        padding: 0 2.5rem;
       }
       @media screen and (max-width: 1470px) {
-        padding: 0 2.5rem;
+        padding: 0 1.5rem;
+      }
+      @media screen and (max-width: 1350px) {
+        padding: 0 1rem;
       }
       &:after {
         display: block;
         content: "";
-        width: 1px;
+        width: 0.05rem;
         height: 12rem;
-        background-color: $gray-900;
+        background-color: $lines;
         position: absolute;
         right: 0;
         bottom: 1.5rem;
@@ -268,11 +271,18 @@
 
 /* STYLING THE SECTION WITH THE NEWS ARTICLES ON THE MAIN PAGE  */
 .news {
-  height: 600px;
-  background: linear-gradient(to bottom, $body-bg 54%, $blue 54%, $blue 100%);
-
+  min-height: 60vh;
+  background: linear-gradient(to bottom, $body-bg 50%, $blue 50%, $blue 100%);
   h3 {
     margin-bottom: 2rem;
+  }
+  @media screen and (min-width: 1600px) {
+    min-height: 65vh;
+
+    .carousel-products,
+    .carousel-events {
+      min-height: 45vh;
+    }
   }
 }
 
@@ -291,7 +301,7 @@
     }
 
     img {
-      width: 80%;
+      width: 65%;
       height: auto;
       position: absolute;
       top: 50%;
@@ -304,32 +314,27 @@
     .image-container {
       flex: 0 0 20%;
 
-      &:first-child {
+      &:first-child,
+      &:nth-child(4) {
         img {
-          width: 90%;
-        }
-      }
-
-      &:last-child {
-        img {
-          width: 75%;
+          width: 72%;
         }
       }
     }
   }
   .second-row {
     .image-container {
-      flex: 0 0 21%;
+      flex: 0 0 22.5%;
 
       &:first-child {
         img {
-          width: 60%;
+          width: 55%;
         }
       }
 
       &:nth-child(2) {
         img {
-          width: 95%;
+          width: 85%;
         }
       }
     }

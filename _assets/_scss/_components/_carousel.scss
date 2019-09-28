@@ -1,8 +1,24 @@
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
+#carouselFade {
+  max-height: 85vh;
 
+  .carousel-inner {
+    width: auto;
+    height: 85vh;
+
+    .carousel-item {
+      height: 100%;
+
+      & > img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
 .carousel-caption {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -182,7 +198,7 @@
 .carousel-products,
 .carousel-events {
   width: 100%;
-  height: 400px;
+  min-height: 40vh;
   margin: 0 auto;
 
   .carousel-indicators {
@@ -191,15 +207,6 @@
 
   .card-link {
     margin-left: 0;
-
-    .card {
-      height: 340px;
-
-      .embed-responsive,
-      .card-body {
-        height: 50%;
-      }
-    }
   }
 
   @media screen and (max-width: 1600px) {

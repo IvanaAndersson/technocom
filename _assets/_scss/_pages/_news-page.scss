@@ -5,7 +5,7 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     .card-link {
-      flex: 0 0 23%;
+      flex: 0 0 23.25%;
 
       margin-left: 1.5rem;
       margin-bottom: 1.5rem;
@@ -29,12 +29,30 @@
         }
       }
 
+      @media screen and (max-width: 1662px) {
+        flex: 0 0 23.2%;
+      }
+      @media screen and (max-width: 1617px) {
+        flex: 0 0 23.18%;
+      }
+      @media screen and (max-width: 1600px) {
+        flex: 0 0 23.15%;
+      }
+      @media screen and (max-width: 1575px) {
+        flex: 0 0 23.1%;
+      }
+      @media screen and (max-width: 1525px) {
+        flex: 0 0 23%;
+      }
       @media screen and (max-width: 1457px) {
-        flex: 0 0 22%;
+        flex: 0 0 22.9%;
         .card-title,
         .card-text {
           font-size: 0.9rem;
         }
+      }
+      @media screen and (max-width: 1390px) {
+        flex: 0 0 22.75%;
       }
     }
   }
