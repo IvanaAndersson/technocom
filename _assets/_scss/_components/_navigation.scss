@@ -50,12 +50,10 @@
   }
 }
 
-/* SEARCH BUTTON AND SEARCH FIELD */
-.dropdown-menu {
-  min-width: 100vw;
-}
-.search-bar.dropdown {
+.search-bar {
   min-width: 4.3rem;
+  position: relative;
+
   a.btn {
     width: 100%;
     height: 100%;
@@ -64,56 +62,91 @@
     outline: none;
     border: none;
     cursor: pointer;
-
-    &::before {
-      display: block;
-      content: "";
-      padding-top: 100%;
-    }
-
-    img {
-      width: 30%;
-      height: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    span {
-      display: none;
-    }
   }
 
-  // Toggling this class with JS
-  .expanded {
-    padding: 2rem;
-    img {
-      display: none;
-    }
-    &:before {
-      display: inline-block;
-      content: "\f00d";
-      color: $white;
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      font-size: 1rem;
-    }
+  .search-button {
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .search-button::before {
+    content: "";
+    position: absolute;
+    top: 22.5%;
+    right: 23.5%;
+    width: 0;
+    height: 3px;
+    margin-top: -2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    transform-origin: right top;
+  }
+  .search-button::after {
+    content: "";
+    position: absolute;
+    bottom: 22.5%;
+    right: 23.5%;
+    width: 25%;
+    height: 3px;
+    margin-top: -2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+  }
+
+  .search-icon {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 20%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ffffff;
+  }
+  .search-button.active::before,
+  .search-button.active::after {
+    width: 77.5%;
+  }
+  .search-button.active .search-icon {
+    width: 0;
+    height: 0;
+    border-color: transparent;
+  }
+  .search-button::before,
+  .search-button::after,
+  .search-button .search-icon {
+    transition: all 0.3s ease-in-out;
   }
 
   .search-bar-hidden {
+    transform: scale(0, 1);
+    transition: transform 0.45s ease-in;
+    transform-origin: right;
+    position: fixed;
+    top: 69px;
+    left: 0;
+    right: 0;
     background-color: $teal;
-
     form {
-      min-height: 5rem;
+      min-height: 10rem;
 
-      span {
-        width: 90%;
+      .input-group {
+        width: 100%;
         border-bottom: 1px solid $white;
 
         input[type="text"] {
+          width: 80%;
           color: $white;
           outline: none;
+          border: none;
           font-family: "Axiforma Light";
           font-size: 1.7rem;
 
@@ -123,12 +156,32 @@
             color: rgba(255, 255, 255, 0.5);
           }
         }
-
-        .fa-search {
-          font-size: 1.2rem;
+      }
+      .input-group-append {
+        width: 10%;
+        button[type="submit"] {
+          position: relative;
+          right: 22px;
+          &:before {
+            display: block;
+            content: "";
+            padding-top: 50%;
+          }
+          img {
+            width: 130%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
       }
     }
+  }
+
+  .search-bar-shown {
+    transform: scale(1, 1);
   }
 }
 
@@ -176,13 +229,13 @@
       .news-dropdown,
       .dropdown-main-menu {
         position: fixed;
-        transform: scale(1, 0);
-        transition: transform 0.45s cubic-bezier(0.2, 0.11, 0.66, 1.05); // regulate the speed and the bezier curve of the drop down menu from here
-        transform-origin: top;
-        border-bottom: 1px solid $teal;
         top: 69px;
         left: 0;
         right: 0;
+        transform: rotateX(90deg);
+        transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); // regulate the speed and the bezier curve of the drop down menu from here
+        transform-origin: top;
+        border-bottom: 2px solid $teal;
         z-index: 1000;
       }
 
@@ -200,7 +253,7 @@
       .dropdown-main:focus .dropdown-main-menu,
       .dropdown-main:focus .company-dropdown,
       .dropdown-main:focus .news-dropdown {
-        transform: scale(1, 1);
+        transform: rotateX(0);
       }
 
       .dropdown-main:hover > a,
@@ -213,7 +266,7 @@
         border: none;
         height: 300px;
         background-color: rgba($body-bg, 0);
-        transition: background-color 0.4s ease-in;
+        transition: background-color 0.3s ease-in;
 
         .dropdown-submenu {
           padding-left: 0;
@@ -266,17 +319,17 @@
   // when we scroll on main page, the menu becomes as normal
   .navbar-transparent {
     padding-top: 0.5rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in;
     .navbar-brand {
       margin-left: 2.7rem;
 
       &:before {
         display: block;
         content: "";
-        padding-top: 22%;
+        padding-top: 25%;
       }
       img {
-        width: 100%;
+        width: 110%;
         height: auto;
         position: absolute;
         top: 50%;
@@ -286,19 +339,22 @@
 
     .logo-container {
       background-color: rgba($body-bg, 0);
-      transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in;
       #head-logo-blue {
         opacity: 0;
-        transition: opacity 0.1s ease-in, transform 0.5s ease-in;
+        width: 110%;
+        transform: scale(1) translate3d(-50%, -50%, 0);
+        transform-origin: top left;
+        transition: opacity 0.1s ease-in, transform 0.3s ease-in 0.05s;
       }
       #head-logo-white {
         opacity: 1;
-        transition: opacity 0.5s ease-in;
+        transition: opacity 0.1s ease-in;
         transform: translate(-50%, -50%);
       }
     }
 
-    .search-bar.dropdown {
+    .search-bar {
       a.btn {
         background-color: rgba($teal, 0);
       }
@@ -308,7 +364,8 @@
   //when we hover the transparent menu on the main page (when not scrolled) the menu should be as normal
   // when the home page is scrolled, the menu should be as normal
   .navbar-transparent:hover,
-  .home-page.navbar-when-scrolled {
+  .home-page.navbar-when-scrolled,
+  .home-page.navbar-search-clicked {
     background-color: $blue;
 
     .logo-container {
@@ -316,11 +373,9 @@
 
       #head-logo-blue {
         opacity: 1;
-        width: 100%;
-        top: 25%;
-        left: 0;
-        transform: scale(0.75) translate3d(0, -0.75rem, 1rem);
-        transform-origin: bottom left;
+        width: 110%;
+        transform: scale(0.8) translate3d(-60%, -50%, 0);
+        transform-origin: top left;
       }
 
       #head-logo-white {
@@ -328,7 +383,13 @@
       }
     }
 
-    .search-bar.dropdown {
+    .dropdown-main-menu {
+      @media screen and (min-width: 1700px) {
+        top: 74px;
+      }
+    }
+
+    .search-bar {
       a.btn {
         background-color: rgba($teal, 1);
       }
@@ -337,12 +398,12 @@
 
   // SEARCH BUTTON AND SEARCH FIELD ON DESKTOP
 
-  .search-bar.dropdown {
+  .search-bar {
     position: static;
 
     .search-bar-hidden {
       form {
-        min-height: 10rem;
+        min-height: 15rem;
       }
     }
   }

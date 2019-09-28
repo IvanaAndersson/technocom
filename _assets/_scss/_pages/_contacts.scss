@@ -24,6 +24,7 @@
   }
 
   .companymail {
+    font-size: 1.1rem;
     display: block;
     width: 50%;
     margin: 0 auto;
@@ -72,6 +73,15 @@
 .contact-form {
   padding: 1rem 4.5rem 8rem 4rem;
 
+  input {
+    color: $teal;
+  }
+
+  textarea:focus,
+  input:focus {
+    color: $teal;
+  }
+
   input,
   textarea {
     background: transparent;
@@ -82,6 +92,7 @@
   }
 
   textarea {
+    color: $teal;
     resize: none;
     border-left: 1px solid $gray-900;
   }

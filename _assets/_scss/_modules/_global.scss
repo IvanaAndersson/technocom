@@ -52,7 +52,7 @@ h6 {
 // OVERRIDING THE CARDS STYLES FROM BOOTSTRAP
 
 .card {
-  max-width: 22rem;
+  // max-width: 20rem;
   height: 100%;
 }
 .card-body {
@@ -67,6 +67,7 @@ h6 {
 }
 
 .card-text {
+  font-size: 1.1rem;
   color: $gray-900;
   font-weight: bold;
   transition: color 0.4s ease-in-out;
@@ -92,6 +93,7 @@ h6 {
   .breadcrumb {
     padding: 0.5rem 0;
     margin-bottom: 0;
+    align-items: center;
   }
   a {
     color: $gray-900;
@@ -114,6 +116,8 @@ h6 {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         color: $gray-900;
+        position: relative;
+        top: -3px;
       }
 
       &:hover:before {

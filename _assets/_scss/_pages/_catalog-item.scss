@@ -91,6 +91,10 @@
       padding-left: 0.7rem;
     }
 
+    input:focus {
+      color: $teal;
+    }
+
     button {
       background-color: $teal;
       color: $white;

@@ -1,7 +1,5 @@
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
-.carousel-item {
-  position: relative;
-}
+
 .carousel-caption {
   position: absolute;
   top: 30%;
@@ -184,37 +182,21 @@
 .carousel-products,
 .carousel-events {
   width: 100%;
-  height: 50vh;
+  height: 400px;
+  margin: 0 auto;
+
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+
+  .card-link {
+    margin-left: 0;
+  }
 
   @media screen and (max-width: 1600px) {
-    height: 60vh;
-  }
-  margin: 0 auto;
-  position: relative;
-
-  .carousel-track-container {
-    width: 100%;
-    height: 90%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-
-    .carousel-inner {
-      height: 100%;
-      position: relative;
-      transition: transform 250ms ease-in;
-
-      .carousel-item {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        @media screen and (min-width: 1600px) {
-          .card {
-            max-width: 23rem;
-          }
-        }
-      }
+    .card-title,
+    .card-text {
+      font-size: 1rem;
     }
   }
 }

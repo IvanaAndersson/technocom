@@ -35,7 +35,7 @@
   }
 
   .companymail {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 
     span {
       font-family: "Acari Sans Regular", sans-serif;
@@ -91,12 +91,6 @@
 .copyright-social {
   font-size: 0.8rem;
   border-right: 1px solid $white;
-
-  .facebook,
-  .linkedin {
-    opacity: 0;
-    pointer-events: none;
-  }
 }
 
 .copyright {
@@ -107,16 +101,42 @@
   }
 }
 
+.social-media {
+  margin-right: 2.5rem;
+  .menu-item {
+    &::before {
+      display: inline-block;
+      content: "";
+      font-family: "Font Awesome 5 Brands";
+      font-size: 1.1rem;
+      color: $white;
+    }
+
+    &.fa-facebook::before {
+      content: "\f39e";
+      margin-right: 2rem;
+    }
+
+    &.fa-linkedin::before {
+      content: "\f0e1";
+    }
+
+    &:hover::before {
+      color: $teal;
+    }
+  }
+}
+
 .button-to-top {
   display: block;
-  width: 2rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
   border: 0;
   outline: none;
   cursor: pointer;
   position: relative;
-  padding: 1.2rem;
-  margin-top: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
   span {
     display: none;
   }

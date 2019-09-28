@@ -5,9 +5,10 @@
     margin-top: 5rem;
     margin-bottom: 5rem;
     .card-link {
-      flex: 0 0 23.4873%;
+      flex: 0 0 23%;
+
       margin-left: 1.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
 
       + .card-link {
         margin-left: 1.5rem;
@@ -27,6 +28,14 @@
           margin: 0;
         }
       }
+
+      @media screen and (max-width: 1457px) {
+        flex: 0 0 22%;
+        .card-title,
+        .card-text {
+          font-size: 0.9rem;
+        }
+      }
     }
   }
 }
@@ -35,7 +44,7 @@
 .see-all-news {
   position: relative;
   margin-left: 2rem;
-  color: $gray-900;
+  color: $black;
   &:hover,
   &:focus {
     color: $teal;
@@ -66,7 +75,7 @@
 }
 .news-item {
   .news-item-title {
-    letter-spacing: 0.05rem;
+    line-height: 1.7;
     font-size: 1.3rem;
     color: $black;
     margin-bottom: 3rem;
@@ -86,9 +95,6 @@
   }
   .social-media-list {
     .menu-item {
-      span {
-        display: none;
-      }
       &::before {
         display: inline-block;
         content: "";
@@ -111,6 +117,10 @@
       &.fa-linkedin::before {
         content: "\f0e1";
         background: #0077b5;
+      }
+
+      &:hover:before {
+        text-decoration: none;
       }
     }
   }

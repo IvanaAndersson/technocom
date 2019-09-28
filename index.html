@@ -310,9 +310,9 @@ permalink: /
         <div class="col-1"></div>
         <div class="col-10">
           <h3>Предимства</h3>
-          <ul class="list-unstyled d-flex justify-content-between"
+          <ul class="list-unstyled row justify-content-between"
         >
-          <li class="d-flex flex-column" data-aos="fade-up">
+          <li class="col-4 d-flex flex-column" data-aos="fade-up">
             <div class="image-ratio-container">
               <img
                 src="{{ site.baseurl }}/assets/img/home/icon 2.png"
@@ -327,7 +327,7 @@ permalink: /
               технически решения на разумни цени.
             </div>
           </li>
-          <li class="d-flex flex-column" data-aos="fade-up"
+          <li class="col-4 d-flex flex-column" data-aos="fade-up"
           data-aos-delay="250">
             <div class="image-ratio-container">
               <img
@@ -344,7 +344,7 @@ permalink: /
               </p>
             </div>
           </li>
-          <li class="d-flex flex-column" data-aos="fade-up"
+          <li class="col-4 d-flex flex-column" data-aos="fade-up"
           data-aos-delay="500">
             <div class="image-ratio-container">
               <img
@@ -372,7 +372,7 @@ permalink: /
         
       <div class='row'>
         <div class="col-1"></div>
-        <div class="col-10">
+        <div class="col-10 d-flex flex-column">
           <h3>Новини</h3>
           <div
             class="carousel-header d-flex justify-content-between align-items-center"
@@ -438,12 +438,97 @@ permalink: /
               </a>
             </ul>
           </div>
-          <div class="carousel slide carousel-products carousel-active" id='carouselProducts' data-ride="carousel">
-            <div class="carousel-track-container">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row no-gutters justify-content-between">
-                    <a href='{{ site.baseurl }}/news-item-page.html' class='card-link'>
+          <div class="carousel slide carousel-products mt-auto" id='carouselProducts' data-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row no-gutters">
+                  <a href='{{ site.baseurl }}/news-item-page.html' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <img
+                          class="card-img-top img-fluid embed-responsive-item"
+                          src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
+                          alt="image from an event"
+                        />
+                      </div>
+                      <div class="card-body">
+                        
+                        <p class="card-title">
+                          02.07.2019
+                        </p>
+                        <p class="card-text">
+                          Техноком Ко с поредно участие на MachTech & InnoTech 2019
+                        </p>
+                      
+                      </div>
+                    </div>
+                  </a>
+                  <a href='{{ site.baseurl }}/news-item-page.html' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко проведе поредния си семинар, на който бяха
+                        представени продукти на VESTA
+                      </p>
+                    </div>
+                    </div>
+                  </a>
+                  <a href='{{ site.baseurl }}/news-item-page.html' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко с поредно участие на MachTech & InnoTech 2019
+                      </p>
+                    </div>
+                    </div>
+                  </a>
+                  <a href='{{ site.baseurl }}/news-item-page.html' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко проведе поредния си семинар, на който бяха
+                        представени продукти на VESTA
+                      </p>
+                    </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row no-gutters justify-content-between">
+                  <a href='#' class='card-link col-3 px-3'>
                     <div class="card border-0">
                       <div class="embed-responsive embed-responsive-16by9">
                           <img
@@ -463,200 +548,74 @@ permalink: /
                         
                         </div>
                       </div>
-                    </a>
-                    <a href='{{ site.baseurl }}/news-item-page.html' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img
-                          class="card-img-top img-fluid embed-responsive-item"
-                          src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
-                          alt="image from an event"
-                        />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title">
-                          02.07.2019
-                        </p>
-                        <p class="card-text">
-                          Техноком Ко проведе поредния си семинар, на който бяха
-                          представени продукти на VESTA
-                        </p>
-                      </div>
-                      </div>
-                    </a>
-                    <a href='{{ site.baseurl }}/news-item-page.html' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img
-                          class="card-img-top img-fluid embed-responsive-item"
-                          src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
-                          alt="image from an event"
-                        />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title">
-                          02.07.2019
-                        </p>
-                        <p class="card-text">
-                          Техноком Ко с поредно участие на MachTech & InnoTech 2019
-                        </p>
-                      </div>
-                      </div>
-                    </a>
-                    <a href='{{ site.baseurl }}/news-item-page.html' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img
-                          class="card-img-top img-fluid embed-responsive-item"
-                          src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
-                          alt="image from an event"
-                        />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title">
-                          02.07.2019
-                        </p>
-                        <p class="card-text">
-                          Техноком Ко проведе поредния си семинар, на който бяха
-                          представени продукти на VESTA
-                        </p>
-                      </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row no-gutters justify-content-between">
-                    <a href='#' class='card-link'>
-                      <div class="card border-0">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <img
-                              class="card-img-top img-fluid embed-responsive-item"
-                              src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
-                              alt="image from an event"
-                            />
-                          </div>
-                          <div class="card-body">
-                            
-                            <p class="card-title">
-                              02.07.2019
-                            </p>
-                            <p class="card-text">
-                              Техноком Ко с поредно участие на MachTech & InnoTech 2019
-                            </p>
-                          
-                          </div>
-                        </div>
-                    </a>
-                    <a href='#' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img
-                          class="card-img-top img-fluid embed-responsive-item"
-                          src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
-                          alt="image from an event"
-                        />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title">
-                          02.07.2019
-                        </p>
-                        <p class="card-text">
-                          Техноком Ко проведе поредния си семинар, на който бяха
-                          представени продукти на VESTA
-                        </p>
-                      </div>
-                      </div>
-                    </a>
-                    <a href='#' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img
-                          class="card-img-top img-fluid embed-responsive-item"
-                          src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
-                          alt="image from an event"
-                        />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title">
-                          02.07.2019
-                        </p>
-                        <p class="card-text">
-                          Техноком Ко с поредно участие на MachTech & InnoTech 2019
-                        </p>
-                      </div>
-                      </div>
-                    </a>
-                    <a href='#' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img
-                          class="card-img-top img-fluid embed-responsive-item"
-                          src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
-                          alt="image from an event"
-                        />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title">
-                          02.07.2019
-                        </p>
-                        <p class="card-text">
-                          Техноком Ко проведе поредния си семинар, на който бяха
-                          представени продукти на VESTA
-                        </p>
-                      </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row no-gutters justify-content-between">
-                    <a href='#' class='card-link'>
+                  </a>
+                  <a href='#' class='card-link col-3 px-3'>
                     <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                          <img
-                            class="card-img-top img-fluid embed-responsive-item"
-                            src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
-                            alt="image from an event"
-                          />
-                        </div>
-                        <div class="card-body">
-                          
-                          <p class="card-title">
-                            02.07.2019
-                          </p>
-                          <p class="card-text">
-                            Техноком Ко с поредно участие на MachTech & InnoTech 2019
-                          </p>
-                        
-                        </div>
-                      </div>
-                    </a>
-                    <a href='#' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img
-                          class="card-img-top img-fluid embed-responsive-item"
-                          src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
-                          alt="image from an event"
-                        />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title">
-                          02.07.2019
-                        </p>
-                        <p class="card-text">
-                          Техноком Ко проведе поредния си семинар, на който бяха
-                          представени продукти на VESTA
-                        </p>
-                      </div>
-                      </div>
-                    </a>
-                    <a href='#' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко проведе поредния си семинар, на който бяха
+                        представени продукти на VESTA
+                      </p>
+                    </div>
+                    </div>
+                  </a>
+                  <a href='#' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко с поредно участие на MachTech & InnoTech 2019
+                      </p>
+                    </div>
+                    </div>
+                  </a>
+                  <a href='#' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко проведе поредния си семинар, на който бяха
+                        представени продукти на VESTA
+                      </p>
+                    </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row no-gutters justify-content-between">
+                  <a href='#' class='card-link col-3 px-3'>
+                  <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
                         <img
                           class="card-img-top img-fluid embed-responsive-item"
                           src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
@@ -664,39 +623,80 @@ permalink: /
                         />
                       </div>
                       <div class="card-body">
+                        
                         <p class="card-title">
                           02.07.2019
                         </p>
                         <p class="card-text">
                           Техноком Ко с поредно участие на MachTech & InnoTech 2019
                         </p>
+                      
                       </div>
-                      </div>
-                    </a>
-                    <a href='#' class='card-link'>
-                      <div class="card border-0">
-                      <div class="embed-responsive embed-responsive-16by9">
-                        <img
-                          class="card-img-top img-fluid embed-responsive-item"
-                          src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
-                          alt="image from an event"
-                        />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-title">
-                          02.07.2019
-                        </p>
-                        <p class="card-text">
-                          Техноком Ко проведе поредния си семинар, на който бяха
-                          представени продукти на VESTA
-                        </p>
-                      </div>
-                      </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
+                  <a href='#' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко проведе поредния си семинар, на който бяха
+                        представени продукти на VESTA
+                      </p>
+                    </div>
+                    </div>
+                  </a>
+                  <a href='#' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко с поредно участие на MachTech & InnoTech 2019
+                      </p>
+                    </div>
+                    </div>
+                  </a>
+                  <a href='#' class='card-link col-3 px-3'>
+                    <div class="card border-0">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко проведе поредния си семинар, на който бяха
+                        представени продукти на VESTA
+                      </p>
+                    </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
+            
             <ol class="carousel-indicators">
               <li
                 data-target="#carouselProducts"
@@ -709,12 +709,12 @@ permalink: /
             
           </div>
 
-          <div class="carousel slide carousel-events" id='carouselEvents' data-ride="carousel">
+          <div class="carousel slide carousel-events mt-auto" id='carouselEvents' data-ride="carousel">
             <div class="carousel-track-container">
               <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row no-gutters justify-content-between">
-                      <a href='{{ site.baseurl }}/news-item-page.html' class='card-link'>
+                      <a href='{{ site.baseurl }}/news-item-page.html' class='card-link col-3 px-3'>
                       <div class="card border-0">
                         <div class="embed-responsive embed-responsive-16by9">
                             <img
@@ -735,7 +735,7 @@ permalink: /
                           </div>
                         </div>
                       </a>
-                      <a href='{{ site.baseurl }}/news-item-page.html' class='card-link'>
+                      <a href='{{ site.baseurl }}/news-item-page.html' class='card-link col-3 px-3'>
                         <div class="card border-0">
                         <div class="embed-responsive embed-responsive-16by9">
                           <img
@@ -755,7 +755,7 @@ permalink: /
                         </div>
                         </div>
                       </a>
-                      <a href='#' class='card-link'>
+                      <a href='#' class='card-link col-3 px-3'>
                         <div class="card border-0">
                         <div class="embed-responsive embed-responsive-16by9">
                           <img
@@ -774,7 +774,7 @@ permalink: /
                         </div>
                         </div>
                       </a>
-                      <a href='#' class='card-link'>
+                      <a href='#' class='card-link col-3 px-3'>
                         <div class="card border-0">
                         <div class="embed-responsive embed-responsive-16by9">
                           <img
@@ -799,7 +799,7 @@ permalink: /
       
                   <div class="carousel-item">
                     <div class="row no-gutters justify-content-between">
-                      <a href='#' class='card-link'>
+                      <a href='#' class='card-link col-3 px-3'>
                         <div class="card border-0">
                           <div class="embed-responsive embed-responsive-16by9">
                               <img
@@ -820,7 +820,7 @@ permalink: /
                             </div>
                           </div>
                         </a>
-                        <a href='#' class='card-link'>
+                        <a href='#' class='card-link col-3 px-3'>
                           <div class="card border-0">
                           <div class="embed-responsive embed-responsive-16by9">
                             <img
@@ -840,7 +840,7 @@ permalink: /
                           </div>
                           </div>
                         </a>
-                        <a href='#' class='card-link'>
+                        <a href='#' class='card-link col-3 px-3'>
                           <div class="card border-0">
                           <div class="embed-responsive embed-responsive-16by9">
                             <img
@@ -859,7 +859,7 @@ permalink: /
                           </div>
                           </div>
                         </a>
-                        <a href='#' class='card-link'>
+                        <a href='#' class='card-link col-3 px-3'>
                           <div class="card border-0">
                           <div class="embed-responsive embed-responsive-16by9">
                             <img
@@ -884,7 +884,7 @@ permalink: /
       
                   <div class="carousel-item">
                     <div class="row no-gutters justify-content-between">
-                      <a href='#' class='card-link'>
+                      <a href='#' class='card-link col-3 px-3'>
                       <div class="card border-0">
                         <div class="embed-responsive embed-responsive-16by9">
                             <img
@@ -905,7 +905,7 @@ permalink: /
                           </div>
                         </div>
                       </a>
-                      <a href='#' class='card-link'>
+                      <a href='#' class='card-link col-3 px-3'>
                         <div class="card border-0">
                         <div class="embed-responsive embed-responsive-16by9">
                           <img
@@ -925,7 +925,7 @@ permalink: /
                         </div>
                         </div>
                       </a>
-                      <a href='#' class='card-link'>
+                      <a href='#' class='card-link col-3 px-3'>
                         <div class="card border-0">
                         <div class="embed-responsive embed-responsive-16by9">
                           <img
@@ -944,7 +944,7 @@ permalink: /
                         </div>
                         </div>
                       </a>
-                      <a href='#' class='card-link'>
+                      <a href='#' class='card-link col-3 px-3'>
                         <div class="card border-0">
                         <div class="embed-responsive embed-responsive-16by9">
                           <img

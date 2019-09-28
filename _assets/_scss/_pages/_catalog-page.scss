@@ -5,7 +5,7 @@
     margin-top: 3.5rem;
     margin-bottom: 10rem;
     .card-link {
-      flex: 0 0 18.66%;
+      flex: 0 0 18.7%;
       margin-bottom: 1.25rem;
 
       @include each(6) {
@@ -14,6 +14,14 @@
 
       .card {
         width: auto;
+      }
+
+      @media screen and (max-width: 1457px) {
+        flex: 0 0 22%;
+        .card-title,
+        .card-text {
+          font-size: 0.9rem;
+        }
       }
     }
   }
