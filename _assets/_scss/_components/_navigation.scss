@@ -135,6 +135,7 @@
     left: 0;
     right: 0;
     background-color: $teal;
+
     form {
       min-height: 10rem;
 
@@ -155,6 +156,10 @@
             font-size: 1.7rem;
             color: rgba(255, 255, 255, 0.5);
           }
+        }
+        input:focus {
+          outline: none;
+          // border: none;
         }
       }
       .input-group-append {
@@ -178,6 +183,10 @@
         }
       }
     }
+  }
+
+  .form-control:focus {
+    box-shadow: none;
   }
 
   .search-bar-shown {

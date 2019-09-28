@@ -1049,6 +1049,8 @@ h6 {
 .contact-form textarea:focus,
 .contact-form input:focus {
   color: #00a0ad;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .contact-form input,
@@ -10056,6 +10058,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.search-bar .search-bar-hidden form .input-group input:focus {
+  outline: none;
+}
+
 .search-bar .search-bar-hidden form .input-group-append {
   width: 10%;
 }
@@ -10079,6 +10085,11 @@ a.text-dark:hover, a.text-dark:focus {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.search-bar .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .search-bar .search-bar-shown {
