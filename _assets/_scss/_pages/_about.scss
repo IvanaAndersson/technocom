@@ -110,21 +110,18 @@
   background: linear-gradient(to bottom, $body-bg 50%, $teal 50%, $teal 100%);
 }
 
-.partners-cards {
-  background: transparent;
+.about-partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
 
   .card {
-    // max-width: 23rem;
     border: none;
   }
 }
 
 .partners-card {
-  flex: 0 0 22.5%;
-  @media screen and (max-width: 1570px) {
-    flex: 0 0 21.5%;
-  }
-  margin: 0 1rem;
   padding: 2rem;
   background-color: $body-bg;
   display: flex;
