@@ -733,8 +733,8 @@ h6 {
 /* STYLING THE SECTION WITH THE NEWS ARTICLES ON THE MAIN PAGE  */
 .news {
   height: 600px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f4f4f4), color-stop(50%, #004456), to(#004456));
-  background: linear-gradient(to bottom, #f4f4f4 50%, #004456 50%, #004456 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(54%, #f4f4f4), color-stop(54%, #004456), to(#004456));
+  background: linear-gradient(to bottom, #f4f4f4 54%, #004456 54%, #004456 100%);
 }
 
 .news h3 {
@@ -10673,6 +10673,18 @@ a.text-dark:hover, a.text-dark:focus {
 .carousel-products .card-link,
 .carousel-events .card-link {
   margin-left: 0;
+}
+
+.carousel-products .card-link .card,
+.carousel-events .card-link .card {
+  height: 340px;
+}
+
+.carousel-products .card-link .card .embed-responsive,
+.carousel-products .card-link .card .card-body,
+.carousel-events .card-link .card .embed-responsive,
+.carousel-events .card-link .card .card-body {
+  height: 50%;
 }
 
 @media screen and (max-width: 1600px) {

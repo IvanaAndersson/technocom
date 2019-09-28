@@ -191,6 +191,15 @@
 
   .card-link {
     margin-left: 0;
+
+    .card {
+      height: 340px;
+
+      .embed-responsive,
+      .card-body {
+        height: 50%;
+      }
+    }
   }
 
   @media screen and (max-width: 1600px) {
