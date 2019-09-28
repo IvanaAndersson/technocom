@@ -774,7 +774,7 @@ h6 {
 }
 
 .partners .image-container img {
-  width: 65%;
+  width: 70%;
   height: auto;
   position: absolute;
   top: 50%;
@@ -790,7 +790,7 @@ h6 {
 }
 
 .partners .first-row .image-container:first-child img, .partners .first-row .image-container:nth-child(4) img {
-  width: 72%;
+  width: 75%;
 }
 
 .partners .second-row .image-container {
@@ -10550,7 +10550,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .contacts ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.55rem;
 }
 
 .contacts span {
