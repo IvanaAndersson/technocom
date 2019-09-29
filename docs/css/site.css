@@ -565,14 +565,14 @@ h6 {
 .auto-industry .product-picture:after {
   display: block;
   content: "";
-  padding-top: 38%;
+  padding-top: 40%;
 }
 
 @media screen and (min-width: 1600px) {
   .products .product-picture:after,
   .engineering .product-picture:after,
   .auto-industry .product-picture:after {
-    padding-top: 43%;
+    padding-top: 48%;
   }
 }
 
@@ -694,7 +694,7 @@ h6 {
 .advantage-text ul li:after {
   display: block;
   content: "";
-  width: 0.05rem;
+  width: 1px;
   height: 12rem;
   background-color: #aaaaaa;
   position: absolute;
