@@ -855,6 +855,12 @@ h6 {
 }
 
 /* HERE START THE ABOUT PAGE */
+.mission-text p,
+.values-text p,
+.partners-text p {
+  text-align: justify;
+}
+
 .about-main {
   margin-top: 4.3rem;
 }
@@ -866,12 +872,6 @@ h6 {
 
 .about-main h4:first-child {
   margin: 0 0 1rem 0;
-}
-
-.about-main h6 {
-  font-size: 1.25rem;
-  font-family: "Axiforma Light";
-  margin-bottom: 1.5rem;
 }
 
 .mission .mission-text {
@@ -983,7 +983,7 @@ h6 {
 }
 
 .partners-card {
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #f4f4f4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,7 +1009,7 @@ h6 {
 }
 
 .partners-card .image-container img {
-  width: 80%;
+  width: 100%;
   height: auto;
   position: absolute;
   top: 50%;
@@ -1023,10 +1023,26 @@ h6 {
   font-size: 0.9rem;
 }
 
+.partners-card:first-child img, .partners-card:nth-child(4) img, .partners-card:nth-child(8) img {
+  width: 90%;
+}
+
+.partners-card:nth-child(2) img, .partners-card:nth-child(3) img, .partners-card:nth-child(5) img {
+  width: 85%;
+}
+
+.partners-card:nth-child(6) img {
+  width: 75%;
+}
+
+.partners-card:nth-child(7) img {
+  width: 110%;
+}
+
 /* STYLES FOR THE CONTACT PAGE */
 .contacts-header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #004456), to(#00a0ad));
-  background: linear-gradient(to bottom, #004456 50%, #00a0ad 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #004456), to(#00a0ad));
+  background: linear-gradient(to bottom, #004456 30%, #00a0ad 100%);
   min-height: 45vh;
   margin-top: 4.3rem;
 }
@@ -1038,13 +1054,7 @@ h6 {
 .contacts-header h1,
 .contacts-header h2 {
   text-align: center;
-  margin: 3rem 0;
-}
-
-.contacts-header h2 {
-  color: #00a0ad;
-  font-family: "Axiforma Light", sans-serif;
-  margin-bottom: 4rem;
+  margin: 3rem 0 5rem 0;
 }
 
 .contacts-header h5 {
@@ -1053,10 +1063,9 @@ h6 {
 }
 
 .contacts-header .companymail {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   display: block;
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
   margin-top: 2.5rem;
 }
 
@@ -1069,12 +1078,12 @@ h6 {
 .contact-address p,
 .office-contacts p {
   font-family: "Acari Sans SemiBold", sans-serif;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .map-link {
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 4rem;
   border: 1px solid white;
@@ -1085,6 +1094,45 @@ h6 {
   text-decoration: none;
   background: #004456;
   border: 1px solid #004456;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header .companymail {
+    font-size: 1.15rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+  }
+  .map-link {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .map-link {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .contacts-header .companymail {
+    font-size: 1.25rem;
+    width: 60%;
+  }
+  .map-link {
+    width: 60%;
+  }
+  .tech-consultants p,
+  .contact-address p,
+  .office-contacts p {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .map-link {
+    width: 50%;
+  }
 }
 
 .contact-form-message {
@@ -1174,6 +1222,7 @@ h6 {
 .accent-text .accent-paragraph {
   color: #6e6e73;
   width: 80%;
+  text-align: justify;
 }
 
 .accent-image {
@@ -1192,6 +1241,10 @@ h6 {
 
 .catalog-item-text {
   margin-bottom: 4rem;
+}
+
+.catalog-item-text p {
+  text-align: justify;
 }
 
 .catalog-item-title {
@@ -1410,6 +1463,10 @@ h6 {
   min-height: 90vh;
 }
 
+.news-item {
+  margin-bottom: 5rem;
+}
+
 .news-item .news-item-title {
   line-height: 1.7;
   font-size: 1.3rem;
@@ -1426,6 +1483,7 @@ h6 {
 
 .news-item .news-item-paragraph {
   color: #6e6e73;
+  text-align: justify;
 }
 
 .news-item .news-item-image {
@@ -6147,11 +6205,11 @@ input[type="button"].btn-block {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("../assets/img/home/strelka.png");
+  background-image: url("../assets/img/carets/back.svg");
 }
 
 .carousel-control-next-icon {
-  background-image: url("../assets/img/home/strelka.png");
+  background-image: url("../assets/img/carets/right-arrow.svg");
 }
 
 .carousel-indicators {
@@ -6178,7 +6236,7 @@ input[type="button"].btn-block {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  width: 0.8rem;
+  width: 0.7rem;
   height: 3px;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
@@ -9955,14 +10013,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .search-bar {
-  min-width: 4.3rem;
   position: relative;
 }
 
 .search-bar a.btn {
   width: 100%;
   height: 100%;
-  background: #00a0ad;
   position: relative;
   outline: none;
   border: none;
@@ -10332,7 +10388,11 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #00a0ad;
   }
   .search-bar {
+    min-width: 4.3rem;
     position: static;
+  }
+  .search-bar a.btn {
+    background: #00a0ad;
   }
   .search-bar .search-bar-hidden form {
     min-height: 10rem;
@@ -10399,7 +10459,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .footer-nav li {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
 }
 
 .address p,
@@ -10487,9 +10547,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .social-media .menu-item.fa-linkedin::before {
   content: "\f0e1";
-  position: absolute;
-  top: -10px;
-  left: 0;
+  margin-top: 4px;
 }
 
 .social-media .menu-item:hover::before {
@@ -10508,11 +10566,15 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 0.9rem;
 }
 
-.button-to-top span {
-  display: none;
+.button-to-top:before {
+  display: block;
+  content: "";
+  padding-top: 50%;
 }
 
-.button-to-top svg {
+.button-to-top img {
+  width: 100%;
+  height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10520,18 +10582,14 @@ a.text-dark:hover, a.text-dark:focus {
           transform: translate(-50%, -50%) rotate(180deg);
 }
 
-.button-to-top .arrow-to-top {
-  fill: white;
-}
-
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
 #carouselFade {
-  max-height: 85vh;
+  max-height: 75vh;
 }
 
 #carouselFade .carousel-inner {
   width: auto;
-  height: 85vh;
+  height: 75vh;
 }
 
 #carouselFade .carousel-inner .carousel-item {
@@ -10542,12 +10600,12 @@ a.text-dark:hover, a.text-dark:focus {
 #carouselFade .carousel-inner .carousel-item:before {
   display: block;
   content: "";
-  padding-top: 50%;
+  padding-top: 1%;
 }
 
 #carouselFade .carousel-inner .carousel-item img {
-  width: 150%;
-  height: auto;
+  width: auto;
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10555,74 +10613,45 @@ a.text-dark:hover, a.text-dark:focus {
           transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 1161px) {
-  #carouselFade .carousel-inner .carousel-item img {
-    width: 120%;
-  }
-}
-
-@media screen and (min-width: 1275px) {
-  #carouselFade .carousel-inner .carousel-item img {
-    width: 110%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  #carouselFade .carousel-inner .carousel-item img {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #carouselFade {
-    height: auto;
-  }
-  #carouselFade .carousel-inner {
-    height: auto;
-  }
-  #carouselFade .carousel-inner .carousel-item img {
-    width: auto;
-    height: 100%;
-  }
-}
-
 .carousel-caption {
-  position: absolute;
-  top: 37.5%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: left;
+  position: static;
+  height: 100%;
+}
+
+.carousel-caption .order-1 {
+  position: relative;
 }
 
 .carousel-caption h1 {
-  font-family: "Axiforma SemiBold", sans-serif;
-  font-size: 3.3rem;
+  font-family: "Axiforma Bold", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 4rem 0 3rem 0;
 }
 
 .carousel-caption ul {
-  padding-left: 0.5rem;
-  position: relative;
+  text-align: center;
+  padding-left: 0;
 }
 
 .carousel-caption ul li {
   font-family: "Axiforma SemiBold", sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.1rem;
   margin-bottom: 0.25rem;
 }
 
 .carousel-caption h4 {
   color: white;
-  position: absolute;
-  top: -20%;
 }
 
 .delivery,
 .production,
 .industry {
   color: white;
-  font-family: "Axiforma Regular", sans-serif;
-  margin-bottom: 1.5rem;
+  font-family: "Axiforma Light", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
 .delivery:before,
@@ -10631,50 +10660,186 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   content: "";
   width: 6rem;
-  height: 3px;
+  height: 1px;
   background-color: white;
-  margin-bottom: 0.8rem;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .carousel-control-prev {
-  top: -10rem;
-  left: 78%;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  top: 105%;
+  left: 0;
 }
 
 .carousel-control-next {
-  top: -10rem;
-  right: -4%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 25px;
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
-}
-
-.carousel-control-prev-icon:hover {
-  -webkit-transform: translateX(1rem);
-          transform: translateX(1rem);
-}
-
-.carousel-control-next-icon:hover {
-  -webkit-transform: translateX(1rem);
-          transform: translateX(1rem);
+  top: 105%;
+  right: 0;
 }
 
 .carousel-indicators li {
-  height: 0.8rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 50%;
   opacity: 0.8;
 }
 
 .carousel-indicators .active {
   background-color: #00a0ad;
+}
+
+@media screen and (min-width: 992px) {
+  #carouselFade {
+    max-height: 85vh;
+  }
+  #carouselFade .carousel-inner {
+    width: auto;
+    height: 85vh;
+  }
+  #carouselFade .carousel-inner .carousel-item:before {
+    padding-top: 50%;
+  }
+  #carouselFade .carousel-inner .carousel-item img {
+    width: 130%;
+    height: auto;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 39%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .carousel-caption h1 {
+    font-family: "Axiforma SemiBold", sans-serif;
+    font-size: 2.5rem;
+    text-align: right;
+    margin: 0;
+  }
+  .carousel-caption ul {
+    text-align: left;
+    padding-left: 0.5rem;
+    position: relative;
+  }
+  .carousel-caption ul li {
+    font-family: "Axiforma SemiBold", sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  .carousel-caption h4 {
+    font-size: 1rem;
+    position: absolute;
+    top: -9%;
+  }
+  .delivery,
+  .production,
+  .industry {
+    font-family: "Axiforma Regular", sans-serif;
+    margin-bottom: 1.5rem;
+  }
+  .delivery:before,
+  .production:before,
+  .industry:before {
+    position: static;
+    width: 6rem;
+    height: 3px;
+    margin-bottom: 0.8rem;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: -60%;
+  }
+  .carousel-control-prev {
+    left: 73%;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  .carousel-control-next {
+    right: -4%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: url("../assets/img/home/strelka.png");
+    height: 25px;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  }
+  .carousel-control-prev-icon:hover {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  .carousel-control-next-icon:hover {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  .carousel-indicators li {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #carouselFade .carousel-inner .carousel-item img {
+    width: 120%;
+  }
+  .carousel-caption {
+    top: 36%;
+  }
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+  .carousel-caption ul li {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .carousel-caption h4 {
+    font-size: 1.15rem;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: -50%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #carouselFade .carousel-inner .carousel-item img {
+    width: 110%;
+  }
+  .carousel-caption {
+    top: 35%;
+  }
+  .carousel-caption h1 {
+    font-size: 3.3rem;
+  }
+  .carousel-caption ul li {
+    font-size: 1.55rem;
+  }
+  .carousel-caption h4 {
+    font-size: 1.25rem;
+  }
+  .carousel-control-prev {
+    left: 75%;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  #carouselFade .carousel-inner .carousel-item img {
+    width: 100%;
+  }
+  .carousel-caption {
+    top: 37%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 50px;
+    height: 30px;
+  }
 }
 
 /* HERE START THE STYLES FOR THE CAROUSEL WITH NEWS ARTICLES ON THE MAIN PAGE */

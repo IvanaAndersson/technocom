@@ -35,10 +35,10 @@
     /></a>
   </span> -->
 
-  <span class="logo-container d-flex align-items-center col-2">
+  <span class="logo-container d-flex align-items-center col-10">
       <a class="navbar-brand text-uppercase" href="/technocom/">
         <img
-          class=''
+          class='d-none'
           id="head-logo-white"
           src="/technocom/assets/img/bialo logo.png"
           alt="TechnokomKo"/>
@@ -49,9 +49,50 @@
       /></a>
     </span>
 
+    <!-- Search button -->
+  <div class="search-bar col-1">
+      <a class="btn border-0 p-lg-2 p-xl-3" id="dropdownMenuButton">
+          <div class="search-button">
+            <div class="search-icon">
+              <span class="d-none">Search</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="search-bar-hidden border-0 w-100" id="search-bar-hidden"> 
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <form action="GET" autocomplete="on" class="mt-2 border-0 d-flex align-items-center">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control py-2 bg-transparent border-0"
+                    placeholder="Потърсете продукт, код, новина.."
+                    aria-label="Search"
+                    aria-describedby="button-addon2"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn ml-auto"
+                      type="submit"
+                      id="button-addon2"
+                    >
+                      <img src="/technocom/assets/img/home/icon 1.png" alt="search icon">
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+  </div>
+  <!-- Search button -->
+
   <!-- Collapse button -->
   <button
-    class="navbar-toggler"
+    class="navbar-toggler col-1"
     type="button"
     data-toggle="collapse"
     data-target="#navbarSupportedContent2"
@@ -654,49 +695,10 @@
       </li>
     </ul>
     <!-- Links -->
-
-    <!-- Search button -->
-    <!-- <div class="search-bar">
-        <a class="btn border-0 p-lg-2 p-xl-3" id="dropdownMenuButton">
-            <div class="search-button">
-              <div class="search-icon">
-                <span class="d-none">Search</span>
-              </div>
-            </div>
-          </a>
-  
-          <div class="search-bar-hidden border-0 w-100" id="search-bar-hidden"> 
-            <div class="row">
-              <div class="col-1"></div>
-              <div class="col-10">
-                <form action="GET" autocomplete="on" class="mt-2 border-0 d-flex align-items-center">
-                  <div class="input-group mb-3">
-                    <input
-                      type="text"
-                      class="form-control py-2 bg-transparent border-0"
-                      placeholder="Потърсете продукт, код, новина.."
-                      aria-label="Search"
-                      aria-describedby="button-addon2"
-                    />
-                    <div class="input-group-append">
-                      <button
-                        class="btn ml-auto"
-                        type="submit"
-                        id="button-addon2"
-                      >
-                        <img src="/technocom/assets/img/home/icon 1.png" alt="search icon">
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col-1"></div>
-            </div>
-          </div>
-    </div> -->
-    <!-- Search button -->
   </div>
   <!-- Collapsible content -->
+
+  
 </nav>
 <!-- Mobile Navbar -->
 
@@ -1343,9 +1345,11 @@
           alt="..."
         />
         
-        <div class="carousel-caption row no-gutters justify-content-center">
-          <div class="col-1"></div>
-          <ul class="list-unstyled col-5">
+        <div class="carousel-caption row no-gutters flex-column flex-lg-row
+        align-items-center align-items-lg-stretch 
+        justify-content-lg-center">
+          <div class="col-lg-1 order-lg-1"></div>
+          <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
             <h4 class="delivery">Доставка на елементи за:</h4>
             <li class="text-uppercase">Автоматизация</li>
             <li class="text-uppercase">Инженеринг</li>
@@ -1354,8 +1358,8 @@
             </li>
           </ul>
 
-          <div class="d-flex flex-column col-5">
-            <h1 class="text-uppercase text-right">
+          <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+            <h1 class="text-uppercase">
               Технически <br />
               доброто до вас.
             </h1>
@@ -1383,7 +1387,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="col-1"></div>
+          <div class="col-lg-1 order-lg-4"></div>
         </div>
       </div>
       <div class="carousel-item" data-interval='5000'>
@@ -1392,9 +1396,9 @@
           class="d-block"
           alt="..."
         />
-        <div class="carousel-caption row no-gutters justify-content-between">
-            <div class="col-1"></div>
-          <ul class="list-unstyled col-5">
+        <div class="carousel-caption row no-gutters flex-column flex-lg-row align-items-center align-items-lg-stretch justify-content-lg-center">
+            <div class="col-lg-1 order-lg-1"></div>
+          <ul class="list-unstyled col-lg-5 order-2 order-lg-3">
             <h4 class="production">Конструиране и изработване на:</h4>
             <li class="text-uppercase">Транспортни системи</li>
             <li class="text-uppercase">
@@ -1405,8 +1409,8 @@
             </li>
           </ul>
 
-          <div class="d-flex flex-column col-5">
-            <h1 class="text-uppercase text-right">
+          <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+            <h1 class="text-uppercase">
               Технически <br />
               доброто до вас.
             </h1>
@@ -1435,7 +1439,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="col-1"></div>
+          <div class="col-lg-1 order-lg-4"></div>
         </div>
       </div>
       <div class="carousel-item" data-interval='5000' >
@@ -1445,9 +1449,9 @@
           alt="..."
         />
 
-        <div class="carousel-caption row no-gutters justify-content-between">
-            <div class="col-1"></div>
-          <ul class="list-unstyled col-5">
+        <div class="carousel-caption row no-gutters flex-column flex-lg-row align-items-center align-items-lg-stretch justify-content-lg-center">
+            <div class="col-lg-1 order-lg-1"></div>
+          <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
             <h4 class="industry">Проектиране и внедряване на:</h4>
             <li class="text-uppercase">Решение за BIW в автомобилостроенето</li>
             <li class="text-uppercase">
@@ -1458,8 +1462,8 @@
             </li>
           </ul>
 
-          <div class="d-flex flex-column col-5">
-            <h1 class="text-uppercase text-right">
+          <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+            <h1 class="text-uppercase">
               Технически <br />
               доброто до вас.
             </h1>
@@ -1488,7 +1492,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <div class="col-1"></div>
+          <div class="col-lg-1 order-lg-4"></div>
         </div>
       </div>
     </div>
@@ -2457,7 +2461,7 @@
               Работно време
             </p>
             <p>Пон.-Петък: 8:30 - 17:00</p>
-            <p>Събота-Неделя: Почивни дни</p>
+            <p class="mt-1">Събота-Неделя: Почивни дни</p>
           </div>
         </section>
 
@@ -2518,12 +2522,12 @@
 
           <ul class="social-media list-unstyled d-flex align-items-center mb-0">
             <li>
-              <a href="www.facebook.com" class="menu-item fa-facebook"
+              <a href="https://www.facebook.com/" class="menu-item fa-facebook"
                 ><span class="d-none">Facebook</span></a
               >
             </li>
             <li>
-              <a href="www.linkedin.com" class="menu-item fa-linkedin"
+              <a href="https://www.linkedin.com" class="menu-item fa-linkedin"
                 ><span class="d-none">LinkedIn</span></a
               >
             </li>
@@ -2536,22 +2540,9 @@
         href="#"
         class="button-to-top d-flex justify-content-center align-items-center"
       >
-        <svg
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 129 129"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          enable-background="new 0 0 129 129"
-        >
-          <g>
-            <path
-              class="arrow-to-top"
-              d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
-            />
-          </g>
-        </svg>
+        <img src="/technocom/assets/img/carets/down-arrow.svg" alt="" />
 
-        <span>To top</span>
+        <span class="d-none">To top</span>
       </a>
     </div>
   </div>

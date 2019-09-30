@@ -55,12 +55,15 @@ $sizing-fs-laptop: 16px;
 $sizing-fs-desktop: 18px;
 $sizing-fs-huge: 20px;
 
+// RESETTING BOOTSTRAP VARIABLES FOR CAROUSELS.
+
 $carousel-control-opacity: 0.8;
 $carousel-caption-width: 100%;
 $carousel-control-icon-width: 40px;
-$carousel-control-prev-icon-bg: url("../assets/img/home/strelka.png");
-$carousel-control-next-icon-bg: url("../assets/img/home/strelka.png");
-$carousel-indicator-width: 0.8rem;
+$carousel-control-prev-icon-bg: url("../assets/img/carets/back.svg");
+$carousel-control-next-icon-bg: url("../assets/img/carets/right-arrow.svg");
+
+$carousel-indicator-width: 0.7rem;
 $carousel-indicator-spacer: 0.3rem;
 
 $grid-gutter-width: 0px;

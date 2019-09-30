@@ -12,10 +12,10 @@
     /></a>
   </span> -->
 
-  <span class="logo-container d-flex align-items-center col-2">
+  <span class="logo-container d-flex align-items-center col-10">
       <a class="navbar-brand text-uppercase" href="{{ site.baseurl }}/">
         <img
-          class='{% if page.title != "Техноком Ко" %} d-none {% endif %}'
+          class='d-none'
           id="head-logo-white"
           src="{{ site.baseurl }}/assets/img/bialo logo.png"
           alt="TechnokomKo"/>
@@ -26,9 +26,50 @@
       /></a>
     </span>
 
+    <!-- Search button -->
+  <div class="search-bar col-1">
+      <a class="btn border-0 p-lg-2 p-xl-3" id="dropdownMenuButton">
+          <div class="search-button">
+            <div class="search-icon">
+              <span class="d-none">Search</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="search-bar-hidden border-0 w-100" id="search-bar-hidden"> 
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+              <form action="GET" autocomplete="on" class="mt-2 border-0 d-flex align-items-center">
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control py-2 bg-transparent border-0"
+                    placeholder="Потърсете продукт, код, новина.."
+                    aria-label="Search"
+                    aria-describedby="button-addon2"
+                  />
+                  <div class="input-group-append">
+                    <button
+                      class="btn ml-auto"
+                      type="submit"
+                      id="button-addon2"
+                    >
+                      <img src="{{ site.baseurl }}/assets/img/home/icon 1.png" alt="search icon">
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>
+  </div>
+  <!-- Search button -->
+
   <!-- Collapse button -->
   <button
-    class="navbar-toggler"
+    class="navbar-toggler col-1"
     type="button"
     data-toggle="collapse"
     data-target="#navbarSupportedContent2"
@@ -631,49 +672,10 @@
       </li>
     </ul>
     <!-- Links -->
-
-    <!-- Search button -->
-    <!-- <div class="search-bar">
-        <a class="btn border-0 p-lg-2 p-xl-3" id="dropdownMenuButton">
-            <div class="search-button">
-              <div class="search-icon">
-                <span class="d-none">Search</span>
-              </div>
-            </div>
-          </a>
-  
-          <div class="search-bar-hidden border-0 w-100" id="search-bar-hidden"> 
-            <div class="row">
-              <div class="col-1"></div>
-              <div class="col-10">
-                <form action="GET" autocomplete="on" class="mt-2 border-0 d-flex align-items-center">
-                  <div class="input-group mb-3">
-                    <input
-                      type="text"
-                      class="form-control py-2 bg-transparent border-0"
-                      placeholder="Потърсете продукт, код, новина.."
-                      aria-label="Search"
-                      aria-describedby="button-addon2"
-                    />
-                    <div class="input-group-append">
-                      <button
-                        class="btn ml-auto"
-                        type="submit"
-                        id="button-addon2"
-                      >
-                        <img src="{{ site.baseurl }}/assets/img/home/icon 1.png" alt="search icon">
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div class="col-1"></div>
-            </div>
-          </div>
-    </div> -->
-    <!-- Search button -->
   </div>
   <!-- Collapsible content -->
+
+  
 </nav>
 <!-- Mobile Navbar -->
 

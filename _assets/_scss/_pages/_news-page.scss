@@ -64,6 +64,7 @@
   }
 }
 .news-item {
+  margin-bottom: 5rem;
   .news-item-title {
     line-height: 1.7;
     font-size: 1.3rem;
@@ -78,6 +79,7 @@
   }
   .news-item-paragraph {
     color: $gray-900;
+    text-align: justify;
   }
   .news-item-image {
     position: absolute;

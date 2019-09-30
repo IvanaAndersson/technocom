@@ -1,7 +1,7 @@
 /* STYLES FOR THE CONTACT PAGE */
 
 .contacts-header {
-  background: $color-gradient;
+  background: linear-gradient(to bottom, $blue 30%, $teal 100%);
   min-height: 45vh;
   margin-top: 4.3rem;
 
@@ -11,23 +11,22 @@
   h1,
   h2 {
     text-align: center;
-    margin: 3rem 0;
+    margin: 3rem 0 5rem 0;
   }
-  h2 {
-    color: $teal;
-    font-family: "Axiforma Light", sans-serif;
-    margin-bottom: 4rem;
-  }
+  // h2 {
+  //   color: $teal;
+  //   font-family: "Axiforma Light", sans-serif;
+  //   margin-bottom: 4rem;
+  // }
   h5 {
     font-family: "Axiforma Semibold", sans-serif;
     margin-bottom: 1.25rem;
   }
 
   .companymail {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     display: block;
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
     margin-top: 2.5rem;
   }
 }
@@ -42,13 +41,13 @@
 .office-contacts {
   p {
     font-family: "Acari Sans SemiBold", sans-serif;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
   }
 }
 
 .map-link {
   display: block;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem 4rem;
   border: 1px solid $white;
@@ -58,6 +57,51 @@
     text-decoration: none;
     background: $blue;
     border: 1px solid $blue;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    .companymail {
+      font-size: 1.15rem;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 2.5rem;
+    }
+  }
+
+  .map-link {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .map-link {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .contacts-header {
+    .companymail {
+      font-size: 1.25rem;
+      width: 60%;
+    }
+  }
+
+  .map-link {
+    width: 60%;
+  }
+
+  .tech-consultants,
+  .contact-address,
+  .office-contacts {
+    p {
+      margin-bottom: 0.75rem;
+    }
+  }
+}
+@media screen and (min-width: 1600px) {
+  .map-link {
+    width: 50%;
   }
 }
 
