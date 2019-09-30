@@ -10536,11 +10536,23 @@ a.text-dark:hover, a.text-dark:focus {
 
 #carouselFade .carousel-inner .carousel-item {
   height: 100%;
+  position: relative;
 }
 
-#carouselFade .carousel-inner .carousel-item > img {
-  width: 100%;
-  height: 100%;
+#carouselFade .carousel-inner .carousel-item:before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
+#carouselFade .carousel-inner .carousel-item img {
+  width: 130%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .carousel-caption {
