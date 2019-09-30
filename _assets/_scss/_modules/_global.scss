@@ -25,9 +25,9 @@ body {
   overflow-x: hidden;
 }
 
-body[data-aos-duration="6000"] [data-aos],
-[data-aos][data-aos][data-aos-duration="6000"] {
-  transition-duration: 0.6s;
+body[data-aos-duration="2000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="2000"] {
+  transition-duration: 2000ms;
 }
 
 a {

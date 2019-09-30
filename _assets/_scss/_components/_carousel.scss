@@ -17,19 +17,53 @@
       }
 
       img {
-        width: 130%;
+        width: 150%;
         height: auto;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
+
+      @media screen and (min-width: 1161px) {
+        img {
+          width: 120%;
+        }
+      }
+      @media screen and (min-width: 1275px) {
+        img {
+          width: 110%;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #carouselFade {
+    height: auto;
+
+    .carousel-inner {
+      // width: auto;
+      height: auto;
+
+      .carousel-item {
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
     }
   }
 }
 .carousel-caption {
   position: absolute;
-  top: 35%;
+  top: 37.5%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -75,12 +109,12 @@
 }
 
 .carousel-control-prev {
-  top: -50px;
+  top: -10rem;
   left: 78%;
   transform: rotateY(180deg);
 }
 .carousel-control-next {
-  top: -50px;
+  top: -10rem;
   right: -4%;
 }
 
