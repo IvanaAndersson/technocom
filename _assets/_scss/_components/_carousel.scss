@@ -10,7 +10,7 @@
       height: 100%;
 
       & > img {
-        width: auto;
+        width: 100%;
         height: 100%;
       }
     }
@@ -18,36 +18,38 @@
 }
 .carousel-caption {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 0;
   right: 0;
   bottom: 0;
   text-align: left;
 
   h1 {
-    font-family: "Axiforma Bold", sans-serif;
-    font-size: 3.8rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-    color: $white;
-    text-align: right;
-    font-family: "Axiforma Light", sans-serif;
+    font-family: "Axiforma SemiBold", sans-serif;
+    font-size: 3.3rem;
   }
 
   ul {
     padding-left: 0.5rem;
+    position: relative;
     li {
-      font-size: 1.4rem;
-      margin-bottom: 0.5rem;
+      font-family: "Axiforma SemiBold", sans-serif;
+      font-size: 1.55rem;
+      margin-bottom: 0.25rem;
     }
+  }
+
+  h4 {
+    color: $white;
+    position: absolute;
+    top: -20%;
   }
 }
 
 .delivery,
-.production {
-  color: $teal;
+.production,
+.industry {
+  color: $white;
   font-family: "Axiforma Regular", sans-serif;
   margin-bottom: 1.5rem;
 
@@ -66,12 +68,12 @@
   transform: rotateY(180deg);
 }
 .carousel-control-next {
-  right: -5%;
+  right: -4%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 30px;
+  height: 25px;
   transition: transform 0.4s ease;
 }
 
@@ -198,13 +200,16 @@
 .carousel-products,
 .carousel-events {
   width: 100%;
-  min-height: 40vh;
+  height: 50vh;
   margin: 0 auto;
 
   .carousel-indicators {
     margin-bottom: 0;
   }
 
+  .carousel-inner {
+    height: 95%;
+  }
   .card-link {
     margin-left: 0;
   }

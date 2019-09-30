@@ -164,6 +164,40 @@
   }
 }
 
+@-webkit-keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    opacity: 1;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -191,6 +225,12 @@ html {
 body {
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+body[data-aos-duration="6000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="6000"] {
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 
 a {
@@ -590,6 +630,13 @@ h6 {
   transition: transform 0.35s linear, -webkit-transform 0.35s linear;
 }
 
+.products .product-picture img.product,
+.engineering .product-picture img.product,
+.auto-industry .product-picture img.product {
+  width: 45%;
+  top: -15%;
+}
+
 .products::before,
 .engineering::before,
 .auto-industry::before {
@@ -738,7 +785,7 @@ h6 {
 
 /* STYLING THE SECTION WITH THE NEWS ARTICLES ON THE MAIN PAGE  */
 .news {
-  min-height: 60vh;
+  height: 75vh;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f4f4f4), color-stop(50%, #004456), to(#004456));
   background: linear-gradient(to bottom, #f4f4f4 50%, #004456 50%, #004456 100%);
 }
@@ -748,12 +795,12 @@ h6 {
 }
 
 @media screen and (min-width: 1600px) {
-  .news {
-    min-height: 65vh;
-  }
   .news .carousel-products,
   .news .carousel-events {
-    min-height: 45vh;
+    height: 55vh;
+  }
+  .news .carousel-inner {
+    height: 100%;
   }
 }
 
@@ -840,6 +887,11 @@ h6 {
 .mission .mission-text h4 {
   font-family: "Axiforma Light";
   margin: 3rem 0;
+}
+
+.mission .mission-image {
+  -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.77, 0, 0.175, 1) 0.2s both;
+          animation: scale-in-hor-right 1s cubic-bezier(0.77, 0, 0.175, 1) 0.2s both;
 }
 
 .mission .mission-image img {
@@ -1088,9 +1140,9 @@ h6 {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  -webkit-column-gap: 1.3rem;
-          column-gap: 1.3rem;
-  row-gap: 1.3rem;
+  -webkit-column-gap: 1.4rem;
+          column-gap: 1.4rem;
+  row-gap: 1.5rem;
   margin-top: 3.5rem;
   margin-bottom: 10rem;
 }
@@ -6089,8 +6141,8 @@ input[type="button"].btn-block {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: no-repeat 50% / 100% 100%;
 }
 
@@ -10234,10 +10286,10 @@ a.text-dark:hover, a.text-dark:focus {
             transform: scale(1) translate3d(-50%, -50%, 0);
     -webkit-transform-origin: top left;
             transform-origin: top left;
-    -webkit-transition: opacity 0.1s ease-in, -webkit-transform 0.3s ease-in 0.05s;
-    transition: opacity 0.1s ease-in, -webkit-transform 0.3s ease-in 0.05s;
-    transition: opacity 0.1s ease-in, transform 0.3s ease-in 0.05s;
-    transition: opacity 0.1s ease-in, transform 0.3s ease-in 0.05s, -webkit-transform 0.3s ease-in 0.05s;
+    -webkit-transition: opacity 0.1s ease-in, -webkit-transform 0.15s ease-in 0.05s;
+    transition: opacity 0.1s ease-in, -webkit-transform 0.15s ease-in 0.05s;
+    transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s;
+    transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s, -webkit-transform 0.15s ease-in 0.05s;
   }
   .navbar-transparent .logo-container #head-logo-white {
     opacity: 1;
@@ -10436,7 +10488,7 @@ a.text-dark:hover, a.text-dark:focus {
 .social-media .menu-item.fa-linkedin::before {
   content: "\f0e1";
   position: absolute;
-  top: -0.7rem;
+  top: -10px;
   left: 0;
 }
 
@@ -10487,13 +10539,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 #carouselFade .carousel-inner .carousel-item > img {
-  width: auto;
+  width: 100%;
   height: 100%;
 }
 
 .carousel-caption {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -10501,35 +10553,38 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .carousel-caption h1 {
-  font-family: "Axiforma Bold", sans-serif;
-  font-size: 3.8rem;
-}
-
-.carousel-caption h2 {
-  font-size: 1.7rem;
-  color: white;
-  text-align: right;
-  font-family: "Axiforma Light", sans-serif;
+  font-family: "Axiforma SemiBold", sans-serif;
+  font-size: 3.3rem;
 }
 
 .carousel-caption ul {
   padding-left: 0.5rem;
+  position: relative;
 }
 
 .carousel-caption ul li {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  font-family: "Axiforma SemiBold", sans-serif;
+  font-size: 1.55rem;
+  margin-bottom: 0.25rem;
+}
+
+.carousel-caption h4 {
+  color: white;
+  position: absolute;
+  top: -20%;
 }
 
 .delivery,
-.production {
-  color: #00a0ad;
+.production,
+.industry {
+  color: white;
   font-family: "Axiforma Regular", sans-serif;
   margin-bottom: 1.5rem;
 }
 
 .delivery:before,
-.production:before {
+.production:before,
+.industry:before {
   display: block;
   content: "";
   width: 6rem;
@@ -10545,12 +10600,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .carousel-control-next {
-  right: -5%;
+  right: -4%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 30px;
+  height: 25px;
   -webkit-transition: -webkit-transform 0.4s ease;
   transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
@@ -10690,13 +10745,18 @@ a.text-dark:hover, a.text-dark:focus {
 .carousel-products,
 .carousel-events {
   width: 100%;
-  min-height: 40vh;
+  height: 50vh;
   margin: 0 auto;
 }
 
 .carousel-products .carousel-indicators,
 .carousel-events .carousel-indicators {
   margin-bottom: 0;
+}
+
+.carousel-products .carousel-inner,
+.carousel-events .carousel-inner {
+  height: 95%;
 }
 
 .carousel-products .card-link,

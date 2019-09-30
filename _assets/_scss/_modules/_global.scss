@@ -25,6 +25,11 @@ body {
   overflow-x: hidden;
 }
 
+body[data-aos-duration="6000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="6000"] {
+  transition-duration: 0.6s;
+}
+
 a {
   font-family: $font-family-base;
   text-decoration: none;
