@@ -10594,12 +10594,14 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .carousel-control-prev {
+  top: -50px;
   left: 78%;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
 .carousel-control-next {
+  top: -50px;
   right: -4%;
 }
 

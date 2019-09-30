@@ -64,10 +64,12 @@
 }
 
 .carousel-control-prev {
+  top: -50px;
   left: 78%;
   transform: rotateY(180deg);
 }
 .carousel-control-next {
+  top: -50px;
   right: -4%;
 }
 
