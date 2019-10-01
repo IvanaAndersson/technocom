@@ -409,7 +409,7 @@ h6 {
 }
 
 .sub-nav-container {
-  border-bottom: 1px solid rgba(110, 110, 115, 0.5);
+  border-bottom: 1px solid #aaaaaa;
 }
 
 .sub-nav {
@@ -423,11 +423,11 @@ h6 {
 }
 
 .sub-nav-list {
-  border-right: 1px solid rgba(110, 110, 115, 0.5);
+  border-right: 1px solid #aaaaaa;
 }
 
 .sub-nav-list:first-child {
-  border-left: 1px solid rgba(110, 110, 115, 0.5);
+  border-left: 1px solid #aaaaaa;
 }
 
 .sub-nav-list a {
@@ -961,10 +961,12 @@ h6 {
           flex: 0 0 30%;
 }
 
-.partners .second-row .image-container {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+.partners .first-row .image-container:nth-child(2) img, .partners .first-row .image-container:nth-child(6) img {
+  width: 65%;
+}
+
+.partners .first-row .image-container:nth-child(7) img {
+  width: 100%;
 }
 
 @media screen and (min-width: 992px) {
@@ -985,15 +987,16 @@ h6 {
   .partners .first-row .image-container:first-child img, .partners .first-row .image-container:nth-child(4) img {
     width: 75%;
   }
-  .partners .second-row .image-container {
+  .partners .first-row .image-container:nth-child(6), .partners .first-row .image-container:nth-child(7), .partners .first-row .image-container:nth-child(8) {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 22.5%;
             flex: 0 0 22.5%;
+    margin-top: 2rem;
   }
-  .partners .second-row .image-container:first-child img {
+  .partners .first-row .image-container:nth-child(6) img {
     width: 55%;
   }
-  .partners .second-row .image-container:nth-child(2) img {
+  .partners .first-row .image-container:nth-child(7) img {
     width: 85%;
   }
 }
@@ -1031,11 +1034,6 @@ h6 {
 .mission .mission-text h4 {
   font-family: "Axiforma Light";
   margin: 3rem 0;
-}
-
-.mission .mission-image {
-  -webkit-animation: scale-in-hor-right 1s cubic-bezier(0.77, 0, 0.175, 1) 0.2s both;
-          animation: scale-in-hor-right 1s cubic-bezier(0.77, 0, 0.175, 1) 0.2s both;
 }
 
 .mission .mission-image img {
@@ -1153,7 +1151,7 @@ h6 {
 }
 
 .partners-card .image-container img {
-  width: 100%;
+  width: 70%;
   height: auto;
   position: absolute;
   top: 50%;
@@ -1168,19 +1166,15 @@ h6 {
 }
 
 .partners-card:first-child img, .partners-card:nth-child(4) img, .partners-card:nth-child(8) img {
-  width: 90%;
-}
-
-.partners-card:nth-child(2) img, .partners-card:nth-child(3) img, .partners-card:nth-child(5) img {
-  width: 85%;
+  width: 80%;
 }
 
 .partners-card:nth-child(6) img {
-  width: 75%;
+  width: 65%;
 }
 
 .partners-card:nth-child(7) img {
-  width: 110%;
+  width: 100%;
 }
 
 /* STYLES FOR THE CONTACT PAGE */
@@ -1327,6 +1321,58 @@ h6 {
 }
 
 /* STYLING THE PAGES WITH MULTIPLE CATALOG ITEMS */
+.main-product-page {
+  border-top: 1px solid #aaaaaa;
+  background-color: #eaeaea;
+}
+
+.catalog-page .main-catalog-page-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 10rem;
+}
+
+.catalog-page .main-catalog-page-grid .card-body {
+  background-color: #00a0ad;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.catalog-page .main-catalog-page-grid .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+.catalog-page .main-catalog-page-grid .card-link:hover .card-body,
+.catalog-page .main-catalog-page-grid .card-link:focus .card-body {
+  background-color: #004456;
+}
+
+.catalog-page .main-catalog-page-grid .card-link {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.catalog-page .main-catalog-page-grid .card-link + .card-link {
+  margin-left: 0;
+}
+
+.catalog-page .main-catalog-page-grid .card-link .card {
+  width: auto;
+}
+
 .catalog-page .catalog-page-grid {
   display: -ms-grid;
   display: grid;
@@ -1528,13 +1574,12 @@ h6 {
 .codes .row {
   padding: 0.5rem 2rem;
   margin-bottom: 0.3rem;
-  background: #eaeaea;
 }
 
 .codes .row span {
   margin: 0 0.3rem;
-  font-size: 0.8rem;
-  color: #6e6e73;
+  font-size: 0.75rem;
+  color: rgba(110, 110, 115, 0.3);
 }
 
 /* STYLES FOR THE PAGES WITH NEWS CARDS */
@@ -10719,7 +10764,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .copyright-social .bulgarian-flag {
-  width: 7%;
+  width: 8%;
   height: auto;
 }
 
@@ -10842,7 +10887,7 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 0.8rem;
   }
   .copyright-social .bulgarian-flag {
-    width: 3%;
+    width: 2%;
   }
   .copyright .menu-item {
     margin-left: 0.8rem;
@@ -10910,7 +10955,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .carousel-caption ul li {
   font-family: "Axiforma SemiBold", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.25rem;
 }
 

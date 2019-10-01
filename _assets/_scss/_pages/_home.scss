@@ -428,12 +428,19 @@
   .first-row {
     .image-container {
       flex: 0 0 30%;
-    }
-  }
 
-  .second-row {
-    .image-container {
-      flex: 0 0 25%;
+      &:nth-child(2),
+      &:nth-child(6) {
+        img {
+          width: 65%;
+        }
+      }
+
+      &:nth-child(7) {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -461,19 +468,20 @@
             width: 75%;
           }
         }
-      }
-    }
-    .second-row {
-      .image-container {
-        flex: 0 0 22.5%;
 
-        &:first-child {
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          flex: 0 0 22.5%;
+          margin-top: 2rem;
+        }
+
+        &:nth-child(6) {
           img {
             width: 55%;
           }
         }
-
-        &:nth-child(2) {
+        &:nth-child(7) {
           img {
             width: 85%;
           }

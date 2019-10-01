@@ -3,7 +3,9 @@ const myNav = document.getElementById("navigation-desktop");
 const mobileNav = document.getElementById("navigation-mobile");
 const headLogo = document.getElementById("head-logo-picture");
 const searchButton = document.getElementById("dropdownMenuButton");
+const mobileSearchButton = document.getElementById("dropdownMobileButton");
 const searchBar = document.getElementById("search-bar-hidden");
+const searchBarMobile = document.getElementById("search-bar-hidden-mobile");
 let currentY = window.scrollY;
 let scrollDirection = "";
 
@@ -22,9 +24,12 @@ window.addEventListener("scroll", event => {
 });
 
 searchButton.addEventListener("click", event => {
-  // console.log("button is clicked");
   searchBar.classList.toggle("search-bar-shown");
   myNav.classList.toggle("navbar-search-clicked");
+});
+
+mobileSearchButton.addEventListener("click", event => {
+  searchBarMobile.classList.toggle("search-bar-shown");
   mobileNav.classList.toggle("navbar-search-clicked");
 });
 

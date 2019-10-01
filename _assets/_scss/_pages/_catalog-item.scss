@@ -135,12 +135,12 @@
   .row {
     padding: 0.5rem 2rem;
     margin-bottom: 0.3rem;
-    background: $card-bg;
+    // background: $card-bg;
 
     span {
       margin: 0 0.3rem;
-      font-size: 0.8rem;
-      color: $gray-900;
+      font-size: 0.75rem;
+      color: rgba($gray-900, 0.3);
     }
   }
 }

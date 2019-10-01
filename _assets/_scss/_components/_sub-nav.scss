@@ -1,5 +1,5 @@
 .sub-nav-container {
-  border-bottom: 1px solid rgba($gray-900, 0.5);
+  border-bottom: 1px solid $lines;
 }
 .sub-nav {
   width: 100%;
@@ -12,10 +12,10 @@
 }
 
 .sub-nav-list {
-  border-right: 1px solid rgba($gray-900, 0.5);
+  border-right: 1px solid $lines;
 
   &:first-child {
-    border-left: 1px solid rgba($gray-900, 0.5);
+    border-left: 1px solid $lines;
   }
 
   a {

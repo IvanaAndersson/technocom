@@ -28,7 +28,7 @@ permalink: /
         <div
           class="carousel-caption row no-gutters flex-column flex-lg-row
         align-items-center align-items-lg-stretch 
-        justify-content-lg-center"
+        justify-content-center"
         >
           <div class="col-lg-1 order-lg-1"></div>
           <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
@@ -79,7 +79,8 @@ permalink: /
           alt="..."
         />
         <div
-          class="carousel-caption row no-gutters flex-column flex-lg-row align-items-center align-items-lg-stretch justify-content-lg-center"
+          class="carousel-caption row no-gutters flex-column flex-lg-row 
+          align-items-center align-items-lg-stretch justify-content-center"
         >
           <div class="col-lg-1 order-lg-1"></div>
           <ul class="list-unstyled col-lg-5 order-2 order-lg-3">
@@ -88,8 +89,14 @@ permalink: /
             <li class="text-uppercase">
               Индустриални работни места
             </li>
-            <li class="text-uppercase">
+            <li class="text-uppercase d-none d-lg-block">
               Пневматични и електрически табла
+            </li>
+            <li class="text-uppercase d-lg-none">
+              Пневматични табла
+            </li>
+            <li class="text-uppercase d-lg-none">
+              Електрически табла
             </li>
           </ul>
 
@@ -134,12 +141,14 @@ permalink: /
         />
 
         <div
-          class="carousel-caption row no-gutters flex-column flex-lg-row align-items-center align-items-lg-stretch justify-content-lg-center"
+          class="carousel-caption row no-gutters flex-column flex-lg-row 
+          align-items-center align-items-lg-stretch justify-content-center"
         >
           <div class="col-lg-1 order-lg-1"></div>
           <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
             <h4 class="industry">Проектиране и внедряване на:</h4>
-            <li class="text-uppercase">Решение за BIW в автомобилостроенето</li>
+            <li class="text-uppercase d-none d-lg-block">Решение за BIW в автомобилостроенето</li>
+            <li class="text-uppercase d-lg-none">Решение за BIW</li>
             <li class="text-uppercase">
               Модулни инструментални системи
             </li>
@@ -420,7 +429,7 @@ permalink: /
               </div>
               <div>
                 <h6 class="mt-2 mb-3 text-uppercase">Страст към успеха</h6>
-                Винаги се стремим към съвършенство, защото сме емоционално и
+                Стремим се към съвършенство, защото сме емоционално и
                 интелектуално свързани с работата си.
               </div>
             </li>
@@ -518,7 +527,7 @@ permalink: /
                   </div>
                   <div>
                     <h6 class="mt-2 mb-3 text-uppercase">Страст към успеха</h6>
-                    Винаги се стремим към съвършенство, защото сме емоционално и
+                    Стремим се към съвършенство, защото сме емоционално и
                     интелектуално свързани с работата си.
                   </div>
                 </div>
@@ -1252,7 +1261,7 @@ permalink: /
         <div class="col-lg-1"></div>
         <div class="col-12 col-lg-10">
           <h3>Партньори</h3>
-          <div class="row first-row mb-lg-5 w-100 justify-content-center">
+          <div class="row first-row mb-lg-2 w-100 justify-content-center">
             <div class="image-container ">
               <img
                 src="{{ site.baseurl }}/assets/img/partniori/univer.png"
@@ -1283,13 +1292,11 @@ permalink: /
                 alt="logo of our partners"
               />
             </div>
-          </div>
-          <div class="row second-row w-100 justify-content-center">
-            <div class="image-container">
-              <img
-                src="{{ site.baseurl }}/assets/img/partniori/sirca.png"
-                alt="logo of our partners"
-              />
+            <div class="image-container ">
+                <img
+                  src="{{ site.baseurl }}/assets/img/partniori/sirca.png"
+                  alt="logo of our partners"
+                />
             </div>
             <div class="image-container">
               <img
@@ -1304,6 +1311,9 @@ permalink: /
               />
             </div>
           </div>
+          <!-- <div class="row second-row w-100 justify-content-center">
+            
+          </div> -->
         </div>
         <div class="col-lg-1"></div>
       </div>
