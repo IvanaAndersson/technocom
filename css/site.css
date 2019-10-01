@@ -10651,11 +10651,24 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .mobile-logo .logo-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+}
+
+.mobile-logo .logo-icon img {
   width: auto;
   height: 100%;
 }
 
 .mobile-logo .logo-type {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+  text-align: right;
+}
+
+.mobile-logo .logo-type img {
   width: auto;
   height: 120%;
 }
@@ -10827,23 +10840,9 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .copyright-social {
     font-size: 0.8rem;
-    border-right: 1px solid white;
-    position: relative;
-  }
-  .copyright-social:before {
-    display: block;
-    content: "";
-    padding-top: 1%;
   }
   .copyright-social .bulgarian-flag {
-    width: auto;
-    height: 30%;
-    position: absolute;
-    top: 1.2rem;
-    left: 0;
-  }
-  .copyright {
-    margin-left: 2.5rem;
+    width: 3%;
   }
   .copyright .menu-item {
     margin-left: 0.8rem;
