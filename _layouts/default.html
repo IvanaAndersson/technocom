@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no"/>
     <title>{{ page.title }}</title>
     <!-- Bootstrap + CSS compiled file -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css" />
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <div class="loader d-lg-none"><img src="/assets/img/footer/tk_logo.png" alt=""></div>
     <header class='site-header'>
       {% include navigation.html %}
       <h1 {% if page.title == 'Техноком Ко' or page.title ==  'Компанията' or page.title ==  'Контакти' %} class='d-none' {% endif %}

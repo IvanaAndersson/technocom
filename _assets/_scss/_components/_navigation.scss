@@ -1,8 +1,6 @@
 /* NAVIGATION STYLES FOR MOBILE AND TABLET SCREENS*/
 
 .navbar-expand-lg {
-  padding: 1rem 0;
-
   .logo-container {
     background: $body-bg;
     img {
@@ -44,6 +42,80 @@
       color: $teal;
       text-decoration: none;
       outline: none;
+    }
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.6rem 0;
+}
+
+//when on the main page, the menu is transparent and the logo is white
+// when we scroll on main page, the menu becomes as normal
+.navbar-transparent {
+  padding-top: 0.5rem;
+  transition: all 0.3s ease-in;
+  .navbar-brand {
+    margin-left: 1rem;
+
+    &:before {
+      display: block;
+      content: "";
+      padding-top: 25%;
+    }
+    img {
+      width: 80%;
+      height: auto;
+      position: absolute;
+      top: 55%;
+      left: 45%;
+    }
+  }
+
+  .logo-container {
+    background-color: rgba($body-bg, 0);
+    transition: all 0.3s ease-in;
+    #head-logo-blue {
+      opacity: 0;
+      width: 80%;
+      transform: scale(1) translate3d(-50%, -50%, 0);
+      transform-origin: top left;
+      transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s;
+    }
+    #head-logo-white {
+      opacity: 1;
+      transition: opacity 0.1s ease-in;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .search-bar {
+    a.btn {
+      background-color: rgba($teal, 0);
+    }
+  }
+}
+
+//when we hover the transparent menu on the main page (when not scrolled) the menu should be as normal
+// when the home page is scrolled, the menu should be as normal
+
+.home-page.navbar-when-scrolled,
+.home-page.navbar-search-clicked {
+  background-color: $blue;
+
+  .logo-container {
+    background-color: rgba($body-bg, 1);
+
+    #head-logo-blue {
+      opacity: 1;
+      width: 80%;
+      transform: scale(0.9) translate3d(-55%, -55%, 0);
+      transform-origin: top left;
+    }
+
+    #head-logo-white {
+      opacity: 0;
     }
   }
 }
@@ -190,8 +262,6 @@
 
 @media screen and (min-width: 992px) {
   .navbar-expand-lg {
-    padding: 0;
-
     .navbar-brand {
       width: 100%;
       position: relative;

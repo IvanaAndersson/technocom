@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no"/>
     <title>Компанията</title>
     <!-- Bootstrap + CSS compiled file -->
     <link rel="stylesheet" href="/technocom/css/site.css" />
@@ -20,25 +21,21 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <div class="loader d-lg-none"><img src="/assets/img/footer/tk_logo.png" alt=""></div>
     <header class='site-header'>
       <!-- Mobile Navbar visible untill large width -->
 <nav
-  class="navbar navbar-expand-lg navbar-dark bg-dark p-0 d-lg-none"
+class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100  bg-dark 
+"
+
   id="navigation-mobile"
 >
+<div class="row no-gutters">
   <!-- Navbar brand -->
-  <!-- <span class="logo-container d-flex align-items-center px-3">
-    <a class="navbar-brand text-uppercase" href="/technocom/">
-      <img
-        src="/technocom/assets/img/logo 1.png"
-        alt="Technokom Ko logo"
-    /></a>
-  </span> -->
-
-  <span class="logo-container d-flex align-items-center col-10">
+    <span class="logo-container d-flex align-items-center col-8">
       <a class="navbar-brand text-uppercase" href="/technocom/">
         <img
-          class='d-none'
+        class=' d-none '
           id="head-logo-white"
           src="/technocom/assets/img/bialo logo.png"
           alt="TechnokomKo"/>
@@ -50,7 +47,7 @@
     </span>
 
     <!-- Search button -->
-  <div class="search-bar col-1">
+  <div class="search-bar col-2">
       <a class="btn border-0 p-lg-2 p-xl-3" id="dropdownMenuButton">
           <div class="search-button">
             <div class="search-icon">
@@ -92,7 +89,7 @@
 
   <!-- Collapse button -->
   <button
-    class="navbar-toggler col-1"
+    class="navbar-toggler col-2"
     type="button"
     data-toggle="collapse"
     data-target="#navbarSupportedContent2"
@@ -697,6 +694,8 @@
     <!-- Links -->
   </div>
   <!-- Collapsible content -->
+</div>
+  
 
   
 </nav>
@@ -1398,7 +1397,6 @@
       </div>
       <div class="values-text col-5">
         <h4>СТРАТЕГИЧЕСКИ ФОКУС</h4>
-        <!-- <h6>Удобството на бързината</h6> -->
         <p>
           В един динамичен свят фирмите трябва да могат да разчитат напълно на
           своя партньор. Като мобилни и целеустремени специалисти не спираме да
@@ -1442,7 +1440,6 @@
       <div class="row no-gutters flex-column mb-5">
         <div class="partners-text col-6">
           <h4>ПАРТНЬОРИ</h4>
-          <!-- <h6>От професионалисти за професионалисти</h6> -->
           <p class="p-detail">
             Доставчиците на ТЕХНОКОМ Ко са основно европейски производители,
             чиито богати гами от продукти позволяват на професионалисти като Вас
@@ -1665,7 +1662,7 @@
         <section class="contacts col-2">
           <h5 class="text-white text-uppercase mb-4">Контакти</h5>
           <ul class="list-unstyled">
-            <li class="first-child font-weight-bold">
+            <li class="first-child text-white font-weight-bold">
               <span class="footer-icon-container">
                 <img
                   class="footer-icon"

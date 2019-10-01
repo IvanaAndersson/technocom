@@ -138,6 +138,20 @@
   src: local("Axiforma Bold Italic"), url("../assets/fonts/Axiforma/Axiforma-Bold-Italic.otf") format("opentype");
 }
 
+@-webkit-keyframes loader-fade-out {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loader-fade-out {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 @-webkit-keyframes slide-bottom {
   0% {
     opacity: 0;
@@ -231,6 +245,37 @@ body[data-aos-duration="2000"] [data-aos],
 [data-aos][data-aos][data-aos-duration="2000"] {
   -webkit-transition-duration: 2000ms;
           transition-duration: 2000ms;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f4f4f4;
+}
+
+.loader img {
+  width: 100%;
+  height: auto;
+}
+
+.loader.hidden {
+  -webkit-animation: loader-fade-out 2s;
+          animation: loader-fade-out 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 a {
@@ -9960,10 +10005,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* NAVIGATION STYLES FOR MOBILE AND TABLET SCREENS*/
-.navbar-expand-lg {
-  padding: 1rem 0;
-}
-
 .navbar-expand-lg .logo-container {
   background: #f4f4f4;
 }
@@ -10010,6 +10051,91 @@ a.text-dark:hover, a.text-dark:focus {
   color: #00a0ad;
   text-decoration: none;
   outline: none;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.6rem 0;
+}
+
+.navbar-transparent {
+  padding-top: 0.5rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.navbar-transparent .navbar-brand {
+  margin-left: 1rem;
+}
+
+.navbar-transparent .navbar-brand:before {
+  display: block;
+  content: "";
+  padding-top: 25%;
+}
+
+.navbar-transparent .navbar-brand img {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 55%;
+  left: 45%;
+}
+
+.navbar-transparent .logo-container {
+  background-color: rgba(244, 244, 244, 0);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.navbar-transparent .logo-container #head-logo-blue {
+  opacity: 0;
+  width: 80%;
+  -webkit-transform: scale(1) translate3d(-50%, -50%, 0);
+          transform: scale(1) translate3d(-50%, -50%, 0);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: opacity 0.1s ease-in, -webkit-transform 0.15s ease-in 0.05s;
+  transition: opacity 0.1s ease-in, -webkit-transform 0.15s ease-in 0.05s;
+  transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s;
+  transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s, -webkit-transform 0.15s ease-in 0.05s;
+}
+
+.navbar-transparent .logo-container #head-logo-white {
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.navbar-transparent .search-bar a.btn {
+  background-color: rgba(0, 160, 173, 0);
+}
+
+.home-page.navbar-when-scrolled,
+.home-page.navbar-search-clicked {
+  background-color: #004456;
+}
+
+.home-page.navbar-when-scrolled .logo-container,
+.home-page.navbar-search-clicked .logo-container {
+  background-color: #f4f4f4;
+}
+
+.home-page.navbar-when-scrolled .logo-container #head-logo-blue,
+.home-page.navbar-search-clicked .logo-container #head-logo-blue {
+  opacity: 1;
+  width: 80%;
+  -webkit-transform: scale(0.9) translate3d(-55%, -55%, 0);
+          transform: scale(0.9) translate3d(-55%, -55%, 0);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.home-page.navbar-when-scrolled .logo-container #head-logo-white,
+.home-page.navbar-search-clicked .logo-container #head-logo-white {
+  opacity: 0;
 }
 
 .search-bar {
@@ -10194,9 +10320,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* NAVIGATION STYLES FOR SCREENS ABOVE 992px */
 @media screen and (min-width: 992px) {
-  .navbar-expand-lg {
-    padding: 0;
-  }
   .navbar-expand-lg .navbar-brand {
     width: 100%;
     position: relative;
