@@ -1,11 +1,10 @@
 <!-- Mobile Navbar visible untill large width -->
 <nav
-class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100 {% if page.title != 'Техноком Ко' %} bg-dark {% endif %}
+class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100 {% if page.title != 'Техноком Ко' %} bg-dark {% endif %}
 {% if page.title == 'Техноком Ко' %} navbar-transparent home-page {% endif %}"
 
   id="navigation-mobile"
 >
-<div class="row no-gutters">
   <!-- Navbar brand -->
     <span class="logo-container d-flex align-items-center col-8">
       <a class="navbar-brand text-uppercase" href="{{ site.baseurl }}/">
@@ -669,7 +668,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100 {% if 
     <!-- Links -->
   </div>
   <!-- Collapsible content -->
-</div>
+
   
 
   
@@ -678,12 +677,10 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100 {% if 
 
 <!-- Desktop Navbar visible over the large width breakpoint -->
 <nav
-  class="navbar-expand-lg navbar-dark p-0 d-none fixed-top d-lg-block w-100 {% if page.title != 'Техноком Ко' %} bg-dark {% endif %}
+  class="navbar-expand-lg navbar-dark p-0 d-none fixed-top d-lg-flex row w-100 {% if page.title != 'Техноком Ко' %} bg-dark {% endif %}
   {% if page.title == 'Техноком Ко' %} navbar-transparent home-page {% endif %}"
   id="navigation-desktop"
 >
-  <!-- The class d-lg-block overrides the d-flex, so I put the content in another div -->
-  <div class="row w-100 ">
     <!-- Navbar brand -->
     <span class="logo-container d-flex align-items-center col-2">
       <a class="navbar-brand text-uppercase" href="{{ site.baseurl }}/">
@@ -1283,6 +1280,6 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100 {% if 
     <!-- Collapsible content -->
 
     <div class="col-1"></div>
-  </div>
+  
 </nav>
 <!-- Desktop Navbar -->

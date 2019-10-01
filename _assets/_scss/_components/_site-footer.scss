@@ -1,129 +1,50 @@
 /* STYLES FOR THE FOOTER, FOOTER IS THE SAME ON ALL PAGES */
-
-.footer-icon-container {
-  position: relative;
-
-  .footer-icon {
-    width: auto;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -2rem;
-    margin-right: 1rem;
-  }
-}
 .site-footer {
   background-color: $blue;
   width: 100%;
 
   & a {
     color: $white;
-    font-size: 0.8rem;
-    transition: all 0.4s ease;
-
-    &:hover,
-    &:focus {
-      color: $teal;
-      text-decoration: none;
-      outline: none;
-    }
   }
 
   h5 {
-    font-size: 1rem;
-    font-family: "Acari Sans Bold", sans-serif;
-  }
-}
-
-.logo {
-  max-height: 12.7rem;
-
-  img {
-    width: 50%;
-    height: auto;
+    color: $teal;
+    font-size: 1.25rem;
+    font-family: "Axiforma SemiBold", sans-serif;
   }
 
   .companymail {
-    font-size: 1.1rem;
-    margin-left: 2rem;
-    span {
-      font-family: "Acari Sans Regular", sans-serif;
-    }
-
-    .footer-icon {
-      height: 80%;
-    }
-  }
-}
-
-.footer-nav {
-  li {
-    margin-bottom: 0.25rem;
-  }
-}
-
-.address {
-  p,
-  .company-name {
-    font-size: 0.8rem;
-  }
-
-  p {
-    margin-bottom: 0;
-  }
-}
-.written-address {
-  .company-name {
-    font-family: "Acari Sans Bold", sans-serif;
+    font-size: 2rem;
+    text-align: center;
     margin-bottom: 1.5rem;
   }
 }
-.contacts {
-  ul {
-    font-size: 0.8rem;
 
-    li {
-      margin-bottom: 0.55rem;
-    }
-  }
+.mobile-logo {
+  max-height: 5.5rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid $body-bg;
+  margin-bottom: 2rem;
 
-  span {
-    font-family: "Acari Sans Bold", sans-serif;
-    font-size: 0.9rem;
-  }
-}
-
-/* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
-.footer-copyright {
-  border-top: 1px solid $white;
-}
-
-.copyright-social {
-  font-size: 0.8rem;
-  border-right: 1px solid $white;
-  position: relative;
-
-  &:before {
-    display: block;
-    content: "";
-    padding-top: 1%;
-  }
-
-  .bulgarian-flag {
+  .logo-icon {
     width: auto;
-    height: 30%;
-    position: absolute;
-    top: 1rem;
-    left: 0;
+    height: 100%;
+  }
+
+  .logo-type {
+    width: auto;
+    height: 120%;
   }
 }
 
-.copyright {
-  margin-left: 2.5rem;
-  .menu-item {
-    border-left: 1px solid $white;
-    margin-left: 0.8rem;
-    padding-left: 0.8rem;
+.address,
+.contacts {
+  text-align: center;
+}
+
+.address {
+  p {
+    margin: 0;
   }
 }
 
@@ -135,7 +56,7 @@
       display: inline-block;
       content: "";
       font-family: "Font Awesome 5 Brands";
-      font-size: 1.1rem;
+      font-size: 2rem;
       color: $white;
     }
 
@@ -148,10 +69,30 @@
       content: "\f0e1";
       margin-top: 4px;
     }
+  }
+}
 
-    &:hover::before {
-      color: $teal;
-    }
+.footer-copyright {
+  border-top: 1px solid $white;
+}
+
+.copyright-social {
+  font-size: 0.8rem;
+  border-right: 1px solid $white;
+  position: relative;
+
+  .bulgarian-flag {
+    width: 7%;
+    height: auto;
+  }
+}
+
+.copyright {
+  margin-left: 0.5rem;
+  .menu-item {
+    border-left: 1px solid $white;
+    margin-left: 0.25rem;
+    padding-left: 0.25rem;
   }
 }
 
@@ -179,5 +120,147 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer-icon-container {
+    position: relative;
+
+    .footer-icon {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -2rem;
+      margin-right: 1rem;
+    }
+  }
+  .site-footer {
+    & a {
+      font-size: 0.8rem;
+      transition: all 0.4s ease;
+
+      &:hover,
+      &:focus {
+        color: $teal;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+
+    h5 {
+      color: $white;
+      font-size: 1rem;
+    }
+  }
+
+  .logo {
+    max-height: 12.7rem;
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+
+    .companymail {
+      text-align: left;
+      font-size: 1.1rem;
+      margin-left: 2rem;
+      margin-bottom: 0;
+      span {
+        font-family: "Acari Sans Regular", sans-serif;
+      }
+
+      .footer-icon {
+        height: 80%;
+      }
+    }
+  }
+
+  .footer-nav {
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .address,
+  .contacts {
+    text-align: left;
+  }
+
+  .address {
+    p,
+    .company-name {
+      font-size: 0.8rem;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .written-address {
+    .company-name {
+      font-family: "Acari Sans Bold", sans-serif;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .contacts {
+    ul {
+      font-size: 0.8rem;
+
+      li {
+        margin-bottom: 0.55rem;
+      }
+    }
+
+    span {
+      font-family: "Acari Sans Bold", sans-serif;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
+  .footer-copyright {
+    border-top: 1px solid $white;
+  }
+
+  .copyright-social {
+    font-size: 0.8rem;
+    border-right: 1px solid $white;
+    position: relative;
+
+    &:before {
+      display: block;
+      content: "";
+      padding-top: 1%;
+    }
+
+    .bulgarian-flag {
+      width: auto;
+      height: 30%;
+      position: absolute;
+      top: 1.2rem;
+      left: 0;
+    }
+  }
+
+  .copyright {
+    margin-left: 2.5rem;
+    .menu-item {
+      margin-left: 0.8rem;
+      padding-left: 0.8rem;
+    }
+  }
+
+  .social-media {
+    .menu-item {
+      &::before {
+        font-size: 1.1rem;
+      }
+
+      &:hover::before {
+        color: $teal;
+      }
+    }
   }
 }

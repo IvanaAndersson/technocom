@@ -2,100 +2,18 @@
 
 /*STYLING THE SECTION WITH THE THREE MODULES, WHICH ACT AS A SECONDARY MENU ON THE FRONT PAGE */
 
-.secondary-menu {
-  min-height: 85vh;
-  margin-bottom: 2rem;
-  & > .row {
-    height: 85vh;
-
-    .row {
-      height: 100%;
-    }
-  }
-}
-
 .products,
 .engineering,
 .auto-industry {
-  height: 100%;
-  padding-top: 4rem;
-  background-image: linear-gradient(to bottom, $body-bg, $body-bg);
-  z-index: 1;
-  overflow: hidden;
-
-  .wrapper {
-    height: 100%;
-    border: none;
-    border-right: 1px solid $lines;
-
-    ul {
-      display: none;
-
-      li {
-        position: relative;
-        transition: all 0.25s ease-in;
-        left: 0;
-        animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        animation-delay: 0.05s;
-        margin-bottom: 0.2rem;
-
-        &:hover {
-          left: 2rem;
-        }
-
-        &:nth-child(1) {
-          animation-delay: 0.05s;
-        }
-        &:nth-child(2) {
-          animation-delay: 0.15s;
-        }
-        &:nth-child(3) {
-          animation-delay: 0.25s;
-        }
-        &:nth-child(4) {
-          animation-delay: 0.35s;
-        }
-        &:nth-child(5) {
-          animation-delay: 0.45s;
-        }
-
-        &:before {
-          display: inline-block;
-          content: "";
-          height: 1.25px;
-          width: 4.5rem;
-          background: $white;
-          position: absolute;
-          top: 40%;
-          right: 102%;
-          transform: scale(0, 1);
-          transform-origin: right top;
-          transition: transform 0.2s ease-in;
-        }
-
-        &:focus::before,
-        &:hover::before {
-          transform: scale(1, 1);
-        }
-
-        a {
-          color: $white;
-
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
+  padding-top: 2.5rem;
 
   .menu-header {
-    max-height: 20rem;
-    padding-left: 2rem;
     position: relative;
     margin-bottom: 3rem;
-    z-index: 500;
+
     h4 {
+      padding-left: 1.5rem;
+      font-size: 1.5rem;
       color: $black;
       margin-bottom: 2rem;
       font-family: "Axiforma Bold", sans-serif;
@@ -110,7 +28,7 @@
 
     img {
       width: auto;
-      height: 100%;
+      height: 70%;
       position: absolute;
       top: 0;
       left: 5%;
@@ -120,71 +38,221 @@
 
   .product-picture {
     position: relative;
-    z-index: 2000;
-    transition: all 0.35s ease-in;
 
     &:after {
       display: block;
       content: "";
-      padding-top: 40%;
-
-      @media screen and (min-width: 1600px) {
-        padding-top: 48%;
-      }
+      padding-top: 50%;
     }
 
     img {
       width: 50%;
       height: auto;
-      position: absolute;
-      top: 15%;
-      right: -1%;
-      transition: transform 0.35s linear;
 
-      &.product {
-        width: 45%;
-        top: -15%;
+      position: absolute;
+      top: -85%;
+      right: -1%;
+
+      &.engineering-picture {
+        top: -50%;
+      }
+
+      &.auto-picture {
+        top: -60%;
+      }
+    }
+  }
+}
+
+.engineering {
+  background-color: darken($body-bg, 3%);
+}
+
+.auto-industry {
+  border-bottom: 1px solid $lines;
+}
+
+@media screen and (min-width: 992px) {
+  .secondary-menu {
+    min-height: 85vh;
+    margin-bottom: 2rem;
+    & > .row {
+      height: 85vh;
+
+      .row {
+        height: 100%;
       }
     }
   }
 
-  //WHEN EACH OF THE MODULES IS HOVERED - DO THESE
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom, $blue, $teal);
-    z-index: -1;
-    transition: opacity 0.5s ease-in;
-    opacity: 0;
-  }
+  .products,
+  .engineering,
+  .auto-industry {
+    height: 100%;
+    padding-top: 4rem;
+    background-image: linear-gradient(to bottom, $body-bg, $body-bg);
+    z-index: 1;
+    overflow: hidden;
 
-  &:hover::before {
-    opacity: 1;
-  }
+    .wrapper {
+      height: 100%;
+      border: none;
+      border-right: 1px solid $lines;
 
-  &:hover {
-    opacity: 1;
-    color: $white;
-  }
+      ul {
+        display: none;
 
-  &:hover .menu-header {
-    h4 {
+        li {
+          position: relative;
+          transition: all 0.25s ease-in;
+          left: 0;
+          animation: slide-bottom 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            both;
+          animation-delay: 0.05s;
+          margin-bottom: 0.2rem;
+
+          &:hover {
+            left: 2rem;
+          }
+
+          &:nth-child(1) {
+            animation-delay: 0.05s;
+          }
+          &:nth-child(2) {
+            animation-delay: 0.1s;
+          }
+          &:nth-child(3) {
+            animation-delay: 0.2s;
+          }
+          &:nth-child(4) {
+            animation-delay: 0.3s;
+          }
+          &:nth-child(5) {
+            animation-delay: 0.4s;
+          }
+
+          &:before {
+            display: inline-block;
+            content: "";
+            height: 1.25px;
+            width: 4.5rem;
+            background: $white;
+            position: absolute;
+            top: 40%;
+            right: 102%;
+            transform: scale(0, 1);
+            transform-origin: right top;
+            transition: transform 0.2s ease-in;
+          }
+
+          &:focus::before,
+          &:hover::before {
+            transform: scale(1, 1);
+          }
+
+          a {
+            color: $white;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-header {
+      max-height: 20rem;
+      padding-left: 2rem;
+      position: relative;
+      margin-bottom: 3rem;
+      z-index: 500;
+
+      h4 {
+        font-family: "Axiforma SemiBold", sans-serif;
+        font-size: 1.4rem;
+        padding-left: 0;
+      }
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .product-picture {
+      position: relative;
+      z-index: 2000;
+      transition: all 0.35s ease-in;
+
+      &:after {
+        padding-top: 40%;
+      }
+
+      img {
+        transition: transform 0.35s linear;
+
+        &.product {
+          width: 45%;
+          top: -15%;
+        }
+
+        &.engineering-picture {
+          top: 15%;
+        }
+
+        &.auto-picture {
+          top: 15%;
+        }
+      }
+    }
+
+    //WHEN EACH OF THE MODULES IS HOVERED - DO THESE
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, $blue, $teal);
+      z-index: -1;
+      transition: opacity 0.5s ease-in;
+      opacity: 0;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 1;
       color: $white;
     }
-  }
 
-  &:hover .product-picture {
-    img {
-      transform: translateY(-5rem) scale(1.2);
+    &:hover .menu-header {
+      h4 {
+        color: $white;
+      }
+    }
+
+    &:hover .product-picture {
+      img {
+        transform: translateY(-5rem) scale(1.2);
+      }
+    }
+
+    &:hover ul {
+      display: block;
     }
   }
 
-  &:hover ul {
-    display: block;
+  .engineering {
+    background-color: transparent;
+  }
+
+  .auto-industry {
+    border-bottom: none;
   }
 }
 
@@ -196,9 +264,30 @@
     font-family: "Axiforma Light", sans-serif;
     font-weight: 300;
     color: $teal;
-    margin-bottom: 4rem;
-    padding-left: 1rem;
-    border-left: 3px solid $teal;
+    text-align: center;
+  }
+}
+
+.news {
+  h3 {
+    color: $white;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .advantages,
+  .news,
+  .partners {
+    h3 {
+      text-align: left;
+      font-family: "Axiforma Light", sans-serif;
+      font-weight: 300;
+      color: $teal;
+      margin-bottom: 4rem;
+      padding-left: 1rem;
+      border-left: 3px solid $teal;
+    }
   }
 }
 
@@ -275,20 +364,38 @@
 }
 
 /* STYLING THE SECTION WITH THE NEWS ARTICLES ON THE MAIN PAGE  */
-.news {
-  height: 75vh;
-  background: linear-gradient(to bottom, $body-bg 50%, $blue 50%, $blue 100%);
-  h3 {
-    margin-bottom: 2rem;
+.news-mobile {
+  .card-link + .card-link {
+    margin-left: 0;
   }
-  @media screen and (min-width: 1600px) {
-    .carousel-products,
-    .carousel-events {
-      height: 55vh;
-    }
 
-    .carousel-inner {
-      height: 100%;
+  .card-body {
+    background-color: $teal;
+    padding: 1.5rem 1rem 3rem 1.5rem;
+    // padding-bottom: 3rem;
+  }
+
+  .card-title,
+  .card-text {
+    color: $white;
+  }
+}
+@media screen and (min-width: 992px) {
+  .news {
+    height: 75vh;
+    background: linear-gradient(to bottom, $body-bg 50%, $blue 50%, $blue 100%);
+    h3 {
+      margin-bottom: 2rem;
+    }
+    @media screen and (min-width: 1600px) {
+      .carousel-products,
+      .carousel-events {
+        height: 55vh;
+      }
+
+      .carousel-inner {
+        height: 100%;
+      }
     }
   }
 }
@@ -296,7 +403,8 @@
 /* STYLING THE SECTION WITH THE PARTNERS ON THE MAIN PAGE  */
 
 .partners {
-  padding: 5rem 0;
+  padding: 2rem 0;
+
   .image-container {
     position: relative;
     overflow: hidden;
@@ -304,11 +412,11 @@
     &:before {
       display: block;
       content: "";
-      padding-top: 35%;
+      padding-top: 50%;
     }
 
     img {
-      width: 70%;
+      width: 80%;
       height: auto;
       position: absolute;
       top: 50%;
@@ -319,29 +427,56 @@
 
   .first-row {
     .image-container {
-      flex: 0 0 20%;
+      flex: 0 0 30%;
+    }
+  }
 
-      &:first-child,
-      &:nth-child(4) {
-        img {
-          width: 75%;
+  .second-row {
+    .image-container {
+      flex: 0 0 25%;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .partners {
+    padding: 5rem 0;
+    .image-container {
+      &:before {
+        padding-top: 35%;
+      }
+
+      img {
+        width: 70%;
+      }
+    }
+
+    .first-row {
+      .image-container {
+        flex: 0 0 20%;
+
+        &:first-child,
+        &:nth-child(4) {
+          img {
+            width: 75%;
+          }
         }
       }
     }
-  }
-  .second-row {
-    .image-container {
-      flex: 0 0 22.5%;
+    .second-row {
+      .image-container {
+        flex: 0 0 22.5%;
 
-      &:first-child {
-        img {
-          width: 55%;
+        &:first-child {
+          img {
+            width: 55%;
+          }
         }
-      }
 
-      &:nth-child(2) {
-        img {
-          width: 85%;
+        &:nth-child(2) {
+          img {
+            width: 85%;
+          }
         }
       }
     }

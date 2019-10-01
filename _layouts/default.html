@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div class="loader d-lg-none"><img src="/assets/img/footer/tk_logo.png" alt=""></div>
+    <div class="loader d-lg-none"><img src="{{ site.baseurl }}/assets/img/logo-loading.png" alt=""></div>
     <header class='site-header'>
       {% include navigation.html %}
       <h1 {% if page.title == 'Техноком Ко' or page.title ==  'Компанията' or page.title ==  'Контакти' %} class='d-none' {% endif %}
@@ -35,7 +35,7 @@
   
     
 
-    <footer class="site-footer text-white pt-5">
+    <footer class="site-footer text-white pt-lg-5">
       {% include footer.html %}
     </footer>
 

@@ -21,16 +21,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div class="loader d-lg-none"><img src="/assets/img/footer/tk_logo.png" alt=""></div>
+    <div class="loader d-lg-none"><img src="/technocom/assets/img/logo-loading.png" alt=""></div>
     <header class='site-header'>
       <!-- Mobile Navbar visible untill large width -->
 <nav
-class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100  bg-dark 
+class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100  bg-dark 
 "
 
   id="navigation-mobile"
 >
-<div class="row no-gutters">
   <!-- Navbar brand -->
     <span class="logo-container d-flex align-items-center col-8">
       <a class="navbar-brand text-uppercase" href="/technocom/">
@@ -694,7 +693,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100  bg-da
     <!-- Links -->
   </div>
   <!-- Collapsible content -->
-</div>
+
   
 
   
@@ -703,12 +702,10 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100  bg-da
 
 <!-- Desktop Navbar visible over the large width breakpoint -->
 <nav
-  class="navbar-expand-lg navbar-dark p-0 d-none fixed-top d-lg-block w-100  bg-dark 
+  class="navbar-expand-lg navbar-dark p-0 d-none fixed-top d-lg-flex row w-100  bg-dark 
   "
   id="navigation-desktop"
 >
-  <!-- The class d-lg-block overrides the d-flex, so I put the content in another div -->
-  <div class="row w-100 ">
     <!-- Navbar brand -->
     <span class="logo-container d-flex align-items-center col-2">
       <a class="navbar-brand text-uppercase" href="/technocom/">
@@ -1308,7 +1305,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100  bg-da
     <!-- Collapsible content -->
 
     <div class="col-1"></div>
-  </div>
+  
 </nav>
 <!-- Desktop Navbar -->
 
@@ -1566,155 +1563,200 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100  bg-da
   
     
 
-    <footer class="site-footer text-white pt-5">
+    <footer class="site-footer text-white pt-lg-5">
       <div class="container-fluid p-0">
   <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row no-gutters justify-content-between">
-        <section class="logo d-flex flex-column col-2">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10 row no-gutters justify-content-between">
+      <section class="logo d-none d-lg-flex flex-column col-lg-2">
+        <img
+          src="/technocom/assets/img/footer/tk_logo.png"
+          alt="technocom logo FOR FOOTER"
+        />
+
+        <a
+          href="mailto:info@technokom.bg"
+          class="companymail mt-auto d-none d-lg-block"
+        >
+          <span class="footer-icon-container">
+            <img
+              class="footer-icon d-none d-lg-inline"
+              src="/technocom/assets/img/footer/email-icon.png"
+              alt="an icon of an email"
+            /> </span
+          >info@technokom.bg
+        </a>
+      </section>
+
+      <section
+        class="mobile-logo w-100 d-flex justify-content-between d-lg-none"
+      >
+        <span>
           <img
-            src="/technocom/assets/img/footer/tk_logo.png"
-            alt="technocom logo FOR FOOTER"
+            class="logo-icon"
+            src="/technocom/assets/img/footer/logo 2.png"
+            alt=""
           />
+        </span>
+        <span>
+          <img
+            class="logo-type"
+            src="/technocom/assets/img/footer/logo 3.png"
+            alt=""
+          />
+        </span>
+      </section>
 
-          <a
-            href="mailto:ivana.p.kostova@gmail.com"
-            class="companymail mt-auto"
-          >
-            <span class="footer-icon-container">
-              <img
-                class="footer-icon"
-                src="/technocom/assets/img/footer/email-icon.png"
-                alt="an icon of an email"
-              /> </span
-            >info@technocom.bg
-          </a>
-        </section>
-
-        <section class="footer-nav col-2">
-          <h5 class="text-white mb-4">ТЕХНОКОМ Ко</h5>
-          <nav>
-            <ul class="list-unstyled">
-              <li>
-                <a href="/technocom/products.html" class="menu-item"
-                  >Продукти</a
-                >
-              </li>
-              <li>
-                <a href="/technocom/engineering.html" class="menu-item"
-                  >Инженеринг</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/technocom/auto-industry.html"
-                  class="menu-item"
-                  >Автомобилна Индустрия</a
-                >
-              </li>
-              <li>
-                <a href="/technocom/about/index.html" class="menu-item"
-                  >Компанията</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/technocom/news/new-products.html"
-                  class="menu-item"
-                  >Новини</a
-                >
-              </li>
-              <li>
-                <a
-                  href="/technocom/contact/index.html"
-                  class="menu-item"
-                  >Контакти</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </section>
-
-        <section class="address col-2">
-          <h5 class="text-white text-uppercase mb-4">Адрес</h5>
-          <div class="written-address mb-4">
-            <span class="company-name font-weight-bold footer-icon-container">
-              <img
-                class="footer-icon"
-                src="/technocom/assets/img/footer/location-icon.png"
-                alt="an icon for location"
-              />
-              ТЕХНОКОМ Ко ЕООД
-            </span>
-            <p class="mt-2">Пловдив 4003, България</p>
-            <p>бул. "Васил Левски" 214</p>
-          </div>
-          <div class="work-hours mt-3">
-            <p class="text-white text-uppercase font-weight-bold mb-2">
-              Работно време
-            </p>
-            <p>Пон.-Петък: 8:30 - 17:00</p>
-            <p class="mt-1">Събота-Неделя: Почивни дни</p>
-          </div>
-        </section>
-
-        <section class="contacts col-2">
-          <h5 class="text-white text-uppercase mb-4">Контакти</h5>
+      <section class="footer-nav d-none d-lg-block col-lg-2">
+        <h5 class="text-white mb-4">ТЕХНОКОМ Ко</h5>
+        <nav>
           <ul class="list-unstyled">
-            <li class="first-child text-white font-weight-bold">
-              <span class="footer-icon-container">
-                <img
-                  class="footer-icon"
-                  src="/technocom/assets/img/footer/phone-icon.png"
-                  alt="an icon of a phone"
-                />
-                + 359 32 965 088
-              </span>
-            </li>
-            <li class="second-child font-weight-bold">
-              <span class="footer-icon-container">
-                <img
-                  class="footer-icon"
-                  src="/technocom/assets/img/footer/fax.png"
-                  alt="an icon of a fax machine"
-                />
-                + 359 32 965 099</span
+            <li>
+              <a href="/technocom/products.html" class="menu-item"
+                >Продукти</a
               >
             </li>
-            <li>+ 359 888 221 437</li>
-            <li>+ 359 888 332 968</li>
-            <li>+ 359 879 497 035</li>
-            <li>+ 359 894 530 453</li>
+            <li>
+              <a href="/technocom/engineering.html" class="menu-item"
+                >Инженеринг</a
+              >
+            </li>
+            <li>
+              <a href="/technocom/auto-industry.html" class="menu-item"
+                >Автомобилна Индустрия</a
+              >
+            </li>
+            <li>
+              <a href="/technocom/about/index.html" class="menu-item"
+                >Компанията</a
+              >
+            </li>
+            <li>
+              <a
+                href="/technocom/news/new-products.html"
+                class="menu-item"
+                >Новини</a
+              >
+            </li>
+            <li>
+              <a href="/technocom/contact/index.html" class="menu-item"
+                >Контакти</a
+              >
+            </li>
           </ul>
-        </section>
-      </div>
+        </nav>
+      </section>
+
+      <section class="address col-12 col-lg-2">
+        <h5 class="text-uppercase mb-lg-4">Адрес</h5>
+        <div class="written-address mb-4">
+          <span class="company-name font-weight-bold footer-icon-container">
+            <img
+              class="footer-icon d-none d-lg-inline"
+              src="/technocom/assets/img/footer/location-icon.png"
+              alt="an icon for location"
+            />
+            ТЕХНОКОМ Ко ЕООД
+          </span>
+          <p class="mt-2">Пловдив 4003, България</p>
+          <p>бул. "Васил Левски" 214</p>
+        </div>
+        <div class="work-hours d-none d-lg-block mt-3">
+          <p class="text-white text-uppercase font-weight-bold mb-2">
+            Работно време
+          </p>
+          <p>Пон.-Петък: 8:30 - 17:00</p>
+          <p class="mt-1">Събота-Неделя: Почивни дни</p>
+        </div>
+      </section>
+
+      <section class="contacts col-12 col-lg-2">
+        <h5 class="text-uppercase mb-4">Контакти</h5>
+        <ul class="list-unstyled">
+          <li class="first-child text-white font-weight-bold">
+            <span class="footer-icon-container">
+              <img
+                class="footer-icon d-none d-lg-inline"
+                src="/technocom/assets/img/footer/phone-icon.png"
+                alt="an icon of a phone"
+              />
+              + 359 32 965 088
+            </span>
+          </li>
+          <li class="second-child font-weight-bold">
+            <span class="footer-icon-container">
+              <img
+                class="footer-icon d-none d-lg-inline"
+                src="/technocom/assets/img/footer/fax.png"
+                alt="an icon of a fax machine"
+              />
+              + 359 32 965 099</span
+            >
+          </li>
+          <li>+ 359 888 221 437</li>
+          <li>+ 359 888 332 968</li>
+          <li class="d-none d-lg-block">+ 359 879 497 035</li>
+          <li class="d-none d-lg-block">+ 359 894 530 453</li>
+        </ul>
+      </section>
+
+      <a
+        href="mailto:info@technokom.bg"
+        class="companymail col-12 d-block d-lg-none"
+      >
+        info@technokom.bg
+      </a>
+
+      <ul
+        class="social-media list-unstyled col-12 d-lg-none d-flex justify-content-center mb-0"
+      >
+        <li>
+          <a href="https://www.facebook.com/" class="menu-item fa-facebook"
+            ><span class="d-none">Facebook</span></a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" class="menu-item fa-linkedin"
+            ><span class="d-none">LinkedIn</span></a
+          >
+        </li>
+      </ul>
     </div>
-    <div class="col-1"></div>
+
+    <div class="col-lg-1"></div>
   </div>
 
   <div class="row footer-copyright mt-5">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="copyright-social mx-0">
+    <div class="col-lg-1"></div>
+    <div class="col-10 col-lg-10 row">
+      <div class="col-12 pl-3 copyright-social d-flex align-items-center mx-0">
         <img
           class="bulgarian-flag"
           src="/technocom/assets/img/footer/zname.png"
           alt="bulgarian flag"
         />
         <div
-          class="d-flex justify-content-between align-items-center flex-grow-1 pb-2"
+          class="d-flex justify-content-between align-items-center flex-lg-grow-1 pb-lg-2"
         >
           <span class="copyright d-flex">
-            <p class="m-0">
-              &copy;2020 Technocom Co. Всички права запазени.
-            </p>
+            <span class="d-flex m-0">
+              <span class="order-2 order-lg-1 mr-1">
+                &copy;2020
+              </span>
+              <span class="order-1 order-lg-2 mr-1">
+                Technocom Co
+              </span>
+            </span>
+
+            <span class="d-none d-lg-inline">. Всички права запазени.</span>
             <a href="/technocom/privacy/index.html" class="menu-item">
               Поверителност
             </a>
           </span>
 
-          <ul class="social-media list-unstyled d-flex align-items-center mb-0">
+          <ul
+            class="social-media list-unstyled d-none d-lg-flex align-items-center mb-0"
+          >
             <li>
               <a href="https://www.facebook.com/" class="menu-item fa-facebook"
                 ><span class="d-none">Facebook</span></a
@@ -1729,7 +1771,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 d-block d-lg-none w-100  bg-da
         </div>
       </div>
     </div>
-    <div class="col-1 d-flex justify-content-center">
+    <div class="col-2 col-lg-1 d-flex justify-content-center">
       <a
         href="#"
         class="button-to-top d-flex justify-content-center align-items-center"

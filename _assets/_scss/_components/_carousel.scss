@@ -1,10 +1,10 @@
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
 
 #carouselFade {
-  max-height: 75vh;
+  max-height: 85vh;
   .carousel-inner {
     width: auto;
-    height: 75vh;
+    height: 85vh;
 
     .carousel-item {
       height: 100%;
@@ -83,7 +83,6 @@
 .carousel-control-prev {
   top: 105%;
   left: 0;
-  // transform: rotateY(180deg);
 }
 .carousel-control-next {
   top: 105%;
@@ -105,11 +104,8 @@
 
 @media screen and (min-width: 992px) {
   #carouselFade {
-    max-height: 85vh;
-
     .carousel-inner {
       width: auto;
-      height: 85vh;
 
       .carousel-item {
         &:before {
@@ -294,6 +290,68 @@
   .carousel-control-next-icon {
     width: 50px;
     height: 30px;
+  }
+}
+
+/* HERE START THE STYLES FOR THE CAROUSEL WITH ADVANTAGES ON THE MOBILE MAIN PAGE  */
+.advantages {
+  margin-bottom: 3rem;
+
+  .carousel-header {
+    margin-bottom: 0;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: $teal;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .carousel-item {
+    color: $gray-900;
+    text-align: center;
+
+    & > .row {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    h6 {
+      color: $black;
+      font-family: "Acari Sans Bold", sans-serif;
+    }
+    .image-ratio-container {
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        display: block;
+        content: "";
+        padding-top: 35%;
+      }
+
+      img {
+        width: 22%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 }
 

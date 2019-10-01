@@ -43,13 +43,13 @@ body[data-aos-duration="2000"] [data-aos],
   background: $body-bg;
 
   img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }
 
 .loader.hidden {
-  animation: loader-fade-out 2s;
+  animation: loader-fade-out 1s;
   animation-fill-mode: forwards;
 }
 
