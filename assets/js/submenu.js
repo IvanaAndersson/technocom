@@ -21,7 +21,3 @@ $(".dropdown-menu a.dropdown-toggle").on("click", function(e) {
 
   return false;
 });
-
-$(".search-button").click(function() {
-  $(this).toggleClass("active");
-});
