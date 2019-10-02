@@ -361,15 +361,10 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
-  ul {
-    li {
-      padding: 0 2rem;
-
-      .image-ratio-container,
-      .advantages-body {
-      }
-    }
+@media screen and (min-width: 1272px) {
+  .advantages-body {
+    align-self: center;
+    width: 20rem;
   }
 }
 

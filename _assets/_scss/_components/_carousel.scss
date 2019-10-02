@@ -305,7 +305,7 @@
     background-color: $teal;
     width: 2.5rem;
     height: 2.5rem;
-    top: 50%;
+    top: 40%;
   }
 
   .carousel-control-prev {
@@ -329,10 +329,6 @@
       margin: 0 auto;
     }
 
-    h6 {
-      color: $black;
-      font-family: "Acari Sans Bold", sans-serif;
-    }
     .image-ratio-container {
       position: relative;
       overflow: hidden;
@@ -350,6 +346,20 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+    }
+
+    .advantages-body {
+      font-size: 0.8rem;
+      text-align: justify;
+      text-align-last: center;
+      align-self: center;
+      width: 16rem;
+
+      h6 {
+        color: $black;
+        font-family: "Acari Sans Bold", sans-serif;
+        margin-bottom: 1.5rem;
       }
     }
   }
