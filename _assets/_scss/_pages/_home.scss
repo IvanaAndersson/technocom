@@ -72,6 +72,12 @@
   border-bottom: 1px solid $lines;
 }
 
+@media screen and (min-width: 768px) {
+  .auto-industry {
+    border-bottom: none;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .secondary-menu {
     min-height: 85vh;
@@ -301,23 +307,11 @@
 .advantage-text {
   ul {
     text-align: center;
+
     li {
       color: $gray-900;
       position: relative;
-      padding: 0 5rem;
-
-      @media screen and (max-width: 1690px) {
-        padding: 0 3.2rem;
-      }
-      @media screen and (max-width: 1550px) {
-        padding: 0 2.5rem;
-      }
-      @media screen and (max-width: 1470px) {
-        padding: 0 1.5rem;
-      }
-      @media screen and (max-width: 1350px) {
-        padding: 0 1rem;
-      }
+      padding: 0 1rem;
       &:after {
         display: block;
         content: "";
@@ -355,9 +349,25 @@
         }
       }
 
+      .advantages-body {
+        text-align: justify;
+        text-align-last: center;
+      }
       h6 {
         color: $black;
         font-family: "Acari Sans Bold", sans-serif;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  ul {
+    li {
+      padding: 0 2rem;
+
+      .image-ratio-container,
+      .advantages-body {
       }
     }
   }

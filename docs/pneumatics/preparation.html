@@ -48,41 +48,41 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
     <!-- Search button -->
   <div class="search-bar col-2">
       <a class="btn border-0 p-lg-2 p-xl-3" id="dropdownMobileButton">
-          <div class="search-button">
-            <div class="search-icon">
-              <span class="d-none">Search</span>
-            </div>
-          </div>
-        </a>
-
-        <div class="search-bar-hidden border-0 w-100" id="search-bar-hidden-mobile"> 
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10">
-              <form action="GET" autocomplete="on" class="mt-2 border-0 d-flex align-items-center">
-                <div class="input-group mb-3">
-                  <input
-                    type="text"
-                    class="form-control py-2 bg-transparent border-0"
-                    placeholder="Потърсете продукт, код, новина.."
-                    aria-label="Search"
-                    aria-describedby="button-addon2"
-                  />
-                  <div class="input-group-append">
-                    <button
-                      class="btn ml-auto"
-                      type="submit"
-                      id="button-addon2"
-                    >
-                      <img src="/technocom/assets/img/home/icon 1.png" alt="search icon">
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="col-1"></div>
+        <div class="search-button">
+          <div class="search-icon">
+            <span class="d-none">Search</span>
           </div>
         </div>
+      </a>
+
+      <div class="search-bar-hidden border-0 w-100" id="search-bar-hidden-mobile"> 
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <form action="GET" autocomplete="on" class="mt-2 border-0 d-flex align-items-center">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control py-2 bg-transparent border-0"
+                  placeholder="Потърсете продукт, код, новина.."
+                  aria-label="Search"
+                  aria-describedby="button-addon2"
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn ml-auto"
+                    type="submit"
+                    id="button-addon2"
+                  >
+                    <img src="/technocom/assets/img/home/icon 1.png" alt="search icon">
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
   </div>
   <!-- Search button -->
 
@@ -100,42 +100,40 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
   </button>
 
   <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+  <div class="collapse navbar-collapse navbar-mobile-collapse" id="navbarSupportedContent2">
     <!-- Links -->
-    <ul class="navbar-nav">
+    <ul class="navbar-nav accordion" id='accordionMenu'>
       <!-- Products menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <span class='menu-text'>Меню</span>
+      <li class="nav-item accordion" id="accordionProducts">
         <a
-          class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
+          class="nav-link dropdown-toggle"
           id="navbarDropdownMenuLink2"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+          data-toggle="collapse"
+          aria-expanded="false" 
+          aria-controls="collapseProducts"
+          data-target=".products-dropdown"
         >
           Продукти
-          <span class="sr-only">(current)</span>
         </a>
 
-        <div
-          class="dropdown-menu bg-primary w-100 m-0"
-          aria-labelledby="navbarDropdownMenuLink2"
-        >
+        <div class="collapse products-dropdown first-dropdown"
+        data-parent="#accordionMenu">
           <ul class="row no-gutters list-unstyled">
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
-              >
+            <div class="hoverable col-12 d-flex flex-column">
+              <li class="dropdown-submenu">
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Пневматика</a
-                >
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapsePneumatics"
+                  data-target=".pneumatics-dropdown"
+                  >Пневматика
+                  </a>
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem"
+                  class="collapse pneumatics-dropdown second-dropdown w-100 border-0"
+                  data-parent="#accordionProducts"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -163,21 +161,21 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </li>
             </div>
 
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
-              >
+            <div class="hoverable col-12 d-flex flex-column"
+            >
+              <li class="dropdown-submenu">
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem2"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Профили</a
-                >
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseProfiles"
+                  data-target=".profiles-dropdown"
+                  >Профили
+                  </a>
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem2"
+                class="collapse profiles-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionProducts"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -205,21 +203,21 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </li>
             </div>
 
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+            <div class="hoverable col-12 d-flex flex-column"
               >
+              <li class="dropdown-submenu">
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem3"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseLinear"
+                  data-target=".linear-dropdown"
                   >Линейни задвижвания</a
                 >
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem3"
+                  class="collapse linear-dropdown second-dropdown w-100 border-0"
+                  data-parent="#accordionProducts"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -247,21 +245,22 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </li>
             </div>
 
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
+            <div class="hoverable col-12 d-flex flex-column">
               <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+                class="dropdown-submenu"
               >
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem4"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseArmature"
+                  data-target=".armature-dropdown"
                   >Арматура</a
                 >
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem4"
+                  class="collapse armature-dropdown second-dropdown  w-100 border-0"
+                  data-parent="#accordionProducts"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -289,22 +288,23 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </li>
             </div>
 
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
+            <div class="hoverable col-12 d-flex flex-column">
               <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
+                class="dropdown-submenu"
               >
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem5"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseVibrators"
+                  data-target=".vibrators-dropdown"
                   >Вибратори</a
                 >
 
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem5"
+                  class="collapse vibrators-dropdown second-dropdown w-100 border-0"
+                  data-parent="#accordionProducts"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -336,37 +336,34 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
       </li>
 
       <!-- Engineering menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item accordion" id="accordionEngineering">
         <a
-          class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
+          class="nav-link dropdown-toggle"
           id="navbarDropdownMenuLink3"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+          data-toggle="collapse"
+          aria-expanded="false" 
+          aria-controls="collapseEngineering"
+          data-target=".engineering-dropdown"
         >
           Инженеринг
         </a>
 
-        <div
-          class="dropdown-menu bg-primary w-100"
-          aria-labelledby="navbarDropdownMenuLink3"
-        >
+        <div class="collapse engineering-dropdown first-dropdown"
+        data-parent="#accordionMenu">
           <ul class="row no-gutters list-unstyled">
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
-              >
+            <div class="hoverable col-12 d-flex flex-column">
+              <li class="dropdown-submenu" >
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseTransport"
+                  data-target=".transport-dropdown"
                   >Транспортни системи</a
                 >
-                <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem"
+                <div class="collapse transport-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionEngineering"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -394,21 +391,20 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </li>
             </div>
 
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
-              >
+            <div class="hoverable col-12 d-flex flex-column">
+              <li class="dropdown-submenu" >
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem2"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseIndustrial"
+                  data-target=".industrial-dropdown"
                   >Индустриални работни места</a
                 >
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem2"
+                class="collapse industrial-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionEngineering"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -431,21 +427,20 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </li>
             </div>
 
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
-              >
+            <div class="hoverable col-12 d-flex flex-column">
+              <li class="dropdown-submenu" >
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem3"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseTables"
+                  data-target=".tables-dropdown"
                   >Пневматични и електрически табла</a
                 >
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem3"
+                  class="collapse tables-dropdown second-dropdown w-100 border-0"
+                  data-parent="#accordionEngineering"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -467,37 +462,35 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
       </li>
 
       <!-- Auto industry menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item accordion" id="accordionAutoindustry">
         <a
-          class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
+          class="nav-link dropdown-toggle"
           id="navbarDropdownMenuLink4"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+          data-toggle="collapse"
+          aria-expanded="false" 
+          aria-controls="collapseAutoindustry"
+          data-target=".auto-industry-dropdown"
         >
           Авто индустрия
         </a>
 
-        <div
-          class="dropdown-menu bg-primary w-100"
-          aria-labelledby="navbarDropdownMenuLink4"
-        >
+        <div class="collapse auto-industry-dropdown first-dropdown"
+        data-parent="#accordionMenu">
           <ul class="row no-gutters list-unstyled">
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
-              >
+            <div class="hoverable col-12 d-flex flex-column">
+              <li class="dropdown-submenu" >
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseClamps"
+                  data-target=".clamps-dropdown"
                   >Клампи</a
                 >
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem"
+                class="collapse clamps-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionAutoindustry"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -540,21 +533,20 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </li>
             </div>
 
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
-              >
+            <div class="hoverable col-12 d-flex flex-column">
+              <li class="dropdown-submenu " >
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem2"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseGR8"
+                  data-target=".gr8-dropdown"
                   >GR8 модулна система</a
                 >
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem2"
+                  class="collapse gr8-dropdown second-dropdown w-100 border-0"
+                  data-parent="#accordionAutoindustry"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -572,21 +564,20 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </li>
             </div>
 
-            <div class="hoverable col-sm-12 col-lg col-xl d-flex flex-column">
-              <li
-                class="dropdown-submenu text-uppercase font-weight-bold text-white py-3"
-              >
+            <div class="hoverable col-12 d-flex flex-column">
+              <li class="dropdown-submenu " >
                 <a
                   class="menu-item dropdown-toggle"
                   id="subMenuItem3"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  data-toggle="collapse"
+                  aria-expanded="false" 
+                  aria-controls="collapseAccessories"
+                  data-target=".accessories-dropdown"
                   >Аксесоари</a
                 >
                 <div
-                  class="dropdown-menu bg-primary w-100 border-0"
-                  aria-labelledby="subMenuItem3"
+                class="collapse accessories-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionAutoindustry"
                 >
                   <ul class="list-unstyled pt-2">
                     <li class="my-1">
@@ -618,73 +609,29 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
       </li>
 
       <!-- THE COMPANY menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item">
         <a
-          class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
-          id="navbarDropdownMenuLink5"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+        class="nav-link nav-link-secondary"
+        href="/technocom/about/index.html"
           >Компанията
         </a>
-        <div
-          class="dropdown-menu bg-primary border mt-2"
-          aria-labelledby="navbarDropdownMenuLink5"
-        >
-          <ul class="list-unstyled">
-            <li class="px-5 py-2 border-bottom">
-              <a
-                class="menu-item pl-0"
-                href="/technocom/about/index.html"
-              >
-                Мисия
-              </a>
-            </li>
-            <li class="px-5 py-2">
-              <a
-                class="menu-item pl-0"
-                href="/technocom/about/index.html#partners"
-              >
-                Партньори
-              </a>
-            </li>
-          </ul>
-        </div>
+        
       </li>
 
       <!-- News menu -->
-      <li class="nav-item dropdown bg-primary mx-2">
+      <li class="nav-item">
         <a
-          class="nav-link dropdown-toggle text-uppercase font-weight-bold p-lg-1 p-xl-3"
-          id="navbarDropdownMenuLink6"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
+        class="nav-link nav-link-secondary"
+        href="/technocom/news/new-products.html"
           >Новини
         </a>
-        <div
-          class="dropdown-menu bg-primary border mt-2"
-          aria-labelledby="navbarDropdownMenuLink6"
-        >
-          <ul class="list-unstyled">
-            <li class="border-bottom px-5 py-2">
-              <a class="menu-item pl-0" href="#!">
-                Продукти
-              </a>
-            </li>
-            <li class="px-5 py-2">
-              <a class="menu-item pl-0" href="#!">
-                Събития
-              </a>
-            </li>
-          </ul>
-        </div>
+       
       </li>
 
       <!-- Contacts menu item -->
-      <li class="nav-item bg-primary mx-2">
+      <li class="nav-item">
         <a
-          class="nav-link text-uppercase font-weight-bold p-lg-1 p-xl-3"
+          class="nav-link nav-link-secondary"
           href="/technocom/contact/index.html"
           >Контакти
         </a>
@@ -693,10 +640,6 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
     <!-- Links -->
   </div>
   <!-- Collapsible content -->
-
-  
-
-  
 </nav>
 <!-- Mobile Navbar -->
 
@@ -1735,7 +1678,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
     <!-- personalized scripts -->
     <script src="/technocom/assets/js/index.js"></script>
     <script src="/technocom/assets/js/carousel.js"></script>
-    <script src="/technocom/assets/js/submenu.js"></script>
+    <!-- <script src="/technocom/assets/js/submenu.js"></script> -->
     
     <!-- scripts for the fading in elements on home page -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

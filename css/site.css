@@ -550,6 +550,12 @@ h6 {
   border-bottom: 1px solid #aaaaaa;
 }
 
+@media screen and (min-width: 768px) {
+  .auto-industry {
+    border-bottom: none;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .secondary-menu {
     min-height: 85vh;
@@ -821,31 +827,7 @@ h6 {
 .advantage-text ul li {
   color: #6e6e73;
   position: relative;
-  padding: 0 5rem;
-}
-
-@media screen and (max-width: 1690px) {
-  .advantage-text ul li {
-    padding: 0 3.2rem;
-  }
-}
-
-@media screen and (max-width: 1550px) {
-  .advantage-text ul li {
-    padding: 0 2.5rem;
-  }
-}
-
-@media screen and (max-width: 1470px) {
-  .advantage-text ul li {
-    padding: 0 1.5rem;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  .advantage-text ul li {
-    padding: 0 1rem;
-  }
+  padding: 0 1rem;
 }
 
 .advantage-text ul li:after {
@@ -888,9 +870,20 @@ h6 {
   width: 19%;
 }
 
+.advantage-text ul li .advantages-body {
+  text-align: justify;
+  text-align-last: center;
+}
+
 .advantage-text ul li h6 {
   color: black;
   font-family: "Acari Sans Bold", sans-serif;
+}
+
+@media screen and (min-width: 1600px) {
+  ul li {
+    padding: 0 2rem;
+  }
 }
 
 /* STYLING THE SECTION WITH THE NEWS ARTICLES ON THE MAIN PAGE  */
@@ -4624,10 +4617,10 @@ input[type="button"].btn-block {
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0;
-  border-left: 0.3em solid transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
 }
 
 .dropdown-toggle:empty::after {
@@ -4719,9 +4712,9 @@ input[type="button"].btn-block {
   margin-left: 0.255em;
   vertical-align: 0.255em;
   content: "";
-  border-top: 0;
+  border-top: 0.3em solid;
   border-right: 0.3em solid transparent;
-  border-bottom: 0.3em solid;
+  border-bottom: 0;
   border-left: 0.3em solid transparent;
 }
 
@@ -10163,27 +10156,6 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0.5rem 0;
 }
 
-.navbar-expand-lg .navbar-nav a {
-  font-size: 0.8rem;
-}
-
-.navbar-expand-lg .navbar-nav .hoverable {
-  border: 1px solid #00a0ad;
-}
-
-.navbar-expand-lg .navbar-nav .hoverable .dropdown-submenu {
-  padding-left: 2rem;
-}
-
-.navbar-expand-lg .navbar-nav .hoverable .dropdown-submenu .dropdown-menu {
-  padding-left: 2rem;
-}
-
-.navbar-expand-lg .navbar-nav .hoverable .dropdown-submenu .dropdown-menu a {
-  text-transform: none;
-  font-weight: 300;
-}
-
 .navbar-expand-lg .menu-item,
 .navbar-expand-lg .nav-link {
   color: white;
@@ -10197,8 +10169,118 @@ a.text-dark:hover, a.text-dark:focus {
   outline: none;
 }
 
+.dropdown-toggle:after {
+  display: block;
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.menu-item.dropdown-toggle:after {
+  display: block;
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  color: #f4f4f4;
+  top: 50%;
+  right: 40px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.navbar-mobile-collapse {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar-mobile-collapse .navbar-nav {
+  width: 100%;
+  height: 100%;
+  background-color: #004456;
+}
+
+.navbar-mobile-collapse .menu-text {
+  color: #00a0ad;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-mobile-collapse .nav-item {
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #00a0ad;
+}
+
+.navbar-mobile-collapse .nav-link {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Acari Sans Bold", sans-serif;
+}
+
+.navbar-mobile-collapse .nav-link:active {
+  background-color: #00a0ad;
+  color: white;
+}
+
+.navbar-mobile-collapse .nav-link.nav-link-secondary {
+  text-transform: none;
+  padding: 1rem;
+  font-family: "Acari Sans SemiBold", sans-serif;
+}
+
+.navbar-mobile-collapse .nav-link.nav-link-secondary:active {
+  background-color: #004456;
+  color: #00a0ad;
+}
+
+.navbar-mobile-collapse .hoverable .dropdown-submenu {
+  width: 100%;
+  background: #004456;
+  border-top: 1px solid #00a0ad;
+}
+
+.navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item {
+  display: block;
+  color: white;
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "Acari Sans SemiBold", sans-serif;
+}
+
+.navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item:active, .navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item:visited {
+  background: #00a0ad;
+  color: white;
+}
+
+.navbar-mobile-collapse .hoverable .dropdown-submenu .second-dropdown {
+  min-width: 100%;
+  background: #f4f4f4;
+}
+
+.navbar-mobile-collapse .hoverable .dropdown-submenu .second-dropdown a {
+  font-size: 0.8rem;
+  display: block;
+  color: black;
+  text-transform: none;
+  font-weight: 300;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 0.55rem 2.5rem;
+}
+
+.navbar-mobile-collapse .hoverable .dropdown-submenu .second-dropdown a:active {
+  color: #00a0ad;
+}
+
 .navbar-toggler {
   border: none;
+  outline: none;
   padding: 0.6rem 0;
 }
 
@@ -10464,6 +10546,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* NAVIGATION STYLES FOR SCREENS ABOVE 992px */
 @media screen and (min-width: 992px) {
+  .navbar-expand-lg a {
+    font-size: 0.8rem;
+  }
   .navbar-expand-lg .navbar-brand {
     width: 100%;
     position: relative;
@@ -10695,27 +10780,36 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 2rem;
 }
 
-.mobile-logo .logo-icon {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
-}
-
-.mobile-logo .logo-icon img {
-  width: auto;
-  height: 100%;
-}
-
+.mobile-logo .logo-icon,
 .mobile-logo .logo-type {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 45%;
           flex: 0 0 45%;
-  text-align: right;
+  position: relative;
+}
+
+.mobile-logo .logo-icon:before,
+.mobile-logo .logo-type:before {
+  display: block;
+  content: "";
+  padding-top: 40%;
+}
+
+.mobile-logo .logo-icon img,
+.mobile-logo .logo-type img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.mobile-logo .logo-icon img {
+  left: 0;
 }
 
 .mobile-logo .logo-type img {
-  width: auto;
   height: 120%;
+  right: 0;
 }
 
 .address,
@@ -10787,7 +10881,7 @@ a.text-dark:hover, a.text-dark:focus {
   cursor: pointer;
   position: relative;
   padding: 0.75rem;
-  margin-top: 0.9rem;
+  margin-top: 0.25rem;
 }
 
 .button-to-top:before {
@@ -10899,30 +10993,33 @@ a.text-dark:hover, a.text-dark:focus {
   .social-media .menu-item:hover::before {
     color: #00a0ad;
   }
+  .button-to-top {
+    margin-top: 0.9rem;
+  }
 }
 
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
-#carouselFade {
+.carousel-fade {
   max-height: 85vh;
 }
 
-#carouselFade .carousel-inner {
+.carousel-fade .carousel-inner {
   width: auto;
   height: 85vh;
 }
 
-#carouselFade .carousel-inner .carousel-item {
+.carousel-fade .carousel-inner .carousel-item {
   height: 100%;
   position: relative;
 }
 
-#carouselFade .carousel-inner .carousel-item:before {
+.carousel-fade .carousel-inner .carousel-item:before {
   display: block;
   content: "";
   padding-top: 1%;
 }
 
-#carouselFade .carousel-inner .carousel-item img {
+.carousel-fade .carousel-inner .carousel-item img {
   width: auto;
   height: 100%;
   position: absolute;
@@ -11010,13 +11107,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media screen and (min-width: 992px) {
-  #carouselFade .carousel-inner {
+  .carousel-fade .carousel-inner {
     width: auto;
   }
-  #carouselFade .carousel-inner .carousel-item:before {
+  .carousel-fade .carousel-inner .carousel-item:before {
     padding-top: 50%;
   }
-  #carouselFade .carousel-inner .carousel-item img {
+  .carousel-fade .carousel-inner .carousel-item img {
     width: 130%;
     height: auto;
   }
@@ -11100,7 +11197,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  #carouselFade .carousel-inner .carousel-item img {
+  .carousel-fade .carousel-inner .carousel-item img {
     width: 120%;
   }
   .carousel-caption {
@@ -11123,7 +11220,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media screen and (min-width: 1440px) {
-  #carouselFade .carousel-inner .carousel-item img {
+  .carousel-fade .carousel-inner .carousel-item img {
     width: 110%;
   }
   .carousel-caption {
@@ -11144,7 +11241,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media screen and (min-width: 1640px) {
-  #carouselFade .carousel-inner .carousel-item img {
+  .carousel-fade .carousel-inner .carousel-item img {
     width: 100%;
   }
   .carousel-caption {

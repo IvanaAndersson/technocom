@@ -26,20 +26,32 @@
   border-bottom: 1px solid $body-bg;
   margin-bottom: 2rem;
 
-  .logo-icon {
+  .logo-icon,
+  .logo-type {
     flex: 0 0 45%;
+    position: relative;
+    &:before {
+      display: block;
+      content: "";
+      padding-top: 40%;
+    }
     img {
       width: auto;
       height: 100%;
+      position: absolute;
+      top: 0;
     }
   }
 
-  .logo-type {
-    flex: 0 0 45%;
-    text-align: right;
+  .logo-icon {
     img {
-      width: auto;
+      left: 0;
+    }
+  }
+  .logo-type {
+    img {
       height: 120%;
+      right: 0;
     }
   }
 }
@@ -112,7 +124,7 @@
   cursor: pointer;
   position: relative;
   padding: 0.75rem;
-  margin-top: 0.9rem;
+  margin-top: 0.25rem;
 
   &:before {
     display: block;
@@ -255,5 +267,9 @@
         color: $teal;
       }
     }
+  }
+
+  .button-to-top {
+    margin-top: 0.9rem;
   }
 }

@@ -1,6 +1,6 @@
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
 
-#carouselFade {
+.carousel-fade {
   max-height: 85vh;
   .carousel-inner {
     width: auto;
@@ -103,7 +103,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  #carouselFade {
+  .carousel-fade {
     .carousel-inner {
       width: auto;
 
@@ -203,7 +203,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  #carouselFade {
+  .carousel-fade {
     .carousel-inner {
       .carousel-item {
         img {
@@ -238,7 +238,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  #carouselFade {
+  .carousel-fade {
     .carousel-inner {
       .carousel-item {
         img {
@@ -272,7 +272,7 @@
 }
 
 @media screen and (min-width: 1640px) {
-  #carouselFade {
+  .carousel-fade {
     .carousel-inner {
       .carousel-item {
         img {

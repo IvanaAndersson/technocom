@@ -1,0 +1,13 @@
+@mixin caret-up {
+  border-top: $caret-width solid;
+  border-right: $caret-width solid transparent;
+  border-bottom: 0;
+  border-left: $caret-width solid transparent;
+}
+
+@mixin caret-down {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}

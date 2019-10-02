@@ -5,10 +5,196 @@ permalink: /
 ---
 
 <main>
-  <!-- SECTION WITH TO PAGE CAROUSEL -->
+  <!-- SECTION WITH PAGE CAROUSEL -->
+  <!-- ONE CAROUSEL FOR MOBILE WHICH ISN'T AUTOMATIC -->
+  <div
+  id="carouselFadeMobile"
+  class="carousel slide carousel-fade d-lg-none"
+  data-ride="carousel"
+  data-interval="false"
+>
+  <ol class="carousel-indicators">
+    <li data-target="#carouselFadeMobile" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselFadeMobile" data-slide-to="1"></li>
+    <li data-target="#carouselFadeMobile" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="5000">
+      <img
+        src="{{ site.baseurl }}/assets/img/home/1.jpg"
+        class="d-block"
+        alt="..."
+      />
+
+      <div
+        class="carousel-caption row no-gutters flex-column flex-lg-row
+      align-items-center align-items-lg-stretch 
+      justify-content-center"
+      >
+        <div class="col-lg-1 order-lg-1"></div>
+        <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
+          <h4 class="delivery">Доставка на елементи за:</h4>
+          <li class="text-uppercase">Автоматизация</li>
+          <li class="text-uppercase">Инженеринг</li>
+          <li class="text-uppercase">
+            Автомобилна индустрия
+          </li>
+        </ul>
+
+        <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+          <h1 class="text-uppercase">
+            Технически <br />
+            доброто до вас.
+          </h1>
+          <a
+            class="carousel-control-prev"
+            href="#carouselFadeMobile"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a
+            class="carousel-control-next"
+            href="#carouselFadeMobile"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="col-lg-1 order-lg-4"></div>
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="5000">
+      <img
+        src="{{ site.baseurl }}/assets/img/home/2.jpg"
+        class="d-block"
+        alt="..."
+      />
+      <div
+        class="carousel-caption row no-gutters flex-column flex-lg-row 
+        align-items-center align-items-lg-stretch justify-content-center"
+      >
+        <div class="col-lg-1 order-lg-1"></div>
+        <ul class="list-unstyled col-lg-5 order-2 order-lg-3">
+          <h4 class="production">Конструиране и изработване на:</h4>
+          <li class="text-uppercase">Транспортни системи</li>
+          <li class="text-uppercase">
+            Индустриални работни места
+          </li>
+          
+          <li class="text-uppercase ">
+            Пневматични табла
+          </li>
+          <li class="text-uppercase ">
+            Електрически табла
+          </li>
+        </ul>
+
+        <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+          <h1 class="text-uppercase">
+            Технически <br />
+            доброто до вас.
+          </h1>
+          <a
+            class="carousel-control-prev"
+            href="#carouselFadeMobile"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+             
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a
+            class="carousel-control-next"
+            href="#carouselFadeMobile"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="col-lg-1 order-lg-4"></div>
+      </div>
+    </div>
+    <div class="carousel-item" data-interval="5000">
+      <img
+        src="{{ site.baseurl }}/assets/img/home/3.jpg"
+        class="d-block"
+        alt="..."
+      />
+
+      <div
+        class="carousel-caption row no-gutters flex-column flex-lg-row 
+        align-items-center align-items-lg-stretch justify-content-center"
+      >
+        <div class="col-lg-1 order-lg-1"></div>
+        <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
+          <h4 class="industry">Проектиране и внедряване на:</h4>
+          
+          <li class="text-uppercase ">Решение за BIW</li>
+          <li class="text-uppercase">
+            Модулни инструментални системи
+          </li>
+          <li class="text-uppercase">
+            Бързо инсталиране и настройка
+          </li>
+        </ul>
+
+        <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+          <h1 class="text-uppercase">
+            Технически <br />
+            доброто до вас.
+          </h1>
+
+          <a
+            class="carousel-control-prev"
+            href="#carouselFadeMobile"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a
+            class="carousel-control-next"
+            href="#carouselFadeMobile"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="col-lg-1 order-lg-4"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- ONE CAROUSEL FOR DESKTOP WHICH IS AUTOMATIC -->
   <div
     id="carouselFade"
-    class="carousel slide carousel-fade"
+    class="carousel slide carousel-fade d-none d-lg-block"
     data-ride="carousel"
     data-pause="false"
   >
@@ -89,14 +275,8 @@ permalink: /
             <li class="text-uppercase">
               Индустриални работни места
             </li>
-            <li class="text-uppercase d-none d-lg-block">
+            <li class="text-uppercase">
               Пневматични и електрически табла
-            </li>
-            <li class="text-uppercase d-lg-none">
-              Пневматични табла
-            </li>
-            <li class="text-uppercase d-lg-none">
-              Електрически табла
             </li>
           </ul>
 
@@ -112,7 +292,6 @@ permalink: /
               data-slide="prev"
             >
               <span class="carousel-control-prev-icon" aria-hidden="true">
-                <!-- <img src="/assets/img/home/strelka.png" alt="" /> -->
               </span>
               <span class="sr-only">Previous</span>
             </a>
@@ -147,8 +326,8 @@ permalink: /
           <div class="col-lg-1 order-lg-1"></div>
           <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
             <h4 class="industry">Проектиране и внедряване на:</h4>
-            <li class="text-uppercase d-none d-lg-block">Решение за BIW в автомобилостроенето</li>
-            <li class="text-uppercase d-lg-none">Решение за BIW</li>
+            <li class="text-uppercase">Решение за BIW в автомобилостроенето</li>
+            
             <li class="text-uppercase">
               Модулни инструментални системи
             </li>
@@ -194,10 +373,11 @@ permalink: /
   </div>
 
   <div class="container-fluid p-0">
-    <!-- THE SECTION WITH SECONDARY MENU -->
+    <!-- THE SECTION WITH SECONDARY MENU / THE THREE SECTORS -->
 
     <section class="secondary-menu mb-2 mb-lg-5 row no-gutters">
       <div class="col-lg-1"></div>
+      <!-- THE THREE SECTORS ARE VERTICAL ON MOBILE AND THEY ARE LINKS TO THE CORRESPONDING PAGES  -->
       <div class="col-12 d-lg-none row no-gutters">
         <a href="/products.html" class="col-12 col-md-4">
           <div class="products ">
@@ -264,7 +444,7 @@ permalink: /
           </div>
         </a>
       </div>
-
+      <!-- THE THREE SECTORS ARE HORIZONTAL ON DESKTOP -->
       <div class="d-none d-lg-flex col-10 row no-gutters">
         <div class="products col-4 px-0">
           <div class="wrapper d-flex flex-column">
@@ -375,123 +555,68 @@ permalink: /
 
     <!-- THE SECTION WITH THE ADVANTAGES -->
     <section class="advantages">
-      <div class="advantage-text d-none d-lg-flex row no-gutters">
-        <div class="col-1"></div>
-        <div class="col-10">
-          <h3>Предимства</h3>
-          <ul class="list-unstyled row justify-content-between">
-            <li class="col-4 d-flex flex-column" data-aos="fade-up">
-              <div class="image-ratio-container">
-                <img
-                  src="{{ site.baseurl }}/assets/img/home/icon 2.png"
-                  class="mb-4"
-                  alt="an icon showing a lightbulb"
-                />
-              </div>
 
-              <div>
-                <h6 class="mt-2 mb-3 text-uppercase">Технически решения</h6>
-                Предлагаме на българския пазар както продукти, така и цялостни
-                технически решения на разумни цени.
-              </div>
-            </li>
-            <li
-              class="col-4 d-flex flex-column"
-              data-aos="fade-up"
-              data-aos-delay="250"
-            >
-              <div class="image-ratio-container">
-                <img
-                  src="{{ site.baseurl }}/assets/img/home/icon 3.png"
-                  class="mb-4"
-                  alt="an icon showing a packet that is moving"
-                />
-              </div>
-              <div>
-                <h6 class="mt-2 mb-3 text-uppercase">Бърза доставка</h6>
-                <p>
-                  Нашата дистрибуторска мрежа и складова наличност ни позволяват
-                  да бъдем винаги близо до Вас.
-                </p>
-              </div>
-            </li>
-            <li
-              class="col-4 d-flex flex-column"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="image-ratio-container">
-                <img
-                  src="{{ site.baseurl }}/assets/img/home/icon 4.png"
-                  class="mb-4"
-                  alt="an icon showing a bullseye"
-                />
-              </div>
-              <div>
-                <h6 class="mt-2 mb-3 text-uppercase">Страст към успеха</h6>
-                Стремим се към съвършенство, защото сме емоционално и
-                интелектуално свързани с работата си.
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-1"></div>
-      </div>
+      <!-- ADVANTAGES CAROUSEL, ONLY ON MOBILE -->
       
-      <div
-        class="carousel slide carousel-advantages d-lg-none"
-        id="carouselAdvantages"
-        data-ride="carousel"
-        data-interval="false"
-      >
-
-        <div class="carousel-header d-flex justify-content-between align-items-center">
+      
+      <h3 class='my-3 d-lg-none'>Предимства</h3>
+      
+      <div class="row no-gutters">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+          <div
+            class="carousel slide carousel-advantages d-lg-none"
+            id="carouselAdvantages"
+            data-ride="carousel"
+            data-interval="false"
+          >
+    
+            <div class="carousel-header d-flex justify-content-between align-items-center">
+                  
+              <a
+                class="carousel-control-prev"
+                href="#carouselAdvantages"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true">
+                </span>
+                <span class="sr-only">Previous</span>
+              </a>
+  
+              <a
+                class="carousel-control-next"
+                href="#carouselAdvantages"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
               
-            <a
-              class="carousel-control-prev"
-              href="#carouselAdvantages"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon" aria-hidden="true">
-              </span>
-              <span class="sr-only">Previous</span>
-            </a>
-
-            <a
-              class="carousel-control-next"
-              href="#carouselAdvantages"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
-          
-        </div>
-        <h3 class='mb-3'>Предимства</h3>
-          <div class="carousel-inner">
+            </div>
+            <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="row no-gutters">
-                <div class="col-12 d-flex flex-column">
-                  <div class="image-ratio-container">
-                    <img
-                      src="{{ site.baseurl }}/assets/img/home/icon 2.png"
-                      class="mb-4"
-                      alt="an icon showing a lightbulb"
-                    />
-                  </div>
+            <div class="row no-gutters">
+              <div class="col-12 d-flex flex-column">
+                <div class="image-ratio-container">
+                  <img
+                    src="{{ site.baseurl }}/assets/img/home/icon 2.png"
+                    class="mb-4"
+                    alt="an icon showing a lightbulb"
+                  />
+                </div>
 
-                  <div>
-                    <h6 class="mt-2 mb-3 text-uppercase">Технически решения</h6>
-                    Предлагаме на българския пазар както продукти, така и цялостни
-                    технически решения на разумни цени.
-                  </div>
+                <div>
+                  <h6 class="mt-2 mb-3 text-uppercase">Технически решения</h6>
+                  Предлагаме на българския пазар както продукти, така и цялостни
+                  технически решения на разумни цени.
                 </div>
               </div>
+            </div>
             </div>
 
             <div class="carousel-item">
@@ -534,12 +659,141 @@ permalink: /
               </div>
             </div>
           </div>
+        </div>
+        </div>
+        <div class="col-md-1"></div>
       </div>
+         
+
+      <!-- SECTION WITH ADVANTAGES FOR DESKTOP, STATIC  -->
+      <div class="advantage-text d-none d-lg-flex row no-gutters">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <h3>Предимства</h3>
+          <ul class="list-unstyled row justify-content-between">
+            <li class="col-4 d-flex flex-column align-items-center" data-aos="fade-up">
+              <div class="image-ratio-container">
+                <img
+                  src="{{ site.baseurl }}/assets/img/home/icon 2.png"
+                  class="mb-4"
+                  alt="an icon showing a lightbulb"
+                />
+              </div>
+
+              <div class='advantages-body'>
+                <h6 class="mt-2 mb-3 text-uppercase">Технически решения</h6>
+                <p>
+                  Предлагаме на българския пазар както продукти, така и цялостни
+                технически решения на разумни цени.
+                </p>
+                
+              </div>
+            </li>
+            <li
+              class="col-4 d-flex flex-column align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <div class="image-ratio-container">
+                <img
+                  src="{{ site.baseurl }}/assets/img/home/icon 3.png"
+                  class="mb-4"
+                  alt="an icon showing a packet that is moving"
+                />
+              </div>
+              <div class='advantages-body'>
+                <h6 class="mt-2 mb-3 text-uppercase">Бърза доставка</h6>
+                <p>
+                  Нашата дистрибуторска мрежа и складова наличност ни позволяват
+                  да бъдем винаги близо до Вас.
+                </p>
+              </div>
+            </li>
+            <li
+              class="col-4 d-flex flex-column align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="image-ratio-container">
+                <img
+                  src="{{ site.baseurl }}/assets/img/home/icon 4.png"
+                  class="mb-4"
+                  alt="an icon showing a bullseye"
+                />
+              </div>
+              <div class='advantages-body'>
+                <h6 class="mt-2 mb-3 text-uppercase">Страст към успеха</h6>
+                <p>
+                  Стремим се към съвършенство, защото сме емоционално и
+                  интелектуално свързани с работата си.
+
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      
+      
     </section>
 
     <!-- SECTION WITH NEWS -->
 
     <section class="news">
+
+      <!-- THE SECTION WITH NEWS ON MOBILE, STATIC  -->
+      <div class="row d-lg-none news-mobile">
+          <h3 class='bg-primary col-12 p-4'>Новини</h3>
+          <a
+          href="{{ site.baseurl }}/news-item-page.html"
+          class="card-link col-12"
+          >
+            <div class="card border-0">
+              <div class="embed-responsive embed-responsive-4by3">
+                <img
+                  class="card-img-top img-fluid embed-responsive-item"
+                  src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
+                  alt="image from an event"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title">
+                  02.07.2019
+                </p>
+                <p class="card-text">
+                  Техноком Ко с поредно участие на MachTech & InnoTech
+                  2019
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="{{ site.baseurl }}/news-item-page.html"
+            class="card-link col-12"
+          >
+            <div class="card border-0">
+              <div class="embed-responsive embed-responsive-4by3">
+                <img
+                  class="card-img-top img-fluid embed-responsive-item"
+                  src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
+                  alt="image from an event"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title">
+                  02.07.2019
+                </p>
+                <p class="card-text">
+                  Техноком Ко проведе поредния си семинар, на който бяха
+                  представени продукти на VESTA
+                </p>
+              </div>
+            </div>
+          </a>
+      </div>
+
+      <!-- THE SECTION WITH NEWS CAROUSEL ONLY ON DESKTOP -->
       <div class="row d-none d-lg-flex">
         <div class="col-1"></div>
         <div class="col-10 d-flex flex-column">
@@ -1203,58 +1457,10 @@ permalink: /
         <div class="col-1"></div>
       </div>
 
-      <div class="row d-lg-none news-mobile">
-        <h3 class='bg-primary col-12 p-4'>Новини</h3>
-        <a
-        href="{{ site.baseurl }}/news-item-page.html"
-        class="card-link col-12"
-        >
-          <div class="card border-0">
-            <div class="embed-responsive embed-responsive-4by3">
-              <img
-                class="card-img-top img-fluid embed-responsive-item"
-                src="{{ site.baseurl }}/assets/img/home/photo 4.jpg"
-                alt="image from an event"
-              />
-            </div>
-            <div class="card-body">
-              <p class="card-title">
-                02.07.2019
-              </p>
-              <p class="card-text">
-                Техноком Ко с поредно участие на MachTech & InnoTech
-                2019
-              </p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="{{ site.baseurl }}/news-item-page.html"
-          class="card-link col-12"
-        >
-          <div class="card border-0">
-            <div class="embed-responsive embed-responsive-4by3">
-              <img
-                class="card-img-top img-fluid embed-responsive-item"
-                src="{{ site.baseurl }}/assets/img/home/photo 3.jpeg"
-                alt="image from an event"
-              />
-            </div>
-            <div class="card-body">
-              <p class="card-title">
-                02.07.2019
-              </p>
-              <p class="card-text">
-                Техноком Ко проведе поредния си семинар, на който бяха
-                представени продукти на VESTA
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
+      
     </section>
 
-    <!-- SECTION WITH PARTNERS LOGOS -->
+    <!-- SECTION WITH PARTNERS LOGOS, SAME ON ALL DEVICES -->
 
     <section class="partners">
       <div class="row">
@@ -1311,9 +1517,6 @@ permalink: /
               />
             </div>
           </div>
-          <!-- <div class="row second-row w-100 justify-content-center">
-            
-          </div> -->
         </div>
         <div class="col-lg-1"></div>
       </div>
