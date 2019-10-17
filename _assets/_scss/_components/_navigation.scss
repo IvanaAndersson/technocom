@@ -4,8 +4,8 @@
   .logo-container {
     background: $body-bg;
     img {
-      // width: 70%;
-      // height: auto;
+      width: 70%;
+      height: auto;
     }
   }
 
@@ -392,12 +392,12 @@
       position: relative;
     }
 
-    // #head-logo-blue {
-    //   display: block;
-    //   width: 65%;
-    //   height: auto;
-    //   margin: 0 auto;
-    // }
+    #head-logo-blue {
+      display: block;
+      width: 65%;
+      height: auto;
+      margin: 0 auto;
+    }
 
     .navbar-nav {
       margin: 0 auto;
@@ -530,7 +530,7 @@
         padding-top: 20%;
       }
       img {
-        width: 97%;
+        width: 95%;
         height: auto;
         position: absolute;
         top: 50%;
@@ -544,7 +544,7 @@
       transition: all 0.3s ease-in;
       #head-logo-blue {
         opacity: 0;
-        // width: 100%;
+        width: 95%;
         // transform: scale(1) translate3d(-50%, -50%, 0);
         // transform-origin: top left;
         transition: opacity 0.1s ease-in;
@@ -574,7 +574,7 @@
 
       #head-logo-blue {
         opacity: 1;
-        // width: 100%;
+        width: 95%;
         // transform: scale(0.8) translate3d(-60%, -50%, 0);
         // transform-origin: top left;
       }

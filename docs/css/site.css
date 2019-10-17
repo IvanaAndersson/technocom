@@ -10153,6 +10153,11 @@ a.text-dark:hover, a.text-dark:focus {
   background: #f4f4f4;
 }
 
+.navbar-expand-lg .logo-container img {
+  width: 70%;
+  height: auto;
+}
+
 .navbar-expand-lg .navbar-nav {
   cursor: pointer;
   padding: 0.5rem 0;
@@ -10601,6 +10606,12 @@ a.text-dark:hover, a.text-dark:focus {
     width: 100%;
     position: relative;
   }
+  .navbar-expand-lg #head-logo-blue {
+    display: block;
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+  }
   .navbar-expand-lg .navbar-nav {
     margin: 0 auto;
   }
@@ -10724,7 +10735,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding-top: 20%;
   }
   .navbar-transparent .navbar-brand img {
-    width: 97%;
+    width: 95%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -10739,6 +10750,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .navbar-transparent .logo-container #head-logo-blue {
     opacity: 0;
+    width: 95%;
     -webkit-transition: opacity 0.1s ease-in;
     transition: opacity 0.1s ease-in;
   }
@@ -10764,6 +10776,7 @@ a.text-dark:hover, a.text-dark:focus {
   .home-page.navbar-when-scrolled .logo-container #head-logo-blue,
   .home-page.navbar-search-clicked .logo-container #head-logo-blue {
     opacity: 1;
+    width: 95%;
   }
   .navbar-transparent:hover .logo-container #head-logo-white,
   .home-page.navbar-when-scrolled .logo-container #head-logo-white,
