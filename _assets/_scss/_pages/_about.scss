@@ -21,8 +21,6 @@
 }
 
 .mission {
-  // position: relative;
-
   .mission-text {
     margin-top: 10rem;
     padding-right: 5rem;
@@ -65,9 +63,8 @@
   margin: 15rem auto 10rem auto;
 
   blockquote {
-    width: 80%;
-    margin: 0 auto;
     position: relative;
+    text-align: justify;
 
     &:before {
       display: inline-block;

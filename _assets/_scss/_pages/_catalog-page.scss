@@ -67,30 +67,36 @@
     }
   }
 }
-.container-fluid {
-  .accent {
-    margin: 10rem auto;
-  }
+
+.accent {
+  background: $teal;
+}
+
+.accent-container {
+  padding: 3rem 0;
+}
+
+.accent-heading {
+  font-size: 1.85rem;
+  font-family: "Axiforma Bold";
+  padding: 1rem 0;
 }
 
 .accent-text {
-  h4 {
-    font-size: 1.75rem;
-    font-family: "Axiforma Light";
-    padding: 1rem 1.3rem;
-    margin: 4.5rem 0;
-  }
   .accent-paragraph {
-    color: $gray-900;
+    color: $white;
     width: 80%;
     text-align: justify;
-  }
-}
+    margin-top: 4rem;
 
-.accent-image {
-  border: 1px solid $blue;
-  .embed-responsive-item {
-    width: 100%;
-    height: auto;
+    &:before {
+      display: block;
+      content: "";
+      width: 6rem;
+      height: 3px;
+      background-color: $white;
+      position: absolute;
+      top: 2rem;
+    }
   }
 }

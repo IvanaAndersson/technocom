@@ -4,8 +4,8 @@
   .logo-container {
     background: $body-bg;
     img {
-      width: 70%;
-      height: auto;
+      // width: 70%;
+      // height: auto;
     }
   }
 
@@ -181,14 +181,15 @@
     &:before {
       display: block;
       content: "";
-      padding-top: 25%;
+      padding-top: 20%;
     }
     img {
-      width: 80%;
+      width: 90%;
       height: auto;
       position: absolute;
       top: 55%;
       left: 45%;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -197,21 +198,20 @@
     transition: all 0.3s ease-in;
     #head-logo-blue {
       opacity: 0;
-      width: 80%;
-      transform: scale(1) translate3d(-50%, -50%, 0);
-      transform-origin: top left;
-      transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s;
+      // transform: scale(1) translate3d(-50%, -50%, 0);
+      // transform-origin: top left;
+      transition: opacity 0.1s ease-in;
+      //  transform 0.15s ease-in 0.05s;
     }
     #head-logo-white {
       opacity: 1;
       transition: opacity 0.1s ease-in;
-      transform: translate(-50%, -50%);
     }
   }
 
   .search-bar {
     a.btn {
-      background-color: rgba($teal, 0);
+      background-color: rgba($teal, 1);
     }
   }
 }
@@ -228,9 +228,9 @@
 
     #head-logo-blue {
       opacity: 1;
-      width: 80%;
-      transform: scale(0.9) translate3d(-55%, -55%, 0);
-      transform-origin: top left;
+      // width: 80%;
+      // transform: scale(0.9) translate3d(-55%, -55%, 0);
+      // transform-origin: top left;
     }
 
     #head-logo-white {
@@ -392,12 +392,12 @@
       position: relative;
     }
 
-    #head-logo-blue {
-      display: block;
-      width: 65%;
-      height: auto;
-      margin: 0 auto;
-    }
+    // #head-logo-blue {
+    //   display: block;
+    //   width: 65%;
+    //   height: auto;
+    //   margin: 0 auto;
+    // }
 
     .navbar-nav {
       margin: 0 auto;
@@ -522,42 +522,42 @@
     padding-top: 0.5rem;
     transition: all 0.3s ease-in;
     .navbar-brand {
-      margin-left: 2.7rem;
+      margin-left: 0.5rem;
 
       &:before {
         display: block;
         content: "";
-        padding-top: 25%;
+        padding-top: 20%;
       }
       img {
-        width: 110%;
+        width: 97%;
         height: auto;
         position: absolute;
         top: 50%;
         left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
 
     .logo-container {
-      background-color: rgba($body-bg, 0);
+      background-color: $teal;
       transition: all 0.3s ease-in;
       #head-logo-blue {
         opacity: 0;
-        width: 110%;
-        transform: scale(1) translate3d(-50%, -50%, 0);
-        transform-origin: top left;
-        transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s;
+        // width: 100%;
+        // transform: scale(1) translate3d(-50%, -50%, 0);
+        // transform-origin: top left;
+        transition: opacity 0.1s ease-in;
       }
       #head-logo-white {
         opacity: 1;
         transition: opacity 0.1s ease-in;
-        transform: translate(-50%, -50%);
       }
     }
 
     .search-bar {
       a.btn {
-        background-color: rgba($teal, 0);
+        background-color: $teal;
       }
     }
   }
@@ -570,23 +570,17 @@
     background-color: $blue;
 
     .logo-container {
-      background-color: rgba($body-bg, 1);
+      background-color: $body-bg;
 
       #head-logo-blue {
         opacity: 1;
-        width: 110%;
-        transform: scale(0.8) translate3d(-60%, -50%, 0);
-        transform-origin: top left;
+        // width: 100%;
+        // transform: scale(0.8) translate3d(-60%, -50%, 0);
+        // transform-origin: top left;
       }
 
       #head-logo-white {
         opacity: 0;
-      }
-    }
-
-    .search-bar {
-      a.btn {
-        background-color: rgba($teal, 1);
       }
     }
   }

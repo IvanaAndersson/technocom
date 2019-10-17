@@ -1058,9 +1058,8 @@ h6 {
 }
 
 .quote blockquote {
-  width: 80%;
-  margin: 0 auto;
   position: relative;
+  text-align: justify;
 }
 
 .quote blockquote:before {
@@ -1394,30 +1393,35 @@ h6 {
   width: auto;
 }
 
-.container-fluid .accent {
-  margin: 10rem auto;
+.accent {
+  background: #00a0ad;
 }
 
-.accent-text h4 {
-  font-size: 1.75rem;
-  font-family: "Axiforma Light";
-  padding: 1rem 1.3rem;
-  margin: 4.5rem 0;
+.accent-container {
+  padding: 3rem 0;
+}
+
+.accent-heading {
+  font-size: 1.85rem;
+  font-family: "Axiforma Bold";
+  padding: 1rem 0;
 }
 
 .accent-text .accent-paragraph {
-  color: #6e6e73;
+  color: white;
   width: 80%;
   text-align: justify;
+  margin-top: 4rem;
 }
 
-.accent-image {
-  border: 1px solid #004456;
-}
-
-.accent-image .embed-responsive-item {
-  width: 100%;
-  height: auto;
+.accent-text .accent-paragraph:before {
+  display: block;
+  content: "";
+  width: 6rem;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: 2rem;
 }
 
 /* STYLING THE INDIVIDUAL PRODUCT FROM THE CATALOG PAGE*/
@@ -10149,11 +10153,6 @@ a.text-dark:hover, a.text-dark:focus {
   background: #f4f4f4;
 }
 
-.navbar-expand-lg .logo-container img {
-  width: 70%;
-  height: auto;
-}
-
 .navbar-expand-lg .navbar-nav {
   cursor: pointer;
   padding: 0.5rem 0;
@@ -10356,15 +10355,17 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-transparent .navbar-brand:before {
   display: block;
   content: "";
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 .navbar-transparent .navbar-brand img {
-  width: 80%;
+  width: 90%;
   height: auto;
   position: absolute;
   top: 55%;
   left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .navbar-transparent .logo-container {
@@ -10375,27 +10376,18 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-transparent .logo-container #head-logo-blue {
   opacity: 0;
-  width: 80%;
-  -webkit-transform: scale(1) translate3d(-50%, -50%, 0);
-          transform: scale(1) translate3d(-50%, -50%, 0);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transition: opacity 0.1s ease-in, -webkit-transform 0.15s ease-in 0.05s;
-  transition: opacity 0.1s ease-in, -webkit-transform 0.15s ease-in 0.05s;
-  transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s;
-  transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s, -webkit-transform 0.15s ease-in 0.05s;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
 }
 
 .navbar-transparent .logo-container #head-logo-white {
   opacity: 1;
   -webkit-transition: opacity 0.1s ease-in;
   transition: opacity 0.1s ease-in;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .navbar-transparent .search-bar a.btn {
-  background-color: rgba(0, 160, 173, 0);
+  background-color: #00a0ad;
 }
 
 .home-page.navbar-when-scrolled,
@@ -10411,11 +10403,6 @@ a.text-dark:hover, a.text-dark:focus {
 .home-page.navbar-when-scrolled .logo-container #head-logo-blue,
 .home-page.navbar-search-clicked .logo-container #head-logo-blue {
   opacity: 1;
-  width: 80%;
-  -webkit-transform: scale(0.9) translate3d(-55%, -55%, 0);
-          transform: scale(0.9) translate3d(-55%, -55%, 0);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
 }
 
 .home-page.navbar-when-scrolled .logo-container #head-logo-white,
@@ -10614,12 +10601,6 @@ a.text-dark:hover, a.text-dark:focus {
     width: 100%;
     position: relative;
   }
-  .navbar-expand-lg #head-logo-blue {
-    display: block;
-    width: 65%;
-    height: auto;
-    margin: 0 auto;
-  }
   .navbar-expand-lg .navbar-nav {
     margin: 0 auto;
   }
@@ -10735,46 +10716,39 @@ a.text-dark:hover, a.text-dark:focus {
     transition: all 0.3s ease-in;
   }
   .navbar-transparent .navbar-brand {
-    margin-left: 2.7rem;
+    margin-left: 0.5rem;
   }
   .navbar-transparent .navbar-brand:before {
     display: block;
     content: "";
-    padding-top: 25%;
+    padding-top: 20%;
   }
   .navbar-transparent .navbar-brand img {
-    width: 110%;
+    width: 97%;
     height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   .navbar-transparent .logo-container {
-    background-color: rgba(244, 244, 244, 0);
+    background-color: #00a0ad;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
   }
   .navbar-transparent .logo-container #head-logo-blue {
     opacity: 0;
-    width: 110%;
-    -webkit-transform: scale(1) translate3d(-50%, -50%, 0);
-            transform: scale(1) translate3d(-50%, -50%, 0);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
-    -webkit-transition: opacity 0.1s ease-in, -webkit-transform 0.15s ease-in 0.05s;
-    transition: opacity 0.1s ease-in, -webkit-transform 0.15s ease-in 0.05s;
-    transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s;
-    transition: opacity 0.1s ease-in, transform 0.15s ease-in 0.05s, -webkit-transform 0.15s ease-in 0.05s;
+    -webkit-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
   }
   .navbar-transparent .logo-container #head-logo-white {
     opacity: 1;
     -webkit-transition: opacity 0.1s ease-in;
     transition: opacity 0.1s ease-in;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
   }
   .navbar-transparent .search-bar a.btn {
-    background-color: rgba(0, 160, 173, 0);
+    background-color: #00a0ad;
   }
   .navbar-transparent:hover,
   .home-page.navbar-when-scrolled,
@@ -10790,21 +10764,11 @@ a.text-dark:hover, a.text-dark:focus {
   .home-page.navbar-when-scrolled .logo-container #head-logo-blue,
   .home-page.navbar-search-clicked .logo-container #head-logo-blue {
     opacity: 1;
-    width: 110%;
-    -webkit-transform: scale(0.8) translate3d(-60%, -50%, 0);
-            transform: scale(0.8) translate3d(-60%, -50%, 0);
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
   }
   .navbar-transparent:hover .logo-container #head-logo-white,
   .home-page.navbar-when-scrolled .logo-container #head-logo-white,
   .home-page.navbar-search-clicked .logo-container #head-logo-white {
     opacity: 0;
-  }
-  .navbar-transparent:hover .search-bar a.btn,
-  .home-page.navbar-when-scrolled .search-bar a.btn,
-  .home-page.navbar-search-clicked .search-bar a.btn {
-    background-color: #00a0ad;
   }
   .search-bar {
     min-width: 4.3rem;
