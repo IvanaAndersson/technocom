@@ -1273,33 +1273,28 @@ p.decorative-text:before {
 }
 
 /* STYLES FOR THE CONTACT PAGE */
-.contacts-header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #004456), to(#00a0ad));
-  background: linear-gradient(to bottom, #004456 30%, #00a0ad 100%);
-  min-height: 45vh;
-  margin-top: 4.3rem;
-}
-
 .contacts-header h1 {
-  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #004456), to(#00a0ad));
+  background: linear-gradient(to bottom, #004456 50%, #00a0ad 100%);
+  margin-top: 58px;
+  margin-bottom: 0;
+  padding: 1.5rem 0;
 }
 
-.contacts-header h1,
-.contacts-header h2 {
-  text-align: center;
-  margin: 3rem 0 5rem 0;
-}
-
-.contacts-header h5 {
-  font-family: "Axiforma Semibold", sans-serif;
-  margin-bottom: 1.25rem;
-}
-
-.contacts-header .companymail {
-  font-size: 1.1rem;
-  display: block;
-  width: 100%;
-  margin-top: 2.5rem;
+.contacts-header-text {
+  padding: 2.5rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #00a0ad), to(#004456));
+  background: linear-gradient(to bottom, #00a0ad 10%, #004456 100%);
 }
 
 .contact-address,
@@ -1314,19 +1309,211 @@ p.decorative-text:before {
   margin-bottom: 0.25rem;
 }
 
-.map-link {
+.tech-consultants {
+  margin-top: 3rem;
+}
+
+.tech-consultants:before {
   display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 4rem;
-  border: 1px solid white;
+  content: "";
+  width: 5rem;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.office-contacts,
+.tech-consultants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.office-contacts h5,
+.tech-consultants h5 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.office-contacts p,
+.tech-consultants p {
+  text-align: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.office-contacts {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.office-contacts .office-icon {
+  width: 10%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.office-contacts p {
+  font-size: 1.1rem;
+}
+
+.companymail-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 1.5rem;
 }
 
-.map-link:hover {
-  text-decoration: none;
-  background: #004456;
-  border: 1px solid #004456;
+.companymail-mobile img {
+  width: 10%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.companymail-mobile a {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.contact-form-heading {
+  color: #00a0ad;
+  font-family: "Axiforma Light";
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact-form {
+  padding: 1rem 1.5rem 3rem 1.5rem;
+}
+
+.contact-form input {
+  color: #00a0ad;
+}
+
+.contact-form textarea:focus,
+.contact-form input:focus {
+  color: #00a0ad;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #6e6e73;
+  margin-bottom: 2rem;
+}
+
+.contact-form textarea {
+  color: #00a0ad;
+  resize: none;
+  border-left: 1px solid #6e6e73;
+}
+
+.contact-form .data-privacy {
+  width: 80%;
+  font-size: 0.75rem;
+  color: #6e6e73;
+}
+
+.contact-form button {
+  display: block;
+  border: none;
+  outline: none;
+  background: #00a0ad;
+  padding: 0.75rem 3.5rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .contacts-header {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #004456), to(#00a0ad));
+    background: linear-gradient(to bottom, #004456 30%, #00a0ad 100%);
+    min-height: 45vh;
+    margin-top: 4.3rem;
+  }
+  .contacts-header h1 {
+    font-size: 2rem;
+    background: transparent;
+    margin-top: 0;
+    padding: 0;
+  }
+  .contacts-header h1,
+  .contacts-header h2 {
+    text-align: center;
+    margin: 3rem 0 5rem 0;
+  }
+  .contacts-header h5 {
+    font-family: "Axiforma Semibold", sans-serif;
+    margin-bottom: 1.25rem;
+  }
+  .contacts-header .companymail {
+    font-size: 1.1rem;
+    display: block;
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  .contacts-header-text {
+    padding: 0;
+    background: transparent;
+  }
+  .tech-consultants {
+    display: block;
+    margin-top: 0;
+  }
+  .tech-consultants:before {
+    content: none;
+  }
+  .map-link {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+    border: 1px solid white;
+    margin-top: 1.5rem;
+  }
+  .map-link:hover {
+    text-decoration: none;
+    background: #004456;
+    border: 1px solid #004456;
+  }
+  .office-contacts {
+    display: block;
+  }
+  .office-contacts p {
+    font-size: 1rem;
+  }
+  .contact-form-message {
+    color: #00a0ad;
+    line-height: 1.6;
+    font-family: "Axiforma Light";
+    width: 60%;
+    margin: 3.5rem auto;
+    text-align: center;
+  }
+  .contact-form {
+    padding: 1rem 4.5rem 8rem 4rem;
+  }
+  .contact-form button {
+    padding: 1rem 4rem;
+    float: right;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1366,53 +1553,6 @@ p.decorative-text:before {
   .map-link {
     width: 50%;
   }
-}
-
-.contact-form-message {
-  color: #00a0ad;
-  line-height: 1.6;
-  font-family: "Axiforma Light";
-  width: 60%;
-  margin: 3.5rem auto;
-  text-align: center;
-}
-
-.contact-form {
-  padding: 1rem 4.5rem 8rem 4rem;
-}
-
-.contact-form input {
-  color: #00a0ad;
-}
-
-.contact-form textarea:focus,
-.contact-form input:focus {
-  color: #00a0ad;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #6e6e73;
-  margin-bottom: 2rem;
-}
-
-.contact-form textarea {
-  color: #00a0ad;
-  resize: none;
-  border-left: 1px solid #6e6e73;
-}
-
-.contact-form button {
-  border: none;
-  outline: none;
-  background: #00a0ad;
-  padding: 1rem 4rem;
-  float: right;
 }
 
 /* STYLING THE PAGES WITH MULTIPLE CATALOG ITEMS */

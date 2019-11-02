@@ -1,29 +1,20 @@
 /* STYLES FOR THE CONTACT PAGE */
-
 .contacts-header {
-  background: linear-gradient(to bottom, $blue 30%, $teal 100%);
-  min-height: 45vh;
-  margin-top: 4.3rem;
-
   h1 {
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: $color-gradient;
+    margin-top: 58px;
+    margin-bottom: 0;
+    padding: 1.5rem 0;
   }
-  h1,
-  h2 {
-    text-align: center;
-    margin: 3rem 0 5rem 0;
-  }
-  h5 {
-    font-family: "Axiforma Semibold", sans-serif;
-    margin-bottom: 1.25rem;
-  }
+}
 
-  .companymail {
-    font-size: 1.1rem;
-    display: block;
-    width: 100%;
-    margin-top: 2.5rem;
-  }
+.contacts-header-text {
+  padding: 2.5rem 0;
+  background: linear-gradient(to bottom, $teal 10%, $blue 100%);
 }
 
 .contact-address,
@@ -40,18 +31,194 @@
   }
 }
 
-.map-link {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 4rem;
-  border: 1px solid $white;
-  margin-top: 1.5rem;
+.tech-consultants {
+  margin-top: 3rem;
+  &:before {
+    display: block;
+    content: "";
+    width: 5rem;
+    height: 2px;
+    background: $white;
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.office-contacts,
+.tech-consultants {
+  display: flex;
+  flex-wrap: wrap;
+  h5 {
+    flex-basis: 100%;
+  }
+  p {
+    text-align: center;
+    flex-basis: 50%;
+  }
+}
+.office-contacts {
+  justify-content: center;
 
-  &:hover {
-    text-decoration: none;
-    background: $blue;
-    border: 1px solid $blue;
+  .office-icon {
+    width: 10%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.companymail-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  img {
+    width: 10%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  a {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+.contact-form-heading {
+  color: $teal;
+  font-family: "Axiforma Light";
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.contact-form {
+  padding: 1rem 1.5rem 3rem 1.5rem;
+
+  input {
+    color: $teal;
+  }
+
+  textarea:focus,
+  input:focus {
+    color: $teal;
+    box-shadow: none;
+  }
+
+  input,
+  textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $gray-900;
+    margin-bottom: 2rem;
+  }
+
+  textarea {
+    color: $teal;
+    resize: none;
+    border-left: 1px solid $gray-900;
+  }
+
+  .data-privacy {
+    width: 80%;
+    font-size: 0.75rem;
+    color: $gray-900;
+  }
+
+  button {
+    display: block;
+    border: none;
+    outline: none;
+    background: $teal;
+    padding: 0.75rem 3.5rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contacts-header {
+    background: linear-gradient(to bottom, $blue 30%, $teal 100%);
+    min-height: 45vh;
+    margin-top: 4.3rem;
+
+    h1 {
+      font-size: 2rem;
+      background: transparent;
+      margin-top: 0;
+      padding: 0;
+    }
+    h1,
+    h2 {
+      text-align: center;
+      margin: 3rem 0 5rem 0;
+    }
+    h5 {
+      font-family: "Axiforma Semibold", sans-serif;
+      margin-bottom: 1.25rem;
+    }
+
+    .companymail {
+      font-size: 1.1rem;
+      display: block;
+      width: 100%;
+      margin-top: 2.5rem;
+    }
+  }
+
+  .contacts-header-text {
+    padding: 0;
+    background: transparent;
+  }
+  .tech-consultants {
+    display: block;
+    margin-top: 0;
+    &:before {
+      content: none;
+    }
+  }
+
+  .map-link {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+    border: 1px solid $white;
+    margin-top: 1.5rem;
+
+    &:hover {
+      text-decoration: none;
+      background: $blue;
+      border: 1px solid $blue;
+    }
+  }
+
+  .office-contacts {
+    display: block;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .contact-form-message {
+    color: $teal;
+    line-height: 1.6;
+    font-family: "Axiforma Light";
+    width: 60%;
+    margin: 3.5rem auto;
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 1rem 4.5rem 8rem 4rem;
+
+    button {
+      padding: 1rem 4rem;
+      float: right;
+    }
   }
 }
 
@@ -97,51 +264,5 @@
 @media screen and (min-width: 1600px) {
   .map-link {
     width: 50%;
-  }
-}
-
-.contact-form-message {
-  color: $teal;
-  line-height: 1.6;
-  font-family: "Axiforma Light";
-  width: 60%;
-  margin: 3.5rem auto;
-  text-align: center;
-}
-
-.contact-form {
-  padding: 1rem 4.5rem 8rem 4rem;
-
-  input {
-    color: $teal;
-  }
-
-  textarea:focus,
-  input:focus {
-    color: $teal;
-    box-shadow: none;
-  }
-
-  input,
-  textarea {
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid $gray-900;
-    margin-bottom: 2rem;
-  }
-
-  textarea {
-    color: $teal;
-    resize: none;
-    border-left: 1px solid $gray-900;
-  }
-
-  button {
-    border: none;
-    outline: none;
-    background: $teal;
-    padding: 1rem 4rem;
-    float: right;
   }
 }

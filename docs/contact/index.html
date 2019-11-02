@@ -1263,13 +1263,26 @@ id="navigation-mobile">
       <section class="contacts-header">
   <div class="container-fluid p-0">
     <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
         <h1 class="text-white text-uppercase font-weight-bold">
           Контакти
         </h1>
-        <div class="row no-gutters justify-content-between text-white w-100">
-          <div class="contact-address col-4 px-5 mb-4 text-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2956.6500719641367!2d24.74002602538323!3d42.17916610761812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f97852580594f2a!2z0KLQtdGF0L3QvtC60L7QvCDQmtC-INCV0J7QntCU!5e0!3m2!1sen!2sbg!4v1572710015860!5m2!1sen!2sbg"
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+          class="d-lg-none"
+        ></iframe>
+        <div
+          class="contacts-header-text row no-gutters justify-content-between text-white w-100"
+        >
+          <div
+            class="d-none d-lg-block contact-address col-lg-4 px-lg-5 mb-lg-4 text-center"
+          >
             <h5 class="text-white">ТЕХНОКОМ Ко ЕООД</h5>
             <p>Пловдив 4003, България</p>
             <p>бул. "Васил Левски" 214</p>
@@ -1280,17 +1293,23 @@ id="navigation-mobile">
               >КАРТА
             </a>
           </div>
-          <div class="office-contacts col-4 px-5 mb-4 text-center">
+
+          <div class="office-contacts col-lg-4 px-lg-5 mb-lg-4 text-center">
+            <img
+              src="/technocom/assets/img/footer/phone-icon.png"
+              alt=""
+              class="d-lg-none office-icon"
+            />
             <h5 class="text-uppercase text-white">Офис</h5>
             <p>+ 359 32 965 088</p>
             <p>+ 359 32 965 099</p>
             <a
-              href="mailto:ivana.p.kostova@gmail.com"
-              class="companymail text-white mb-0"
-              >info@technocom.bg
+              href="mailto:info@technokom.bg"
+              class="companymail text-white mb-0 d-none d-lg-block"
+              >info@technokom.bg
             </a>
           </div>
-          <div class="tech-consultants col-4 px-5 mb-4 text-center">
+          <div class="tech-consultants col-lg-4 px-lg-5 mb-lg-4 text-center">
             <h5 class="text-uppercase text-white">
               Технически Консултанти
             </h5>
@@ -1299,21 +1318,34 @@ id="navigation-mobile">
             <p>+ 359 894 530 453</p>
             <p class="mb-0">+ 359 888 221 437</p>
           </div>
+
+          <div class="d-lg-none companymail-mobile">
+            <img
+              src="/technocom/assets/img/footer/email-icon.png"
+              alt=""
+            />
+            <a href="mailto:info@technokom.bg" class="text-white mb-0"
+              >info@technokom.bg
+            </a>
+          </div>
         </div>
       </div>
-      <div class="col-1"></div>
+      <div class="col-lg-1"></div>
     </div>
   </div>
 </section>
 
 <main class="container-fluid p-0">
   <div class="row no-gutters">
-    <div class="col-1"></div>
-    <div class="col-10">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
       <section class="contact-form">
-        <h5 class="contact-form-message">
+        <h5 class="contact-form-message d-none d-lg-block">
           Нашите консултанти очакват запитванията Ви,<br />
           за да получите бърз и професионален отговор.
+        </h5>
+        <h5 class="contact-form-heading d-lg-none">
+          Контактна форма
         </h5>
         <form action="POST" autocomplete="on">
           <div class="form-group">
@@ -1368,12 +1400,18 @@ id="navigation-mobile">
             ></textarea>
           </div>
           <!-- RECAPTCHA GOES HERE -->
-          <!-- <div class="g-recaptcha" data-sitekey="to-be-filled"></div> -->
+
+          <!-- <div class="g-recaptcha" data-sitekey="to-be-filled"></div>
+          <p class="data-privacy">
+            Тези данни ше бъдат използвани единствено с цел обработване на
+            Вашето запитване
+          </p> -->
+
           <button type="submit" class="btn btn-primary">ИЗПРАТИ</button>
         </form>
       </section>
     </div>
-    <div class="col-1"></div>
+    <div class="col-lg-1"></div>
   </div>
 </main>
 
