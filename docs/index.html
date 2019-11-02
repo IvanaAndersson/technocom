@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no"/>
     <title>Техноком Ко</title>
+    <link rel="icon" href="/technocom/assets/img/favicon.png">
     <!-- Bootstrap + CSS compiled file -->
     <link rel="stylesheet" href="/technocom/css/site.css" />
     <!-- Fontawesome -->
@@ -23,30 +24,27 @@
   <body>
     <div class="loader d-lg-none"><img src="/technocom/assets/img/logo-loading.png" alt=""></div>
     <header class='site-header'>
-      <!-- Mobile Navbar visible untill large width -->
+      <!-- Mobile Navbar visible untill large width: 992px-->
 <nav
 class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100 
- navbar-transparent home-page "
-
-  id="navigation-mobile"
->
+"
+id="navigation-mobile">
   <!-- Navbar brand -->
-    <span class="logo-container d-flex align-items-center col-8">
-      <a class="navbar-brand text-uppercase" href="/technocom/">
-        <img
-        class=''
-          id="head-logo-white"
-          src="/technocom/assets/img/bialo logo.png"
-          alt="TechnokomKo"/>
-        <img
-          id="head-logo-blue"
-          src="/technocom/assets/img/logo 1.png"
-          alt="TechnokomKo"
-      /></a>
-    </span>
+  <span class="logo-container d-flex align-items-center col-8">
+    <a class="navbar-brand text-uppercase" href="/technocom/">
+      <img
+        id="head-logo-white"
+        src="/technocom/assets/img/bialo logo.png"
+        alt="TechnokomKo-logo"/>
+      <!-- <img
+        id="head-logo-blue"
+        src="/technocom/assets/img/logo 1.png"
+        alt="TechnokomKo"/> -->
+    </a>
+  </span>
 
     <!-- Search button -->
-  <div class="search-bar col-2">
+  <div class="search-bar col-2 bg-primary">
       <a class="btn border-0 p-lg-2 p-xl-3" id="dropdownMobileButton">
         <div class="search-button">
           <div class="search-icon">
@@ -647,6 +645,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
 <!-- Desktop Navbar visible over the large width breakpoint -->
 <nav
   class="navbar-expand-lg navbar-dark p-0 d-none fixed-top d-lg-flex row w-100 
+  
    navbar-transparent home-page "
   id="navigation-desktop"
 >
@@ -1276,29 +1275,15 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
     <li data-target="#carouselFadeMobile" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="5000">
+    <div class="carousel-item active">
       <img
-        src="/technocom/assets/img/home/1.jpg"
+        src="/technocom/assets/img/home/mobile1.jpg"
         class="d-block"
         alt="..."
       />
 
-      <div
-        class="carousel-caption row no-gutters flex-column flex-lg-row
-      align-items-center align-items-lg-stretch 
-      justify-content-center"
-      >
-        <div class="col-lg-1 order-lg-1"></div>
-        <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
-          <h4 class="delivery">Доставка на елементи за:</h4>
-          <li class="text-uppercase">Автоматизация</li>
-          <li class="text-uppercase">Инженеринг</li>
-          <li class="text-uppercase">
-            Автомобилна индустрия
-          </li>
-        </ul>
-
-        <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+      <div class="carousel-caption row no-gutters flex-column">
+        <div class="d-flex flex-column">
           <h1 class="text-uppercase">
             Технически <br />
             доброто до вас.
@@ -1327,36 +1312,23 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="col-lg-1 order-lg-4"></div>
+
+        <ul class="list-unstyled">
+          <h4 class="delivery">Доставка на елементи за:</h4>
+          <li>Автоматизация</li>
+          <li>Инженеринг</li>
+          <li> Автомобилна индустрия </li>
+        </ul>
       </div>
     </div>
-    <div class="carousel-item" data-interval="5000">
+    <div class="carousel-item">
       <img
-        src="/technocom/assets/img/home/2.jpg"
+        src="/technocom/assets/img/home/mobile2.jpg"
         class="d-block"
         alt="..."
       />
-      <div
-        class="carousel-caption row no-gutters flex-column flex-lg-row 
-        align-items-center align-items-lg-stretch justify-content-center"
-      >
-        <div class="col-lg-1 order-lg-1"></div>
-        <ul class="list-unstyled col-lg-5 order-2 order-lg-3">
-          <h4 class="production">Конструиране и изработване на:</h4>
-          <li class="text-uppercase">Транспортни системи</li>
-          <li class="text-uppercase">
-            Индустриални работни места
-          </li>
-          
-          <li class="text-uppercase ">
-            Пневматични табла
-          </li>
-          <li class="text-uppercase ">
-            Електрически табла
-          </li>
-        </ul>
-
-        <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+      <div class="carousel-caption row no-gutters flex-column">
+        <div class="d-flex flex-column">
           <h1 class="text-uppercase">
             Технически <br />
             доброто до вас.
@@ -1386,34 +1358,25 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="col-lg-1 order-lg-4"></div>
+
+        <ul class="list-unstyled">
+          <h4 class="production">Конструиране и изработване на:</h4>
+          <li>Транспортни системи</li>
+          <li> Индустриални работни места</li>
+          <li>Пневматични табла</li>
+          <li>Електрически табла</li>
+        </ul>
       </div>
     </div>
-    <div class="carousel-item" data-interval="5000">
+    <div class="carousel-item">
       <img
-        src="/technocom/assets/img/home/3.jpg"
+        src="/technocom/assets/img/home/mobile3.jpg"
         class="d-block"
         alt="..."
       />
 
-      <div
-        class="carousel-caption row no-gutters flex-column flex-lg-row 
-        align-items-center align-items-lg-stretch justify-content-center"
-      >
-        <div class="col-lg-1 order-lg-1"></div>
-        <ul class="list-unstyled col-lg-5 order-2 order-lg-2">
-          <h4 class="industry">Проектиране и внедряване на:</h4>
-          
-          <li class="text-uppercase ">Решение за BIW</li>
-          <li class="text-uppercase">
-            Модулни инструментални системи
-          </li>
-          <li class="text-uppercase">
-            Бързо инсталиране и настройка
-          </li>
-        </ul>
-
-        <div class="d-flex flex-column col-lg-5 order-1 order-lg-3">
+      <div class="carousel-caption row no-gutters flex-column">
+        <div class="d-flex flex-column">
           <h1 class="text-uppercase">
             Технически <br />
             доброто до вас.
@@ -1443,7 +1406,12 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <div class="col-lg-1 order-lg-4"></div>
+        <ul class="list-unstyled">
+          <h4 class="industry">Проектиране и внедряване на:</h4>
+          <li>Решение за BIW</li>
+          <li>Модулни инструментални системи</li>
+          <li>Бързо инсталиране и настройка</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -1814,10 +1782,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
     <section class="advantages">
 
       <!-- ADVANTAGES CAROUSEL, ONLY ON MOBILE -->
-      
-      
       <h3 class='my-3 d-lg-none'>Предимства</h3>
-      
       <div class="row no-gutters">
         <div class="col-md-1"></div>
         <div class="col-12 col-md-10">
@@ -1827,7 +1792,6 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
             data-ride="carousel"
             data-interval="false"
           >
-    
             <div class="carousel-header d-flex justify-content-between align-items-center">
                   
               <a
@@ -1856,72 +1820,72 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               
             </div>
             <div class="carousel-inner">
-            <div class="carousel-item active">
-            <div class="row no-gutters">
-              <div class="col-12 d-flex flex-column">
-                <div class="image-ratio-container">
-                  <img
-                    src="/technocom/assets/img/home/icon 2.png"
-                    class="mb-4"
-                    alt="an icon showing a lightbulb"
-                  />
-                </div>
+              <div class="carousel-item active">
+                <div class="row no-gutters">
+                  <div class="col-12 d-flex flex-column">
+                    <div class="image-ratio-container">
+                      <img
+                        src="/technocom/assets/img/home/icon 2.png"
+                        class="mb-4"
+                        alt="an icon showing a lightbulb"
+                      />
+                    </div>
 
-                <div class='advantages-body'>
-                  <h6 class="mt-2 mb-3 text-uppercase">Технически решения</h6>
-                  <p>
-                    Предлагаме на българския пазар както продукти, така и цялостни
-                  технически решения на разумни цени.
-                  </p>
-                  
-                </div>
-              </div>
-            </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="row no-gutters justify-content-between">
-                <div class="col-12 d-flex flex-column">
-                  <div class="image-ratio-container">
-                    <img
-                      src="/technocom/assets/img/home/icon 3.png"
-                      class="mb-4"
-                      alt="an icon showing a packet that is moving"
-                    />
-                  </div>
-                  <div class='advantages-body'>
-                    <h6 class="mt-2 mb-3 text-uppercase">Бърза доставка</h6>
-                    <p>
-                      Нашата дистрибуторска мрежа и складова наличност ни
-                      позволяват да бъдем винаги близо до Вас.
-                    </p>
+                    <div class='advantages-body'>
+                      <h6 class="mt-2 mb-3 text-uppercase">Технически решения</h6>
+                      <p>
+                        Предлагаме на българския пазар както продукти, така и цялостни
+                        технически решения на разумни цени.
+                      </p>
+                      
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="carousel-item">
-              <div class="row no-gutters justify-content-between">
-                <div class="col-12 d-flex flex-column">
-                  <div class="image-ratio-container">
-                    <img
-                      src="/technocom/assets/img/home/icon 4.png"
-                      class="mb-4"
-                      alt="an icon showing a bullseye"
-                    />
-                  </div>
-                  <div class='advantages-body'>
-                    <h6 class="mt-2 mb-3 text-uppercase">Страст към успеха</h6>
-                    <p>
-                      Стремим се към съвършенство, защото сме емоционално и
-                    интелектуално свързани с работата си.
-                    </p>
+              <div class="carousel-item">
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-12 d-flex flex-column">
+                    <div class="image-ratio-container">
+                      <img
+                        src="/technocom/assets/img/home/icon 3.png"
+                        class="mb-4"
+                        alt="an icon showing a packet that is moving"
+                      />
+                    </div>
+                    <div class='advantages-body'>
+                      <h6 class="mt-2 mb-3 text-uppercase">Бърза доставка</h6>
+                      <p>
+                        Нашата дистрибуторска мрежа и складова наличност ни
+                        позволяват да бъдем винаги близо до Вас.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+
+              <div class="carousel-item">
+                <div class="row no-gutters justify-content-between">
+                  <div class="col-12 d-flex flex-column">
+                    <div class="image-ratio-container">
+                      <img
+                        src="/technocom/assets/img/home/icon 4.png"
+                        class="mb-4"
+                        alt="an icon showing a bullseye"
+                      />
+                    </div>
+                    <div class='advantages-body'>
+                      <h6 class="mt-2 mb-3 text-uppercase">Страст към успеха</h6>
+                      <p>
+                        Стремим се към съвършенство, защото сме емоционално и
+                      интелектуално свързани с работата си.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-        </div>
+          </div>
         </div>
         <div class="col-md-1"></div>
       </div>
@@ -2004,58 +1968,294 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
 
     <section class="news">
 
-      <!-- THE SECTION WITH NEWS ON MOBILE, STATIC  -->
+      <!-- THE SECTION WITH NEWS ON MOBILE, CAROUSEL IS NOT AUTOMATIC -->
       <div class="row d-lg-none news-mobile">
-          <h3 class='bg-primary col-12 p-4'>Новини</h3>
-          <a
-          href="/technocom/news-item-page.html"
-          class="card-link col-12"
+        <h3 class='bg-primary col-12 p-4'>Новини</h3>
+        <ul class="list-unstyled d-flex mobile-tabs">
+          <li
+            class="tabs-item tabs-mob-item--products active-tab text-uppercase font-weight-bold"
           >
-            <div class="card border-0">
-              <div class="embed-responsive embed-responsive-4by3">
-                <img
-                  class="card-img-top img-fluid embed-responsive-item"
-                  src="/technocom/assets/img/home/photo 4.jpg"
-                  alt="image from an event"
-                />
+            <a href="#!">Продукти</a>
+          </li>
+          <li
+            class="tabs-item tabs-mob-item--events text-uppercase font-weight-bold"
+          >
+            <a href="#!">Събития</a>
+          </li>
+        </ul>
+
+        <div
+          class="carousel slide carousel-products-mobile d-lg-none"
+          id="carouselProductsMobile"
+          data-ride="carousel"
+          data-interval="false"
+        >
+          <div class="carousel-header d-flex justify-content-between align-items-center">
+                
+            <a
+              class="carousel-control-prev"
+              href="#carouselProductsMobile"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+              </span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a
+              class="carousel-control-next"
+              href="#carouselProductsMobile"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+            
+          </div>
+
+          <ol class="carousel-indicators">
+            <li data-target="#carouselProductsMobile" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselProductsMobile" data-slide-to="1"></li>
+            <li data-target="#carouselProductsMobile" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              
+              <div class="card border-0">
+                <a
+                  href="/technocom/news-item-page.html"
+                  class="card-link"
+                >
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <img
+                      class="card-img-top img-fluid embed-responsive-item"
+                      src="/technocom/assets/img/home/photo 4.jpg"
+                      alt="image from an event"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">
+                      02.07.2019
+                    </p>
+                    <p class="card-text">
+                      Техноком Ко с поредно участие на MachTech & InnoTech
+                      2019
+                    </p>
+                    
+                  </div>
+                </a>
+
+                <a href="/technocom/news/new-products.html"
+                  class='see-all-mobile'>Виж всички</a>
               </div>
-              <div class="card-body">
-                <p class="card-title">
-                  02.07.2019
-                </p>
-                <p class="card-text">
-                  Техноком Ко с поредно участие на MachTech & InnoTech
-                  2019
-                </p>
+              
+            </div>
+
+            <div class="carousel-item">
+              
+              <div class="card border-0">
+                <a
+                  href="/technocom/news-item-page.html"
+                  class="card-link"
+                >
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <img
+                      class="card-img-top img-fluid embed-responsive-item"
+                      src="/technocom/assets/img/home/photo 3.jpeg"
+                      alt="image from an event"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">
+                      02.07.2019
+                    </p>
+                    <p class="card-text">
+                      Техноком Ко проведе поредния си семинар, на който бяха
+                      представени продукти на VESTA
+                    </p>
+                  </div>
+                </a>
+                <a href="/technocom/news/new-products.html"
+                    class='see-all-mobile'>Виж всички</a>
+              </div>
+              
+            </div>
+
+            <div class="carousel-item">
+              <div class="card border-0">
+
+                <a
+                  href="/technocom/news-item-page.html"
+                  class="card-link col-12"
+                >
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <img
+                      class="card-img-top img-fluid embed-responsive-item"
+                      src="/technocom/assets/img/home/photo 3.jpeg"
+                      alt="image from an event"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">
+                      02.07.2019
+                    </p>
+                    <p class="card-text">
+                      Техноком Ко проведе поредния си семинар, на който бяха
+                      представени продукти на VESTA
+                    </p>
+                  </div>
+                </a>
+                <a href="/technocom/news/new-products.html"
+                  class='see-all-mobile'>Виж всички</a>
               </div>
             </div>
-          </a>
-          <a
-            href="/technocom/news-item-page.html"
-            class="card-link col-12"
-          >
-            <div class="card border-0">
-              <div class="embed-responsive embed-responsive-4by3">
-                <img
-                  class="card-img-top img-fluid embed-responsive-item"
-                  src="/technocom/assets/img/home/photo 3.jpeg"
-                  alt="image from an event"
-                />
+          </div>
+        </div>
+
+        <div
+          class="carousel slide carousel-events-mobile d-lg-none"
+          id="carouselEventsMobile"
+          data-ride="carousel"
+          data-interval="false"
+        >
+          <div class="carousel-header d-flex justify-content-between align-items-center">
+                
+            <a
+              class="carousel-control-prev"
+              href="#carouselEventsMobile"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true">
+              </span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a
+              class="carousel-control-next"
+              href="#carouselEventsMobile"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+            
+          </div>
+
+          <ol class="carousel-indicators">
+            <li data-target="#carouselEventsMobile" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselEventsMobile" data-slide-to="1"></li>
+            <li data-target="#carouselEventsMobile" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              
+              <div class="card border-0">
+                <a
+                  href="/technocom/news-item-page.html"
+                  class="card-link"
+                >
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <img
+                      class="card-img-top img-fluid embed-responsive-item"
+                      src="/technocom/assets/img/home/photo 3.jpeg"
+                      alt="image from an event"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">
+                      02.07.2019
+                    </p>
+                    <p class="card-text">
+                      Техноком Ко проведе поредния си семинар, на който бяха
+                      представени продукти на VESTA
+                    </p>
+                  </div>
+                </a>
+                <a href="/technocom/news/events.html"
+                    class='see-all-mobile'>Виж всички</a>
               </div>
-              <div class="card-body">
-                <p class="card-title">
-                  02.07.2019
-                </p>
-                <p class="card-text">
-                  Техноком Ко проведе поредния си семинар, на който бяха
-                  представени продукти на VESTA
-                </p>
+              
+            </div>
+
+            <div class="carousel-item">
+              
+                <div class="card border-0">
+                  <a
+                    href="/technocom/news-item-page.html"
+                    class="card-link"
+                  >
+                    <div class="embed-responsive embed-responsive-4by3">
+                      <img
+                        class="card-img-top img-fluid embed-responsive-item"
+                        src="/technocom/assets/img/home/photo 4.jpg"
+                        alt="image from an event"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <p class="card-title">
+                        02.07.2019
+                      </p>
+                      <p class="card-text">
+                        Техноком Ко с поредно участие на MachTech & InnoTech
+                        2019
+                      </p>
+                      
+                    </div>
+                  </a>
+  
+                  <a href="/technocom/news/events.html"
+                    class='see-all-mobile'>Виж всички</a>
+                </div>
+                
+              </div>
+
+            <div class="carousel-item">
+              <div class="card border-0">
+
+                <a
+                  href="/technocom/news-item-page.html"
+                  class="card-link col-12"
+                >
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <img
+                      class="card-img-top img-fluid embed-responsive-item"
+                      src="/technocom/assets/img/home/photo 3.jpeg"
+                      alt="image from an event"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <p class="card-title">
+                      02.07.2019
+                    </p>
+                    <p class="card-text">
+                      Техноком Ко проведе поредния си семинар, на който бяха
+                      представени продукти на VESTA
+                    </p>
+                  </div>
+                </a>
+                <a href="/technocom/news/events.html"
+                  class='see-all-mobile'>Виж всички</a>
               </div>
             </div>
-          </a>
+          </div>
+        </div>
+  
       </div>
 
-      <!-- THE SECTION WITH NEWS CAROUSEL ONLY ON DESKTOP -->
+      <!-- THE SECTION WITH NEWS CAROUSEL ON DESKTOP AUTOMATIC -->
       <div class="row d-none d-lg-flex">
         <div class="col-1"></div>
         <div class="col-10 d-flex flex-column">
@@ -2139,6 +2339,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
               </a>
             </ul>
           </div>
+          <!-- THIS IS THE CAROUSEL WITH SECTION PRODUCTS -->
           <div
             class="carousel slide carousel-products"
             id="carouselProducts"
@@ -2424,6 +2625,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
             </ol>
           </div>
 
+          <!-- THIS IS THE CAROUSEL WITH SECTION EVENTS -->
           <div
             class="carousel slide carousel-events"
             id="carouselEvents"
@@ -2754,13 +2956,13 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
                   alt="logo of our partners"
                 />
             </div>
-            <div class="image-container">
+            <div class="image-container ml-2">
               <img
                 src="/technocom/assets/img/partniori/dogus.png"
                 alt="logo of out partners"
               />
             </div>
-            <div class="image-container">
+            <div class="image-container ml-4">
               <img
                 src="/technocom/assets/img/partniori/turbo.png"
                 alt="logo of out partners"
@@ -2781,7 +2983,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
       <div class="container-fluid p-0">
   <div class="row">
     <div class="col-lg-1"></div>
-    <div class="col-lg-10 row no-gutters justify-content-between">
+    <div class="col-lg-10 row no-gutters py-4 py-lg-0 justify-content-between">
       <section class="logo d-none d-lg-flex flex-column col-lg-2">
         <img
           src="/technocom/assets/img/footer/tk_logo.png"
@@ -2802,7 +3004,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
         </a>
       </section>
 
-      <section
+      <!-- <section
         class="mobile-logo w-100 d-flex justify-content-between d-lg-none"
       >
         <span class="logo-icon">
@@ -2811,7 +3013,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
         <span class="logo-type">
           <img src="/technocom/assets/img/footer/logo 3.png" alt="" />
         </span>
-      </section>
+      </section> -->
 
       <section class="footer-nav d-none d-lg-block col-lg-2">
         <h5 class="text-white mb-4">ТЕХНОКОМ Ко</h5>
@@ -2855,7 +3057,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
 
       <section class="address col-12 col-lg-2">
         <h5 class="text-uppercase mb-lg-4">Адрес</h5>
-        <div class="written-address mb-4">
+        <div class="written-address mb-2">
           <span class="company-name font-weight-bold footer-icon-container">
             <img
               class="footer-icon d-none d-lg-inline"
@@ -2876,8 +3078,14 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
         </div>
       </section>
 
+      <a
+        href="https://goo.gl/maps/Qrr3QiFkkRmENNwP7"
+        class="map-in-footer text-white"
+        target="_blank"
+        >КАРТА
+      </a>
       <section class="contacts col-12 col-lg-2">
-        <h5 class="text-uppercase mb-4">Контакти</h5>
+        <h5 class="text-uppercase mb-3">Контакти</h5>
         <ul class="list-unstyled">
           <li class="first-child text-white font-weight-bold">
             <span class="footer-icon-container">
@@ -2932,7 +3140,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
     <div class="col-lg-1"></div>
   </div>
 
-  <div class="row footer-copyright mt-5">
+  <div class="row footer-copyright">
     <div class="col-lg-1"></div>
     <div class="col-10 col-lg-10 row">
       <div
@@ -2952,7 +3160,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
                 &copy;2020
               </span>
               <span class="order-1 order-lg-2 mr-1">
-                Technocom Co
+                Technokom Co
               </span>
             </span>
 

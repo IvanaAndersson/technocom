@@ -1,11 +1,20 @@
 /* NAVIGATION STYLES FOR MOBILE AND TABLET SCREENS*/
+.navbar-dark {
+  .navbar-toggler {
+    background: $blue;
 
+    &:focus {
+      outline: none;
+    }
+  }
+}
 .navbar-expand-lg {
   .logo-container {
-    background: $body-bg;
+    background: $teal;
     img {
-      width: 70%;
+      width: 80%;
       height: auto;
+      margin-left: 1rem;
     }
   }
 
@@ -132,8 +141,8 @@
 
 .navbar-icon {
   display: block;
-  height: 3px;
-  width: 1.75rem;
+  height: 2px;
+  width: 1.5rem;
   background-color: $white;
   position: relative;
   transition: backgroun-color 0.2s ease-out;
@@ -172,72 +181,72 @@
 
 //when on the main page, the menu is transparent and the logo is white
 // when we scroll on main page, the menu becomes as normal
-.navbar-transparent {
-  padding-top: 0.5rem;
-  transition: all 0.3s ease-in;
-  .navbar-brand {
-    margin-left: 1rem;
+// .navbar-transparent {
+//   padding-top: 0.5rem;
+//   transition: all 0.3s ease-in;
+//   .navbar-brand {
+//     margin-left: 1rem;
 
-    &:before {
-      display: block;
-      content: "";
-      padding-top: 20%;
-    }
-    img {
-      width: 90%;
-      height: auto;
-      position: absolute;
-      top: 55%;
-      left: 45%;
-      transform: translate(-50%, -50%);
-    }
-  }
+//     &:before {
+//       display: block;
+//       content: "";
+//       padding-top: 20%;
+//     }
+//     img {
+//       width: 90%;
+//       height: auto;
+//       position: absolute;
+//       top: 55%;
+//       left: 45%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
 
-  .logo-container {
-    background-color: rgba($body-bg, 0);
-    transition: all 0.3s ease-in;
-    #head-logo-blue {
-      opacity: 0;
-      // transform: scale(1) translate3d(-50%, -50%, 0);
-      // transform-origin: top left;
-      transition: opacity 0.1s ease-in;
-      //  transform 0.15s ease-in 0.05s;
-    }
-    #head-logo-white {
-      opacity: 1;
-      transition: opacity 0.1s ease-in;
-    }
-  }
+//   .logo-container {
+//     background-color: rgba($body-bg, 0);
+//     transition: all 0.3s ease-in;
+//     #head-logo-blue {
+//       opacity: 0;
+//       // transform: scale(1) translate3d(-50%, -50%, 0);
+//       // transform-origin: top left;
+//       transition: opacity 0.1s ease-in;
+//       //  transform 0.15s ease-in 0.05s;
+//     }
+//     #head-logo-white {
+//       opacity: 1;
+//       transition: opacity 0.1s ease-in;
+//     }
+//   }
 
-  .search-bar {
-    a.btn {
-      background-color: rgba($teal, 1);
-    }
-  }
-}
+//   .search-bar {
+//     a.btn {
+//       background-color: rgba($teal, 1);
+//     }
+//   }
+// }
 
 //when we hover the transparent menu on the main page (when not scrolled) the menu should be as normal
 // when the home page is scrolled, the menu should be as normal
 
-.home-page.navbar-when-scrolled,
-.home-page.navbar-search-clicked {
-  background-color: $blue;
+// .home-page.navbar-when-scrolled,
+// .home-page.navbar-search-clicked {
+//   background-color: $blue;
 
-  .logo-container {
-    background-color: rgba($body-bg, 1);
+//   .logo-container {
+//     background-color: rgba($body-bg, 1);
 
-    #head-logo-blue {
-      opacity: 1;
-      // width: 80%;
-      // transform: scale(0.9) translate3d(-55%, -55%, 0);
-      // transform-origin: top left;
-    }
+//     #head-logo-blue {
+//       opacity: 1;
+//       // width: 80%;
+//       // transform: scale(0.9) translate3d(-55%, -55%, 0);
+//       // transform-origin: top left;
+//     }
 
-    #head-logo-white {
-      opacity: 0;
-    }
-  }
-}
+//     #head-logo-white {
+//       opacity: 0;
+//     }
+//   }
+// }
 
 .search-bar {
   position: relative;
@@ -324,7 +333,7 @@
     top: 49px;
     left: 0;
     right: 0;
-    background-color: $teal;
+    background-color: $blue;
 
     form {
       min-height: 10rem;
@@ -387,6 +396,12 @@
     & a {
       font-size: 0.8rem;
     }
+    .logo-container {
+      background: $body-bg;
+      img {
+        margin-left: 0;
+      }
+    }
     .navbar-brand {
       width: 100%;
       position: relative;
@@ -394,7 +409,7 @@
 
     #head-logo-blue {
       display: block;
-      width: 65%;
+      width: 75%;
       height: auto;
       margin: 0 auto;
     }
@@ -530,7 +545,7 @@
         padding-top: 20%;
       }
       img {
-        width: 95%;
+        width: 80%;
         height: auto;
         position: absolute;
         top: 50%;
@@ -544,7 +559,7 @@
       transition: all 0.3s ease-in;
       #head-logo-blue {
         opacity: 0;
-        width: 95%;
+        width: 80%;
         // transform: scale(1) translate3d(-50%, -50%, 0);
         // transform-origin: top left;
         transition: opacity 0.1s ease-in;
@@ -574,7 +589,7 @@
 
       #head-logo-blue {
         opacity: 1;
-        width: 95%;
+        width: 80%;
         // transform: scale(0.8) translate3d(-60%, -50%, 0);
         // transform-origin: top left;
       }
@@ -597,6 +612,7 @@
 
     .search-bar-hidden {
       top: 69px;
+      background-color: $teal;
       form {
         min-height: 10rem;
       }

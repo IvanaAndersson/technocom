@@ -249,8 +249,10 @@ body[data-aos-duration="2000"] [data-aos],
 
 .loader {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   z-index: 5000;
@@ -267,7 +269,7 @@ body[data-aos-duration="2000"] [data-aos],
 }
 
 .loader img {
-  width: 80%;
+  width: 65%;
   height: auto;
 }
 
@@ -10149,13 +10151,22 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* NAVIGATION STYLES FOR MOBILE AND TABLET SCREENS*/
+.navbar-dark .navbar-toggler {
+  background: #004456;
+}
+
+.navbar-dark .navbar-toggler:focus {
+  outline: none;
+}
+
 .navbar-expand-lg .logo-container {
-  background: #f4f4f4;
+  background: #00a0ad;
 }
 
 .navbar-expand-lg .logo-container img {
-  width: 70%;
+  width: 80%;
   height: auto;
+  margin-left: 1rem;
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -10303,8 +10314,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-icon {
   display: block;
-  height: 3px;
-  width: 1.75rem;
+  height: 2px;
+  width: 1.5rem;
   background-color: white;
   position: relative;
   -webkit-transition: backgroun-color 0.2s ease-out;
@@ -10345,74 +10356,6 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   top: 0;
-}
-
-.navbar-transparent {
-  padding-top: 0.5rem;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.navbar-transparent .navbar-brand {
-  margin-left: 1rem;
-}
-
-.navbar-transparent .navbar-brand:before {
-  display: block;
-  content: "";
-  padding-top: 20%;
-}
-
-.navbar-transparent .navbar-brand img {
-  width: 90%;
-  height: auto;
-  position: absolute;
-  top: 55%;
-  left: 45%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.navbar-transparent .logo-container {
-  background-color: rgba(244, 244, 244, 0);
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.navbar-transparent .logo-container #head-logo-blue {
-  opacity: 0;
-  -webkit-transition: opacity 0.1s ease-in;
-  transition: opacity 0.1s ease-in;
-}
-
-.navbar-transparent .logo-container #head-logo-white {
-  opacity: 1;
-  -webkit-transition: opacity 0.1s ease-in;
-  transition: opacity 0.1s ease-in;
-}
-
-.navbar-transparent .search-bar a.btn {
-  background-color: #00a0ad;
-}
-
-.home-page.navbar-when-scrolled,
-.home-page.navbar-search-clicked {
-  background-color: #004456;
-}
-
-.home-page.navbar-when-scrolled .logo-container,
-.home-page.navbar-search-clicked .logo-container {
-  background-color: #f4f4f4;
-}
-
-.home-page.navbar-when-scrolled .logo-container #head-logo-blue,
-.home-page.navbar-search-clicked .logo-container #head-logo-blue {
-  opacity: 1;
-}
-
-.home-page.navbar-when-scrolled .logo-container #head-logo-white,
-.home-page.navbar-search-clicked .logo-container #head-logo-white {
-  opacity: 0;
 }
 
 .search-bar {
@@ -10517,7 +10460,7 @@ a.text-dark:hover, a.text-dark:focus {
   top: 49px;
   left: 0;
   right: 0;
-  background-color: #00a0ad;
+  background-color: #004456;
 }
 
 .search-bar .search-bar-hidden form {
@@ -10602,13 +10545,19 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-expand-lg a {
     font-size: 0.8rem;
   }
+  .navbar-expand-lg .logo-container {
+    background: #f4f4f4;
+  }
+  .navbar-expand-lg .logo-container img {
+    margin-left: 0;
+  }
   .navbar-expand-lg .navbar-brand {
     width: 100%;
     position: relative;
   }
   .navbar-expand-lg #head-logo-blue {
     display: block;
-    width: 65%;
+    width: 75%;
     height: auto;
     margin: 0 auto;
   }
@@ -10735,7 +10684,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding-top: 20%;
   }
   .navbar-transparent .navbar-brand img {
-    width: 95%;
+    width: 80%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -10750,7 +10699,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .navbar-transparent .logo-container #head-logo-blue {
     opacity: 0;
-    width: 95%;
+    width: 80%;
     -webkit-transition: opacity 0.1s ease-in;
     transition: opacity 0.1s ease-in;
   }
@@ -10776,7 +10725,7 @@ a.text-dark:hover, a.text-dark:focus {
   .home-page.navbar-when-scrolled .logo-container #head-logo-blue,
   .home-page.navbar-search-clicked .logo-container #head-logo-blue {
     opacity: 1;
-    width: 95%;
+    width: 80%;
   }
   .navbar-transparent:hover .logo-container #head-logo-white,
   .home-page.navbar-when-scrolled .logo-container #head-logo-white,
@@ -10792,6 +10741,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .search-bar .search-bar-hidden {
     top: 69px;
+    background-color: #00a0ad;
   }
   .search-bar .search-bar-hidden form {
     min-height: 10rem;
@@ -10815,48 +10765,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .site-footer .companymail {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1.5rem;
-}
-
-.mobile-logo {
-  max-height: 5.5rem;
-  padding: 1.5rem;
-  border-bottom: 1px solid #f4f4f4;
-  margin-bottom: 2rem;
-}
-
-.mobile-logo .logo-icon,
-.mobile-logo .logo-type {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
-  position: relative;
-}
-
-.mobile-logo .logo-icon:before,
-.mobile-logo .logo-type:before {
-  display: block;
-  content: "";
-  padding-top: 40%;
-}
-
-.mobile-logo .logo-icon img,
-.mobile-logo .logo-type img {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-
-.mobile-logo .logo-icon img {
-  left: 0;
-}
-
-.mobile-logo .logo-type img {
-  height: 120%;
-  right: 0;
 }
 
 .address,
@@ -10866,6 +10777,24 @@ a.text-dark:hover, a.text-dark:focus {
 
 .address p {
   margin: 0;
+}
+
+.written-address .company-name {
+  font-size: 1.2rem;
+}
+
+.map-in-footer {
+  display: block;
+  width: 50%;
+  margin: 0.5rem auto 1.75rem auto;
+  text-align: center;
+  border: 1px solid white;
+  padding: 0.75rem 0;
+}
+
+.first-child,
+.second-child {
+  font-size: 1.2rem;
 }
 
 .social-media {
@@ -10880,7 +10809,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
   content: "";
   font-family: "Font Awesome 5 Brands";
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -10902,6 +10831,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 0.8rem;
   border-right: 1px solid white;
   position: relative;
+  padding: 0.85rem 0;
 }
 
 .copyright-social .bulgarian-flag {
@@ -10916,7 +10846,7 @@ a.text-dark:hover, a.text-dark:focus {
 .copyright .menu-item {
   border-left: 1px solid white;
   margin-left: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 0.5rem;
 }
 
 .button-to-top {
@@ -10928,7 +10858,7 @@ a.text-dark:hover, a.text-dark:focus {
   cursor: pointer;
   position: relative;
   padding: 0.75rem;
-  margin-top: 0.25rem;
+  margin-top: 0.65rem;
 }
 
 .button-to-top:before {
@@ -11023,6 +10953,7 @@ a.text-dark:hover, a.text-dark:focus {
   /* STYLES FOR THE PART OF THE FOOTER WITH THE PROVACY POLICI AND SOCIAL MEDIA ICONS*/
   .footer-copyright {
     border-top: 1px solid white;
+    margin-top: 3rem;
   }
   .copyright-social {
     font-size: 0.8rem;
@@ -11046,6 +10977,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
+#carouselFadeMobile {
+  max-height: 82vh;
+}
+
+#carouselFadeMobile .carousel-inner {
+  width: auto;
+  height: 82vh;
+}
+
 .carousel-fade {
   max-height: 85vh;
 }
@@ -11081,8 +11021,9 @@ a.text-dark:hover, a.text-dark:focus {
   height: 100%;
 }
 
-.carousel-caption .order-1 {
+.carousel-caption > div {
   position: relative;
+  top: 10%;
 }
 
 .carousel-caption h1 {
@@ -11093,6 +11034,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .carousel-caption ul {
+  position: relative;
+  top: 10%;
   text-align: center;
   padding-left: 0;
 }
@@ -11101,6 +11044,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Axiforma SemiBold", sans-serif;
   font-size: 1rem;
   margin-bottom: 0.25rem;
+  text-transform: uppercase;
 }
 
 .carousel-caption h4 {
@@ -11134,17 +11078,25 @@ a.text-dark:hover, a.text-dark:focus {
 
 .carousel-control-prev {
   top: 105%;
-  left: 0;
+  left: -7px;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+  width: 30px;
 }
 
 .carousel-control-next {
   top: 105%;
-  right: 0;
+  right: -7px;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+  width: 30px;
 }
 
 .carousel-indicators li {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   opacity: 0.8;
 }
@@ -11217,8 +11169,14 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
   }
+  .carousel-control-prev .carousel-control-prev-icon {
+    width: 40px;
+  }
   .carousel-control-next {
     right: -4%;
+  }
+  .carousel-control-next .carousel-control-next-icon {
+    width: 40px;
   }
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
@@ -11364,13 +11322,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .advantages .carousel-item .advantages-body {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: justify;
   text-align-last: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 16rem;
+  width: 18rem;
 }
 
 .advantages .carousel-item .advantages-body h6 {
@@ -11379,7 +11337,108 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 1.5rem;
 }
 
-/* HERE START THE STYLES FOR THE CAROUSEL WITH NEWS ARTICLES ON THE MAIN PAGE */
+/* HERE START THE STYLES FOR THE MOBILE CAROUSEL WITH NEWS ARTICLES ON THE MAIN PAGE */
+.mobile-tabs {
+  width: 100%;
+  background: #004456;
+  margin-bottom: 0;
+}
+
+.mobile-tabs .tabs-item {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0.65rem 0;
+}
+
+.mobile-tabs .tabs-item a {
+  color: white;
+}
+
+.mobile-tabs .active-tab {
+  background: #00a0ad;
+  color: white;
+}
+
+.mobile-tabs .active-tab a:hover,
+.mobile-tabs .active-tab a:focus,
+.mobile-tabs .active-tab a:visited {
+  outline: none;
+  text-decoration: none;
+}
+
+.carousel-events-mobile {
+  display: none;
+}
+
+.carousel-products-mobile .carousel-header,
+.carousel-events-mobile .carousel-header {
+  margin-bottom: 0;
+}
+
+.carousel-products-mobile .carousel-control-prev,
+.carousel-products-mobile .carousel-control-next,
+.carousel-events-mobile .carousel-control-prev,
+.carousel-events-mobile .carousel-control-next {
+  background-color: #00a0ad;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 30%;
+}
+
+.carousel-products-mobile .carousel-control-prev,
+.carousel-events-mobile .carousel-control-prev {
+  left: 0;
+}
+
+.carousel-products-mobile .carousel-control-next,
+.carousel-events-mobile .carousel-control-next {
+  right: 0;
+}
+
+.carousel-products-mobile .carousel-control-prev-icon,
+.carousel-products-mobile .carousel-control-next-icon,
+.carousel-events-mobile .carousel-control-prev-icon,
+.carousel-events-mobile .carousel-control-next-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.carousel-products-mobile .carousel-indicators,
+.carousel-events-mobile .carousel-indicators {
+  top: 50%;
+}
+
+.carousel-products-mobile .card,
+.carousel-events-mobile .card {
+  background: #00a0ad;
+}
+
+.carousel-products-mobile .card-body,
+.carousel-events-mobile .card-body {
+  padding: 1.5rem 1rem;
+}
+
+.carousel-products-mobile .card-title,
+.carousel-products-mobile .card-text,
+.carousel-events-mobile .card-title,
+.carousel-events-mobile .card-text {
+  font-size: 0.9rem;
+}
+
+.carousel-products-mobile .see-all-mobile,
+.carousel-events-mobile .see-all-mobile {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  padding: 0.65rem 0;
+  margin: 0.5rem auto 2rem auto;
+}
+
+/* HERE START THE STYLES FOR THE DESKTOP CAROUSEL WITH NEWS ARTICLES ON THE MAIN PAGE */
 .carousel-header {
   margin-bottom: 2rem;
 }
@@ -11410,28 +11469,28 @@ a.text-dark:hover, a.text-dark:focus {
           transform: translateY(-50%);
 }
 
-.tabs-item {
+.tabs .tabs-item {
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: relative;
 }
 
-.tabs-item:last-child {
+.tabs .tabs-item:last-child {
   border-left: 1px solid #6e6e73;
   margin-left: 0.8rem;
   padding-left: 0.8rem;
 }
 
-.tabs-item a {
+.tabs .tabs-item a {
   color: black;
 }
 
-.tabs-item a:hover {
+.tabs .tabs-item a:hover {
   color: #00a0ad;
   text-decoration: none;
 }
 
-.active-tab a {
+.tabs .active-tab a {
   color: #00a0ad !important;
 }
 

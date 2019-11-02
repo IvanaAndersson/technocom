@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no"/>
     <title>Пневматика</title>
+    <link rel="icon" href="/technocom/assets/img/favicon.png">
     <!-- Bootstrap + CSS compiled file -->
     <link rel="stylesheet" href="/technocom/css/site.css" />
     <!-- Fontawesome -->
@@ -23,30 +24,27 @@
   <body>
     <div class="loader d-lg-none"><img src="/technocom/assets/img/logo-loading.png" alt=""></div>
     <header class='site-header'>
-      <!-- Mobile Navbar visible untill large width -->
+      <!-- Mobile Navbar visible untill large width: 992px-->
 <nav
-class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100  bg-dark 
-"
-
-  id="navigation-mobile"
->
+class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100 
+ bg-dark "
+id="navigation-mobile">
   <!-- Navbar brand -->
-    <span class="logo-container d-flex align-items-center col-8">
-      <a class="navbar-brand text-uppercase" href="/technocom/">
-        <img
-        class=' d-none '
-          id="head-logo-white"
-          src="/technocom/assets/img/bialo logo.png"
-          alt="TechnokomKo"/>
-        <img
-          id="head-logo-blue"
-          src="/technocom/assets/img/logo 1.png"
-          alt="TechnokomKo"
-      /></a>
-    </span>
+  <span class="logo-container d-flex align-items-center col-8">
+    <a class="navbar-brand text-uppercase" href="/technocom/">
+      <img
+        id="head-logo-white"
+        src="/technocom/assets/img/bialo logo.png"
+        alt="TechnokomKo-logo"/>
+      <!-- <img
+        id="head-logo-blue"
+        src="/technocom/assets/img/logo 1.png"
+        alt="TechnokomKo"/> -->
+    </a>
+  </span>
 
     <!-- Search button -->
-  <div class="search-bar col-2">
+  <div class="search-bar col-2 bg-primary">
       <a class="btn border-0 p-lg-2 p-xl-3" id="dropdownMobileButton">
         <div class="search-button">
           <div class="search-icon">
@@ -646,7 +644,8 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
 
 <!-- Desktop Navbar visible over the large width breakpoint -->
 <nav
-  class="navbar-expand-lg navbar-dark p-0 d-none fixed-top d-lg-flex row w-100  bg-dark 
+  class="navbar-expand-lg navbar-dark p-0 d-none fixed-top d-lg-flex row w-100 
+   bg-dark 
   "
   id="navigation-desktop"
 >
@@ -1445,7 +1444,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
       <div class="container-fluid p-0">
   <div class="row">
     <div class="col-lg-1"></div>
-    <div class="col-lg-10 row no-gutters justify-content-between">
+    <div class="col-lg-10 row no-gutters py-4 py-lg-0 justify-content-between">
       <section class="logo d-none d-lg-flex flex-column col-lg-2">
         <img
           src="/technocom/assets/img/footer/tk_logo.png"
@@ -1466,7 +1465,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
         </a>
       </section>
 
-      <section
+      <!-- <section
         class="mobile-logo w-100 d-flex justify-content-between d-lg-none"
       >
         <span class="logo-icon">
@@ -1475,7 +1474,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
         <span class="logo-type">
           <img src="/technocom/assets/img/footer/logo 3.png" alt="" />
         </span>
-      </section>
+      </section> -->
 
       <section class="footer-nav d-none d-lg-block col-lg-2">
         <h5 class="text-white mb-4">ТЕХНОКОМ Ко</h5>
@@ -1519,7 +1518,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
 
       <section class="address col-12 col-lg-2">
         <h5 class="text-uppercase mb-lg-4">Адрес</h5>
-        <div class="written-address mb-4">
+        <div class="written-address mb-2">
           <span class="company-name font-weight-bold footer-icon-container">
             <img
               class="footer-icon d-none d-lg-inline"
@@ -1540,8 +1539,14 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
         </div>
       </section>
 
+      <a
+        href="https://goo.gl/maps/Qrr3QiFkkRmENNwP7"
+        class="map-in-footer text-white"
+        target="_blank"
+        >КАРТА
+      </a>
       <section class="contacts col-12 col-lg-2">
-        <h5 class="text-uppercase mb-4">Контакти</h5>
+        <h5 class="text-uppercase mb-3">Контакти</h5>
         <ul class="list-unstyled">
           <li class="first-child text-white font-weight-bold">
             <span class="footer-icon-container">
@@ -1596,7 +1601,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
     <div class="col-lg-1"></div>
   </div>
 
-  <div class="row footer-copyright mt-5">
+  <div class="row footer-copyright">
     <div class="col-lg-1"></div>
     <div class="col-10 col-lg-10 row">
       <div
@@ -1616,7 +1621,7 @@ class="navbar-expand-lg navbar-dark fixed-top p-0 row no-gutters d-lg-none w-100
                 &copy;2020
               </span>
               <span class="order-1 order-lg-2 mr-1">
-                Technocom Co
+                Technokom Co
               </span>
             </span>
 

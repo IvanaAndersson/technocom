@@ -1,5 +1,12 @@
 /* HERE START THE STYLES FOR THE CAROUSEL WITH THE BANNERS ON THE HOME PAGE */
+#carouselFadeMobile {
+  max-height: 82vh;
 
+  .carousel-inner {
+    width: auto;
+    height: 82vh;
+  }
+}
 .carousel-fade {
   max-height: 85vh;
   .carousel-inner {
@@ -31,10 +38,13 @@
 .carousel-caption {
   position: static;
   height: 100%;
+  // margin-top: 3.5rem;
 
-  .order-1 {
+  & > div {
     position: relative;
+    top: 10%;
   }
+
   h1 {
     font-family: "Axiforma Bold", sans-serif;
     text-align: center;
@@ -43,6 +53,8 @@
   }
 
   ul {
+    position: relative;
+    top: 10%;
     text-align: center;
     padding-left: 0;
 
@@ -50,6 +62,7 @@
       font-family: "Axiforma SemiBold", sans-serif;
       font-size: 1rem;
       margin-bottom: 0.25rem;
+      text-transform: uppercase;
     }
   }
 
@@ -82,17 +95,25 @@
 
 .carousel-control-prev {
   top: 105%;
-  left: 0;
+  left: -7px;
+
+  .carousel-control-prev-icon {
+    width: 30px;
+  }
 }
 .carousel-control-next {
   top: 105%;
-  right: 0;
+  right: -7px;
+
+  .carousel-control-next-icon {
+    width: 30px;
+  }
 }
 
 .carousel-indicators {
   li {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
     border-radius: 50%;
     opacity: 0.8;
   }
@@ -174,9 +195,17 @@
   .carousel-control-prev {
     left: 73%;
     transform: rotateY(180deg);
+
+    .carousel-control-prev-icon {
+      width: 40px;
+    }
   }
   .carousel-control-next {
     right: -4%;
+
+    .carousel-control-next-icon {
+      width: 40px;
+    }
   }
 
   .carousel-control-prev-icon,
@@ -350,11 +379,11 @@
     }
 
     .advantages-body {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       text-align: justify;
       text-align-last: center;
       align-self: center;
-      width: 16rem;
+      width: 18rem;
 
       h6 {
         color: $black;
@@ -365,7 +394,93 @@
   }
 }
 
-/* HERE START THE STYLES FOR THE CAROUSEL WITH NEWS ARTICLES ON THE MAIN PAGE */
+/* HERE START THE STYLES FOR THE MOBILE CAROUSEL WITH NEWS ARTICLES ON THE MAIN PAGE */
+.mobile-tabs {
+  width: 100%;
+  background: $blue;
+  margin-bottom: 0;
+
+  .tabs-item {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0.65rem 0;
+    a {
+      color: $white;
+    }
+  }
+
+  .active-tab {
+    background: $teal;
+    color: $white;
+
+    a:hover,
+    a:focus,
+    a:visited {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.carousel-events-mobile {
+  display: none;
+}
+
+.carousel-products-mobile,
+.carousel-events-mobile {
+  .carousel-header {
+    margin-bottom: 0;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: $teal;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 30%;
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+  .carousel-control-next {
+    right: 0;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .carousel-indicators {
+    top: 50%;
+  }
+
+  .card {
+    background: $teal;
+  }
+
+  .card-body {
+    padding: 1.5rem 1rem;
+  }
+
+  .card-title,
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .see-all-mobile {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    color: $white;
+    border: 1px solid $white;
+    padding: 0.65rem 0;
+    margin: 0.5rem auto 2rem auto;
+  }
+}
+
+/* HERE START THE STYLES FOR THE DESKTOP CAROUSEL WITH NEWS ARTICLES ON THE MAIN PAGE */
 .carousel-header {
   margin-bottom: 2rem;
 
@@ -393,26 +508,28 @@
   }
 }
 
-.tabs-item {
-  align-self: flex-start;
-  position: relative;
-  &:last-child {
-    border-left: 1px solid $gray-900;
-    margin-left: 0.8rem;
-    padding-left: 0.8rem;
-  }
+.tabs {
+  .tabs-item {
+    align-self: flex-start;
+    position: relative;
+    &:last-child {
+      border-left: 1px solid $gray-900;
+      margin-left: 0.8rem;
+      padding-left: 0.8rem;
+    }
 
-  a {
-    color: $black;
-    &:hover {
-      color: $teal;
-      text-decoration: none;
+    a {
+      color: $black;
+      &:hover {
+        color: $teal;
+        text-decoration: none;
+      }
     }
   }
-}
-.active-tab {
-  a {
-    color: $teal !important;
+  .active-tab {
+    a {
+      color: $teal !important;
+    }
   }
 }
 
