@@ -44,7 +44,7 @@ body[data-aos-duration="2000"] [data-aos],
   background: $body-bg;
 
   img {
-    width: 65%;
+    width: 60%;
     height: auto;
   }
 }
@@ -63,13 +63,21 @@ a {
 
 .site-header {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: $color-gradient;
-    min-height: 10rem;
-    margin-top: 68px;
+    min-height: 8rem;
+    margin-top: 58px;
   }
 }
-
+@media screen and (min-width: 992px) {
+  .site-header {
+    h1 {
+      font-size: 2rem;
+      min-height: 10rem;
+      margin-top: 68px;
+    }
+  }
+}
 /* STYLING THE HEADINGS IN GENERAL BUT OVERRIDING THEM IN OTHER FILES FOR DIFFERENT SECTIONS */
 
 h2,
@@ -164,15 +172,19 @@ h6 {
 
 /* STYLING THE PRIVACY POLICY HEADINGS AND TEXT */
 .privacy-policy {
+  font-size: 0.9rem;
+  text-align: justify;
+
   h4 {
+    font-size: 1.25rem;
     position: relative;
-    margin: 2.5rem 0 1.5rem 0;
+    margin: 1.25rem 0 1rem 0;
 
     &:before {
       display: inline-block;
       content: "";
       width: 3px;
-      height: 2rem;
+      height: 1.5rem;
       background: $teal;
       position: absolute;
       top: 0;
@@ -181,11 +193,28 @@ h6 {
   }
 
   h6 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 1rem;
   }
 
   ul {
     padding-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .privacy-policy {
+    h4 {
+      font-size: 1.5rem;
+      margin: 2.5rem 0 1.5rem 0;
+
+      &:before {
+        height: 2rem;
+      }
+    }
+
+    h6 {
+      font-size: 1.1rem;
+    }
   }
 }

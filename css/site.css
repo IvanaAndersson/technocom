@@ -269,7 +269,7 @@ body[data-aos-duration="2000"] [data-aos],
 }
 
 .loader img {
-  width: 65%;
+  width: 60%;
   height: auto;
 }
 
@@ -287,11 +287,19 @@ a {
 
 /* STYLING THE HEADERS EXCEPT ON HOME, ABOUT AND CONTACTS PAGES*/
 .site-header h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #004456), to(#00a0ad));
   background: linear-gradient(to bottom, #004456 50%, #00a0ad 100%);
-  min-height: 10rem;
-  margin-top: 68px;
+  min-height: 8rem;
+  margin-top: 58px;
+}
+
+@media screen and (min-width: 992px) {
+  .site-header h1 {
+    font-size: 2rem;
+    min-height: 10rem;
+    margin-top: 68px;
+  }
 }
 
 /* STYLING THE HEADINGS IN GENERAL BUT OVERRIDING THEM IN OTHER FILES FOR DIFFERENT SECTIONS */
@@ -385,16 +393,22 @@ h6 {
 }
 
 /* STYLING THE PRIVACY POLICY HEADINGS AND TEXT */
+.privacy-policy {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
 .privacy-policy h4 {
+  font-size: 1.25rem;
   position: relative;
-  margin: 2.5rem 0 1.5rem 0;
+  margin: 1.25rem 0 1rem 0;
 }
 
 .privacy-policy h4:before {
   display: inline-block;
   content: "";
   width: 3px;
-  height: 2rem;
+  height: 1.5rem;
   background: #00a0ad;
   position: absolute;
   top: 0;
@@ -402,12 +416,25 @@ h6 {
 }
 
 .privacy-policy h6 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 1rem;
 }
 
 .privacy-policy ul {
   padding-left: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .privacy-policy h4 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1.5rem 0;
+  }
+  .privacy-policy h4:before {
+    height: 2rem;
+  }
+  .privacy-policy h6 {
+    font-size: 1.1rem;
+  }
 }
 
 .sub-nav-container {
@@ -999,179 +1026,250 @@ h6 {
   }
 }
 
-/* HERE START THE ABOUT PAGE */
+/* HERE STARTS THE ABOUT PAGE */
 .mission-text p,
 .values-text p,
 .partners-text p {
+  font-size: 0.9rem;
   text-align: justify;
 }
 
-.about-main {
-  margin-top: 4.3rem;
-}
-
-.about-main h4 {
-  font-family: "Axiforma Bold";
-  margin: 2rem 0 1.25rem 0;
-}
-
-.about-main h4:first-child {
-  margin: 0 0 1rem 0;
+.mission .mission-mobile-image img {
+  width: 100%;
+  height: auto;
 }
 
 .mission .mission-text {
-  margin-top: 10rem;
-  padding-right: 5rem;
+  position: relative;
+  padding: 0 1.5rem;
 }
 
 .mission .mission-text h2 {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: -65%;
+  left: 0;
+  z-index: 100;
+  font-size: 1.5rem;
+  color: white;
   font-family: "Axiforma Bold";
   line-height: 1.5;
 }
 
 .mission .mission-text h4 {
-  font-family: "Axiforma Light";
-  margin: 3rem 0;
-}
-
-.mission .mission-image img {
-  width: 100%;
-  max-height: 90vh;
-}
-
-.p-detail {
-  position: relative;
-}
-
-.p-detail:before {
-  display: inline-block;
-  content: "";
-  width: 3px;
-  height: 2rem;
-  background: #00a0ad;
-  position: absolute;
-  top: 0;
-  left: -1rem;
-}
-
-/* STYLING THE BLOCKQUOTE */
-.quote {
-  margin: 15rem auto 10rem auto;
-}
-
-.quote blockquote {
-  position: relative;
-  text-align: justify;
-}
-
-.quote blockquote:before {
-  display: inline-block;
-  content: '"';
+  font-size: 1.25rem;
+  text-transform: uppercase;
   font-family: "Axiforma Bold";
-  font-size: 200px;
-  font-weight: 100;
-  color: rgba(110, 110, 115, 0.4);
-  position: absolute;
-  top: -110%;
-  left: 40%;
-}
-
-.values-image {
-  overflow: hidden;
-}
-
-.values-image:before {
-  display: block;
-  content: "";
-  padding-top: 50%;
-}
-
-.values-image img {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 2rem 0;
 }
 
 .values-text {
-  padding-left: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-/* STYLING THE SECTION WITH THE PARTNERS ON THE ABOUT PAGE */
-.partners-about {
-  padding: 5rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f4f4f4), color-stop(50%, #00a0ad), to(#00a0ad));
-  background: linear-gradient(to bottom, #f4f4f4 50%, #00a0ad 50%, #00a0ad 100%);
+.values-text h4 {
+  font-size: 1.25rem;
+  font-family: "Axiforma Bold";
+  margin: 2rem 0;
 }
 
-.about-partners-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 2.5rem;
-          column-gap: 2.5rem;
-  row-gap: 2.5rem;
+.values-mobile-image {
+  margin-bottom: 1.5rem;
 }
 
-.about-partners-grid .card {
-  border: none;
+.values-mobile-image img {
+  width: 100%;
+  height: auto;
 }
 
-.partners-card {
-  padding: 1.5rem;
-  background-color: #f4f4f4;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.partners-card .image-container {
+p.decorative-text {
+  font-size: 1rem;
+  text-align-last: center;
+  font-family: "Axiforma Light";
+  color: #00a0ad;
   position: relative;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
 }
 
-.partners-card .image-container:before {
+p.decorative-text:before {
   display: block;
   content: "";
-  padding-top: 40%;
-}
-
-.partners-card .image-container img {
-  width: 70%;
-  height: auto;
+  width: 5rem;
+  height: 2px;
+  background: #aaaaaa;
   position: absolute;
-  top: 50%;
+  top: -15%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.partners-card p {
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.partners-card:first-child img, .partners-card:nth-child(4) img, .partners-card:nth-child(8) img {
-  width: 80%;
-}
-
-.partners-card:nth-child(6) img {
-  width: 65%;
-}
-
-.partners-card:nth-child(7) img {
-  width: 100%;
+@media screen and (min-width: 992px) {
+  .mission-text p,
+  .values-text p,
+  .partners-text p {
+    font-size: 1rem;
+  }
+  .about-main {
+    margin-top: 4.3rem;
+  }
+  .about-main h4 {
+    font-size: 1.5rem;
+    font-family: "Axiforma Bold";
+    margin: 2rem 0 1.25rem 0;
+  }
+  .about-main h4:first-child {
+    margin: 0 0 1rem 0;
+  }
+  .mission .mission-text {
+    margin-top: 10rem;
+    padding-right: 5rem;
+  }
+  .mission .mission-text h2 {
+    text-align: left;
+    position: static;
+    font-size: 2rem;
+    color: #00a0ad;
+    font-family: "Axiforma Bold";
+    line-height: 1.5;
+  }
+  .mission .mission-text h4 {
+    font-size: 1.5rem;
+    text-transform: none;
+    font-family: "Axiforma Light";
+    margin: 3rem 0;
+  }
+  .mission .mission-image img {
+    width: 100%;
+    max-height: 90vh;
+  }
+  .p-detail {
+    position: relative;
+  }
+  .p-detail:before {
+    display: inline-block;
+    content: "";
+    width: 3px;
+    height: 2rem;
+    background: #00a0ad;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+  }
+  /* STYLING THE BLOCKQUOTE ON DESKTOP ONLY */
+  .quote {
+    margin: 15rem auto 10rem auto;
+  }
+  .quote blockquote {
+    position: relative;
+    text-align: justify;
+  }
+  .quote blockquote:before {
+    display: inline-block;
+    content: '"';
+    font-family: "Axiforma Bold";
+    font-size: 200px;
+    font-weight: 100;
+    color: rgba(110, 110, 115, 0.4);
+    position: absolute;
+    top: -110%;
+    left: 40%;
+  }
+  .values-image {
+    overflow: hidden;
+  }
+  .values-image:before {
+    display: block;
+    content: "";
+    padding-top: 50%;
+  }
+  .values-image img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .values-text {
+    padding-left: 5rem;
+  }
+  p.decorative-text {
+    font-size: 1rem;
+    text-align-last: initial;
+    font-family: "Acari Sans Regular", sans-serif;
+    color: black;
+    margin: 0;
+  }
+  p.decorative-text:before {
+    content: none;
+  }
+  /* STYLING THE SECTION WITH THE PARTNERS ON THE DESKTOP ABOUT PAGE */
+  .partners-about {
+    padding: 5rem 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f4f4f4), color-stop(50%, #00a0ad), to(#00a0ad));
+    background: linear-gradient(to bottom, #f4f4f4 50%, #00a0ad 50%, #00a0ad 100%);
+  }
+  .about-partners-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+    row-gap: 2.5rem;
+  }
+  .about-partners-grid .card {
+    border: none;
+  }
+  .partners-card {
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners-card .image-container {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .partners-card .image-container:before {
+    display: block;
+    content: "";
+    padding-top: 40%;
+  }
+  .partners-card .image-container img {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .partners-card p {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .partners-card:first-child img, .partners-card:nth-child(4) img, .partners-card:nth-child(8) img {
+    width: 80%;
+  }
+  .partners-card:nth-child(6) img {
+    width: 65%;
+  }
+  .partners-card:nth-child(7) img {
+    width: 100%;
+  }
 }
 
 /* STYLES FOR THE CONTACT PAGE */
