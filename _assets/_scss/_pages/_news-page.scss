@@ -2,28 +2,49 @@
 
 .news-page {
   .news-page-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    padding: 2rem 0;
     .card-link {
-      margin-left: 0;
-      margin-bottom: 0;
+      width: 100%;
+    }
+  }
+}
 
-      + .card-link {
+.see-more-news {
+  display: block;
+  width: 50%;
+  text-align: center;
+  color: $teal;
+  border: 1px solid $teal;
+  padding: 0.75rem 0;
+  margin: 0.5rem auto 1.75rem auto;
+}
+
+@media screen and (min-width: 992px) {
+  .news-page {
+    .news-page-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      .card-link {
         margin-left: 0;
-      }
+        margin-bottom: 0;
 
-      .card {
-        width: auto;
-
-        .card-body {
-          padding: 0.9rem;
+        + .card-link {
+          margin-left: 0;
         }
-        .card-title {
-          margin: 0;
+
+        .card {
+          width: auto;
+
+          .card-body {
+            padding: 0.9rem;
+          }
+          .card-title {
+            margin: 0;
+          }
         }
       }
     }
@@ -31,31 +52,35 @@
 }
 
 /* STYLING OF THE SEE ALL BUTTON ON THE NEWS PAGE */
-.see-all-news {
-  position: relative;
-  margin-left: 2rem;
-  color: $black;
-  &:hover,
-  &:focus {
-    color: $teal;
-    text-decoration: none;
-    outline: none;
-  }
-  &:before {
-    display: inline-block;
-    content: "";
-    width: 1rem * 1.75;
-    height: 2px;
-    background-color: rgba($gray-900, 0.5);
-    margin-right: 0.5rem;
-    position: absolute;
-    top: 50%;
-    left: -50%;
-    transform: translateY(-50%);
+
+@media screen and (min-width: 992px) {
+  .see-all-news {
+    position: relative;
+    margin-left: 2rem;
+    color: $black;
+    &:hover,
+    &:focus {
+      color: $teal;
+      text-decoration: none;
+      outline: none;
+    }
+    &:before {
+      display: inline-block;
+      content: "";
+      width: 1rem * 1.75;
+      height: 2px;
+      background-color: rgba($gray-900, 0.5);
+      margin-right: 0.5rem;
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
 /* STYLES FOR THE PAGES WITH NEWS ARTICLES */
+
 .container-news-item {
   padding-top: 1.5rem;
 
@@ -85,6 +110,9 @@
     position: absolute;
     right: 0;
   }
+}
+
+@media screen and (min-width: 992px) {
   .social-media-list {
     .menu-item {
       &::before {

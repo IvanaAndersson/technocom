@@ -3,15 +3,13 @@
 }
 .sub-nav {
   width: 100%;
-  min-height: 4rem;
-
-  & > ul {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
+  min-height: 3rem;
 }
 
 .sub-nav-list {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
   border-right: 1px solid $lines;
 
   &:first-child {
@@ -49,5 +47,20 @@
       text-decoration: none;
       outline: none;
     }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sub-nav {
+    min-height: 4rem;
+
+    & > ul {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+
+  .sub-nav-list {
+    flex-grow: 0;
   }
 }

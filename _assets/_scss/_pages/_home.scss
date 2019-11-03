@@ -262,6 +262,30 @@
   }
 }
 
+@media (min-width: 1360px) and (max-width: 1445px) {
+  .engineering:hover {
+    .wrapper {
+      ul {
+        li:last-child {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1530px) {
+  .products,
+  .engineering,
+  .auto-industry {
+    .product-picture {
+      &:after {
+        padding-top: 42%;
+      }
+    }
+  }
+}
+
 /* THE SECTIONS WITH THE ADVANTAGES, NEWS AND PARTNERS HAVE THE SAME STYLING FOR THE HEADING  */
 .advantages,
 .news,
@@ -377,7 +401,6 @@
   .card-body {
     background-color: $teal;
     padding: 1.5rem 1rem 3rem 1.5rem;
-    // padding-bottom: 3rem;
   }
 
   .card-title,
@@ -387,7 +410,7 @@
 }
 @media screen and (min-width: 992px) {
   .news {
-    height: 75vh;
+    height: 75vmin;
     background: linear-gradient(to bottom, $body-bg 50%, $blue 50%, $blue 100%);
     h3 {
       margin-bottom: 2rem;
@@ -395,7 +418,7 @@
     @media screen and (min-width: 1600px) {
       .carousel-products,
       .carousel-events {
-        height: 55vh;
+        height: 55vmin;
       }
 
       .carousel-inner {
@@ -404,7 +427,39 @@
     }
   }
 }
+@media screen and (min-width: 1440px) {
+  .news {
+    background: linear-gradient(to bottom, $body-bg 55%, $blue 55%, $blue 100%);
+    h3 {
+      margin-bottom: 2rem;
+    }
 
+    .carousel-products,
+    .carousel-events {
+      height: 55vmin;
+      .carousel-indicators {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1590px) {
+  .news {
+    .carousel-products,
+    .carousel-events {
+      height: 65vh;
+
+      .carousel-indicators {
+        margin-bottom: 5rem;
+      }
+    }
+
+    .carousel-inner {
+      height: 100%;
+    }
+  }
+}
 /* STYLING THE SECTION WITH THE PARTNERS ON THE MAIN PAGE  */
 
 .partners {
