@@ -453,7 +453,7 @@
   }
 
   .carousel-indicators {
-    top: 50%;
+    margin-top: 14rem;
   }
 
   .card {
@@ -481,11 +481,27 @@
   }
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 420px) {
   .carousel-products-mobile,
   .carousel-events-mobile {
     .carousel-indicators {
-      top: 60%;
+      margin-top: 17rem;
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .carousel-products-mobile,
+  .carousel-events-mobile {
+    .carousel-indicators {
+      margin-top: 20rem;
+    }
+  }
+}
+@media screen and (min-width: 550px) {
+  .carousel-products-mobile,
+  .carousel-events-mobile {
+    .carousel-indicators {
+      margin-top: 23rem;
     }
   }
 }
@@ -493,7 +509,15 @@
   .carousel-products-mobile,
   .carousel-events-mobile {
     .carousel-indicators {
-      top: 66%;
+      margin-top: 27rem;
+    }
+  }
+}
+@media screen and (min-width: 700px) {
+  .carousel-products-mobile,
+  .carousel-events-mobile {
+    .carousel-indicators {
+      margin-top: 29rem;
     }
   }
 }
@@ -501,7 +525,7 @@
   .carousel-products-mobile,
   .carousel-events-mobile {
     .carousel-indicators {
-      top: 70%;
+      margin-top: 34rem;
     }
   }
 }

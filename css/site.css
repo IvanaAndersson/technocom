@@ -1109,7 +1109,7 @@ h6 {
 }
 
 .mission .mission-text h2 {
-  background: url("/assets/img/about/mobile-about-1.jpg") center no-repeat;
+  background: url("../assets/img/about/mobile-about-1.jpg") center no-repeat;
   background-size: cover;
   text-align: center;
   width: 100%;
@@ -11806,7 +11806,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .carousel-products-mobile .carousel-indicators,
 .carousel-events-mobile .carousel-indicators {
-  top: 50%;
+  margin-top: 14rem;
 }
 
 .carousel-products-mobile .card,
@@ -11838,24 +11838,45 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0.5rem auto 2rem auto;
 }
 
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 420px) {
   .carousel-products-mobile .carousel-indicators,
   .carousel-events-mobile .carousel-indicators {
-    top: 60%;
+    margin-top: 17rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .carousel-products-mobile .carousel-indicators,
+  .carousel-events-mobile .carousel-indicators {
+    margin-top: 20rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .carousel-products-mobile .carousel-indicators,
+  .carousel-events-mobile .carousel-indicators {
+    margin-top: 23rem;
   }
 }
 
 @media screen and (min-width: 650px) {
   .carousel-products-mobile .carousel-indicators,
   .carousel-events-mobile .carousel-indicators {
-    top: 66%;
+    margin-top: 27rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .carousel-products-mobile .carousel-indicators,
+  .carousel-events-mobile .carousel-indicators {
+    margin-top: 29rem;
   }
 }
 
 @media screen and (min-width: 800px) {
   .carousel-products-mobile .carousel-indicators,
   .carousel-events-mobile .carousel-indicators {
-    top: 70%;
+    margin-top: 34rem;
   }
 }
 
