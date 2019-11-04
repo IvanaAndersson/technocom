@@ -1,15 +1,55 @@
 ---
-layout: pneumatics
+layout: default
 title: Пневматика
 subtitle: Антиротационни цилиндри
 ---
 
+<div class="sub-nav-container no-gutters d-none d-lg-flex">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+    <nav class="sub-nav d-flex justify-content-center aling-items-center">
+      <ul
+        class="list-unstyled d-flex flex-wrap flex-lg-nowrap justify-content-center w-100 m-0"
+      >
+        <li class="sub-nav-list h-lg-100 px-lg-5 d-flex current-sub-item">
+          <a
+            href="{{ site.baseurl }}/pneumatics/movement.html"
+            class="text-uppercase"
+            >Движение
+          </a>
+        </li>
+        <li class="sub-nav-list h-lg-100 px-lg-5 d-flex">
+          <a
+            href="{{ site.baseurl }}/pneumatics/management.html"
+            class="text-uppercase"
+            >Управление
+          </a>
+        </li>
+        <li class="sub-nav-list h-lg-100 px-lg-5 d-flex">
+          <a
+            href="{{ site.baseurl }}/pneumatics/preparation.html"
+            class="text-uppercase"
+            >Подготовка
+          </a>
+        </li>
+        <li class="sub-nav-list h-lg-100 px-lg-5 d-flex">
+          <a
+            href="{{ site.baseurl }}/pneumatics/connecting.html"
+            class="text-uppercase"
+            >Свързване
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="col-lg-1"></div>
+</div>
 <div class="container-fluid container-catalog-item">
   <div class="row no-gutters">
-    <div class="col-1"></div>
-    <div class="col-10">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
       <div
-        class="carousel-header mb-5 row no-gutters justify-content-between align-items-center"
+        class="carousel-header carousel-product-header mb-5 row no-gutters justify-content-between align-items-center"
       >
         <nav
           class="breadcrumb-nav col-10 d-none d-lg-block"
@@ -44,9 +84,32 @@ subtitle: Антиротационни цилиндри
           </ol>
         </nav>
 
-        <ul
-          class="list-unstyled d-flex justify-content-between align-items-center pages"
+        <a
+          href="{{ site.baseurl }}/pneumatics.html"
+          class="see-all-products d-lg-none"
         >
+          <svg
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 477.175 477.175"
+            style="enable-background:new 0 0 477.175 477.175;"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                class="button-fill"
+                d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+       c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"
+              />
+            </g>
+          </svg>
+          Всички продукти
+        </a>
+        <ul class="pages d-flex justify-content-around align-items-center">
           <a
             class="carousel-button carousel-button--left"
             href="#carouselProduct"
@@ -68,7 +131,7 @@ subtitle: Антиротационни цилиндри
                 <path
                   class="button-fill"
                   d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-       c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"
+                  c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"
                 />
               </g>
             </svg>
@@ -109,12 +172,40 @@ subtitle: Антиротационни цилиндри
         <div class="carousel-track-container">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="row no-gutters justify-content-between catalog-item">
-                <div class="catalog-item-description col-7">
-                  <div class="catalog-item-text">
-                    <h4 class="catalog-item-title text-uppercase">
-                      Компактен антиротационен цилиндър
-                    </h4>
+              <div
+                class="d-flex flex-column flex-lg-row no-gutters justify-content-between catalog-item"
+              >
+                <div class="catalog-item-description col-lg-7">
+                  <h4 class="catalog-item-title text-uppercase">
+                    Компактен антиротационен цилиндър
+                  </h4>
+                  <div
+                    class="catalog-item-image-mobile embed-responsive embed-responsive-1by1 
+                      d-lg-none mx-auto"
+                  >
+                    <img
+                      class="img-fluid embed-responsive-item"
+                      src="{{
+                        site.baseurl
+                      }}/assets/img/products/422711001375694145.jpg"
+                      alt="image a product"
+                    />
+                  </div>
+
+                  <ul
+                    class="list-unstyled tabs-links d-flex align-items-center d-lg-none"
+                  >
+                    <li id="characteristics-tab-link" class="active-tab-link">
+                      <a href="#!">Инфо</a>
+                    </li>
+                    <li id="documents-tab-link"><a href="#!">Документи</a></li>
+                    <li id="3d-model-tab-link"><a href="#!">3D модел</a></li>
+                  </ul>
+                  <div
+                    class="catalog-item-text active-catalog-section px-4 px-lg-0"
+                    id="characteristics-catalog-item"
+                  >
+                    <h3 class="d-lg-none">Характеристики</h3>
                     <p class="catalog-item-paragraph">
                       Новите цилиндри от неръждаема стомана на UNIVER,
                       предназначени за агресивни среди, вече са налични в ISO
@@ -134,13 +225,16 @@ subtitle: Антиротационни цилиндри
                       2GDc T4 сертифициране).
                     </p>
                   </div>
-                  <div class="catalog-item-download">
+                  <div
+                    class="catalog-item-download d-none d-lg-flex"
+                    id="documents-catalog-item"
+                  >
                     <a
                       href="#!"
                       target="_blank"
-                      class="d-flex align-items-center"
+                      class="d-flex flex-column flex-lg-row align-items-center"
                     >
-                      <span class="download-image">
+                      <span class="download-image order-2 order-lg-1">
                         <img
                           class="pdf-icon"
                           src="{{
@@ -156,196 +250,19 @@ subtitle: Антиротационни цилиндри
                           alt=""
                         />
                       </span>
-
-                      <span>Свали техническа информация</span>
-                    </a>
-                  </div>
-                  <form class="d-flex align-items-center">
-                    <span class="download-image align-self-start">
-                      <img
-                        src="{{ site.baseurl }}/assets/img/products/3d icon.png"
-                        alt=""
-                      />
-                    </span>
-                    <div class="download-form d-flex flex-column">
-                      <span>Свали 3D модел</span>
-                      <span
-                        >За да получите линк за сваляне на 3D модела, моля,
-                        <br />
-                        попълнете валиден имейл адрес в полето по-долу
+                      <span class="d-lg-none order-3 pdf">pdf</span>
+                      <span class="order-1 order-lg-2 download-span"
+                        >Свали техническа информация
                       </span>
-                      <div class="input-group">
-                        <input type="email" placeholder="E-mail" />
-                        <div>
-                          <button type="submit">ИЗПРАТИ</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-
-                <div
-                  class="catalog-item-image embed-responsive embed-responsive-1by1 col-5"
-                >
-                  <img
-                    class="img-fluid embed-responsive-item"
-                    src="{{
-                      site.baseurl
-                    }}/assets/img/products/422711001375694145.jpg"
-                    alt="image a product"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="row no-gutters justify-content-between catalog-item">
-                <div class="catalog-item-description col-7">
-                  <div class="catalog-item-text">
-                    <h4 class="catalog-item-title text-uppercase">
-                      Компактен антиротационен цилиндър
-                    </h4>
-                    <p class="catalog-item-paragraph">
-                      Новите цилиндри от неръждаема стомана на UNIVER,
-                      предназначени за агресивни среди, вече са налични в ISO
-                      6431, ISO 15552 и компактни версии ISO 21287. Гъвкавостта
-                      на използване, дори и при тежки приложения, се предоставя
-                      от възможността за персонализиране на материалите (AISI
-                      304/316 inox) и уплътненията (също и с FDA и ATEX CE, II
-                      2GDc T4 сертифициране).
-                    </p>
-                    <p class="catalog-item-paragraph">
-                      Новите цилиндри от неръждаема стомана на UNIVER,
-                      предназначени за агресивни среди, вече са налични в ISO
-                      6431, ISO 15552 и компактни версии ISO 21287. Гъвкавостта
-                      на използване, дори и при тежки приложения, се предоставя
-                      от възможността за персонализиране на материалите (AISI
-                      304/316 inox) и уплътненията (също и с FDA и ATEX CE, II
-                      2GDc T4 сертифициране).
-                    </p>
-                  </div>
-                  <div class="catalog-item-download">
-                    <a
-                      href="#!"
-                      target="_blank"
-                      class="d-flex align-items-center"
-                    >
-                      <span class="download-image">
-                        <img
-                          class="pdf-icon"
-                          src="{{
-                            site.baseurl
-                          }}/assets/img/products/pdf icon.png"
-                          alt=""
-                        />
-                        <img
-                          class="arrow-icon"
-                          src="{{
-                            site.baseurl
-                          }}/assets/img/products/arrow icon.png"
-                          alt=""
-                        />
-                      </span>
-
-                      <span>Свали техническа информация</span>
-                    </a>
-                  </div>
-                  <form class="d-flex align-items-center">
-                    <span class="download-image align-self-start">
-                      <img
-                        src="{{ site.baseurl }}/assets/img/products/3d icon.png"
-                        alt=""
-                      />
-                    </span>
-                    <div class="download-form d-flex flex-column">
-                      <span>Свали 3D модел</span>
-                      <span
-                        >За да получите линк за сваляне на 3D модела, моля,
-                        <br />
-                        попълнете валиден имейл адрес в полето по-долу
-                      </span>
-                      <div class="input-group">
-                        <input type="email" placeholder="E-mail" />
-                        <div>
-                          <button type="submit">ИЗПРАТИ</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-
-                <div
-                  class="catalog-item-image embed-responsive embed-responsive-1by1 col-5"
-                >
-                  <img
-                    class="img-fluid embed-responsive-item"
-                    src="{{
-                      site.baseurl
-                    }}/assets/img/products/422711001375694145.jpg"
-                    alt="image a product"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="row no-gutters justify-content-between catalog-item">
-                <div class="catalog-item-description col-7">
-                  <div class="catalog-item-text">
-                    <h4 class="catalog-item-title text-uppercase">
-                      Компактен антиротационен цилиндър
-                    </h4>
-                    <p class="catalog-item-paragraph">
-                      Новите цилиндри от неръждаема стомана на UNIVER,
-                      предназначени за агресивни среди, вече са налични в ISO
-                      6431, ISO 15552 и компактни версии ISO 21287. Гъвкавостта
-                      на използване, дори и при тежки приложения, се предоставя
-                      от възможността за персонализиране на материалите (AISI
-                      304/316 inox) и уплътненията (също и с FDA и ATEX CE, II
-                      2GDc T4 сертифициране).
-                    </p>
-                    <p class="catalog-item-paragraph">
-                      Новите цилиндри от неръждаема стомана на UNIVER,
-                      предназначени за агресивни среди, вече са налични в ISO
-                      6431, ISO 15552 и компактни версии ISO 21287. Гъвкавостта
-                      на използване, дори и при тежки приложения, се предоставя
-                      от възможността за персонализиране на материалите (AISI
-                      304/316 inox) и уплътненията (също и с FDA и ATEX CE, II
-                      2GDc T4 сертифициране).
-                    </p>
-                  </div>
-                  <div class="catalog-item-download">
-                    <a
-                      href="#!"
-                      target="_blank"
-                      class="d-flex align-items-center"
-                    >
-                      <span class="download-image">
-                        <img
-                          class="pdf-icon"
-                          src="{{
-                            site.baseurl
-                          }}/assets/img/products/pdf icon.png"
-                          alt=""
-                        />
-                        <img
-                          class="arrow-icon"
-                          src="{{
-                            site.baseurl
-                          }}/assets/img/products/arrow icon.png"
-                          alt=""
-                        />
-                      </span>
-
-                      <span>Свали техническа информация</span>
                     </a>
                   </div>
                   <form
-                    action="POST"
-                    autocomplete="on"
-                    class="d-flex align-items-center"
+                    class="align-items-center d-none d-lg-flex"
+                    id="3d-model-catalog-item"
                   >
-                    <span class="download-image align-self-start">
+                    <span
+                      class="download-image align-self-start d-none d-lg-inline"
+                    >
                       <img
                         src="{{ site.baseurl }}/assets/img/products/3d icon.png"
                         alt=""
@@ -353,12 +270,23 @@ subtitle: Антиротационни цилиндри
                     </span>
                     <div class="download-form d-flex flex-column">
                       <span>Свали 3D модел</span>
-                      <span
-                        >За да получите линк за сваляне на 3D модела, моля,
-                        <br />
-                        попълнете валиден имейл адрес в полето по-долу.
+
+                      <span class="download-image align-self-center d-lg-none">
+                        <img
+                          src="{{
+                            site.baseurl
+                          }}/assets/img/products/3d icon.png"
+                          alt=""
+                        />
                       </span>
-                      <div class="input-group">
+                      <span>
+                        За да получите линк за сваляне на 3D модела, моля,
+                        <br />
+                        попълнете валиден имейл адрес в полето по-долу
+                      </span>
+                      <div
+                        class="input-group justify-content-center justify-content-lg-start"
+                      >
                         <input type="email" placeholder="E-mail" />
                         <div>
                           <button type="submit">ИЗПРАТИ</button>
@@ -369,7 +297,286 @@ subtitle: Антиротационни цилиндри
                 </div>
 
                 <div
-                  class="catalog-item-image embed-responsive embed-responsive-1by1 col-5"
+                  class="catalog-item-image embed-responsive embed-responsive-1by1 
+                  col-lg-5 d-none d-lg-block"
+                >
+                  <img
+                    class="img-fluid embed-responsive-item"
+                    src="{{
+                      site.baseurl
+                    }}/assets/img/products/422711001375694145.jpg"
+                    alt="image a product"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="d-flex flex-column flex-lg-row no-gutters justify-content-between catalog-item"
+              >
+                <div class="catalog-item-description col-lg-7">
+                  <h4 class="catalog-item-title text-uppercase">
+                    Компактен антиротационен цилиндър
+                  </h4>
+                  <div
+                    class="catalog-item-image-mobile embed-responsive embed-responsive-1by1 
+                      d-lg-none mx-auto"
+                  >
+                    <img
+                      class="img-fluid embed-responsive-item"
+                      src="{{
+                        site.baseurl
+                      }}/assets/img/products/422711001375694145.jpg"
+                      alt="image a product"
+                    />
+                  </div>
+
+                  <ul
+                    class="list-unstyled tabs-links d-flex align-items-center d-lg-none"
+                  >
+                    <li id="characteristics-tab-link" class="active-tab-link">
+                      <a href="#!">Инфо</a>
+                    </li>
+                    <li id="documents-tab-link"><a href="#!">Документи</a></li>
+                    <li id="3d-model-tab-link"><a href="#!">3D модел</a></li>
+                  </ul>
+                  <div
+                    class="catalog-item-text active-catalog-section px-4 px-lg-0"
+                    id="characteristics-catalog-item"
+                  >
+                    <h3 class="d-lg-none">Характеристики</h3>
+                    <p class="catalog-item-paragraph">
+                      Новите цилиндри от неръждаема стомана на UNIVER,
+                      предназначени за агресивни среди, вече са налични в ISO
+                      6431, ISO 15552 и компактни версии ISO 21287. Гъвкавостта
+                      на използване, дори и при тежки приложения, се предоставя
+                      от възможността за персонализиране на материалите (AISI
+                      304/316 inox) и уплътненията (също и с FDA и ATEX CE, II
+                      2GDc T4 сертифициране).
+                    </p>
+                    <p class="catalog-item-paragraph">
+                      Новите цилиндри от неръждаема стомана на UNIVER,
+                      предназначени за агресивни среди, вече са налични в ISO
+                      6431, ISO 15552 и компактни версии ISO 21287. Гъвкавостта
+                      на използване, дори и при тежки приложения, се предоставя
+                      от възможността за персонализиране на материалите (AISI
+                      304/316 inox) и уплътненията (също и с FDA и ATEX CE, II
+                      2GDc T4 сертифициране).
+                    </p>
+                  </div>
+                  <div
+                    class="catalog-item-download d-none d-lg-flex"
+                    id="documents-catalog-item"
+                  >
+                    <a
+                      href="#!"
+                      target="_blank"
+                      class="d-flex flex-column flex-lg-row align-items-center"
+                    >
+                      <span class="download-image order-2 order-lg-1">
+                        <img
+                          class="pdf-icon"
+                          src="{{
+                            site.baseurl
+                          }}/assets/img/products/pdf icon.png"
+                          alt=""
+                        />
+                        <img
+                          class="arrow-icon"
+                          src="{{
+                            site.baseurl
+                          }}/assets/img/products/arrow icon.png"
+                          alt=""
+                        />
+                      </span>
+                      <span class="d-lg-none order-3 pdf">pdf</span>
+                      <span class="order-1 order-lg-2 download-span"
+                        >Свали техническа информация
+                      </span>
+                    </a>
+                  </div>
+                  <form
+                    class="align-items-center d-none d-lg-flex"
+                    id="3d-model-catalog-item"
+                  >
+                    <span
+                      class="download-image align-self-start d-none d-lg-inline"
+                    >
+                      <img
+                        src="{{ site.baseurl }}/assets/img/products/3d icon.png"
+                        alt=""
+                      />
+                    </span>
+                    <div class="download-form d-flex flex-column">
+                      <span>Свали 3D модел</span>
+
+                      <span class="download-image align-self-center d-lg-none">
+                        <img
+                          src="{{
+                            site.baseurl
+                          }}/assets/img/products/3d icon.png"
+                          alt=""
+                        />
+                      </span>
+                      <span>
+                        За да получите линк за сваляне на 3D модела, моля,
+                        <br />
+                        попълнете валиден имейл адрес в полето по-долу
+                      </span>
+                      <div
+                        class="input-group justify-content-center justify-content-lg-start"
+                      >
+                        <input type="email" placeholder="E-mail" />
+                        <div>
+                          <button type="submit">ИЗПРАТИ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div
+                  class="catalog-item-image embed-responsive embed-responsive-1by1 
+                  col-lg-5 d-none d-lg-block"
+                >
+                  <img
+                    class="img-fluid embed-responsive-item"
+                    src="{{
+                      site.baseurl
+                    }}/assets/img/products/422711001375694145.jpg"
+                    alt="image a product"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="d-flex flex-column flex-lg-row no-gutters justify-content-between catalog-item"
+              >
+                <div class="catalog-item-description col-lg-7">
+                  <h4 class="catalog-item-title text-uppercase">
+                    Компактен антиротационен цилиндър
+                  </h4>
+                  <div
+                    class="catalog-item-image-mobile embed-responsive embed-responsive-1by1 
+                      d-lg-none mx-auto"
+                  >
+                    <img
+                      class="img-fluid embed-responsive-item"
+                      src="{{
+                        site.baseurl
+                      }}/assets/img/products/422711001375694145.jpg"
+                      alt="image a product"
+                    />
+                  </div>
+
+                  <ul
+                    class="list-unstyled tabs-links d-flex align-items-center d-lg-none"
+                  >
+                    <li id="characteristics-tab-link" class="active-tab-link">
+                      <a href="#!">Инфо</a>
+                    </li>
+                    <li id="documents-tab-link"><a href="#!">Документи</a></li>
+                    <li id="3d-model-tab-link"><a href="#!">3D модел</a></li>
+                  </ul>
+                  <div
+                    class="catalog-item-text active-catalog-section px-4 px-lg-0"
+                    id="characteristics-catalog-item"
+                  >
+                    <h3 class="d-lg-none">Характеристики</h3>
+                    <p class="catalog-item-paragraph">
+                      Новите цилиндри от неръждаема стомана на UNIVER,
+                      предназначени за агресивни среди, вече са налични в ISO
+                      6431, ISO 15552 и компактни версии ISO 21287. Гъвкавостта
+                      на използване, дори и при тежки приложения, се предоставя
+                      от възможността за персонализиране на материалите (AISI
+                      304/316 inox) и уплътненията (също и с FDA и ATEX CE, II
+                      2GDc T4 сертифициране).
+                    </p>
+                    <p class="catalog-item-paragraph">
+                      Новите цилиндри от неръждаема стомана на UNIVER,
+                      предназначени за агресивни среди, вече са налични в ISO
+                      6431, ISO 15552 и компактни версии ISO 21287. Гъвкавостта
+                      на използване, дори и при тежки приложения, се предоставя
+                      от възможността за персонализиране на материалите (AISI
+                      304/316 inox) и уплътненията (също и с FDA и ATEX CE, II
+                      2GDc T4 сертифициране).
+                    </p>
+                  </div>
+                  <div
+                    class="catalog-item-download d-none d-lg-flex"
+                    id="documents-catalog-item"
+                  >
+                    <a
+                      href="#!"
+                      target="_blank"
+                      class="d-flex flex-column flex-lg-row align-items-center"
+                    >
+                      <span class="download-image order-2 order-lg-1">
+                        <img
+                          class="pdf-icon"
+                          src="{{
+                            site.baseurl
+                          }}/assets/img/products/pdf icon.png"
+                          alt=""
+                        />
+                        <img
+                          class="arrow-icon"
+                          src="{{
+                            site.baseurl
+                          }}/assets/img/products/arrow icon.png"
+                          alt=""
+                        />
+                      </span>
+                      <span class="d-lg-none order-3 pdf">pdf</span>
+                      <span class="order-1 order-lg-2 download-span"
+                        >Свали техническа информация
+                      </span>
+                    </a>
+                  </div>
+                  <form
+                    class="align-items-center d-none d-lg-flex"
+                    id="3d-model-catalog-item"
+                  >
+                    <span
+                      class="download-image align-self-start d-none d-lg-inline"
+                    >
+                      <img
+                        src="{{ site.baseurl }}/assets/img/products/3d icon.png"
+                        alt=""
+                      />
+                    </span>
+                    <div class="download-form d-flex flex-column">
+                      <span>Свали 3D модел</span>
+
+                      <span class="download-image align-self-center d-lg-none">
+                        <img
+                          src="{{
+                            site.baseurl
+                          }}/assets/img/products/3d icon.png"
+                          alt=""
+                        />
+                      </span>
+                      <span>
+                        За да получите линк за сваляне на 3D модела, моля,
+                        <br />
+                        попълнете валиден имейл адрес в полето по-долу
+                      </span>
+                      <div
+                        class="input-group justify-content-center justify-content-lg-start"
+                      >
+                        <input type="email" placeholder="E-mail" />
+                        <div>
+                          <button type="submit">ИЗПРАТИ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div
+                  class="catalog-item-image embed-responsive embed-responsive-1by1 
+                  col-lg-5 d-none d-lg-block"
                 >
                   <img
                     class="img-fluid embed-responsive-item"
@@ -407,6 +614,6 @@ subtitle: Антиротационни цилиндри
         </div>
       </section>
     </div>
-    <div class="col-1"></div>
+    <div class="col-lg-1"></div>
   </div>
 </div>

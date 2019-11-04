@@ -1,30 +1,119 @@
 /* STYLING THE INDIVIDUAL PRODUCT FROM THE CATALOG PAGE*/
-.container-catalog-item {
-  padding: 0.5rem 0;
+.carousel-product-header {
+  border-bottom: 1px solid $lines;
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+.see-all-products {
+  font-size: 0.8rem;
+  color: $gray-900;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  svg {
+    width: 1.75rem;
+    height: 1rem;
+  }
+  .button-fill {
+    fill: $gray-900;
+  }
+}
+
+.pages {
+  list-style: none;
+  padding: 0.8rem 0.5rem;
+  width: 8rem;
+  background: $teal;
+  position: relative;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 1rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .carousel-button {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .button-fill {
+    fill: $white;
+  }
+
+  .page-left,
+  .page-right {
+    padding-top: 0.3rem;
+    font-family: "Axiforma Regular";
+    font-size: 1.2rem;
+    margin: 0 0.8rem;
+  }
+}
+
+.tabs-links {
+  width: 100%;
+
+  li {
+    background: $blue;
+    flex-basis: 33.33%;
+    padding: 0.75rem 0;
+    text-align: center;
+
+    a {
+      color: $white;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.tabs-links li.active-tab-link {
+  background: $teal;
 }
 
 .catalog-item-text {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+  h3 {
+    color: $teal;
+    text-align: center;
+    font-family: "Acari Sans Regular";
+    margin: 1.5rem 0;
+  }
   p {
+    font-size: 0.9rem;
     text-align: justify;
   }
 }
 
 .catalog-item-title {
-  margin-bottom: 4rem;
-  border-left: 3px solid $teal;
-  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.catalog-item-image-mobile.embed-responsive {
+  width: 85%;
+  margin-bottom: 1.5rem;
 }
 
 .catalog-item-paragraph {
-  width: 80%;
   color: $gray-900;
-  line-height: 1.7;
 }
 
 .download-image {
   position: relative;
-  margin-right: 3rem;
+  margin-bottom: 1rem;
 
   &:before {
     display: inline-block;
@@ -45,8 +134,20 @@
   }
 }
 
+.download-span {
+  font-size: 1.75rem;
+  text-align: center;
+  color: $teal;
+  margin-bottom: 1rem;
+}
+
+.pdf {
+  font-size: 1.75rem;
+  color: $teal;
+}
+
 .catalog-item-download {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: $gray-900;
   a {
     color: $black;
@@ -79,6 +180,8 @@
 
 .catalog-item {
   form {
+    display: flex;
+
     input,
     button {
       border: none;
@@ -89,9 +192,10 @@
     }
 
     input {
-      width: 15rem;
+      width: 19rem;
       background: darken($body-bg, 10%);
       padding-left: 0.7rem;
+      margin-bottom: 1rem;
     }
 
     input:focus {
@@ -113,34 +217,114 @@
 }
 
 .download-form {
+  align-items: center;
   span {
-    margin-bottom: 1rem;
     &:first-child {
-      color: $black;
-      font-size: 1.1rem;
+      color: $teal;
+      font-size: 1.75rem;
+      text-align: center;
     }
+    margin-bottom: 1rem;
     font-size: 0.8rem;
   }
 }
 
-.catalog-item-image {
-  height: 80%;
-  border: 1px solid $blue;
-}
-
 .codes {
-  margin-top: 6rem;
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #000;
+  padding: 1rem;
 
   .row {
-    padding: 0.5rem 2rem;
-    margin-bottom: 0.3rem;
-    // background: $card-bg;
-
+    justify-content: center;
+    padding: 0.1rem;
     span {
       margin: 0 0.3rem;
-      font-size: 0.75rem;
+      font-size: 0.55rem;
       color: rgba($gray-900, 0.3);
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-product-header {
+    border-bottom: 1px solid transparent;
+  }
+  .container-catalog-item {
+    padding: 0.5rem 0;
+  }
+  .catalog-item-text {
+    margin-bottom: 4rem;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .catalog-item-title {
+    text-align: left;
+    margin-bottom: 4rem;
+    border-left: 3px solid $teal;
+    padding-left: 1rem;
+  }
+
+  .catalog-item-paragraph {
+    width: 80%;
+    line-height: 1.7;
+  }
+
+  .catalog-item-image {
+    height: 80%;
+    border: 1px solid $blue;
+  }
+
+  .download-image {
+    position: relative;
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+
+  .download-span {
+    font-size: 1.1rem;
+    text-align: left;
+    color: $black;
+    margin-bottom: 0;
+  }
+
+  .catalog-item-download {
+    margin-bottom: 3rem;
+  }
+
+  .catalog-item {
+    input {
+      width: 15rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .download-form {
+    align-items: flex-start;
+    span {
+      &:first-child {
+        color: $black;
+        font-size: 1.1rem;
+        text-align: left;
+      }
+    }
+  }
+
+  .codes {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    border-top: 1px solid transparent;
+    padding: 0;
+
+    .row {
+      padding: 0.5rem 2rem;
+      margin-bottom: 0.3rem;
+      justify-content: flex-start;
+
+      span {
+        font-size: 0.75rem;
+      }
     }
   }
 }

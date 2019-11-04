@@ -53,3 +53,68 @@ window.addEventListener("load", event => {
   const loader = document.querySelector(".loader");
   loader.classList.add("hidden");
 });
+
+// script for switching between tabs in the catalog item page
+
+const characteristicsTabLink = document.getElementById(
+  "characteristics-tab-link"
+);
+const documentsTabLink = document.getElementById("documents-tab-link");
+const threedModelTabLink = document.getElementById("3d-model-tab-link");
+const characteristicsCatalogItem = document.getElementById(
+  "characteristics-catalog-item"
+);
+const documentsCatalogItem = document.getElementById("documents-catalog-item");
+const threedModelCatalogItem = document.getElementById("3d-model-catalog-item");
+
+const switchTabLink = (
+  activeTabLink,
+  inactiveTabLinks,
+  activeCatalogItem,
+  inactiveCatalogItems
+) => {
+  activeTabLink.classList.add("active-tab-link");
+  activeCatalogItem.classList.add("active-catalog-section");
+  activeCatalogItem.classList.remove("d-none");
+
+  inactiveTabLinks.forEach(tabLink => {
+    tabLink.classList.remove("active-tab-link");
+  });
+
+  inactiveCatalogItems.forEach(catalogItem => {
+    catalogItem.classList.remove("active-catalog-section");
+    catalogItem.classList.add("d-none");
+  });
+};
+
+characteristicsTabLink.addEventListener("click", _e => {
+  switchTabLink(
+    characteristicsTabLink,
+    [documentsTabLink, threedModelTabLink],
+    characteristicsCatalogItem,
+    [documentsCatalogItem, threedModelCatalogItem]
+  );
+  threedModelCatalogItem.classList.remove("d-flex");
+});
+
+documentsTabLink.addEventListener("click", _e => {
+  switchTabLink(
+    documentsTabLink,
+    [characteristicsTabLink, threedModelTabLink],
+    documentsCatalogItem,
+    [characteristicsCatalogItem, threedModelCatalogItem]
+  );
+
+  threedModelCatalogItem.classList.remove("d-flex");
+});
+
+threedModelTabLink.addEventListener("click", _e => {
+  switchTabLink(
+    threedModelTabLink,
+    [documentsTabLink, characteristicsTabLink],
+    threedModelCatalogItem,
+    [documentsCatalogItem, characteristicsCatalogItem]
+  );
+
+  threedModelCatalogItem.classList.add("d-flex");
+});

@@ -454,8 +454,7 @@
   }
 
   .carousel-indicators {
-    top: 0;
-    margin-top: 14rem;
+    bottom: 40%;
   }
 
   .card {
@@ -483,27 +482,20 @@
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 450px) {
   .carousel-products-mobile,
   .carousel-events-mobile {
     .carousel-indicators {
-      margin-top: 17rem;
+      bottom: 35%;
     }
   }
 }
-@media screen and (min-width: 500px) {
-  .carousel-products-mobile,
-  .carousel-events-mobile {
-    .carousel-indicators {
-      margin-top: 20rem;
-    }
-  }
-}
+
 @media screen and (min-width: 550px) {
   .carousel-products-mobile,
   .carousel-events-mobile {
     .carousel-indicators {
-      margin-top: 23rem;
+      bottom: 30%;
     }
   }
 }
@@ -511,23 +503,23 @@
   .carousel-products-mobile,
   .carousel-events-mobile {
     .carousel-indicators {
-      margin-top: 27rem;
+      bottom: 27%;
     }
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   .carousel-products-mobile,
   .carousel-events-mobile {
     .carousel-indicators {
-      margin-top: 29rem;
+      bottom: 24%;
     }
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .carousel-products-mobile,
   .carousel-events-mobile {
     .carousel-indicators {
-      margin-top: 34rem;
+      bottom: 20%;
     }
   }
 }
@@ -703,7 +695,7 @@
 }
 
 .carousel-products-list.carousel-auto-industry,
-.carousel-products-list.carousel-engineering {
+.carousel-products-list .carousel-engineering {
   .product-redirect-link {
     width: 70%;
   }
