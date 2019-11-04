@@ -3,20 +3,22 @@ layout: default
 ---
 
 <div class="sub-nav-container row no-gutters">
-  <div class="col-1"></div>
-  <div class="col-10">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
     <nav class="sub-nav d-flex justify-content-center aling-items-center">
-      <ul class="list-unstyled d-flex justify-content-center w-100 m-0">
+      <ul
+        class="list-unstyled d-flex flex-wrap flex-lg-nowrap justify-content-center w-100 m-0"
+      >
         {% assign sublist = site.pneumatics | sort: "order" %} {% for product in
         sublist %}
         <li
-          class="sub-nav-list h-100 px-5 d-flex
+          class="sub-nav-list h-lg-100 px-lg-5 d-flex
       {% if page.url contains product.folder and product.order == 1 %}current-sub-item{% endif %}
       "
         >
           <a
             href="{{ site.baseurl }}/{{ product.folder }}/{{ product.slug }}"
-            class="text-uppercase align-self-center"
+            class="text-uppercase"
             >{{ product.subtitle }}
           </a>
         </li>
@@ -24,7 +26,7 @@ layout: default
       </ul>
     </nav>
   </div>
-  <div class="col-1"></div>
+  <div class="col-lg-1"></div>
 </div>
 
 <main class="catalog-page">

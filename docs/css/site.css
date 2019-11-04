@@ -287,7 +287,7 @@ a {
 
 /* STYLING THE HEADERS EXCEPT ON HOME, ABOUT AND CONTACTS PAGES*/
 .site-header h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #004456), to(#00a0ad));
   background: linear-gradient(to bottom, #004456 50%, #00a0ad 100%);
   min-height: 6rem;
@@ -320,7 +320,7 @@ h6 {
 }
 
 .card-title {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #00a0ad;
   font-weight: bold;
   -webkit-transition: color 0.4s ease-in-out;
@@ -328,7 +328,7 @@ h6 {
 }
 
 .card-text {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #6e6e73;
   font-weight: bold;
   -webkit-transition: color 0.4s ease-in-out;
@@ -345,6 +345,15 @@ h6 {
 .card-link:hover .card-text,
 .card-link:focus .card-text {
   color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 1.1rem;
+  }
 }
 
 .breadcrumb-nav {
@@ -437,10 +446,6 @@ h6 {
   }
 }
 
-.sub-nav-container {
-  border-bottom: 1px solid #aaaaaa;
-}
-
 .sub-nav {
   width: 100%;
   min-height: 3rem;
@@ -450,6 +455,8 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -457,6 +464,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   border-right: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
 }
 
 .sub-nav-list:first-child {
@@ -464,9 +472,12 @@ h6 {
 }
 
 .sub-nav-list a {
+  font-size: 0.7rem;
+  text-align: center;
   display: block;
   color: black;
   font-family: "Acari Sans Bold";
+  padding: 0.5rem 0;
 }
 
 .sub-nav-list a:hover, .sub-nav-list a:focus {
@@ -495,6 +506,9 @@ h6 {
 }
 
 @media screen and (min-width: 992px) {
+  .sub-nav-container {
+    border-bottom: 1px solid #aaaaaa;
+  }
   .sub-nav {
     min-height: 4rem;
   }
@@ -506,6 +520,12 @@ h6 {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    border-bottom: 1px solid transparent;
+  }
+  .sub-nav-list a {
+    font-size: 1rem;
   }
 }
 
@@ -1360,7 +1380,7 @@ p.decorative-text:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #004456), to(#00a0ad));
   background: linear-gradient(to bottom, #004456 50%, #00a0ad 100%);
   margin-top: 58px;
@@ -1692,13 +1712,17 @@ p.decorative-text:before {
 .catalog-page .catalog-page-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 1.4rem;
           column-gap: 1.4rem;
   row-gap: 1.5rem;
-  margin-top: 3.5rem;
-  margin-bottom: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.catalog-page .catalog-page-grid .card-body {
+  padding: 0.75rem;
 }
 
 .catalog-page .catalog-page-grid .card-link {
@@ -1719,30 +1743,53 @@ p.decorative-text:before {
 }
 
 .accent-container {
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 .accent-heading {
-  font-size: 1.85rem;
+  font-size: 1rem;
+  text-align: center;
   font-family: "Axiforma Bold";
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .accent-text .accent-paragraph {
   color: white;
-  width: 80%;
   text-align: justify;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
-.accent-text .accent-paragraph:before {
-  display: block;
-  content: "";
-  width: 6rem;
-  height: 3px;
-  background-color: white;
-  position: absolute;
-  top: 2rem;
+@media screen and (min-width: 992px) {
+  .catalog-page .catalog-page-grid {
+    margin-top: 3.5rem;
+    margin-bottom: 10rem;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  .catalog-page .catalog-page-grid .card-body {
+    padding: 1.25rem;
+  }
+  .accent-container {
+    padding: 3rem 0;
+  }
+  .accent-heading {
+    font-size: 1.85rem;
+    text-align: left;
+    padding: 1rem 0;
+  }
+  .accent-text .accent-paragraph {
+    width: 80%;
+    margin-top: 4rem;
+  }
+  .accent-text .accent-paragraph:before {
+    display: block;
+    content: "";
+    width: 6rem;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 2rem;
+  }
 }
 
 /* STYLING THE INDIVIDUAL PRODUCT FROM THE CATALOG PAGE*/
@@ -11772,14 +11819,17 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .carousel-products-mobile .carousel-header,
-.carousel-events-mobile .carousel-header {
+.carousel-events-mobile .carousel-header,
+.carousel-products-list .carousel-header {
   margin-bottom: 0;
 }
 
 .carousel-products-mobile .carousel-control-prev,
 .carousel-products-mobile .carousel-control-next,
 .carousel-events-mobile .carousel-control-prev,
-.carousel-events-mobile .carousel-control-next {
+.carousel-events-mobile .carousel-control-next,
+.carousel-products-list .carousel-control-prev,
+.carousel-products-list .carousel-control-next {
   background-color: #00a0ad;
   width: 2.5rem;
   height: 2.5rem;
@@ -11787,48 +11837,59 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .carousel-products-mobile .carousel-control-prev,
-.carousel-events-mobile .carousel-control-prev {
+.carousel-events-mobile .carousel-control-prev,
+.carousel-products-list .carousel-control-prev {
   left: 0;
 }
 
 .carousel-products-mobile .carousel-control-next,
-.carousel-events-mobile .carousel-control-next {
+.carousel-events-mobile .carousel-control-next,
+.carousel-products-list .carousel-control-next {
   right: 0;
 }
 
 .carousel-products-mobile .carousel-control-prev-icon,
 .carousel-products-mobile .carousel-control-next-icon,
 .carousel-events-mobile .carousel-control-prev-icon,
-.carousel-events-mobile .carousel-control-next-icon {
+.carousel-events-mobile .carousel-control-next-icon,
+.carousel-products-list .carousel-control-prev-icon,
+.carousel-products-list .carousel-control-next-icon {
   width: 1.5rem;
   height: 1.5rem;
 }
 
 .carousel-products-mobile .carousel-indicators,
-.carousel-events-mobile .carousel-indicators {
+.carousel-events-mobile .carousel-indicators,
+.carousel-products-list .carousel-indicators {
+  top: 0;
   margin-top: 14rem;
 }
 
 .carousel-products-mobile .card,
-.carousel-events-mobile .card {
+.carousel-events-mobile .card,
+.carousel-products-list .card {
   width: 100vw;
   background: #00a0ad;
 }
 
 .carousel-products-mobile .card-body,
-.carousel-events-mobile .card-body {
+.carousel-events-mobile .card-body,
+.carousel-products-list .card-body {
   padding: 1.5rem 1rem;
 }
 
 .carousel-products-mobile .card-title,
 .carousel-products-mobile .card-text,
 .carousel-events-mobile .card-title,
-.carousel-events-mobile .card-text {
+.carousel-events-mobile .card-text,
+.carousel-products-list .card-title,
+.carousel-products-list .card-text {
   font-size: 0.9rem;
 }
 
 .carousel-products-mobile .see-all-mobile,
-.carousel-events-mobile .see-all-mobile {
+.carousel-events-mobile .see-all-mobile,
+.carousel-products-list .see-all-mobile {
   display: inline-block;
   width: 40%;
   text-align: center;
@@ -12000,5 +12061,63 @@ a.text-dark:hover, a.text-dark:focus {
   .carousel-events .card-title,
   .carousel-events .card-text {
     font-size: 1rem;
+  }
+}
+
+.carousel-products-list {
+  background: white;
+  padding: 2rem 0;
+}
+
+.carousel-products-list .carousel-indicators {
+  top: 90%;
+  margin-top: 0;
+}
+
+.carousel-products-list .carousel-indicators li {
+  border: 1px solid #00a0ad;
+}
+
+.carousel-products-list .carousel-item {
+  margin-bottom: 2rem;
+}
+
+.carousel-products-list .carousel-item img {
+  width: 80%;
+  height: auto;
+}
+
+.carousel-products-list .embed-responsive .embed-responsive-item {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.carousel-products-list .product-redirect-link {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  padding: 0.75rem 0;
+  text-align: center;
+  border: 1px solid #00a0ad;
+  color: #00a0ad;
+  text-transform: uppercase;
+}
+
+.carousel-products-list.carousel-auto-industry .product-redirect-link,
+.carousel-products-list.carousel-engineering .product-redirect-link {
+  width: 70%;
+}
+
+@media screen and (min-width: 550px) {
+  .carousel-products-list .carousel-indicators {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .carousel-products-list .carousel-indicators {
+    margin-top: 2rem;
   }
 }

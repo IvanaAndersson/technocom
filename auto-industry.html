@@ -6,25 +6,27 @@ permalink: /auto-industry
 
 <div class="container-fluid p-0">
   <div class="sub-nav-container row no-gutters">
-    <div class="col-1"></div>
-    <div class="col-10">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
       <nav class="sub-nav d-flex justify-content-center aling-items-center">
-        <ul class="list-unstyled d-flex justify-content-center w-100 m-0">
-          <li class="sub-nav-list h-100 px-5 d-flex current-sub-item">
+        <ul
+          class="list-unstyled d-flex flex-wrap flex-lg-nowrap justify-content-center w-100 m-0"
+        >
+          <li class="sub-nav-list h-lg-100 px-lg-5 d-flex current-sub-item">
             <a
               href="{{ site.baseurl }}/transport-systems.html"
               class="text-uppercase align-self-center"
               >Клампи
             </a>
           </li>
-          <li class="sub-nav-list h-100 px-5 d-flex">
+          <li class="sub-nav-list h-lg-100 px-lg-5 d-flex">
             <a
               href="{{ site.baseurl }}/"
               class="text-uppercase align-self-center"
               >GR8 модулна система
             </a>
           </li>
-          <li class="sub-nav-list h-100 px-5 d-flex">
+          <li class="sub-nav-list h-lg-100 px-lg-5 d-flex">
             <a
               href="{{ site.baseurl }}/"
               class="text-uppercase align-self-center"
@@ -34,10 +36,190 @@ permalink: /auto-industry
         </ul>
       </nav>
     </div>
-    <div class="col-1"></div>
+    <div class="col-lg-1"></div>
   </div>
 
-  <main class="catalog-page">
+  <main class="catalog-page d-lg-none">
+    <div
+      class="carousel slide carousel-products-list carousel-auto-industry d-lg-none"
+      id="carouselProductsList"
+      data-ride="carousel"
+      data-interval="false"
+    >
+      <div
+        class="carousel-header d-flex justify-content-between align-items-center"
+      >
+        <a
+          class="carousel-control-prev"
+          href="#carouselProductsList"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"> </span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#carouselProductsList"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselProductsList"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselProductsList" data-slide-to="1"></li>
+        <li data-target="#carouselProductsList" data-slide-to="2"></li>
+        <li data-target="#carouselProductsList" data-slide-to="3"></li>
+        <li data-target="#carouselProductsList" data-slide-to="4"></li>
+        <li data-target="#carouselProductsList" data-slide-to="5"></li>
+        <li data-target="#carouselProductsList" data-slide-to="6"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex flex-column">
+            <div class="w-75 mx-auto embed-responsive embed-responsive-1by1">
+              <img
+                src="{{
+                  site.baseurl
+                }}/assets/img/products/422711001375694145.jpg"
+                class="img-fluid embed-responsive-item"
+                alt="a product picture"
+              />
+            </div>
+
+            <a
+              href="{{ site.baseurl }}/pneumatics/movement.html"
+              class="product-redirect-link"
+              >Заключващи единици
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex flex-column">
+            <div class="w-75 mx-auto embed-responsive embed-responsive-1by1">
+              <img
+                src="{{
+                  site.baseurl
+                }}/assets/img/products/612218001307957170.jpg"
+                class="img-fluid embed-responsive-item"
+                alt="a product picture"
+              />
+            </div>
+            <a
+              href="{{ site.baseurl }}/pneumatics/management.html"
+              class="product-redirect-link"
+              >Центриращи единици
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex flex-column">
+            <div class="w-75 mx-auto embed-responsive embed-responsive-1by1">
+              <img
+                src="{{
+                  site.baseurl
+                }}/assets/img/products/747432001317202556.jpg"
+                class="img-fluid embed-responsive-item"
+                alt="a product picture"
+              />
+            </div>
+            <a
+              href="{{ site.baseurl }}/pneumatics/preparation.html"
+              class="product-redirect-link"
+              >Заключващи и центриращи единици
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex flex-column">
+            <div class="w-75 mx-auto embed-responsive embed-responsive-1by1">
+              <img
+                src="{{
+                  site.baseurl
+                }}/assets/img/products/945081001375699384.jpg"
+                class="img-fluid embed-responsive-item"
+                alt="a product picture"
+              />
+            </div>
+            <a
+              href="{{ site.baseurl }}/pneumatics/connecting.html"
+              class="product-redirect-link"
+              >Хващачи /грипери/
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column">
+            <div class="w-75 mx-auto embed-responsive embed-responsive-1by1">
+              <img
+                src="{{
+                  site.baseurl
+                }}/assets/img/products/945081001375699384.jpg"
+                class="img-fluid embed-responsive-item"
+                alt="a product picture"
+              />
+            </div>
+            <a
+              href="{{ site.baseurl }}/pneumatics/connecting.html"
+              class="product-redirect-link"
+              >Въртящи единици
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column">
+            <div class="w-75 mx-auto embed-responsive embed-responsive-1by1">
+              <img
+                src="{{
+                  site.baseurl
+                }}/assets/img/products/945081001375699384.jpg"
+                class="img-fluid embed-responsive-item"
+                alt="a product picture"
+              />
+            </div>
+            <a
+              href="{{ site.baseurl }}/pneumatics/connecting.html"
+              class="product-redirect-link"
+              >Маркиращи единици
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column">
+            <div class="w-75 mx-auto embed-responsive embed-responsive-1by1">
+              <img
+                src="{{
+                  site.baseurl
+                }}/assets/img/products/945081001375699384.jpg"
+                class="img-fluid embed-responsive-item"
+                alt="a product picture"
+              />
+            </div>
+            <a
+              href="{{ site.baseurl }}/pneumatics/connecting.html"
+              class="product-redirect-link"
+              >Електрически единици
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <main class="catalog-page d-none d-lg-block">
     <div class="row no-gutters">
       <div class="col-1"></div>
       <div class="col-10">
