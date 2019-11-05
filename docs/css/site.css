@@ -1824,6 +1824,7 @@ p.decorative-text:before {
 
 .pages {
   list-style: none;
+  margin-bottom: 0;
   padding: 0.8rem 0.5rem;
   width: 8rem;
   background: #00a0ad;
@@ -2198,6 +2199,27 @@ p.decorative-text:before {
 }
 
 /* STYLING OF THE SEE ALL BUTTON ON THE NEWS PAGE */
+.see-all-news {
+  font-size: 0.8rem;
+  color: #6e6e73;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.5rem;
+}
+
+.see-all-news svg {
+  width: 1.5rem;
+  height: 1rem;
+}
+
+.see-all-news .button-fill {
+  fill: #6e6e73;
+}
+
 @media screen and (min-width: 992px) {
   .see-all-news {
     position: relative;
@@ -2225,6 +2247,14 @@ p.decorative-text:before {
 }
 
 /* STYLES FOR THE PAGES WITH NEWS ARTICLES */
+h5.news-item-title {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+}
+
 .container-news-item {
   padding-top: 1.5rem;
 }
@@ -2234,19 +2264,13 @@ p.decorative-text:before {
 }
 
 .news-item {
+  font-size: 0.9rem;
   margin-bottom: 5rem;
 }
 
-.news-item .news-item-title {
-  line-height: 1.7;
-  font-size: 1.3rem;
-  color: black;
-  margin-bottom: 3rem;
-  border-left: 3px solid #00a0ad;
-  padding-left: 1rem;
-}
-
 .news-item .news-item-date {
+  position: absolute;
+  top: -5%;
   color: #00a0ad;
   font-weight: bold;
 }
@@ -2256,40 +2280,66 @@ p.decorative-text:before {
   text-align: justify;
 }
 
-.news-item .news-item-image {
-  position: absolute;
-  right: 0;
+.news-item .social-media-list .menu-item::before {
+  display: inline-block;
+  content: "";
+  font-family: "Font Awesome 5 Brands";
+  font-size: 0.9rem;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-item .social-media-list .menu-item.fa-facebook::before {
+  content: "\f39e";
+  background: #3c5a99;
+  margin-right: 2rem;
+}
+
+.news-item .social-media-list .menu-item.fa-linkedin::before {
+  content: "\f0e1";
+  background: #0077b5;
+}
+
+.news-item .social-media-list .menu-item:hover:before {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 992px) {
-  .social-media-list .menu-item::before {
-    display: inline-block;
-    content: "";
-    font-family: "Font Awesome 5 Brands";
+  .news-item {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .news-item h4.news-item-title {
+    color: black;
+    line-height: 1.7;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    border-left: 3px solid #00a0ad;
+    padding-left: 1rem;
+  }
+  .news-item .news-item-date {
+    position: static;
+  }
+  .news-item .news-item-image {
+    position: absolute;
+    right: 0;
+  }
+  .news-item .social-media-list .menu-item::before {
     font-size: 1.1rem;
-    color: white;
     width: 2rem;
     height: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .social-media-list .menu-item.fa-facebook::before {
-    content: "\f39e";
-    background: #3c5a99;
-    margin-right: 2rem;
-  }
-  .social-media-list .menu-item.fa-linkedin::before {
-    content: "\f0e1";
-    background: #0077b5;
-  }
-  .social-media-list .menu-item:hover:before {
+  .news-item .social-media-list .menu-item:hover:before {
     text-decoration: none;
   }
 }

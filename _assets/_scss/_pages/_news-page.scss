@@ -52,7 +52,20 @@
 }
 
 /* STYLING OF THE SEE ALL BUTTON ON THE NEWS PAGE */
-
+.see-all-news {
+  font-size: 0.8rem;
+  color: $gray-900;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  svg {
+    width: 1.5rem;
+    height: 1rem;
+  }
+  .button-fill {
+    fill: $gray-900;
+  }
+}
 @media screen and (min-width: 992px) {
   .see-all-news {
     position: relative;
@@ -80,7 +93,13 @@
 }
 
 /* STYLES FOR THE PAGES WITH NEWS ARTICLES */
-
+h5.news-item-title {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: $black;
+  text-align: center;
+  padding: 1rem;
+}
 .container-news-item {
   padding-top: 1.5rem;
 
@@ -89,16 +108,11 @@
   }
 }
 .news-item {
+  font-size: 0.9rem;
   margin-bottom: 5rem;
-  .news-item-title {
-    line-height: 1.7;
-    font-size: 1.3rem;
-    color: $black;
-    margin-bottom: 3rem;
-    border-left: 3px solid $teal;
-    padding-left: 1rem;
-  }
   .news-item-date {
+    position: absolute;
+    top: -5%;
     color: $teal;
     font-weight: bold;
   }
@@ -106,23 +120,17 @@
     color: $gray-900;
     text-align: justify;
   }
-  .news-item-image {
-    position: absolute;
-    right: 0;
-  }
-}
 
-@media screen and (min-width: 992px) {
   .social-media-list {
     .menu-item {
       &::before {
         display: inline-block;
         content: "";
         font-family: "Font Awesome 5 Brands";
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         color: $white;
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -141,6 +149,46 @@
 
       &:hover:before {
         text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .news-item {
+    padding: 0;
+    font-size: 1rem;
+
+    h4.news-item-title {
+      color: $black;
+      line-height: 1.7;
+      font-size: 1.3rem;
+      margin-bottom: 3rem;
+      border-left: 3px solid $teal;
+      padding-left: 1rem;
+    }
+
+    .news-item-date {
+      position: static;
+    }
+
+    .news-item-image {
+      position: absolute;
+      right: 0;
+    }
+
+    .social-media-list {
+      .menu-item {
+        &::before {
+          font-size: 1.1rem;
+
+          width: 2rem;
+          height: 2rem;
+        }
+
+        &:hover:before {
+          text-decoration: none;
+        }
       }
     }
   }
