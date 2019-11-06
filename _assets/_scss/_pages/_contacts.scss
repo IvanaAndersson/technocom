@@ -85,8 +85,15 @@
     margin-bottom: 1rem;
   }
   a {
+    color: $white;
     display: block;
     font-size: 1.5rem;
+
+    &:hover,
+    &:focus {
+      color: $teal;
+      text-decoration: none;
+    }
   }
 }
 
@@ -98,7 +105,7 @@
 }
 
 .contact-form {
-  padding: 1rem 1.5rem 3rem 1.5rem;
+  padding: 1rem 1rem 3rem 1rem;
 
   input {
     color: $teal;

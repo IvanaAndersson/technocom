@@ -4,52 +4,11 @@
   background-color: $card-bg;
 }
 .catalog-page {
-  .main-catalog-page-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    margin-top: 3.5rem;
-    margin-bottom: 10rem;
-
-    .card-body {
-      background-color: $teal;
-      transition: background-color 0.4s ease-in-out;
-    }
-
-    .card-title {
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-      color: $white;
-      font-weight: bold;
-      text-align: center;
-      text-transform: uppercase;
-      transition: color 0.4s ease-in-out;
-    }
-
-    .card-link:hover .card-body,
-    .card-link:focus .card-body {
-      background-color: $blue;
-    }
-
-    .card-link {
-      margin-left: 0;
-      margin-bottom: 0;
-
-      + .card-link {
-        margin-left: 0;
-      }
-
-      .card {
-        width: auto;
-      }
-    }
-  }
   .catalog-page-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.4rem;
-    row-gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
 
@@ -97,10 +56,53 @@
 
 @media screen and (min-width: 992px) {
   .catalog-page {
+    .main-catalog-page-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 2rem;
+      row-gap: 2rem;
+      margin-top: 3.5rem;
+      margin-bottom: 10rem;
+
+      .card-body {
+        background-color: $teal;
+        transition: background-color 0.4s ease-in-out;
+      }
+
+      .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        color: $white;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        transition: color 0.4s ease-in-out;
+      }
+
+      .card-link:hover .card-body,
+      .card-link:focus .card-body {
+        background-color: $blue;
+      }
+
+      .card-link {
+        margin-left: 0;
+        margin-bottom: 0;
+
+        + .card-link {
+          margin-left: 0;
+        }
+
+        .card {
+          width: auto;
+        }
+      }
+    }
     .catalog-page-grid {
       margin-top: 3.5rem;
       margin-bottom: 10rem;
       grid-template-columns: repeat(5, 1fr);
+      column-gap: 1.4rem;
+      row-gap: 1.5rem;
 
       .card-body {
         padding: 1.25rem;

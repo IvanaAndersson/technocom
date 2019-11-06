@@ -4,7 +4,6 @@
 .partners-text {
   p {
     font-size: 0.9rem;
-    text-align: justify;
   }
 }
 
@@ -33,7 +32,7 @@
     }
 
     h4 {
-      padding: 0 1.5rem;
+      padding: 0 1rem;
       font-size: 1.25rem;
       text-transform: uppercase;
       font-family: "Axiforma Bold";
@@ -41,14 +40,14 @@
     }
 
     p {
-      padding: 0 1.5rem;
+      padding: 0 1rem;
     }
   }
 }
 
 .values-text {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   h4 {
     font-size: 1.25rem;
@@ -92,6 +91,7 @@ p.decorative-text {
   .partners-text {
     p {
       font-size: 1rem;
+      text-align: justify;
     }
   }
 
@@ -201,6 +201,7 @@ p.decorative-text {
   }
 
   .values-text {
+    padding-right: 1.5rem;
     padding-left: 5rem;
   }
 

@@ -1,7 +1,14 @@
 /* HERE START THE STYLES FOR THE HOME PAGE */
 
 /*STYLING THE SECTION WITH THE THREE MODULES, WHICH ACT AS A SECONDARY MENU ON THE FRONT PAGE */
-
+.products-wrapper,
+.engineering-wrapper,
+.auto-wrapper {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
 .products,
 .engineering,
 .auto-industry {
@@ -46,7 +53,7 @@
     }
 
     img {
-      width: 50%;
+      width: 56%;
       height: auto;
 
       position: absolute;
@@ -196,6 +203,7 @@
       }
 
       img {
+        width: 50%;
         transition: transform 0.35s linear;
 
         &.product {
@@ -281,6 +289,10 @@
     .product-picture {
       &:after {
         padding-top: 42%;
+      }
+
+      img {
+        width: 45%;
       }
     }
   }

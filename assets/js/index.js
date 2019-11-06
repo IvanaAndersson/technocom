@@ -67,6 +67,8 @@ const characteristicsCatalogItem = document.getElementById(
 const documentsCatalogItem = document.getElementById("documents-catalog-item");
 const threedModelCatalogItem = document.getElementById("3d-model-catalog-item");
 
+const productCodes = document.getElementById("product-codes");
+
 const switchTabLink = (
   activeTabLink,
   inactiveTabLinks,
@@ -95,6 +97,7 @@ characteristicsTabLink.addEventListener("click", _e => {
     [documentsCatalogItem, threedModelCatalogItem]
   );
   threedModelCatalogItem.classList.remove("d-flex");
+  productCodes.classList.remove("d-none");
 });
 
 documentsTabLink.addEventListener("click", _e => {
@@ -106,6 +109,7 @@ documentsTabLink.addEventListener("click", _e => {
   );
 
   threedModelCatalogItem.classList.remove("d-flex");
+  productCodes.classList.add("d-none");
 });
 
 threedModelTabLink.addEventListener("click", _e => {
@@ -117,4 +121,5 @@ threedModelTabLink.addEventListener("click", _e => {
   );
 
   threedModelCatalogItem.classList.add("d-flex");
+  productCodes.classList.add("d-none");
 });
