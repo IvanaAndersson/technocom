@@ -34,18 +34,20 @@
     }
   }
 }
-// styles only for the mobile
+
+// STYLES ONLY FOR THE MOBILE MENU
 
 .dropdown-toggle {
   @include plus-icon;
 }
 
-.menu-item.dropdown-toggle {
-  @include plus-icon-menu-item;
-}
 .navbar-mobile-collapse {
+  position: absolute;
+  top: 55px;
+  left: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
 
   .navbar-nav {
     width: 100%;
@@ -54,8 +56,38 @@
   }
 
   .menu-text {
+    display: block;
     color: $teal;
     padding: 0.5rem 1rem;
+    text-decoration: none;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  .back-arrow {
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    svg {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .button-fill {
+      fill: $teal;
+    }
+  }
+  .section-heading {
+    font-family: "Acari Sans SemiBold", sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: $teal;
+    padding: 1rem;
+    border-top: 1px solid $teal;
   }
 
   .nav-item {
@@ -76,6 +108,28 @@
     }
   }
 
+  .level-two-wrapper {
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 1000;
+      top: 55px;
+      left: 0;
+      background-color: $blue;
+      overflow-x: hidden;
+      transform: translateX(100%);
+      transform-origin: right;
+      transition: transform 0.3s ease-in;
+      padding: 0.5rem 0;
+    }
+
+    .overlay-content {
+      position: relative;
+      width: 100%;
+    }
+  }
+
   .nav-link.nav-link-secondary {
     text-transform: none;
     padding: 1rem;
@@ -93,17 +147,25 @@
       background: $blue;
       border-top: 1px solid $teal;
 
+      &:last-child {
+        border-bottom: 1px solid $teal;
+      }
+
       & > .menu-item {
+        font-size: 0.9rem;
         display: block;
         color: $white;
-        padding: 0.75rem 2rem;
+        padding: 1rem;
         text-transform: uppercase;
-        font-size: 0.8rem;
         font-family: "Acari Sans SemiBold", sans-serif;
         &:active,
         &:visited {
           background: $teal;
           color: $white;
+        }
+
+        &[aria-expanded="true"] {
+          background: $teal;
         }
       }
 
@@ -112,13 +174,12 @@
         background: $body-bg;
 
         a {
-          font-size: 0.8rem;
           display: block;
           color: $black;
           text-transform: none;
           font-weight: 300;
           border-bottom: 1px solid $lines;
-          padding: 0.55rem 2.5rem;
+          padding: 0.55rem 1.5rem;
 
           &:active {
             color: $teal;
@@ -178,75 +239,6 @@
   transform: rotate(45deg);
   top: 0;
 }
-
-//when on the main page, the menu is transparent and the logo is white
-// when we scroll on main page, the menu becomes as normal
-// .navbar-transparent {
-//   padding-top: 0.5rem;
-//   transition: all 0.3s ease-in;
-//   .navbar-brand {
-//     margin-left: 1rem;
-
-//     &:before {
-//       display: block;
-//       content: "";
-//       padding-top: 20%;
-//     }
-//     img {
-//       width: 90%;
-//       height: auto;
-//       position: absolute;
-//       top: 55%;
-//       left: 45%;
-//       transform: translate(-50%, -50%);
-//     }
-//   }
-
-//   .logo-container {
-//     background-color: rgba($body-bg, 0);
-//     transition: all 0.3s ease-in;
-//     #head-logo-blue {
-//       opacity: 0;
-//       // transform: scale(1) translate3d(-50%, -50%, 0);
-//       // transform-origin: top left;
-//       transition: opacity 0.1s ease-in;
-//       //  transform 0.15s ease-in 0.05s;
-//     }
-//     #head-logo-white {
-//       opacity: 1;
-//       transition: opacity 0.1s ease-in;
-//     }
-//   }
-
-//   .search-bar {
-//     a.btn {
-//       background-color: rgba($teal, 1);
-//     }
-//   }
-// }
-
-//when we hover the transparent menu on the main page (when not scrolled) the menu should be as normal
-// when the home page is scrolled, the menu should be as normal
-
-// .home-page.navbar-when-scrolled,
-// .home-page.navbar-search-clicked {
-//   background-color: $blue;
-
-//   .logo-container {
-//     background-color: rgba($body-bg, 1);
-
-//     #head-logo-blue {
-//       opacity: 1;
-//       // width: 80%;
-//       // transform: scale(0.9) translate3d(-55%, -55%, 0);
-//       // transform-origin: top left;
-//     }
-
-//     #head-logo-white {
-//       opacity: 0;
-//     }
-//   }
-// }
 
 .search-bar {
   position: relative;
@@ -312,7 +304,7 @@
   }
   .search-button.active::before,
   .search-button.active::after {
-    width: 77.5%;
+    width: 75%;
   }
   .search-button.active .search-icon {
     width: 0;
@@ -330,7 +322,7 @@
     transition: transform 0.45s ease-in;
     transform-origin: right;
     position: fixed;
-    top: 49px;
+    top: 58px;
     left: 0;
     right: 0;
     background-color: $blue;
@@ -574,6 +566,11 @@
     .search-bar {
       a.btn {
         background-color: $teal;
+      }
+
+      .search-button.active::before,
+      .search-button.active::after {
+        width: 77.5%;
       }
     }
   }

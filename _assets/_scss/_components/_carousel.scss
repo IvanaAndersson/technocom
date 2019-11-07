@@ -38,7 +38,8 @@
 .carousel-caption {
   position: static;
   height: 100%;
-  // margin-top: 3.5rem;
+  // justify-content: center;
+  margin-top: 1.5rem;
 
   & > div {
     position: relative;
@@ -49,7 +50,7 @@
     font-family: "Axiforma Bold", sans-serif;
     text-align: center;
     font-size: 1.5rem;
-    margin: 4rem 0 3rem 0;
+    margin-bottom: 3rem;
   }
 
   ul {
@@ -94,7 +95,7 @@
 }
 
 .carousel-control-prev {
-  top: 105%;
+  top: 115%;
   left: -7px;
 
   .carousel-control-prev-icon {
@@ -102,11 +103,22 @@
   }
 }
 .carousel-control-next {
-  top: 105%;
+  top: 115%;
   right: -7px;
 
   .carousel-control-next-icon {
     width: 30px;
+  }
+}
+
+@media screen and (min-height: 580px) {
+  .carousel-caption {
+    margin-top: 3rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 113%;
   }
 }
 

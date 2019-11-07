@@ -181,23 +181,11 @@ h6 {
 /* STYLING THE PRIVACY POLICY HEADINGS AND TEXT */
 .privacy-policy {
   font-size: 0.9rem;
-  text-align: justify;
 
   h4 {
     font-size: 1.25rem;
     position: relative;
     margin: 1.25rem 0 1rem 0;
-
-    &:before {
-      display: inline-block;
-      content: "";
-      width: 3px;
-      height: 1.5rem;
-      background: $teal;
-      position: absolute;
-      top: 0;
-      left: -1rem;
-    }
   }
 
   h6 {
@@ -212,12 +200,20 @@ h6 {
 
 @media screen and (min-width: 992px) {
   .privacy-policy {
+    text-align: justify;
     h4 {
       font-size: 1.5rem;
       margin: 2.5rem 0 1.5rem 0;
 
       &:before {
+        display: inline-block;
+        content: "";
+        width: 3px;
         height: 2rem;
+        background: $teal;
+        position: absolute;
+        top: 0;
+        left: -1rem;
       }
     }
 

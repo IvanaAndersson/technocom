@@ -10,10 +10,6 @@ id="navigation-mobile">
         id="head-logo-white"
         src="{{ site.baseurl }}/assets/img/bialo logo.png"
         alt="TechnokomKo-logo"/>
-      <!-- <img
-        id="head-logo-blue"
-        src="{{ site.baseurl }}/assets/img/logo 1.png"
-        alt="TechnokomKo"/> -->
     </a>
   </span>
 
@@ -36,7 +32,7 @@ id="navigation-mobile">
                 <input
                   type="text"
                   class="form-control py-2 bg-transparent border-0"
-                  placeholder="Потърсете продукт, код, новина.."
+                  placeholder="Потърсете..."
                   aria-label="Search"
                   aria-describedby="button-addon2"
                 />
@@ -78,509 +74,39 @@ id="navigation-mobile">
     <ul class="navbar-nav accordion" id='accordionMenu'>
       <!-- Products menu -->
       <span class='menu-text'>Меню</span>
-      <li class="nav-item accordion" id="accordionProducts">
+      <li class="nav-item">
         <a
+          href='javascript:void(0)'
           class="nav-link dropdown-toggle"
-          id="navbarDropdownMenuLink2"
-          data-toggle="collapse"
-          aria-expanded="false" 
-          aria-controls="collapseProducts"
-          data-target=".products-dropdown"
+          onclick="openNav(productsNav)"
         >
           Продукти
         </a>
-
-        <div class="collapse products-dropdown first-dropdown"
-        data-parent="#accordionMenu">
-          <ul class="row no-gutters list-unstyled">
-            <div class="hoverable col-12 d-flex flex-column">
-              <li class="dropdown-submenu">
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapsePneumatics"
-                  data-target=".pneumatics-dropdown"
-                  >Пневматика
-                  </a>
-                <div
-                  class="collapse pneumatics-dropdown second-dropdown w-100 border-0"
-                  data-parent="#accordionProducts"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="{{ site.baseurl }}/pneumatics/movement.html">
-                        Движение
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="{{ site.baseurl }}/pneumatics/management.html">
-                        Управление
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="{{ site.baseurl }}/pneumatics/preparation.html">
-                        Подготовка
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="{{ site.baseurl }}/pneumatics/connecting.html">
-                        Свързване
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-
-            <div class="hoverable col-12 d-flex flex-column"
-            >
-              <li class="dropdown-submenu">
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem2"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseProfiles"
-                  data-target=".profiles-dropdown"
-                  >Профили
-                  </a>
-                <div
-                class="collapse profiles-dropdown second-dropdown w-100 border-0"
-                data-parent="#accordionProducts"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Алуминиеви профили
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Съединения
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Аксесоари
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        LEAN системи
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-
-            <div class="hoverable col-12 d-flex flex-column"
-              >
-              <li class="dropdown-submenu">
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem3"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseLinear"
-                  data-target=".linear-dropdown"
-                  >Линейни задвижвания</a
-                >
-                <div
-                  class="collapse linear-dropdown second-dropdown w-100 border-0"
-                  data-parent="#accordionProducts"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Направляващи
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        СВД
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Зъбни рейки
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Модулни системи
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-
-            <div class="hoverable col-12 d-flex flex-column">
-              <li
-                class="dropdown-submenu"
-              >
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem4"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseArmature"
-                  data-target=".armature-dropdown"
-                  >Арматура</a
-                >
-                <div
-                  class="collapse armature-dropdown second-dropdown  w-100 border-0"
-                  data-parent="#accordionProducts"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Спирателна
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Регулираща
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Магнетвентили
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Санитарна
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-
-            <div class="hoverable col-12 d-flex flex-column">
-              <li
-                class="dropdown-submenu"
-              >
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem5"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseVibrators"
-                  data-target=".vibrators-dropdown"
-                  >Вибратори</a
-                >
-
-                <div
-                  class="collapse vibrators-dropdown second-dropdown w-100 border-0"
-                  data-parent="#accordionProducts"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Пневматични
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Електрически
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Аератори
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        За бетон
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-          </ul>
-        </div>
       </li>
 
       <!-- Engineering menu -->
-      <li class="nav-item accordion" id="accordionEngineering">
+      <li class="nav-item">
         <a
+          href='javascript:void(0)'
           class="nav-link dropdown-toggle"
-          id="navbarDropdownMenuLink3"
-          data-toggle="collapse"
-          aria-expanded="false" 
-          aria-controls="collapseEngineering"
-          data-target=".engineering-dropdown"
+          onclick="openNav(engineeringNav)"
         >
           Инженеринг
         </a>
-
-        <div class="collapse engineering-dropdown first-dropdown"
-        data-parent="#accordionMenu">
-          <ul class="row no-gutters list-unstyled">
-            <div class="hoverable col-12 d-flex flex-column">
-              <li class="dropdown-submenu" >
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseTransport"
-                  data-target=".transport-dropdown"
-                  >Транспортни системи</a
-                >
-                <div class="collapse transport-dropdown second-dropdown w-100 border-0"
-                data-parent="#accordionEngineering"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="{{ site.baseurl }}/transport-systems/belt.html">
-                        Лентови транспортни системи
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="{{ site.baseurl }}/transport-systems/roller.html">
-                        Ролкови транспортни системи
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="{{ site.baseurl }}/transport-systems/elevatoring.html">
-                        Елеваторни транспортни системи
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="{{ site.baseurl }}/transport-systems/components.html">
-                        Компоненти
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-
-            <div class="hoverable col-12 d-flex flex-column">
-              <li class="dropdown-submenu" >
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem2"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseIndustrial"
-                  data-target=".industrial-dropdown"
-                  >Индустриални работни места</a
-                >
-                <div
-                class="collapse industrial-dropdown second-dropdown w-100 border-0"
-                data-parent="#accordionEngineering"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Индустриални работни маси
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Индустриални колички
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Други
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-
-            <div class="hoverable col-12 d-flex flex-column">
-              <li class="dropdown-submenu" >
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem3"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseTables"
-                  data-target=".tables-dropdown"
-                  >Пневматични и електрически табла</a
-                >
-                <div
-                  class="collapse tables-dropdown second-dropdown w-100 border-0"
-                  data-parent="#accordionEngineering"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Пневматични
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Електрически
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-          </ul>
-        </div>
       </li>
 
       <!-- Auto industry menu -->
-      <li class="nav-item accordion" id="accordionAutoindustry">
+      <li class="nav-item " >
         <a
+          href='javascript:void(0)'
           class="nav-link dropdown-toggle"
-          id="navbarDropdownMenuLink4"
-          data-toggle="collapse"
-          aria-expanded="false" 
-          aria-controls="collapseAutoindustry"
-          data-target=".auto-industry-dropdown"
+          onclick="openNav(autoNav)"
         >
           Авто индустрия
         </a>
-
-        <div class="collapse auto-industry-dropdown first-dropdown"
-        data-parent="#accordionMenu">
-          <ul class="row no-gutters list-unstyled">
-            <div class="hoverable col-12 d-flex flex-column">
-              <li class="dropdown-submenu" >
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseClamps"
-                  data-target=".clamps-dropdown"
-                  >Клампи</a
-                >
-                <div
-                class="collapse clamps-dropdown second-dropdown w-100 border-0"
-                data-parent="#accordionAutoindustry"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Заключващи единици
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Центриращи единици
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Заключващи и центриращи единици
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Хващачи /грипери/
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Въртящи единици
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Маркиращи единици
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Електрически единици
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-
-            <div class="hoverable col-12 d-flex flex-column">
-              <li class="dropdown-submenu " >
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem2"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseGR8"
-                  data-target=".gr8-dropdown"
-                  >GR8 модулна система</a
-                >
-                <div
-                  class="collapse gr8-dropdown second-dropdown w-100 border-0"
-                  data-parent="#accordionAutoindustry"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        GR8
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        GR8SK
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-
-            <div class="hoverable col-12 d-flex flex-column">
-              <li class="dropdown-submenu " >
-                <a
-                  class="menu-item dropdown-toggle"
-                  id="subMenuItem3"
-                  data-toggle="collapse"
-                  aria-expanded="false" 
-                  aria-controls="collapseAccessories"
-                  data-target=".accessories-dropdown"
-                  >Аксесоари</a
-                >
-                <div
-                class="collapse accessories-dropdown second-dropdown w-100 border-0"
-                data-parent="#accordionAutoindustry"
-                >
-                  <ul class="list-unstyled pt-2">
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Клампови челюсти
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Сензори
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        UBK система
-                      </a>
-                    </li>
-                    <li class="my-1">
-                      <a class="menu-item" href="#!">
-                        Ръчно управление
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </div>
-          </ul>
-        </div>
+        
       </li>
-
+        
       <!-- THE COMPANY menu -->
       <li class="nav-item">
         <a
@@ -610,6 +136,547 @@ id="navigation-mobile">
         </a>
       </li>
     </ul>
+
+    <section class="level-two-wrapper mb-5">
+      <!-- the slide with the products menu items  -->
+      <div class="products-dropdown level-two overlay" id='productsNav'>
+        <a href='javascript:void(0)' class="menu-text"
+      onclick="closeNav(productsNav)">
+      <span class='back-arrow'>
+          <svg
+          class="d-lg-none"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 477.175 477.175"
+          style="enable-background:new 0 0 477.175 477.175;"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              class="button-fill"
+              d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+      c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"
+            />
+          </g>
+        </svg>
+      </span>
+        Назад</a>
+        <div class='section-heading'>Продукти</div>
+        <ul class="row no-gutters list-unstyled overlay-content accordion" id='accordionProducts'>
+          <div class="hoverable col-12 d-flex flex-column">
+            <li class="dropdown-submenu">
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapsePneumatics"
+                data-target=".pneumatics-dropdown"
+                >Пневматика
+                </a>
+              <div
+                class="collapse pneumatics-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionProducts"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="{{ site.baseurl }}/pneumatics/movement.html">
+                      Движение
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="{{ site.baseurl }}/pneumatics/management.html">
+                      Управление
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="{{ site.baseurl }}/pneumatics/preparation.html">
+                      Подготовка
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="{{ site.baseurl }}/pneumatics/connecting.html">
+                      Свързване
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+
+          <div class="hoverable col-12 d-flex flex-column"
+          >
+            <li class="dropdown-submenu">
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem2"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseProfiles"
+                data-target=".profiles-dropdown"
+                >Профили
+                </a>
+              <div
+              class="collapse profiles-dropdown second-dropdown w-100 border-0"
+              data-parent="#accordionProducts"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Алуминиеви профили
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Съединения
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Аксесоари
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      LEAN системи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+
+          <div class="hoverable col-12 d-flex flex-column"
+            >
+            <li class="dropdown-submenu">
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem3"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseLinear"
+                data-target=".linear-dropdown"
+                >Линейни задвижвания</a
+              >
+              <div
+                class="collapse linear-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionProducts"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Направляващи
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      СВД
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Зъбни рейки
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Модулни системи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+
+          <div class="hoverable col-12 d-flex flex-column">
+            <li
+              class="dropdown-submenu"
+            >
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem4"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseArmature"
+                data-target=".armature-dropdown"
+                >Арматура</a
+              >
+              <div
+                class="collapse armature-dropdown second-dropdown  w-100 border-0"
+                data-parent="#accordionProducts"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Спирателна
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Регулираща
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Магнетвентили
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Санитарна
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+
+          <div class="hoverable col-12 d-flex flex-column">
+            <li class="dropdown-submenu" >
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem5"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseVibrators"
+                data-target=".vibrators-dropdown"
+                >Вибратори
+              </a>
+
+              <div
+                class="collapse vibrators-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionProducts"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Пневматични
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Електрически
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Аератори
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      За бетон
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+        </ul>
+        
+      </div>
+      <!-- the slide with the engineering menu items -->
+      <div class="engineering-dropdown level-two overlay" id='engineeringNav'>
+        <a href='javascript:void(0)' class="menu-text"
+        onclick="closeNav(engineeringNav)">
+        <span class='back-arrow'>
+            <svg
+            class="d-lg-none"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 477.175 477.175"
+            style="enable-background:new 0 0 477.175 477.175;"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                class="button-fill"
+                d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+        c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"
+              />
+            </g>
+          </svg>
+        </span>Назад</a>
+        <div class='section-heading'>Инженеринг</div>
+        <ul class="row no-gutters list-unstyled overlay-content accordion"
+        id="accordionEngineering">
+          <div class="hoverable col-12 d-flex flex-column">
+            <li class="dropdown-submenu" >
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseTransport"
+                data-target=".transport-dropdown"
+                >Транспортни системи</a
+              >
+              <div class="collapse transport-dropdown second-dropdown w-100 border-0"
+              data-parent="#accordionEngineering"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="{{ site.baseurl }}/transport-systems/belt.html">
+                      Лентови транспортни системи
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="{{ site.baseurl }}/transport-systems/roller.html">
+                      Ролкови транспортни системи
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="{{ site.baseurl }}/transport-systems/elevatoring.html">
+                      Елеваторни транспортни системи
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="{{ site.baseurl }}/transport-systems/components.html">
+                      Компоненти
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+
+          <div class="hoverable col-12 d-flex flex-column">
+            <li class="dropdown-submenu" >
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem2"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseIndustrial"
+                data-target=".industrial-dropdown"
+                >Индустриални работни места</a
+              >
+              <div
+              class="collapse industrial-dropdown second-dropdown w-100 border-0"
+              data-parent="#accordionEngineering"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Индустриални работни маси
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Индустриални колички
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Други
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+
+          <div class="hoverable col-12 d-flex flex-column">
+            <li class="dropdown-submenu" >
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem3"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseTables"
+                data-target=".tables-dropdown"
+                >Пневматични и електрически табла</a
+              >
+              <div
+                class="collapse tables-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionEngineering"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Пневматични
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Електрически
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <!-- the slide with auto insustry menu items -->
+      <div class="auto-industry-dropdown level-two overlay" id="autoNav">
+        <a href='javascript:void(0)' class="menu-text"
+          onclick="closeNav(autoNav)">
+          <span class='back-arrow'>
+              <svg
+              class="d-lg-none"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 477.175 477.175"
+              style="enable-background:new 0 0 477.175 477.175;"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="button-fill"
+                  d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+          c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"
+                />
+              </g>
+            </svg>
+          </span>Назад
+        </a>
+        <div class='section-heading'>Авто-индустрия</div>
+        <ul class="row no-gutters list-unstyled overlay-content accordion"
+        id='accordionAutoindustry'>
+          <div class="hoverable col-12 d-flex flex-column">
+            <li class="dropdown-submenu" >
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseClamps"
+                data-target=".clamps-dropdown"
+                >Клампи</a
+              >
+              <div
+              class="collapse clamps-dropdown second-dropdown w-100 border-0"
+              data-parent="#accordionAutoindustry"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Заключващи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Центриращи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Заключващи и центриращи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Хващачи /грипери/
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Въртящи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Маркиращи единици
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Електрически единици
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+
+          <div class="hoverable col-12 d-flex flex-column">
+            <li class="dropdown-submenu " >
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem2"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseGR8"
+                data-target=".gr8-dropdown"
+                >GR8 модулна система</a
+              >
+              <div
+                class="collapse gr8-dropdown second-dropdown w-100 border-0"
+                data-parent="#accordionAutoindustry"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      GR8
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      GR8SK
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+
+          <div class="hoverable col-12 d-flex flex-column">
+            <li class="dropdown-submenu " >
+              <a
+                class="menu-item dropdown-toggle"
+                id="subMenuItem3"
+                data-toggle="collapse"
+                aria-expanded="false" 
+                aria-controls="collapseAccessories"
+                data-target=".accessories-dropdown"
+                >Аксесоари</a
+              >
+              <div
+              class="collapse accessories-dropdown second-dropdown w-100 border-0"
+              data-parent="#accordionAutoindustry"
+              >
+                <ul class="list-unstyled">
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Клампови челюсти
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Сензори
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      UBK система
+                    </a>
+                  </li>
+                  <li>
+                    <a class="menu-item" href="#!">
+                      Ръчно управление
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </section>
+    
     <!-- Links -->
   </div>
   <!-- Collapsible content -->

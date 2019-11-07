@@ -401,24 +401,12 @@ h6 {
 /* STYLING THE PRIVACY POLICY HEADINGS AND TEXT */
 .privacy-policy {
   font-size: 0.9rem;
-  text-align: justify;
 }
 
 .privacy-policy h4 {
   font-size: 1.25rem;
   position: relative;
   margin: 1.25rem 0 1rem 0;
-}
-
-.privacy-policy h4:before {
-  display: inline-block;
-  content: "";
-  width: 3px;
-  height: 1.5rem;
-  background: #00a0ad;
-  position: absolute;
-  top: 0;
-  left: -1rem;
 }
 
 .privacy-policy h6 {
@@ -431,12 +419,22 @@ h6 {
 }
 
 @media screen and (min-width: 992px) {
+  .privacy-policy {
+    text-align: justify;
+  }
   .privacy-policy h4 {
     font-size: 1.5rem;
     margin: 2.5rem 0 1.5rem 0;
   }
   .privacy-policy h4:before {
+    display: inline-block;
+    content: "";
+    width: 3px;
     height: 2rem;
+    background: #00a0ad;
+    position: absolute;
+    top: 0;
+    left: -1rem;
   }
   .privacy-policy h6 {
     font-size: 1.1rem;
@@ -1191,6 +1189,7 @@ p.decorative-text {
   color: #00a0ad;
   position: relative;
   margin: 3rem 0;
+  text-align: justify;
 }
 
 p.decorative-text:before {
@@ -1726,7 +1725,6 @@ p.decorative-text:before {
 
 .accent-text .accent-paragraph {
   color: white;
-  text-align: justify;
   margin-top: 1rem;
 }
 
@@ -1794,6 +1792,7 @@ p.decorative-text:before {
   .accent-text .accent-paragraph {
     width: 80%;
     margin-top: 4rem;
+    text-align: justify;
   }
   .accent-text .accent-paragraph:before {
     display: block;
@@ -1834,6 +1833,11 @@ p.decorative-text:before {
 
 .see-all-products .button-fill {
   fill: #6e6e73;
+}
+
+.see-all-products:hover, .see-all-products:focus {
+  color: #00a0ad;
+  text-decoration: none;
 }
 
 .pages {
@@ -1879,6 +1883,7 @@ p.decorative-text:before {
 }
 
 .tabs-links {
+  margin-bottom: 0;
   width: 100%;
 }
 
@@ -1962,7 +1967,7 @@ p.decorative-text:before {
   text-align: center;
   line-height: 1.2;
   color: #00a0ad;
-  margin: 1.2rem 0;
+  margin: 1.25rem 0;
 }
 
 .pdf {
@@ -2242,6 +2247,11 @@ p.decorative-text:before {
 
 .see-all-news .button-fill {
   fill: #6e6e73;
+}
+
+.see-all-news:hover, .see-all-news:focus {
+  color: #00a0ad;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 992px) {
@@ -10853,22 +10863,13 @@ a.text-dark:hover, a.text-dark:focus {
           transform: translateY(-50%);
 }
 
-.menu-item.dropdown-toggle:after {
-  display: block;
-  content: "\f067";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  color: #f4f4f4;
-  top: 50%;
-  right: 40px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 .navbar-mobile-collapse {
+  position: absolute;
+  top: 55px;
+  left: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
 }
 
 .navbar-mobile-collapse .navbar-nav {
@@ -10878,8 +10879,40 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .navbar-mobile-collapse .menu-text {
+  display: block;
   color: #00a0ad;
   padding: 0.5rem 1rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar-mobile-collapse .menu-text:hover, .navbar-mobile-collapse .menu-text:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-mobile-collapse .back-arrow {
+  position: absolute;
+  top: 5px;
+  left: -2px;
+}
+
+.navbar-mobile-collapse .back-arrow svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.navbar-mobile-collapse .back-arrow .button-fill {
+  fill: #00a0ad;
+}
+
+.navbar-mobile-collapse .section-heading {
+  font-family: "Acari Sans SemiBold", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #00a0ad;
+  padding: 1rem;
+  border-top: 1px solid #00a0ad;
 }
 
 .navbar-mobile-collapse .nav-item {
@@ -10900,6 +10933,31 @@ a.text-dark:hover, a.text-dark:focus {
   color: white;
 }
 
+.navbar-mobile-collapse .level-two-wrapper .overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 55px;
+  left: 0;
+  background-color: #004456;
+  overflow-x: hidden;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  padding: 0.5rem 0;
+}
+
+.navbar-mobile-collapse .level-two-wrapper .overlay-content {
+  position: relative;
+  width: 100%;
+}
+
 .navbar-mobile-collapse .nav-link.nav-link-secondary {
   text-transform: none;
   padding: 1rem;
@@ -10917,12 +10975,16 @@ a.text-dark:hover, a.text-dark:focus {
   border-top: 1px solid #00a0ad;
 }
 
+.navbar-mobile-collapse .hoverable .dropdown-submenu:last-child {
+  border-bottom: 1px solid #00a0ad;
+}
+
 .navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item {
+  font-size: 0.9rem;
   display: block;
   color: white;
-  padding: 0.75rem 2rem;
+  padding: 1rem;
   text-transform: uppercase;
-  font-size: 0.8rem;
   font-family: "Acari Sans SemiBold", sans-serif;
 }
 
@@ -10931,19 +10993,22 @@ a.text-dark:hover, a.text-dark:focus {
   color: white;
 }
 
+.navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item[aria-expanded="true"] {
+  background: #00a0ad;
+}
+
 .navbar-mobile-collapse .hoverable .dropdown-submenu .second-dropdown {
   min-width: 100%;
   background: #f4f4f4;
 }
 
 .navbar-mobile-collapse .hoverable .dropdown-submenu .second-dropdown a {
-  font-size: 0.8rem;
   display: block;
   color: black;
   text-transform: none;
   font-weight: 300;
   border-bottom: 1px solid #aaaaaa;
-  padding: 0.55rem 2.5rem;
+  padding: 0.55rem 1.5rem;
 }
 
 .navbar-mobile-collapse .hoverable .dropdown-submenu .second-dropdown a:active {
@@ -11085,7 +11150,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .search-bar .search-button.active::before,
 .search-bar .search-button.active::after {
-  width: 77.5%;
+  width: 75%;
 }
 
 .search-bar .search-button.active .search-icon {
@@ -11111,7 +11176,7 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-transform-origin: right;
           transform-origin: right;
   position: fixed;
-  top: 49px;
+  top: 58px;
   left: 0;
   right: 0;
   background-color: #004456;
@@ -11366,6 +11431,10 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-transparent .search-bar a.btn {
     background-color: #00a0ad;
   }
+  .navbar-transparent .search-bar .search-button.active::before,
+  .navbar-transparent .search-bar .search-button.active::after {
+    width: 77.5%;
+  }
   .navbar-transparent:hover,
   .home-page.navbar-when-scrolled,
   .home-page.navbar-search-clicked {
@@ -11483,6 +11552,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .site-footer .companymail:hover, .site-footer .companymail:focus {
+  color: #00a0ad;
   text-decoration: none;
 }
 
@@ -11750,6 +11820,7 @@ a.text-dark:hover, a.text-dark:focus {
 .carousel-caption {
   position: static;
   height: 100%;
+  margin-top: 1.5rem;
 }
 
 .carousel-caption > div {
@@ -11761,7 +11832,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Axiforma Bold", sans-serif;
   text-align: center;
   font-size: 1.5rem;
-  margin: 4rem 0 3rem 0;
+  margin-bottom: 3rem;
 }
 
 .carousel-caption ul {
@@ -11808,7 +11879,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .carousel-control-prev {
-  top: 105%;
+  top: 115%;
   left: -7px;
 }
 
@@ -11817,12 +11888,22 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .carousel-control-next {
-  top: 105%;
+  top: 115%;
   right: -7px;
 }
 
 .carousel-control-next .carousel-control-next-icon {
   width: 30px;
+}
+
+@media screen and (min-height: 580px) {
+  .carousel-caption {
+    margin-top: 3rem;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 113%;
+  }
 }
 
 .carousel-indicators li {

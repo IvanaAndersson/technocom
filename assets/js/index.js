@@ -54,6 +54,19 @@ window.addEventListener("load", event => {
   loader.classList.add("hidden");
 });
 
+// script for sliding the menu on the mobile version
+
+const productsNav = document.getElementById("productsNav");
+const engineeringNav = document.getElementById("engineeringNav");
+const autoNav = document.getElementById("autoNav");
+
+const openNav = navToSlide => {
+  navToSlide.style.transform = "translateX(0px)";
+};
+const closeNav = navToSlide => {
+  navToSlide.style.transform = "translateX(100%)";
+};
+
 // script for switching between tabs in the catalog item page
 
 const characteristicsTabLink = document.getElementById(

@@ -19,6 +19,12 @@
   .button-fill {
     fill: $gray-900;
   }
+
+  &:hover,
+  &:focus {
+    color: $teal;
+    text-decoration: none;
+  }
 }
 
 .pages {
@@ -62,6 +68,7 @@
 }
 
 .tabs-links {
+  margin-bottom: 0;
   width: 100%;
 
   li {
@@ -140,7 +147,7 @@
   text-align: center;
   line-height: 1.2;
   color: $teal;
-  margin: 1.2rem 0;
+  margin: 1.25rem 0;
 }
 
 .pdf {
