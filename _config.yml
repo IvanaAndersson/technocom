@@ -2,8 +2,8 @@ title: Technocom Co
 email: ivana.p.kostova@gmail.com
 description: Technocom Co
 destination: docs
-baseurl: "" # the subpath of your site
-# baseurl: "/technocom" # the subpath of your site
+# baseurl: "" # the subpath of your site
+baseurl: "/technocom" # the subpath of your site
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
 collections:
   pneumatics:
