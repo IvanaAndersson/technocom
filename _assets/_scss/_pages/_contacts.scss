@@ -17,11 +17,6 @@
   background: linear-gradient(to bottom, $teal 10%, $blue 100%);
 }
 
-.contact-address,
-.office-contacts {
-  border-right: 1px solid $white;
-}
-
 .tech-consultants,
 .contact-address,
 .office-contacts {
@@ -182,6 +177,12 @@
     padding: 0;
     background: transparent;
   }
+
+  .contact-address,
+  .office-contacts {
+    border-right: 1px solid $white;
+  }
+
   .tech-consultants {
     display: block;
     margin-top: 0;

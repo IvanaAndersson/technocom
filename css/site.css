@@ -1405,11 +1405,6 @@ p.decorative-text:before {
   background: linear-gradient(to bottom, #00a0ad 10%, #004456 100%);
 }
 
-.contact-address,
-.office-contacts {
-  border-right: 1px solid white;
-}
-
 .tech-consultants p,
 .contact-address p,
 .office-contacts p {
@@ -1590,6 +1585,10 @@ p.decorative-text:before {
   .contacts-header-text {
     padding: 0;
     background: transparent;
+  }
+  .contact-address,
+  .office-contacts {
+    border-right: 1px solid white;
   }
   .tech-consultants {
     display: block;
@@ -10851,16 +10850,10 @@ a.text-dark:hover, a.text-dark:focus {
   outline: none;
 }
 
-.dropdown-toggle:after {
-  display: block;
-  content: "\f067";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  top: 50%;
-  right: 25px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+@media screen and (min-width: 550px) {
+  .navbar-expand-lg .logo-container img {
+    width: 60%;
+  }
 }
 
 .navbar-mobile-collapse {
@@ -10881,7 +10874,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-mobile-collapse .menu-text {
   display: block;
   color: #00a0ad;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   text-decoration: none;
   position: relative;
 }
@@ -10894,7 +10887,7 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar-mobile-collapse .back-arrow {
   position: absolute;
   top: 5px;
-  left: -2px;
+  left: 3px;
 }
 
 .navbar-mobile-collapse .back-arrow svg {
@@ -10911,7 +10904,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 0.9rem;
   text-transform: uppercase;
   color: #00a0ad;
-  padding: 1rem;
   border-top: 1px solid #00a0ad;
 }
 
@@ -10922,15 +10914,33 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .navbar-mobile-collapse .nav-link {
-  padding: 1rem;
   text-transform: uppercase;
   font-size: 1rem;
   font-family: "Acari Sans Bold", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar-mobile-collapse .nav-link:active {
   background-color: #00a0ad;
   color: white;
+}
+
+.navbar-mobile-collapse .plus-icon svg,
+.navbar-mobile-collapse .minus-icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.navbar-mobile-collapse .plus-icon .minus-icon-fill,
+.navbar-mobile-collapse .plus-icon .plus-icon-fill,
+.navbar-mobile-collapse .minus-icon .minus-icon-fill,
+.navbar-mobile-collapse .minus-icon .plus-icon-fill {
+  fill: #f4f4f4;
 }
 
 .navbar-mobile-collapse .level-two-wrapper .overlay {
@@ -10960,7 +10970,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-mobile-collapse .nav-link.nav-link-secondary {
   text-transform: none;
-  padding: 1rem;
   font-family: "Acari Sans SemiBold", sans-serif;
 }
 
@@ -10983,9 +10992,14 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 0.9rem;
   display: block;
   color: white;
-  padding: 1rem;
   text-transform: uppercase;
   font-family: "Acari Sans SemiBold", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item:active, .navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item:visited {
@@ -10993,8 +11007,20 @@ a.text-dark:hover, a.text-dark:focus {
   color: white;
 }
 
+.navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item[aria-expanded="false"] .minus-icon {
+  display: none;
+}
+
 .navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item[aria-expanded="true"] {
   background: #00a0ad;
+}
+
+.navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item[aria-expanded="true"] .plus-icon {
+  display: none;
+}
+
+.navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item[aria-expanded="true"] .minus-icon {
+  display: inline-block;
 }
 
 .navbar-mobile-collapse .hoverable .dropdown-submenu .second-dropdown {
@@ -11013,6 +11039,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-mobile-collapse .hoverable .dropdown-submenu .second-dropdown a:active {
   color: #00a0ad;
+}
+
+.navbar-mobile-collapse .nav-link,
+.navbar-mobile-collapse .section-heading,
+.navbar-mobile-collapse .hoverable .dropdown-submenu > .menu-item {
+  padding: 0.75rem 1rem 0.75rem 1.5rem;
 }
 
 .navbar-toggler {
@@ -11268,6 +11300,7 @@ a.text-dark:hover, a.text-dark:focus {
     background: #f4f4f4;
   }
   .navbar-expand-lg .logo-container img {
+    width: 80%;
     margin-left: 0;
   }
   .navbar-expand-lg .navbar-brand {
@@ -11896,16 +11929,6 @@ a.text-dark:hover, a.text-dark:focus {
   width: 30px;
 }
 
-@media screen and (min-height: 580px) {
-  .carousel-caption {
-    margin-top: 3rem;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    top: 113%;
-  }
-}
-
 .carousel-indicators li {
   width: 0.75rem;
   height: 0.75rem;
@@ -11915,6 +11938,29 @@ a.text-dark:hover, a.text-dark:focus {
 
 .carousel-indicators .active {
   background-color: #00a0ad;
+}
+
+@media (min-width: 550px) and (max-width: 991px) {
+  .carousel-caption {
+    margin-top: 9rem;
+  }
+  .carousel-caption h1 {
+    font-size: 2.25rem;
+    margin-bottom: 4rem;
+  }
+  .carousel-caption ul li {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-height: 580px) {
+  .carousel-caption {
+    margin-top: 3rem;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 113%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -11934,6 +11980,10 @@ a.text-dark:hover, a.text-dark:focus {
     left: 0;
     right: 0;
     bottom: 0;
+    margin-top: 0;
+  }
+  .carousel-caption > div {
+    top: 5%;
   }
   .carousel-caption h1 {
     font-family: "Axiforma SemiBold", sans-serif;
