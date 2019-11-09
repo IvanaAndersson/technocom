@@ -110,18 +110,42 @@ id="navigation-mobile">
 
   <!-- Collapsible content -->
   <div class="collapse navbar-collapse navbar-mobile-collapse" id="navbarSupportedContent2">
-    <!-- Links -->
-    <ul class="navbar-nav accordion" id='accordionMenu'>
-      <!-- Products menu -->
-      <span class='menu-text'>Меню</span>
-      <li class="nav-item">
-        <a
-          href='javascript:void(0)'
-          class="nav-link"
-          onclick="openNav(productsNav)"
-        >
-          Продукти
-          
+    <!-- LEVEL ONE Links -->
+    <section class="level-one">
+      <ul class="navbar-nav accordion" id='accordionMenu'>
+        <span class='menu-text'>Меню</span>
+        
+        <!-- Products menu -->
+        <li class="nav-item">
+          <a
+            href='javascript:void(0)'
+            class="nav-link"
+            onclick="openNav(productsNav)"
+          >
+            Продукти
+            
+              <span class="plus-icon">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="357px" height="357px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+                <g>
+                  <g id="add">
+                    <path class='plus-icon-fill' d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+                  </g>
+                </g>
+                </svg>
+              </span>
+          </a>
+        </li>
+
+        <!-- Engineering menu -->
+        <li class="nav-item">
+          <a
+            href='javascript:void(0)'
+            class="nav-link"
+            onclick="openNav(engineeringNav)"
+          >
+            Инженеринг
+            
             <span class="plus-icon">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="357px" height="357px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
@@ -132,85 +156,66 @@ id="navigation-mobile">
               </g>
               </svg>
             </span>
-        </a>
-      </li>
+          </a>
+        </li>
 
-      <!-- Engineering menu -->
-      <li class="nav-item">
-        <a
-          href='javascript:void(0)'
-          class="nav-link"
-          onclick="openNav(engineeringNav)"
-        >
-          Инженеринг
-          
-          <span class="plus-icon">
-              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="357px" height="357px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
-            <g>
-              <g id="add">
-                <path class='plus-icon-fill' d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
-              </g>
-            </g>
-            </svg>
-          </span>
-        </a>
-      </li>
+        <!-- Auto industry menu -->
+        <li class="nav-item " >
+          <a
+            href='javascript:void(0)'
+            class="nav-link"
+            onclick="openNav(autoNav)"
+          >
+            Авто индустрия
 
-      <!-- Auto industry menu -->
-      <li class="nav-item " >
-        <a
-          href='javascript:void(0)'
-          class="nav-link"
-          onclick="openNav(autoNav)"
-        >
-          Авто индустрия
-
-          
-            <span class="plus-icon">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="357px" height="357px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
-              <g>
-                <g id="add">
-                  <path class='plus-icon-fill' d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+            
+              <span class="plus-icon">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="357px" height="357px" viewBox="0 0 357 357" style="enable-background:new 0 0 357 357;" xml:space="preserve">
+                <g>
+                  <g id="add">
+                    <path class='plus-icon-fill' d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+                  </g>
                 </g>
-              </g>
-              </svg>
-            </span>
-        </a>
-        
-      </li>
-        
-      <!-- THE COMPANY menu -->
-      <li class="nav-item">
-        <a
-        class="nav-link nav-link-secondary"
-        href="/technocom/about/index.html"
-          >Компанията
-        </a>
-        
-      </li>
-
-      <!-- News menu -->
-      <li class="nav-item">
-        <a
-        class="nav-link nav-link-secondary"
-        href="/technocom/news/new-products.html"
-          >Новини
-        </a>
-       
-      </li>
-
-      <!-- Contacts menu item -->
-      <li class="nav-item">
-        <a
+                </svg>
+              </span>
+          </a>
+          
+        </li>
+          
+        <!-- THE COMPANY menu -->
+        <li class="nav-item">
+          <a
           class="nav-link nav-link-secondary"
-          href="/technocom/contact/index.html"
-          >Контакти
-        </a>
-      </li>
-    </ul>
+          href="/technocom/about/index.html"
+            >Компанията
+          </a>
+          
+        </li>
 
+        <!-- News menu -->
+        <li class="nav-item">
+          <a
+          class="nav-link nav-link-secondary"
+          href="/technocom/news/new-products.html"
+            >Новини
+          </a>
+        
+        </li>
+
+        <!-- Contacts menu item -->
+        <li class="nav-item">
+          <a
+            class="nav-link nav-link-secondary"
+            href="/technocom/contact/index.html"
+            >Контакти
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- LEVEL ONE Links -->
+
+    <!-- LEVEL TWO Links -->
     <section class="level-two-wrapper mb-5">
       <!-- the slide with the products menu items  -->
       <div class="products-dropdown level-two overlay" id='productsNav'>
@@ -939,8 +944,8 @@ id="navigation-mobile">
         </ul>
       </div>
     </section>
+    <!-- LEVEL TWO Links -->
     
-    <!-- Links -->
   </div>
   <!-- Collapsible content -->
 </nav>
