@@ -54,6 +54,7 @@
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
 
   .level-one {
     width: 100vw;
@@ -139,7 +140,8 @@
       z-index: 1000;
       top: 0px;
       left: 0;
-      overflow: auto;
+      overflow-x: hidden;
+      overflow-y: auto;
       background-color: $blue;
       transform: translateX(100%);
       transform-origin: right;

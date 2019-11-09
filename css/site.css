@@ -10863,6 +10863,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100vw;
   height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .navbar-mobile-collapse .level-one {
@@ -10955,7 +10956,8 @@ a.text-dark:hover, a.text-dark:focus {
   z-index: 1000;
   top: 0px;
   left: 0;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #004456;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
