@@ -38,7 +38,7 @@
 .carousel-caption {
   position: static;
   height: 100%;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 
   & > div {
     position: relative;
@@ -49,7 +49,7 @@
     font-family: "Axiforma Bold", sans-serif;
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   ul {
@@ -87,14 +87,14 @@
     height: 1px;
     background-color: $white;
     position: absolute;
-    top: -2rem;
+    top: -1rem;
     left: 50%;
     transform: translateX(-50%);
   }
 }
 
 .carousel-control-prev {
-  top: 115%;
+  top: 120%;
   left: -7px;
 
   .carousel-control-prev-icon {
@@ -102,7 +102,7 @@
   }
 }
 .carousel-control-next {
-  top: 115%;
+  top: 120%;
   right: -7px;
 
   .carousel-control-next-icon {
@@ -143,11 +143,31 @@
 @media screen and (min-height: 580px) {
   .carousel-caption {
     margin-top: 3rem;
+
+    & > div {
+      top: 15%;
+    }
+
+    h1 {
+      margin-bottom: 3rem;
+    }
+
+    ul {
+      top: 10%;
+    }
+  }
+
+  .delivery,
+  .production,
+  .industry {
+    &:before {
+      top: -1.5rem;
+    }
   }
 
   .carousel-control-prev,
   .carousel-control-next {
-    top: 113%;
+    top: 100%;
   }
 }
 
